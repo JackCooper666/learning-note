@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e944510f4d0837f9",
+        "id": "aa85e696e0de3869",
         "type": "tabs",
         "children": [
           {
-            "id": "ca8f286302e14e68",
+            "id": "21bff1de81cd8551",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "git/git commends.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "git commends"
+              "title": "New tab"
             }
           }
         ]
@@ -142,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/git commends.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of git commends"
+              "title": "Outline"
             }
           }
         ],
@@ -156,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 614.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +164,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca8f286302e14e68",
+  "active": "21bff1de81cd8551",
   "lastOpenFiles": [
+    "git/git commends.md",
+    "obsidian + github.md",
     "daily plan/ARC SLAM TOOL NOTE.md",
     "April 24.md",
     "ROS 1/rosbag.md",
@@ -190,7 +187,6 @@
     "ROS 1/Lidar namespace and structure.md",
     "Python/UI.md",
     "ROS 1/workspace and package.md",
-    "git/git commends.md",
     "ROS 1/Localization/ekf_localization.md",
     "Python/Untitled",
     "ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png",
@@ -201,7 +197,6 @@
     "Python/ROS1",
     "2025-04-17.md",
     "daily plan/2025-04-04.md",
-    "Python/Python mistakes.md",
     "ROS 1/Localization",
     "ROS 1/navigation",
     "daily plan",
