@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "aa85e696e0de3869",
+        "id": "60bf9444c2f81346",
         "type": "tabs",
         "children": [
           {
-            "id": "21bff1de81cd8551",
+            "id": "e18fa285309e9d7e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,13 +145,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "1de55c432d7228d1",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 620.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,19 +174,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21bff1de81cd8551",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
-    "git/git commends.md",
-    "obsidian + github.md",
-    "daily plan/ARC SLAM TOOL NOTE.md",
+    "sh/run a sh file.md",
+    "obsidian user guidance/common commends.md",
+    "obsidian user guidance/obsidian + github.md",
+    "obsidian user guidance.md",
+    "obsidian user guidance",
+    "daily plan/May 5.md",
+    "ROS 1/SLAM/AC1+FastLivo.md",
+    "sh/sh commends.md",
+    "ROS 1/SLAM",
+    "daily plan/May 4.md",
+    "sh",
+    "ROS 1/SLAM/evo_ape_alignment.png",
+    "ROS 1/python/tricky skill.md",
     "April 24.md",
-    "ROS 1/rosbag.md",
-    "ROS 1/evo.md",
-    "evo_ape_alignment.png",
     "ROS 1/python/Topic communication.md",
     "ROS 1/python/ROS1 noetic with python example code.md",
+    "git/git commends.md",
+    "daily plan/ARC SLAM TOOL NOTE.md",
+    "ROS 1/rosbag.md",
+    "ROS 1/evo.md",
     "ROS 1/python",
-    "ROS 1/python/tricky skill.md",
     "Python/Class.md",
     "Python/cv2.md",
     "Python/file operator.md",
@@ -187,21 +207,12 @@
     "ROS 1/Lidar namespace and structure.md",
     "Python/UI.md",
     "ROS 1/workspace and package.md",
-    "ROS 1/Localization/ekf_localization.md",
     "Python/Untitled",
     "ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png",
-    "ROS 1/navigation/ros_motion_planning.md",
-    "ROS 1/navigation/teb.md",
-    "ROS 1/Localization/cartographer.md",
-    "ROS 1/Localization/AMCL.md",
     "Python/ROS1",
-    "2025-04-17.md",
-    "daily plan/2025-04-04.md",
     "ROS 1/Localization",
     "ROS 1/navigation",
     "daily plan",
-    "git",
-    "Python",
-    "ROS 1"
+    "git"
   ]
 }
