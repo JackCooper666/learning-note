@@ -1,0 +1,3 @@
+- [ ] boundary remove
+- [ ] far point filter
+- [ ] running
