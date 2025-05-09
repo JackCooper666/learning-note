@@ -1,8 +1,8 @@
-- [ ] boundary remove
-	- [ ] bug fix
+- [x] boundary remove
+	- [x] bug fix
 		typedef pcl::PointXYZINormal PointType;
 		typedef pcl::PointCloud<PointType> RsPC;
 		PointCloudXYZI::Ptr feats_undistort
-		
-- [ ] far point filter
-- [ ] running
+			
+-[x] far point filter
+- [x] running

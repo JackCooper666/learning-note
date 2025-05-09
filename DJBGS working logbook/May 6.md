@@ -1,6 +1,6 @@
 - [x] completed the lidar degeneration function
 - [x] body building
-- [ ] boundary points filter
+- [x] boundary points filter
 	current problems
 	- [x] where should the boundary remove function be put in the fastlivo2
 	```cpp

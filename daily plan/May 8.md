@@ -1,3 +1,0 @@
-- [ ] valid point matching function
-- [ ] body building
-- [ ] check other params in the LIO system

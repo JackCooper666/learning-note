@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git commends.md",
+                "file": "DJBGS working logbook/May 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git commends"
+              "title": "May 8"
             }
           }
         ]
@@ -181,14 +181,19 @@
   },
   "active": "e18fa285309e9d7e",
   "lastOpenFiles": [
-    "daily plan/May 8.md",
+    "c and cpp/cpp/address.md",
+    "c and cpp/cpp/STL container.md",
+    "DJBGS working logbook/May 8.md",
+    "DJBGS working logbook/May 4.md",
+    "DJBGS working logbook/May 5.md",
+    "DJBGS working logbook/May 6.md",
+    "DJBGS working logbook/May 7.md",
     "git/git commends.md",
-    "daily plan/May 6.md",
-    "daily plan/May 7.md",
-    "daily plan/ARC SLAM TOOL NOTE.md",
+    "c and cpp/cpp",
+    "c and cpp",
+    "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
     "sh/sh commends.md",
     "sh/run a sh file.md",
-    "daily plan/May 5.md",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
     "slam/convergence Judgements in IEKF.md",
     "ROS 1/SLAM/FAST-LIO论文讲解.pdf",
@@ -199,7 +204,6 @@
     "UTF-8FAST-LIO论文讲解.pdf",
     "ROS 1/SLAM/AC1+FastLivo.md",
     "slam",
-    "daily plan/May 4.md",
     "obsidian user guidance/common commends.md",
     "obsidian user guidance/obsidian + github.md",
     "obsidian user guidance.md",
@@ -212,12 +216,8 @@
     "ROS 1/python/ROS1 noetic with python example code.md",
     "ROS 1/rosbag.md",
     "ROS 1/evo.md",
-    "ROS 1/python",
     "Python/Class.md",
     "Python/cv2.md",
-    "Python/file operator.md",
-    "Python/heapq.md",
-    "Python/Untitled",
     "ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png"
   ]
 }
