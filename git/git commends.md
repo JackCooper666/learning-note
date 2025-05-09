@@ -16,10 +16,15 @@ git remote -v
 ```git
 git branch
 ```
-3. Check current branches
+3. load current branch to local
 ```git
 git fetch
 ```
+To fetch **all branches from both remotes**, including `biao` and `junqi` (which you expect to be in `upstream`), run:
+```git
+git fetch --all
+```
+
 4. Go to your own branch or create a new branch
 ```git
 git checkout your/branch/path  // go to your branch 
@@ -27,12 +32,34 @@ git checkout your/branch/path  // go to your branch
 ```git
 git checkout -b your/new/branch // create a new branch
 ```
-5. Push your content into the branch
+5. commit your codes into the branch and store them a cloud buffer
 ```git
 git add . // add all your local changes 
 git add your/change/path // add one change
 git commit -m "[your/branch] ..." // after add all changes
-git push origin your/branch // upload your the changes into remote 
+```
+6. push the codes into github remote terminal
+if you used `git remote` to connect with a github remote terminal
+before you push, you should check the branch situations
+```git
+git remote -v
+```
+your branch may connected with multiple repositories. such like
+```bash
+~/zewen/fastlivo2-ac/src/FAST-LIVO2$ git remote -v 
+origin https://github.com/hku-mars/FAST-LIVO2.git (fetch) 
+origin https://github.com/hku-mars/FAST-LIVO2.git (push) 
+upstream https://github.com/nuslde/DJBGS.git (fetch) 
+upstream https://github.com/nuslde/DJBGS.git (push)
+```
+
+therefore, please determine which repository should is your destination to push
+```git
+git push --set-upstream origin zewen/fastlivo2-ac1
+```
+or
+```git 
+git push --set-upstream upstream zewen/fastlivo2-ac1
 ```
 
 # How to pull thridparty submodule
