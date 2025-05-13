@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DJBGS working logbook/May 8.md",
+                "file": "ROS/ROS 1 AND ROS 2 COEXIST.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "May 8"
+              "title": "ROS 1 AND ROS 2 COEXIST"
+            }
+          },
+          {
+            "id": "51220ede0b90d853",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DJBGS working logbook/May 13.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "May 13"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,16 +194,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e18fa285309e9d7e",
+  "active": "51220ede0b90d853",
   "lastOpenFiles": [
+    "GPU driver install and CUDA toolkit install.md",
+    "DJBGS working logbook/May 13.md",
+    "ROS/ROS 1 AND ROS 2 COEXIST.md",
+    "ROS/ROS 1/SLAM/Mathematical basis.md",
+    "ROS/ROS 2",
+    "ROS.md",
+    "ROS",
+    "DJBGS working logbook/May 12.md",
+    "DJBGS working logbook/May 10.md",
+    "ROS/ROS 1/evo.md",
+    "ROS/ROS 1/workspace and package.md",
+    "ROS/ROS 1/rosbag.md",
+    "ROS/ROS 1/ROS 1 mistakes.md",
+    "git/git commends.md",
+    "DJBGS working logbook/May 8.md",
     "c and cpp/cpp/address.md",
     "c and cpp/cpp/STL container.md",
-    "DJBGS working logbook/May 8.md",
     "DJBGS working logbook/May 4.md",
     "DJBGS working logbook/May 5.md",
     "DJBGS working logbook/May 6.md",
     "DJBGS working logbook/May 7.md",
-    "git/git commends.md",
     "c and cpp/cpp",
     "c and cpp",
     "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
@@ -196,28 +224,15 @@
     "sh/run a sh file.md",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
     "slam/convergence Judgements in IEKF.md",
-    "ROS 1/SLAM/FAST-LIO论文讲解.pdf",
+    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
     "ROS 1/SLAM/FAST-LIO Principle.md",
     "1.md",
     " 1",
-    "ROS 1/SLAM/evo_ape_alignment.png",
+    "ROS/ROS 1/SLAM/evo_ape_alignment.png",
     "UTF-8FAST-LIO论文讲解.pdf",
-    "ROS 1/SLAM/AC1+FastLivo.md",
+    "ROS/ROS 1/SLAM/AC1+FastLivo.md",
     "slam",
-    "obsidian user guidance/common commends.md",
-    "obsidian user guidance/obsidian + github.md",
-    "obsidian user guidance.md",
     "obsidian user guidance",
-    "ROS 1/SLAM",
-    "sh",
-    "ROS 1/python/tricky skill.md",
-    "April 24.md",
-    "ROS 1/python/Topic communication.md",
-    "ROS 1/python/ROS1 noetic with python example code.md",
-    "ROS 1/rosbag.md",
-    "ROS 1/evo.md",
-    "Python/Class.md",
-    "Python/cv2.md",
-    "ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png"
+    "ROS/ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png"
   ]
 }
