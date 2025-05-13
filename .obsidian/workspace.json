@@ -25,18 +25,30 @@
             "id": "51220ede0b90d853",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "ROS/ROS 1/SLAM/evo_ape_alignment.png"
+              },
+              "icon": "lucide-image",
+              "title": "evo_ape_alignment"
+            }
+          },
+          {
+            "id": "c37a23183af657ba",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "DJBGS working logbook/May 13.md",
+                "file": "Wechat installation/wechat installation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "May 13"
+              "title": "wechat installation"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -181,22 +193,42 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 482.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51220ede0b90d853",
+  "active": "c37a23183af657ba",
   "lastOpenFiles": [
+    "vim editor/vim file editor.md",
+    "Wechat installation/wechat installation.md",
+    "Wechat installation",
+    "vim editor/Pasted image 20250513152705.png",
+    "vim editor/Pasted image 20250513153752.png",
+    "vim editor/Pasted image 20250513153717.png",
+    "vim editor/Pasted image 20250513153706.png",
+    "vim editor/Pasted image 20250513153650.png",
+    "vim editor/Pasted image 20250513153643.png",
+    "vim editor/Pasted image 20250513153436.png",
+    "vim editor/Pasted image 20250513153428.png",
+    "vim editor/Pasted image 20250513153408.png",
+    "vim editor/Pasted image 20250513153228.png",
+    "vim editor",
+    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
+    "slam/UTF-8FAST-LIO论文讲解.pdf",
+    "ROS/ROS 1/SLAM/convergence Judgements in IEKF.md",
     "GPU driver install and CUDA toolkit install.md",
+    "c and cpp/gcc and g++.md",
+    "git/git commends.md",
     "DJBGS working logbook/May 13.md",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS 1/SLAM/Mathematical basis.md",
@@ -209,7 +241,6 @@
     "ROS/ROS 1/workspace and package.md",
     "ROS/ROS 1/rosbag.md",
     "ROS/ROS 1/ROS 1 mistakes.md",
-    "git/git commends.md",
     "DJBGS working logbook/May 8.md",
     "c and cpp/cpp/address.md",
     "c and cpp/cpp/STL container.md",
@@ -222,17 +253,7 @@
     "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
     "sh/sh commends.md",
     "sh/run a sh file.md",
-    "slam/UTF-8FAST-LIO论文讲解.pdf",
-    "slam/convergence Judgements in IEKF.md",
-    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
-    "ROS 1/SLAM/FAST-LIO Principle.md",
-    "1.md",
     " 1",
-    "ROS/ROS 1/SLAM/evo_ape_alignment.png",
-    "UTF-8FAST-LIO论文讲解.pdf",
-    "ROS/ROS 1/SLAM/AC1+FastLivo.md",
-    "slam",
-    "obsidian user guidance",
-    "ROS/ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png"
+    "UTF-8FAST-LIO论文讲解.pdf"
   ]
 }
