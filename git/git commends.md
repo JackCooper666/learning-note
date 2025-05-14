@@ -1,4 +1,4 @@
-# Get Start
+if # Get Start
 
 1. Use the "git clone" or "git remote add" to git the remote repository
 

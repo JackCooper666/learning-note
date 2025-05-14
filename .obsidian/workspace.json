@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wechat installation/wechat installation.md",
+                "file": "DJBGS working logbook/May 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wechat installation"
+              "title": "May 13"
             }
           }
         ],
@@ -198,6 +198,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -209,27 +210,7 @@
   },
   "active": "c37a23183af657ba",
   "lastOpenFiles": [
-    "Wechat installation/Pasted image 20250513160633.png",
-    "vim editor/vim file editor.md",
-    "Wechat installation/wechat installation.md",
-    "Wechat installation",
-    "vim editor/Pasted image 20250513152705.png",
-    "vim editor/Pasted image 20250513153752.png",
-    "vim editor/Pasted image 20250513153717.png",
-    "vim editor/Pasted image 20250513153706.png",
-    "vim editor/Pasted image 20250513153650.png",
-    "vim editor/Pasted image 20250513153643.png",
-    "vim editor/Pasted image 20250513153436.png",
-    "vim editor/Pasted image 20250513153428.png",
-    "vim editor/Pasted image 20250513153408.png",
-    "vim editor/Pasted image 20250513153228.png",
-    "vim editor",
-    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
-    "slam/UTF-8FAST-LIO论文讲解.pdf",
-    "ROS/ROS 1/SLAM/convergence Judgements in IEKF.md",
     "GPU driver install and CUDA toolkit install.md",
-    "c and cpp/gcc and g++.md",
-    "git/git commends.md",
     "DJBGS working logbook/May 13.md",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS 1/SLAM/Mathematical basis.md",
@@ -242,18 +223,29 @@
     "ROS/ROS 1/workspace and package.md",
     "ROS/ROS 1/rosbag.md",
     "ROS/ROS 1/ROS 1 mistakes.md",
+    "git/git commends.md",
     "DJBGS working logbook/May 8.md",
     "c and cpp/cpp/address.md",
     "c and cpp/cpp/STL container.md",
     "DJBGS working logbook/May 4.md",
     "DJBGS working logbook/May 5.md",
     "DJBGS working logbook/May 6.md",
-    "DJBGS working logbook/May 7.md",
     "c and cpp/cpp",
     "c and cpp",
     "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
     "sh/sh commends.md",
+    "sh/run a sh file.md",
+    "slam/UTF-8FAST-LIO论文讲解.pdf",
+    "slam/convergence Judgements in IEKF.md",
+    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
+    "ROS 1/SLAM/FAST-LIO Principle.md",
+    "1.md",
     " 1",
-    "UTF-8FAST-LIO论文讲解.pdf"
+    "ROS/ROS 1/SLAM/evo_ape_alignment.png",
+    "UTF-8FAST-LIO论文讲解.pdf",
+    "ROS/ROS 1/SLAM/AC1+FastLivo.md",
+    "slam",
+    "obsidian user guidance",
+    "ROS/ROS 1/Localization/ekf_localization-amcl-movebase-relationship.png"
   ]
 }
