@@ -23,6 +23,4 @@ update-alternatives: using /usr/bin/gcc-11 to provide /usr/bin/gcc (gcc) in manu
 ```
 
 
-# 
-
 
