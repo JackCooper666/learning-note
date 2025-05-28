@@ -1,22 +1,23 @@
 #include "class_secanrio_1.h"
 
-bool compare(const Cube &a, const Cube &b){
+bool compare(Cube &a, Cube &b){
     
-    float a_a = a.read_a;
-    float a_v = a.read_v;
+    float a_a = a.read_a();
+    float a_v = a.read_v();
 
-    float b_a = b.read_a;
-    float b_v = b.read_v;
+    float b_a = b.read_a();
+    float b_v = b.read_v();
 
     cout << "a's volumn and area " << a_v << " " << a_a << endl;
     cout << "b's volumn and area " << b_v << " " << b_a << endl;
-    if (a_v == b_v && a_a == b_a){
-        return 1;
-    }
-    else{
-        return 0;
-    }
+
+    return (a_v == b_v && a_a == b_a);
 }
+
+/*
+if you use the compare(const Cube &a, const Cube &b)
+the behaviors in the class should be const as well
+*/
 
 
 int main(){
