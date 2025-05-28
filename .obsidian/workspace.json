@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/math.md",
+                "file": "DJBGS working logbook/May 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "math"
+              "title": "May 13"
+            }
+          },
+          {
+            "id": "00f9a944be590f58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git/git commends.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "git commends"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,11 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7ed6e13578e5981d",
+  "active": "00f9a944be590f58",
   "lastOpenFiles": [
+    "DJBGS working logbook/May 18.md",
+    "DJBGS working logbook/May 13.md",
+    "c and cpp/cpp/math.md",
     "c and cpp/cpp/address.md",
     "c and cpp/cpp/STL container.md",
-    "c and cpp/cpp/math.md",
     "c and cpp/gcc and g++.md",
     "git/git commends.md",
     "Steam install Ubuntu.md",
@@ -208,7 +225,6 @@
     "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
     "GPU driver install and CUDA toolkit install.md",
-    "DJBGS working logbook/May 13.md",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS 1/SLAM/Mathematical basis.md",
     "ROS/ROS 2",
@@ -223,7 +239,6 @@
     "DJBGS working logbook/May 4.md",
     "DJBGS working logbook/May 5.md",
     "DJBGS working logbook/May 6.md",
-    "DJBGS working logbook/May 7.md",
     "c and cpp/cpp",
     "c and cpp",
     " 1",
