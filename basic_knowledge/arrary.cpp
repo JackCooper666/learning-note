@@ -72,13 +72,12 @@ int main(){
     cout << "the heaviest one is " << max_w << endl;
     
     /*
-    **练习案例2：**数组元素逆置
-    **案例描述：**请声明一个5个元素的数组，并且将元素逆置.
-    (如原数组元素为：1,3,2,5,4;逆置后输出结果为:4,5,2,3,1);
+     reorder the pigs array in descending order
     */
+   cout << "------------------------------------" << endl;
    for (int i = 0; i < num_pigs - 1; i++){
-        for (int j = 0; j > num_pigs - i - 1; j++){
-            if (pigs[j] < pigs[j + 1]){
+        for (int j = 0; j < num_pigs - i - 1; j++){
+            if (pigs[j] > pigs[j + 1]){
                 int temp = pigs[j];
                 pigs[j] = pigs[j + 1];
                 pigs[j + 1] = temp;
