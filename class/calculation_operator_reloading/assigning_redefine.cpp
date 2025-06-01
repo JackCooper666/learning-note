@@ -37,7 +37,7 @@ int main() {
     // p2 = p1; // This will call the default assignment operator // 浅拷贝
     p3 = p2 = p2 = p1;
     cout << "p1 age: " << *p1.m_age << endl; // Output: 10
-    cout << "p2 age: " << *p2.m_age << endl; // Output: 10
+    cout << "p2 age: " << *p2.m_age << endl; // Output: 20
     cout << "p3 age: " << *p3.m_age << endl; // Output: 10
     return EXIT_SUCCESS;
 }
