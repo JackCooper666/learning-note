@@ -126,12 +126,18 @@ void test03() {
         }
     }
 
-
+    vvpp.pop_back(); // remove the last row
+    cout << "After pop_back, remaining rows: " << vvpp.size() << endl;
+    for (vector<vector<Person*>>::iterator row = vvpp.begin(); row != vvpp.end(); row++) {
+        for (vector<Person*>::iterator col = row->begin(); col != row->end(); col++) {
+            cout << "Name: " << (*col)->name << ", Age: " << (*col)->age << endl;
+        }
+    }
 }
 
 int main() {
-    test01();
+    // test01();
     // test02();
-    // test03();
+    test03();
     return 0;
 }
