@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DJBGS working logbook/拖点去除.md",
+                "file": "ROS/SLAM/PCA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "拖点去除"
+              "title": "PCA"
             }
           }
         ]
@@ -157,8 +157,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -182,27 +182,34 @@
   },
   "active": "33c15af15b7de604",
   "lastOpenFiles": [
-    "git/git commends.md",
+    "ROS/ROS 1/evo.md",
+    "ROS/SLAM/Mathematical basis.md",
+    "ROS/SLAM/flying points.md",
+    "ROS/SLAM/convergence Judgements in IEKF.md",
+    "ROS/ROS 1/evo_ape_alignment.png",
+    "DJBGS working logbook/AC1+FastLivo.md",
+    "ROS/SLAM/PCA.md",
     "DJBGS working logbook/拖点去除.md",
-    "DJBGS working logbook/June 3rd.md",
-    "DJBGS working logbook/May 30.md",
-    "c and cpp/cpp/address and memory.md",
     "May 31.md",
-    "DJBGS working logbook/May 29.md",
     "DJBGS working logbook/May 28.md",
+    "DJBGS working logbook/May 13.md",
+    "DJBGS working logbook/May 7.md",
+    "DJBGS working logbook/May 4.md",
+    "DJBGS working logbook/June 3rd.md",
+    "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
+    "DJBGS working logbook/May 5.md",
+    "DJBGS working logbook/May 6.md",
+    "DJBGS working logbook/May 12.md",
+    "DJBGS working logbook/May 29.md",
+    "DJBGS working logbook/May 30.md",
+    "git/git commends.md",
+    "c and cpp/cpp/address and memory.md",
     "c and cpp/cpp/math.md",
     "DJBGS working logbook/May 18.md",
-    "DJBGS working logbook/May 13.md",
     "c and cpp/cpp/STL container.md",
     "c and cpp/gcc and g++.md",
     "Steam install Ubuntu.md",
-    "ROS/ROS 1/evo.md",
-    "ROS/ROS 1/SLAM/AC1+FastLivo.md",
-    "ROS/ROS 1/SLAM/convergence Judgements in IEKF.md",
-    "ROS/ROS 1/SLAM/evo_ape_alignment.png",
-    "Wechat installation/wechat installation.md",
     "Wechat installation/Pasted image 20250513160633.png",
-    "vim editor/vim file editor.md",
     "Wechat installation",
     "vim editor/Pasted image 20250513152705.png",
     "vim editor/Pasted image 20250513153752.png",
@@ -213,17 +220,10 @@
     "vim editor/Pasted image 20250513153436.png",
     "vim editor/Pasted image 20250513153428.png",
     "vim editor",
-    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
+    "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
-    "GPU driver install and CUDA toolkit install.md",
-    "ROS/ROS 1 AND ROS 2 COEXIST.md",
-    "ROS/ROS 1/SLAM/Mathematical basis.md",
     "ROS/ROS 2",
-    "ROS.md",
     "ROS",
-    "DJBGS working logbook/May 12.md",
-    "DJBGS working logbook/May 10.md",
-    "ROS/ROS 1/workspace and package.md",
     "c and cpp/cpp",
     "c and cpp",
     " 1",
