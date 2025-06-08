@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "beaa21c98ad21ca9",
+        "id": "f5478b4e579bd010",
         "type": "tabs",
         "children": [
           {
-            "id": "c8a6722960141fa3",
+            "id": "8457b535d2b8758e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DJBGS working logbook/拖点去除.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "拖点去除"
+              "title": "New tab"
             }
           }
         ]
@@ -166,8 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,35 +175,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c8a6722960141fa3",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "DJBGS working logbook/拖点去除.md",
-    "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
-    "DJBGS working logbook/AC1+FastLivo.md",
-    "ROS/SLAM/ROI (range of interest).md",
-    "ROS/SLAM/PCA.md",
-    "ROS/SLAM/flying points and flying points remove.md",
-    "DJBGS working logbook/May 30.md",
-    "ROS/ROS 1/evo.md",
-    "ROS/SLAM/Mathematical basis.md",
-    "ROS/SLAM/convergence Judgements in IEKF.md",
-    "ROS/ROS 1/evo_ape_alignment.png",
     "DJBGS working logbook/May 31.md",
-    "DJBGS working logbook/May 28.md",
-    "DJBGS working logbook/May 13.md",
-    "DJBGS working logbook/May 7.md",
-    "DJBGS working logbook/May 4.md",
-    "DJBGS working logbook/June 3rd.md",
-    "DJBGS working logbook/May 5.md",
-    "DJBGS working logbook/May 6.md",
-    "DJBGS working logbook/May 12.md",
-    "DJBGS working logbook/May 29.md",
+    "ROS/SLAM/PCA.md",
+    "ROS/SLAM/ROI (range of interest).md",
+    "ROS/navigation/teb.md",
+    "ROS/navigation/ros_motion_planning.md",
+    "ROS/navigation",
+    "ROS/SLAM/flying points and flying points remove.md",
+    "ROS/SLAM/convergence Judgements in IEKF.md",
+    "ROS/SLAM/Mathematical basis.md",
+    "ROS/SLAM/FAST-LIO论文讲解.pdf",
+    "ROS/SLAM",
+    "ROS/ROS 1/evo_ape_alignment.png",
+    "ROS/Localization/ekf_localization.md",
+    "ROS/Localization/ekf_localization-amcl-movebase-relationship.png",
+    "ROS/Localization/cartographer.md",
+    "ROS/Localization/AMCL.md",
+    "ROS/Localization",
+    "DJBGS working logbook/AC1+FastLivo.md",
     "git/git commends.md",
+    "DJBGS working logbook/June 3rd.md",
+    "DJBGS working logbook/May 30.md",
     "c and cpp/cpp/address and memory.md",
+    "May 31.md",
+    "DJBGS working logbook/May 29.md",
+    "DJBGS working logbook/May 28.md",
     "c and cpp/cpp/math.md",
     "DJBGS working logbook/May 18.md",
+    "DJBGS working logbook/May 13.md",
     "c and cpp/cpp/STL container.md",
     "c and cpp/gcc and g++.md",
+    "ROS/ROS 1/SLAM/evo_ape_alignment.png",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
     "vim editor/Pasted image 20250513152705.png",
@@ -217,16 +218,10 @@
     "vim editor/Pasted image 20250513153706.png",
     "vim editor/Pasted image 20250513153650.png",
     "vim editor/Pasted image 20250513153643.png",
-    "vim editor/Pasted image 20250513153436.png",
-    "vim editor/Pasted image 20250513153428.png",
     "vim editor",
-    "ROS/SLAM/FAST-LIO论文讲解.pdf",
+    "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
     "ROS/ROS 2",
-    "ROS",
-    "c and cpp/cpp",
-    "c and cpp",
-    " 1",
-    "UTF-8FAST-LIO论文讲解.pdf"
+    "ROS"
   ]
 }
