@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DJBGS working logbook/June 8.md",
+                "file": "PHD application/goal list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "June 8"
+              "title": "goal list"
             }
           }
         ]
@@ -182,6 +182,8 @@
   "active": "8457b535d2b8758e",
   "lastOpenFiles": [
     "DJBGS working logbook/June 8.md",
+    "PHD application/goal list.md",
+    "PHD application",
     "conflict-files-obsidian-git.md",
     "DJBGS working logbook/拖点去除.md",
     "DJBGS working logbook/May 31.md",
@@ -212,7 +214,6 @@
     "c and cpp/cpp/math.md",
     "DJBGS working logbook/May 18.md",
     "DJBGS working logbook/May 13.md",
-    "c and cpp/cpp/STL container.md",
     "ROS/ROS 1/SLAM/evo_ape_alignment.png",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
@@ -225,7 +226,6 @@
     "vim editor",
     "ROS/ROS 1/SLAM/FAST-LIO论文讲解.pdf",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
-    "ROS/ROS 2",
-    "ROS"
+    "ROS/ROS 2"
   ]
 }
