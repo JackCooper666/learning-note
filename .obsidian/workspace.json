@@ -11,10 +11,14 @@
             "id": "8457b535d2b8758e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DJBGS working logbook/June 8.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "June 8"
             }
           }
         ]
@@ -175,8 +179,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1de55c432d7228d1",
+  "active": "8457b535d2b8758e",
   "lastOpenFiles": [
+    "DJBGS working logbook/June 8.md",
     "conflict-files-obsidian-git.md",
     "DJBGS working logbook/拖点去除.md",
     "DJBGS working logbook/May 31.md",
@@ -208,7 +213,6 @@
     "DJBGS working logbook/May 18.md",
     "DJBGS working logbook/May 13.md",
     "c and cpp/cpp/STL container.md",
-    "c and cpp/gcc and g++.md",
     "ROS/ROS 1/SLAM/evo_ape_alignment.png",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
