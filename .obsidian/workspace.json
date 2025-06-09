@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/FastLivo2 Code analysis.md",
+                "file": "job application/plan leecode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FastLivo2 Code analysis"
+              "title": "plan leecode"
             }
           }
         ],
@@ -196,8 +196,11 @@
   },
   "active": "64da8c8a4438036d",
   "lastOpenFiles": [
-    "ROS/ROS 1 AND ROS 2 COEXIST.md",
+    "PHD application/goal list.md",
+    "job application/plan leecode.md",
+    "job application",
     "ROS/SLAM/FastLivo2 Code analysis.md",
+    "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS2",
     "ROS/ROS 1/evo.md",
     "ROS/ROS 1/python/ROS1 noetic with python example code.md",
@@ -209,7 +212,6 @@
     "DJBGS working logbook/Untitled.md",
     "DJBGS working logbook/拖点去除.md",
     "conflict-files-obsidian-git.md",
-    "PHD application/goal list.md",
     "PHD application",
     "DJBGS working logbook/June 8.md",
     "ROS/SLAM/ROI (range of interest).md",
@@ -225,7 +227,6 @@
     "DJBGS working logbook/May 7.md",
     "DJBGS working logbook/May 4.md",
     "DJBGS working logbook/June 3rd.md",
-    "DJBGS working logbook/May 5.md",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
     "vim editor/Pasted image 20250513152705.png",
@@ -240,7 +241,6 @@
     "slam/UTF-8FAST-LIO论文讲解.pdf",
     "ROS/ROS 2",
     "ROS",
-    "c and cpp/cpp",
-    "c and cpp"
+    "c and cpp/cpp"
   ]
 }
