@@ -34,6 +34,32 @@ output:
 	-> voxelmap_manager->state_: estimated state
 	->voxelmap_manager->pv_list_: downsampled points cloud
 	-> voxelmap_manager->ptpl_list_: a list of **point-to-plane residuals** (and associated geometric information) that are **built from** the downsampled point cloud (`pv_list_`).
-### 
+
+### the lio point cloud reslu in world frame based on the lio state estimation:
+`the *pul_w_wait_pub` is the point cloud result and will be pushed into the vio system
+
+```cpp
+PointCloudXYZI::Ptr laserCloudFullRes(dense_map_en ? feats_undistort : feats_down_body);
+int size = laserCloudFullRes->points.size();
+PointCloudXYZI::Ptr laserCloudWorld(new PointCloudXYZI(size, 1));
+
+for (int i = 0; i < size; i++)
+{
+	RGBpointBodyToWorld(&laserCloudFullRes->points[i], &laserCloudWorld->points[i]);
+}
+*pcl_w_wait_pub = *laserCloudWorld;
+
+void LIVMapper::RGBpointBodyToWorld(PointType const *const pi, PointType *const po)
+
+{
+V3D p_body(pi->x, pi->y, pi->z);
+V3D p_global(_state.rot_end * (extR * p_body + extT) + _state.pos_end);
+po->x = p_global(0);
+po->y = p_global(1);
+po->z = p_global(2);
+po->intensity = pi->intensity;
+}
+```
 
 # handleVIO() for the VIO part
+
