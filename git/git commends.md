@@ -95,104 +95,56 @@ git status
 
 
 
-# How to set a git link of a repository in your own project and push your cotents
-
-### 🛠️ 1. **Initialize a Git repository locally**
-
-Go to your project folder:
-
-bash
-
-复制编辑
-
-`cd /path/to/your/project`
-
-Initialize it as a Git repository:
-
-bash
-
-复制编辑
-
-`git init`
+## To restore your **previous pushed code** from your branch and overwrite the **current broken code**, follow these steps carefully:
 
 ---
 
-### 📦 2. **Add your files and commit**
+### ✅ Step-by-step: Restore Previous Code from Remote Branch
 
-bash
+Assuming:
 
-复制编辑
+- Your branch is called `your-branch-name`
+    
+- You already pushed working code yesterday
+    
 
-`git add . git commit -m "Initial commit"`
+#### 1. **Discard all local changes and reset to remote**
 
----
+⚠️ WARNING: This will delete all **uncommitted** and **local changes**.
 
-### ☁️ 3. **Create a new GitHub repository**
+```git
+git fetch origin git reset --hard origin/your-branch-name
+```
+This means:
 
-Go to [https://github.com](https://github.com) → Click **"New repository"** → Fill in the name and other details → Click **"Create repository"**.
-
-**Don’t initialize it with a README**, since you already did that locally.
-
----
-
-### 🔗 4. **Connect your local repo to GitHub**
-
-After creating the repo, GitHub will show you the remote URL like:
-
-bash
-
-复制编辑
-
-`git remote add origin https://github.com/yourusername/your-repo-name.git`
-
-Run that command in your terminal (replace the URL with your repo's URL).
+- `fetch`: Gets the latest snapshot from remote
+    
+- `reset --hard`: Resets your working directory, staging area, and branch to match the remote exactly
+    
 
 ---
 
-### 🚀 5. **Push your code to GitHub**
+### 🛑 If You Only Want to Restore Specific Files
 
-bash
+You can restore specific files instead of the whole project:
+```git
+git fetch origin git checkout origin/your-branch-name -- path/to/file.cpp
+```
 
-复制编辑
-
-`git push -u origin master`
-
-(If your default branch is `main`, use `main` instead of `master`.)
 
 ---
 
-Let me know if you want to do this using GitHub Desktop, VS Code, or from a private repo — I can tweak the instructions.
+### 🧯 If You Want to Back Up the Broken Version First (Just in Case)
 
-4o
+Before overwriting, you can back up your current state:
+
+```git
+git branch backup-broken-code
+```
 
 
-# git fetch
-git fetch origin
-Git will:
-
-Connect to the remote (origin, usually GitHub)
-
-Download all new branches, commits, and tags that you don’t have yet
-
-Store them in your local .git database as origin/<branch-name>
+Now your broken version is saved in `backup-broken-code` in case you want to check it later.
 
 
 
 
-
- ### Stage All Deleted Files:
-
-`git add -u`
-
-This stages **modifications and deletions**, but **not untracked files** (i.e. new files).
-
----
-
-### ✅ Or Stage a Specific Deletion:
-
-`git rm src/jackal_navigation/CMakeLists.txt`
-
-And if you want to remove the entire deleted folder (which Git already sees is gone):
-
-
-`git rm -r src/jackal_navigation/`
