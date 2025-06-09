@@ -1,3 +1,9 @@
+slam_mode_ = (img_en && lidar_en) ? LIVO : imu_en ? ONLY_LIO : ONLY_LO;
+# sync_packages()
+proposes:
+1. using the current mode according to the slam_mode_
+2. 
+
 # processImu() for the Forward propagation and motion distortion
 Process2()
 	main functions:
