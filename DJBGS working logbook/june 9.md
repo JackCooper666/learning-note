@@ -1,5 +1,5 @@
-- [ ] body building
-- [ ] english cv
+- [x] body building
+- [x] english cv
 - [ ] phd search
 - [ ] fastlivo2 vio part code 
 - [ ] leecode 5 questions
