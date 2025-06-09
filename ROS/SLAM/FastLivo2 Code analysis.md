@@ -31,9 +31,9 @@ LIO ESIKF state estimation
 inputs:
 	-> state_propagat: the state after forward propagation and motion undistortion
 output:
-	-> state_: estimated state
-	->pv_list_: downsampled points cloud
-	-> ptpl_list_: a list of **point-to-plane residuals** (and associated geometric information) that are **built from** the downsampled point cloud (`pv_list_`).
-	
+	-> voxelmap_manager->state_: estimated state
+	->voxelmap_manager->pv_list_: downsampled points cloud
+	-> voxelmap_manager->ptpl_list_: a list of **point-to-plane residuals** (and associated geometric information) that are **built from** the downsampled point cloud (`pv_list_`).
+### 
 
 # handleVIO() for the VIO part
