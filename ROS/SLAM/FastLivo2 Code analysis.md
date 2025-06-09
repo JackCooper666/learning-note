@@ -1,9 +1,11 @@
 slam_mode_ = (img_en && lidar_en) ? LIVO : imu_en ? ONLY_LIO : ONLY_LO;
 # sync_packages()
-proposes:
-1. using the current mode according to the slam_mode_
-2. 
-
+proposes: for **synchronizing sensor data** (LiDAR, IMU, and optionally camera images) into a coherent `LidarMeasureGroup meas` structure, **based on SLAM mode and timing constraints**.
+VIO:
+- Waits for a camera frame.
+- Associates IMU data up to that image's timestamp.
+LIO:
+Finds LiDAR frames whose timestamp is **before the image capture time**.
 # processImu() for the Forward propagation and motion distortion
 Process2()
 	main functions:
