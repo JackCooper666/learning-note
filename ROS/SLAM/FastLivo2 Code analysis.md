@@ -65,5 +65,5 @@ po->intensity = pi->intensity;
 
 the state estimation in the vio part is in the `vio_manager->processFrame`
 inputs:
-	->
-
+	->`LidarMeasures.measures.back().img`: the img in current frame
+	->`_pv_list` : 
