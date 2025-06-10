@@ -70,8 +70,10 @@ inputs:
 	->`voxelmap_manager->voxel_map_`
 	->`LidarMeasures.last_lio_update_time - _first_lidar_time` 
 
-main functions:
+## main functions:
 `updateFrameState(*state);`
+
+
 `retrieveFromVisualSparseMap(img, pg, feat_map);`
 `computeJacobianAndUpdateEKF(img);`
 `generateVisualMapPoints(img, pg);`
