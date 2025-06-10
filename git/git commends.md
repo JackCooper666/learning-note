@@ -65,31 +65,7 @@ git push --set-upstream upstream zewen/fastlivo2-ac1
 # How to pull thridparty submodule
 
 
-# Pull Others' Repository -- this is wrong
 
-1. check current branches
-```git
-git fetch
-```
-2. go to others' branches
-```git
-git checkout others/branches
-```
-3. pull
-```git
-git branch
-git pull origin others/branches
-git branch
-```
-4. go back to your branch
-```git
-git checkout your/branch
-```
-5. check current git status
-```git
-git branch
-git status
-```
 
 # How to push submodules into your branches
 
@@ -147,4 +123,35 @@ Now your broken version is saved in `backup-broken-code` in case you want to che
 
 
 
+
+
+# token - free push/pull
+
+如果你只想为 **这个单一仓库**（`https://github.com/JackCooper666/learning-note.git`）实现免密码 `git push/pull`，有两个简洁可选方案：
+
+## ✅ 方法一（简单快速，不安全）：只为该仓库记住 token
+
+适合个人开发机，操作简单。
+### Step 1: 进入你的仓库目录
+```git
+cd ~/Documents/learning-note
+```
+
+### Step 2: 设置只对当前仓库记住密码（token）
+
+```git
+git config credential.helper store
+```
+
+### Step 3: 执行一次 `push` 或 `pull` 并输入 GitHub 用户名 + PAT（token）
+```git
+git pull
+# 或者
+git push
+```
+
+这时 Git 会要求你输入用户名和密码：
+- 用户名：你的 GitHub 用户名
+- 密码：GitHub 生成的 **Personal Access Token (PAT)**（不是你的 GitHub 密码）
+Git 会将凭据保存在该仓库下的 `~/.git-credentials` 文件中，之后就不会再要求输入了。
 
