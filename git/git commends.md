@@ -125,7 +125,7 @@ Now your broken version is saved in `backup-broken-code` in case you want to che
 
 
 
-# token - free push/pull
+# token - free push/pull for one respository
 
 如果你只想为 **这个单一仓库**（`https://github.com/JackCooper666/learning-note.git`）实现免密码 `git push/pull`，有两个简洁可选方案：
 

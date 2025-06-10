@@ -12,6 +12,11 @@ int base;
 int order
 powered = pow(base,order);
 ```
+## fabs()
+`fabs()` is a **function from the C standard math library** that computes the **absolute value of a floating-point number** (like `float`, `double`, or `long double`).
+```cpp
+fabs((LidarMeasures.last_lio_update_time - _first_lidar_time) - plot_time)
+```
 # random
 ```cpp
 #include <random>

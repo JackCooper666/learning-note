@@ -63,3 +63,7 @@ po->intensity = pi->intensity;
 
 # handleVIO() for the VIO part
 
+the state estimation in the vio part is in the `vio_manager->processFrame`
+inputs:
+	->
+

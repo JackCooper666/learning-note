@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git commends.md",
+                "file": "ROS/SLAM/FastLivo2 Code analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git commends"
+              "title": "FastLivo2 Code analysis"
             }
           }
         ]
@@ -181,13 +181,17 @@
   },
   "active": "b575b32a0224e155",
   "lastOpenFiles": [
+    "c and cpp/cpp/math.md",
+    "c and cpp/cpp/hashtable.md",
+    "c and cpp/cpp/address and memory.md",
+    "c and cpp/cpp/STL container.md",
+    "ROS/SLAM/FastLivo2 Code analysis.md",
+    "git/git commends.md",
     "DJBGS working logbook/June 10.md",
     "DJBGS working logbook/june 9.md",
-    "c and cpp/cpp/hashtable.md",
     "job application/plan leecode.md",
     "PHD application/goal list.md",
     "job application",
-    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS2",
     "ROS/ROS 1/evo.md",
@@ -195,7 +199,6 @@
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "DJBGS working logbook/AC1+FastLivo.md",
     "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
-    "git/git commends.md",
     "DJBGS working logbook/拖点去除.md",
     "conflict-files-obsidian-git.md",
     "PHD application",
@@ -209,9 +212,6 @@
     "ROS/ROS 1/evo_ape_alignment.png",
     "DJBGS working logbook/May 31.md",
     "DJBGS working logbook/May 28.md",
-    "DJBGS working logbook/May 13.md",
-    "DJBGS working logbook/May 7.md",
-    "DJBGS working logbook/May 4.md",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
     "vim editor/Pasted image 20250513152705.png",
