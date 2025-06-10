@@ -1,4 +1,4 @@
 - [ ] fastlivo2 vio part code 
-- [ ] hashtable learning c/c++
-- [ ] leecode 2 question
+- [x] hashtable learning c/c++
+- [x] leecode 2 question
 - [ ] body building
