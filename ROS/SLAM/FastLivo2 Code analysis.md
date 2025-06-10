@@ -66,4 +66,15 @@ po->intensity = pi->intensity;
 the state estimation in the vio part is in the `vio_manager->processFrame`
 inputs:
 	->`LidarMeasures.measures.back().img`: the img in current frame
-	->`_pv_list` : 
+	->`_pv_list` : the downsampled point cloud
+	->`voxelmap_manager->voxel_map_`
+	->`LidarMeasures.last_lio_update_time - _first_lidar_time` 
+
+main functions:
+`updateFrameState(*state);`
+`retrieveFromVisualSparseMap(img, pg, feat_map);`
+`computeJacobianAndUpdateEKF(img);`
+`generateVisualMapPoints(img, pg);`
+`plotTrackedPoints();`
+`updateVisualMapPoints(img);`
+`updateReferencePatch(feat_map);`
