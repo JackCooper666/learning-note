@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/two-pointer.md",
+                "file": "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "two-pointer"
+              "title": "Boyer-Moore 投票算法"
             }
           }
         ]
@@ -181,8 +181,10 @@
   },
   "active": "b575b32a0224e155",
   "lastOpenFiles": [
-    "job application/plan leecode.md",
+    "c and cpp/cpp/algorithm/plural.md",
+    "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
     "c and cpp/cpp/algorithm/two-pointer.md",
+    "job application/plan leecode.md",
     "c and cpp/cpp/algorithm",
     "c and cpp/cpp/STL/the operators.md",
     "c and cpp/cpp/STL/vector.md",
@@ -210,8 +212,6 @@
     "job application",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS2",
-    "ROS/ROS 1/evo.md",
-    "ROS/ROS 1/python/ROS1 noetic with python example code.md",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "PHD application",
     "ROS/ROS 1/evo_ape_alignment.png",
