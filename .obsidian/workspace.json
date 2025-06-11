@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/string.md",
+                "file": "job application/plan leecode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "string"
+              "title": "plan leecode"
             }
           }
         ]
@@ -181,12 +181,14 @@
   },
   "active": "b575b32a0224e155",
   "lastOpenFiles": [
-    "c and cpp/cpp/STL/hashtable.md",
+    "c and cpp/cpp/STL/the operators.md",
+    "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/string.md",
+    "c and cpp/cpp/STL/sort().md",
+    "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/address and memory.md",
     "c and cpp/gcc and g++.md",
     "c and cpp/cpp/variable type.md",
-    "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL",
     "DJBGS working logbook/June 11.md",
     "DJBGS working logbook/June 10.md",
@@ -210,8 +212,6 @@
     "ROS/ROS 1/python/ROS1 noetic with python example code.md",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "DJBGS working logbook/AC1+FastLivo.md",
-    "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
-    "DJBGS working logbook/拖点去除.md",
     "PHD application",
     "ROS/ROS 1/evo_ape_alignment.png",
     "Wechat installation/Pasted image 20250513160633.png",

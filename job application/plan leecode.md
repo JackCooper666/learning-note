@@ -158,3 +158,63 @@
 - 每天进行 1~~2 次完整面试模拟（2~~3道中等题）
     
 - 梳理总结常见题型模板
+
+
+
+当然可以！下面是为你制定的**前5天详细 LeetCode 刷题计划（含题目链接与分类）**，涵盖基础数据结构：数组、字符串、哈希表、双指针、滑动窗口和前缀和，适合初学者打基础。
+
+---
+
+## 📅 第1~5天：基础数据结构打牢（共15题）
+
+每天练习 3 道题：**2道简单题 + 1道中等题**
+
+---
+
+### ✅ **Day 1：数组基础 + 简单遍历**
+
+|类型|题目名称|题目链接|
+|---|---|---|
+|简单|两数之和|1. Two Sum|
+|简单|移除元素|27. Remove Element|
+|中等|删除有序数组中的重复项 II|80. Remove Duplicates from Sorted Array II|
+
+---
+
+### ✅ **Day 2：哈希表入门**
+
+|类型|题目名称|题目链接|
+|---|---|---|
+|简单|有效的字母异位词|242. Valid Anagram|
+|简单|多数元素|169. Majority Element|
+|中等|两数之和 II - 输入有序数组|167. Two Sum II - Input Array is Sorted|
+
+---
+
+### ✅ **Day 3：字符串 + 滑动窗口初识**
+
+|类型|题目名称|题目链接|
+|---|---|---|
+|简单|反转字符串|344. Reverse String|
+|简单|验证回文串|125. Valid Palindrome|
+|中等|无重复字符的最长子串|3. Longest Substring Without Repeating Characters|
+
+---
+
+### ✅ **Day 4：双指针与前缀和**
+
+|类型|题目名称|题目链接|
+|---|---|---|
+|简单|合并两个有序数组|88. Merge Sorted Array|
+|简单|有序数组的平方|977. Squares of a Sorted Array|
+|中等|连续子数组的最大和|53. Maximum Subarray|
+
+---
+
+### ✅ **Day 5：滑动窗口 + 前缀和进阶**
+
+|类型|题目名称|题目链接|
+|---|---|---|
+|简单|长度最小的子数组|209. Minimum Size Subarray Sum|
+|简单|和为 K 的子数组|560. Subarray Sum Equals K|
+|中等|买卖股票的最佳时机|121. Best Time to Buy and Sell Stock|

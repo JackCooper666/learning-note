@@ -1,3 +1,17 @@
+```cpp
+std::vector<int> table(26, 0);
+```
+1. **`std::vector<int>`**
+    
+    - A dynamic array that can store integers (`int`).
+        
+2. **`table(26, 0)`**
+    
+    - **`26`**: The size of the vector (26 elements).
+        
+    - **`0`**: The initial value for all 26 elements.
+
+
 # reresize(size_t n)
 
 ## Purpose: **Changes the actual size** of the container.
