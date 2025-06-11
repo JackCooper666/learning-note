@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
+                "file": "c and cpp/cpp/algorithm/two-pointer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Boyer-Moore 投票算法"
+              "title": "two-pointer"
             }
           }
         ]
@@ -183,13 +183,13 @@
   "lastOpenFiles": [
     "c and cpp/cpp/algorithm/plural.md",
     "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
-    "c and cpp/cpp/algorithm/two-pointer.md",
-    "job application/plan leecode.md",
-    "c and cpp/cpp/algorithm",
     "c and cpp/cpp/STL/the operators.md",
     "c and cpp/cpp/STL/vector.md",
-    "c and cpp/cpp/STL/string.md",
     "c and cpp/cpp/STL/sort().md",
+    "job application/plan leecode.md",
+    "c and cpp/cpp/algorithm/two-pointer.md",
+    "c and cpp/cpp/algorithm",
+    "c and cpp/cpp/STL/string.md",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/address and memory.md",
     "c and cpp/gcc and g++.md",

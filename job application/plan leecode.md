@@ -183,11 +183,11 @@
 
 ### ✅ **Day 2：哈希表入门**
 
-|类型|题目名称|题目链接|
-|---|---|---|
-|简单|有效的字母异位词|242. Valid Anagram|
-|简单|多数元素|169. Majority Element|
-|中等|两数之和 II - 输入有序数组|167. Two Sum II - Input Array is Sorted|
+| 类型  | 题目名称             | 题目链接                                    |
+| --- | ---------------- | --------------------------------------- |
+| 简单  | 有效的字母异位词         | 242. Valid Anagram                      |
+| 简单  | 多数元素             | 169. Majority Element                   |
+| 中等  | 两数之和 II - 输入有序数组 | 167. Two Sum II - Input Array is Sorted |
 
 ---
 
