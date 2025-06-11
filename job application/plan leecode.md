@@ -213,8 +213,8 @@
 
 ### ✅ **Day 5：滑动窗口 + 前缀和进阶**
 
-|类型|题目名称|题目链接|
-|---|---|---|
-|简单|长度最小的子数组|209. Minimum Size Subarray Sum|
-|简单|和为 K 的子数组|560. Subarray Sum Equals K|
-|中等|买卖股票的最佳时机|121. Best Time to Buy and Sell Stock|
+| 类型  | 题目名称      | 题目链接                                 |
+| --- | --------- | ------------------------------------ |
+| 简单  | 长度最小的子数组  | 209. Minimum Size Subarray Sum       |
+| 简单  | 和为 K 的子数组 | 560. Subarray Sum Equals K           |
+| 中等  | 买卖股票的最佳时机 | 121. Best Time to Buy and Sell Stock |
