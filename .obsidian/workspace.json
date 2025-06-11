@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b3927c432afc9b8b",
+        "id": "b76bebf3b1bf4e77",
         "type": "tabs",
         "children": [
           {
-            "id": "b575b32a0224e155",
+            "id": "00d5e65f81b4443d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/two-pointer.md",
+                "file": "job application/plan leecode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "two-pointer"
+              "title": "plan leecode"
             }
           }
         ]
@@ -179,15 +179,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b575b32a0224e155",
+  "active": "00d5e65f81b4443d",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/二分查找.md",
+    "c and cpp/cpp/algorithm/two-pointer.md",
     "c and cpp/cpp/algorithm/plural.md",
     "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
     "c and cpp/cpp/STL/the operators.md",
     "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/sort().md",
     "job application/plan leecode.md",
-    "c and cpp/cpp/algorithm/two-pointer.md",
     "c and cpp/cpp/algorithm",
     "c and cpp/cpp/STL/string.md",
     "c and cpp/cpp/STL/hashtable.md",
@@ -210,7 +211,6 @@
     "DJBGS working logbook/june 9.md",
     "PHD application/goal list.md",
     "job application",
-    "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/ROS2",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "PHD application",
