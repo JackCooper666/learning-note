@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DJBGS working logbook/June 10.md",
+                "file": "c and cpp/cpp/STL/string.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "June 10"
+              "title": "string"
             }
           }
         ]
@@ -181,8 +181,15 @@
   },
   "active": "b575b32a0224e155",
   "lastOpenFiles": [
-    "c and cpp/cpp/hashtable.md",
+    "c and cpp/cpp/address and memory.md",
+    "c and cpp/gcc and g++.md",
     "c and cpp/cpp/variable type.md",
+    "c and cpp/cpp/STL/string.md",
+    "c and cpp/cpp/STL/vector.md",
+    "c and cpp/cpp/STL",
+    "DJBGS working logbook/June 11.md",
+    "DJBGS working logbook/June 10.md",
+    "c and cpp/cpp/STL/hashtable.md",
     "ROS/ROS 1/C++/topic communication.md",
     "ROS/ROS 1/workspace and package.md",
     "ROS/ROS 1/C++",
@@ -190,11 +197,8 @@
     "ROS/ROS 1/plotjuggler.md",
     "ROS/ROS 1/Lidar namespace and structure.md",
     "ROS/ROS 1/ROS terminal commends.md",
-    "DJBGS working logbook/June 10.md",
     "ROS/SLAM/FastLivo2 Code analysis.md",
     "c and cpp/cpp/math.md",
-    "c and cpp/cpp/address and memory.md",
-    "c and cpp/cpp/STL container.md",
     "git/git commends.md",
     "DJBGS working logbook/june 9.md",
     "job application/plan leecode.md",
@@ -208,10 +212,7 @@
     "DJBGS working logbook/AC1+FastLivo.md",
     "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
     "DJBGS working logbook/拖点去除.md",
-    "conflict-files-obsidian-git.md",
     "PHD application",
-    "DJBGS working logbook/June 8.md",
-    "ROS/SLAM/ROI (range of interest).md",
     "ROS/ROS 1/evo_ape_alignment.png",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
@@ -225,7 +226,6 @@
     "vim editor/Pasted image 20250513153428.png",
     "vim editor",
     "slam/UTF-8FAST-LIO论文讲解.pdf",
-    "ROS/ROS 2",
-    "ROS"
+    "ROS/ROS 2"
   ]
 }
