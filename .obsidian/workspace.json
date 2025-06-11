@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/ROS 1/C++/nav_msgs.md",
+                "file": "ROS/ROS 1/evo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nav_msgs"
+              "title": "evo"
             }
           }
         ]
@@ -181,12 +181,19 @@
   },
   "active": "00d5e65f81b4443d",
   "lastOpenFiles": [
-    "ROS/ROS 1/C++/topic communication.md",
-    "ROS/ROS 1/C++/nav_msgs.md",
+    "ROS/ROS 1/tf.md",
+    "ROS/ROS 1/evo.md",
+    "ROS/ROS 1/evo_ape_alignment.png",
+    "ROS/ROS 1/Lidar namespace and structure.md",
+    "ROS/ROS 1/plotjuggler.md",
+    "ROS/ROS 1/ROS 1 mistakes.md",
+    "ROS/ROS 1/rosbag.md",
+    "ROS/ROS 1/ROS terminal commends.md",
     "ROS/ROS 1/launch/basic usage.md",
+    "ROS/ROS 1/C++/nav_msgs.md",
+    "ROS/ROS 1/C++/topic communication.md",
     "ROS/ROS 1/workspace and package.md",
     "ROS/ROS 1/launch",
-    "ROS/ROS 1/evo.md",
     "job application/plan leecode.md",
     "c and cpp/cpp/algorithm/二分查找.md",
     "c and cpp/cpp/algorithm/two-pointer.md",
@@ -205,17 +212,10 @@
     "DJBGS working logbook/June 11.md",
     "DJBGS working logbook/June 10.md",
     "ROS/ROS 1/C++",
-    "ROS/ROS 1/rosbag.md",
-    "ROS/ROS 1/plotjuggler.md",
-    "ROS/ROS 1/Lidar namespace and structure.md",
-    "ROS/ROS 1/ROS terminal commends.md",
-    "ROS/SLAM/FastLivo2 Code analysis.md",
-    "c and cpp/cpp/math.md",
     "job application",
     "ROS/ROS2",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "PHD application",
-    "ROS/ROS 1/evo_ape_alignment.png",
     "Wechat installation/Pasted image 20250513160633.png",
     "Wechat installation",
     "vim editor/Pasted image 20250513152705.png",
