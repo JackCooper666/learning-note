@@ -8,8 +8,8 @@ fastlivo2 ac1 current issue:
 - [ ] the result has some noise points compared with the rs-ac1-fastlivo
 possible reasons
  1. the state estimation is not good
-	1. lio estimation is not good, the imu params needs adjust
-	2. the weight of the vio system state estimation is too high, vio system gives a wrong estimation to lio system in the next frame
+	1. lio estimation is not good, the imu params needs adjust (I do not think)
+	2. the weight of the vio system state estimation is too high, vio system gives a wrong estimation to lio system in the next frame 
  our:
 ![[arc3_fastlivo2_ac1.png]]
 ```bash
