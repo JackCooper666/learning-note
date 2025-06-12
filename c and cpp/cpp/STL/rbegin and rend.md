@@ -28,3 +28,9 @@ These functions are defined for **all standard containers that support bidirect
 | `std::stack`          | No direct iterators (use underlying container) |
 | `std::queue`          | No direct iterators                            |
 | `std::priority_queue` | No direct iterators (always sorted)            |
+# 2. use in string (as an example)
+In C++, `std::string` provides two reverse iterator functions:
+- **`rbegin()`**: Returns a **reverse iterator** pointing to the **last character** of the string.
+- **`rend()`**: Returns a **reverse iterator** pointing to the **theoretical position before the first character** (like `end()` but for reverse traversal).
+
+These iterators allow you to traverse a string **backwards** (from end to beginning) easily.
