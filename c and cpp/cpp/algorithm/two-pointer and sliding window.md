@@ -1,3 +1,14 @@
+常用双指针思想
+双指针是解数组、链表题中最常见的思想之一。总的来说有四大用途：
+
+	快慢指针：一个指针移动两步，一个指针移动一步。或者两指针移动起点相差K。
+	
+	头尾指针：指针一头一尾同时向内靠近。最常见的就是翻转字符串。
+	
+	栅栏指针：两个指针仿佛围成一个栅栏，一个指针的一侧全部存放符合要求的节点，另一个指针负责遍历寻找。常用于要求原地处理的题目。
+	
+	滑动窗口：两个指针一前一后形成一个窗口，不满足条件时前面的不停扩大窗口，满足时后面指针前进，缩小窗口，由可行解寻找最优解。
+
 # slow-fast pointers
 - Use a **slow pointer (`slow`)** to track the position where the next valid element should be placed.
 - Use a **fast pointer (`fast`)** to scan through the array.
@@ -24,7 +35,7 @@ public:
 };
 ```
 
-# left-right pointers
+# left-right pointers (head-tail pointers)
 e.g.
 给你一个下标从 **1** 开始的整数数组 `numbers` ，该数组已按 **非递减顺序排列**  ，请你从数组中找出满足相加之和等于目标数 `target` 的两个数。如果设这两个数分别是 `numbers[index1]` 和 `numbers[index2]` ，则 `1 <= index1 < index2 <= numbers.length` 。
 
@@ -68,3 +79,44 @@ public:
 };
 ```
 
+# window
+
+滑动窗口是一种**用于处理数组/字符串子区间问题的高效算法技巧**，通过维护一个动态的“窗口”来避免暴力枚举，将时间复杂度从 **O(n²) 优化到 O(n)**。
+
+---
+
+## **1. 核心思想**
+
+- **窗口定义**：在数组/字符串中维护一个**连续的区间** `[left, right]`，通过调整 `left` 和 `right` 来滑动窗口。
+    
+- **关键操作**：
+    
+    - **扩大窗口**（`right++`）：寻找可行解。
+        
+    - **收缩窗口**（`left++`）：优化可行解。
+        
+- **适用场景**：子串、子数组的最优解问题（如“最小覆盖子串”、“最长无重复子串”）。
+    
+
+---
+
+## **2. 算法框架（C++）**
+```cpp
+void slidingWindow(string s) {
+    int left = 0, right = 0;  // 窗口边界
+    unordered_map<char, int> window; // 窗口内字符的统计
+
+    while (right < s.size()) {
+        char c = s[right];
+        window[c]++;          // 扩大窗口
+        right++;
+
+        while (window[c] > 1) { // 满足收缩条件
+            char d = s[left];
+            window[d]--;       // 收缩窗口
+            left++;
+        }
+        // 在此更新答案（如最大/最小长度）
+    }
+}
+```
