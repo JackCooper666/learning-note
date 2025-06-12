@@ -1,0 +1,4 @@
+- [ ] fastlivo1 recorder update 1 hour
+- [ ] three questions leecode 2 hours
+- [ ] find the reasons affect the fastlivo2 4hours
+- [ ] phd apply 2 hours
