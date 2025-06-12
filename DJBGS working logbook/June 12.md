@@ -41,6 +41,5 @@ median      0.079982
    std      0.034777
 ```  
  
- 2. lio system do not filter the noise clearly
- 3. the extrinsic and intrinsic matrix are wrong.
- 4. the vio system is not comprehensive.
+ 2. lio system do not filter the noise clearly. (high possible)
+ 3. the vio system is not comprehensive. (high possible)
