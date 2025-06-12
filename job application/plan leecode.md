@@ -193,11 +193,11 @@
 
 ### ✅ **Day 3：字符串 + 滑动窗口初识**
 
-|类型|题目名称|题目链接|
-|---|---|---|
-|简单|反转字符串|344. Reverse String|
-|简单|验证回文串|125. Valid Palindrome|
-|中等|无重复字符的最长子串|3. Longest Substring Without Repeating Characters|
+| 类型  | 题目名称       | 题目链接                                              |
+| --- | ---------- | ------------------------------------------------- |
+| 简单  | 反转字符串      | 344. Reverse String                               |
+| 简单  | 验证回文串      | 125. Valid Palindrome                             |
+| 中等  | 无重复字符的最长子串 | 3. Longest Substring Without Repeating Characters |
 
 ---
 
