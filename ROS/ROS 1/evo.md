@@ -89,3 +89,14 @@ std：标准差。
 --save_result———存储结果，后接保存路径以及压缩文件名称，存储后得到zip压缩文件
 
 
+## 📈 **Explanation of Each Metric (All in meters)**
+
+| Metric     | Meaning                                                                                                               |
+| ---------- | --------------------------------------------------------------------------------------------------------------------- |
+| **max**    | The **maximum error** at any point in the trajectory. Indicates the worst case.                                       |
+| **mean**   | The **average error** over all trajectory points. General indication of how far off you usually are.                  |
+| **median** | The **middle error** when all errors are sorted. Less affected by large outliers than mean.                           |
+| **min**    | The **smallest error** found. Shows the best-aligned frame.                                                           |
+| **rmse**   | **Root Mean Square Error**: Emphasizes larger errors more than the mean. Commonly used in SLAM to summarize accuracy. |
+| **sse**    | **Sum of Squared Errors**: Total squared error across all frames. Used more in optimization than in interpretation.   |
+| **std**    | **Standard deviation** of the errors. High std means inconsistent accuracy; low std means stable performance.         |

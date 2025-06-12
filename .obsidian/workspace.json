@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DJBGS working logbook/June 12.md",
+                "file": "ROS/ROS 1/evo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "June 12"
+              "title": "evo"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "00d5e65f81b4443d",
   "lastOpenFiles": [
+    "DJBGS working logbook/June 12.md",
     "DJBGS working logbook/rs_arc3_fastlivo.png",
     "DJBGS working logbook/arc3_fastlivo2_ac1.png",
     "DJBGS working logbook/AC1+FastLivo.md",
@@ -204,7 +205,6 @@
     "c and cpp/cpp/O(1) and O(n).md",
     "ROS/ROS 1/launch/sync the clock.md",
     "ROS/ROS 1/launch/basic usage.md",
-    "DJBGS working logbook/June 12.md",
     "ROS/ROS 1/evo.md",
     "ROS/ROS 1/tf.md",
     "ROS/ROS 1/evo_ape_alignment.png",
@@ -225,7 +225,6 @@
     "vim editor/Pasted image 20250513153717.png",
     "vim editor/Pasted image 20250513153706.png",
     "vim editor/Pasted image 20250513153650.png",
-    "vim editor/Pasted image 20250513153643.png",
-    "vim editor/Pasted image 20250513153436.png"
+    "vim editor/Pasted image 20250513153643.png"
   ]
 }

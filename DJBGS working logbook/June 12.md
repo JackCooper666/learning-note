@@ -9,7 +9,7 @@ fastlivo2 ac1 current issue:
 possible reasons
  1. the state estimation is not good
 	1. lio estimation is not good, the imu params needs adjust (I do not think)
-	2. the weight of the vio system state estimation is too high, vio system gives a wrong estimation to lio system in the next frame 
+	2. the weight of the vio system state estimation is too high, vio system gives a wrong estimation to lio system in the next frame (I do not think, as the evo's rmse is 0.05, quite perfect)
  our:
 ![[arc3_fastlivo2_ac1.png]]
 ```bash
@@ -42,3 +42,4 @@ median      0.079982
 ```  
  
  2. lio system do not filter the noise clearly
+ 3. the extrinsic and intrinsic matrix are wrong.
