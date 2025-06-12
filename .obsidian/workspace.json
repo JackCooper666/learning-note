@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/two-pointer and sliding window.md",
+                "file": "DJBGS working logbook/June 12.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "two-pointer and sliding window"
+              "title": "June 12"
             }
           }
         ]
@@ -181,8 +181,13 @@
   },
   "active": "00d5e65f81b4443d",
   "lastOpenFiles": [
-    "c and cpp/cpp/algorithm/Sliding Window.md",
+    "DJBGS working logbook/rs_arc3_fastlivo.png",
+    "DJBGS working logbook/arc3_fastlivo2_ac1.png",
+    "DJBGS working logbook/AC1+FastLivo.md",
+    "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
+    "DJBGS working logbook/拖点去除.md",
     "c and cpp/cpp/algorithm/two-pointer and sliding window.md",
+    "c and cpp/cpp/algorithm/Sliding Window.md",
     "job application/plan leecode.md",
     "c and cpp/cpp/STL/set.md",
     "c and cpp/cpp/math.md",
@@ -206,10 +211,6 @@
     "ROS/ROS 1/Lidar namespace and structure.md",
     "ROS/ROS 1/plotjuggler.md",
     "ROS/ROS 1/ROS 1 mistakes.md",
-    "ROS/ROS 1/rosbag.md",
-    "ROS/ROS 1/ROS terminal commends.md",
-    "ROS/ROS 1/C++/nav_msgs.md",
-    "ROS/ROS 1/C++/topic communication.md",
     "ROS/ROS 1/launch",
     "c and cpp/cpp/algorithm",
     "c and cpp/cpp/STL",
@@ -225,7 +226,6 @@
     "vim editor/Pasted image 20250513153706.png",
     "vim editor/Pasted image 20250513153650.png",
     "vim editor/Pasted image 20250513153643.png",
-    "vim editor/Pasted image 20250513153436.png",
-    "vim editor/Pasted image 20250513153428.png"
+    "vim editor/Pasted image 20250513153436.png"
   ]
 }
