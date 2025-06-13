@@ -72,11 +72,18 @@ inputs:
 
 ## main functions:
 `updateFrameState(*state);`
-
-
 `retrieveFromVisualSparseMap(img, pg, feat_map);`
 `computeJacobianAndUpdateEKF(img);`
 `generateVisualMapPoints(img, pg);`
 `plotTrackedPoints();`
 `updateVisualMapPoints(img);`
 `updateReferencePatch(feat_map);`
+
+
+
+the point cloud update pipeline
+feat_undistort: is the points cloud after the forward propagation and motion undis
+
+
+
+
