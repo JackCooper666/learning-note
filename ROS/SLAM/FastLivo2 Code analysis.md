@@ -82,7 +82,12 @@ inputs:
 
 
 the point cloud update pipeline
-feat_undistort: is the points cloud after the forward propagation and motion undis
+1. feat_undistort: is the points cloud after the forward propagation and motion undistortion
+2. feat_down_body: the down-sampled point cloud of feat_undistort  
+3. feat_down_world: the IMU predication state after the forward propagation, this state translate the feat_down_body from the IMU frame to the world frame
+4. feat_down_world -> LIO StateEstimation() -> `_state = voxelmap_manager->state_ //estimated state` 
+5. `_pv_list = voxelmap_manage->pv_list_` : the IMU predication state after the forward propagation, this state translate the feat_down_body from the IMU frame to the world frame.
+6. `voxelmap_manage->pv_list_` -> `transformLidar(_state.rot_end, _state.pos_end, feats_down_body, world_lidar);`
 
 
 
