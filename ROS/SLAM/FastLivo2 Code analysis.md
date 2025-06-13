@@ -87,8 +87,31 @@ the point cloud update pipeline
 3. feat_down_world: the IMU predication state after the forward propagation, this state translate the feat_down_body from the IMU frame to the world frame
 4. feat_down_world -> LIO StateEstimation() -> `_state = voxelmap_manager->state_ //estimated state` 
 5. `_pv_list = voxelmap_manage->pv_list_` : the IMU predication state after the forward propagation, this state translate the feat_down_body from the IMU frame to the world frame.
-6. `voxelmap_manage->pv_list_` -> `transformLidar(_state.rot_end, _state.pos_end, feats_down_body, world_lidar);`
+6. `world_lidar`  -> `transformLidar(_state.rot_end, _state.pos_end, feats_down_body, world_lidar);` ```
+```cpp
 
+PointCloudXYZI::Ptr world_lidar(new PointCloudXYZI());
 
+transformLidar(_state.rot_end, _state.pos_end, feats_down_body, world_lidar);
+
+for (size_t i = 0; i < world_lidar->points.size(); i++)
+
+{
+
+voxelmap_manager->pv_list_[i].point_w << world_lidar->points[i].x, world_lidar->points[i].y, world_lidar->points[i].z;
+
+M3D point_crossmat = voxelmap_manager->cross_mat_list_[i];
+
+M3D var = voxelmap_manager->body_cov_list_[i];
+
+var = (_state.rot_end * extR) * var * (_state.rot_end * extR).transpose() +
+
+(-point_crossmat) * _state.cov.block<3, 3>(0, 0) * (-point_crossmat).transpose() + _state.cov.block<3, 3>(3, 3);
+
+voxelmap_manager->pv_list_[i].var = var;
+
+}
+
+voxelmap_manager->UpdateVoxelMap(voxelmap_manager->pv_list_);
 
 
