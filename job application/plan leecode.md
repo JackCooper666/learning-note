@@ -203,11 +203,11 @@
 
 ### ✅ **Day 4：双指针与前缀和**
 
-|类型|题目名称|题目链接|
-|---|---|---|
-|简单|合并两个有序数组|88. Merge Sorted Array|
-|简单|有序数组的平方|977. Squares of a Sorted Array|
-|中等|连续子数组的最大和|53. Maximum Subarray|
+| 类型  | 题目名称      | 题目链接                           |
+| --- | --------- | ------------------------------ |
+| 简单  | 合并两个有序数组  | 88. Merge Sorted Array         |
+| 简单  | 有序数组的平方   | 977. Squares of a Sorted Array |
+| 中等  | 连续子数组的最大和 | 53. Maximum Subarray           |
 
 ---
 
