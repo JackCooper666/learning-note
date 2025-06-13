@@ -12,9 +12,12 @@ std::vector<int> table(26, 0);
     - **`0`**: The initial value for all 26 elements.
 
 
-# reresize(size_t n)
+# resize(size_t n)
 
 ## Purpose: **Changes the actual size** of the container.
+
+**!!!!!!!!  but after resize the size of the container will be fixed and cannot be changed**
+
 
 ## Meaning:
 
