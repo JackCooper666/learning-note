@@ -1,4 +1,12 @@
-很好，下面是 **`.count()` 和 `.find()` 在 C++ 中的详细对比**，适用于 `set` / `unordered_set` / `map` / `unordered_map` 等容器。
+# set and multiset
+**简介：**
+- 所有元素都会在插入时自动被排序
+
+
+
+
+
+下面是 **`.count()` 和 `.find()` 在 C++ 中的详细对比**，适用于 `set` / `unordered_set` / `map` / `unordered_map` 等容器。
 
 ---
 
