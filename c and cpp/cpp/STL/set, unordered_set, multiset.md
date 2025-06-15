@@ -136,3 +136,10 @@ int main() {
 | 判断方式   | `if (set.count(x))`        | `if (set.find(x) != set.end())`  |
 | 访问元素的值 | ❌ 不能直接访问元素                 | ✅ 可通过 iterator 访问                |
 | 性能（平均） | **O(1)** for `unordered_*` | **O(1)** for `unordered_*`       |
+
+# tricky
+# `unordered_set<vector<int>>` 无法使用，因为 `std::vector<int>` **没有默认的 hash 函数**。
+## ✅ 正确的做法：
+
+要么使用 `set<vector<int>>`（有序集合，自动去重）  
+要么给 `unordered_set` 提供一个自定义的哈希函数。
