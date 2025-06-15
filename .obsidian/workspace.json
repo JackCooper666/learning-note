@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/vector.md",
+                "file": "c and cpp/cpp/STL/stack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vector"
+              "title": "stack"
             }
           }
         ]
@@ -181,10 +181,11 @@
   },
   "active": "87b750c40f43fdd8",
   "lastOpenFiles": [
+    "c and cpp/cpp/STL/vector.md",
+    "c and cpp/cpp/STL/stack.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "c and cpp/cpp/algorithm/execution time saving method.md",
     "c and cpp/cpp/time complex and space complex.md",
-    "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/sort().md",
     "c and cpp/cpp/STL/rbegin and rend.md",
     "c and cpp/cpp/STL/pair.md",
@@ -210,7 +211,6 @@
     "c and cpp/cpp/algorithm/归并排序.md",
     "DJBGS working logbook/June 12.md",
     "ROS/ROS 1/evo.md",
-    "DJBGS working logbook/AC1+FastLivo.md",
     "c and cpp/cpp/variable type/Untitled",
     "c and cpp/cpp/variable type",
     "ROS/ROS 1/evo_ape_alignment.png",
