@@ -11,7 +11,55 @@ std::vector<int> table(26, 0);
         
     - **`0`**: The initial value for all 26 elements.
 
+# anonymous vector
+In C++, an “anonymous vector” typically refers to a **temporary unnamed `std::vector` object** — a `std::vector` that's created and used **on the fly**, without assigning it to a named variable.
+```cpp
+//Here, `{1, 2, 3}` is automatically deduced as a `std::vector<int>` and passed to `printVector`. You don’t name it — you just use it directly.
+#include <iostream>
+#include <vector>
 
+void printVector(const std::vector<int>& v) {
+    for (int num : v) std::cout << num << " ";
+    std::cout << "\n";
+}
+
+int main() {
+    // anonymous vector used as a function argument
+    printVector({1, 2, 3});  // ← this is an anonymous vector
+}
+
+```
+e.g.
+```cpp
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        set<vector<int>> ans_set;
+        int n = nums.size();
+
+        for (int i = 0; i < n - 2; ++i) {
+            int left = i + 1;
+            int right = n - 1;
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == 0) {
+                    ans_set.insert({nums[i], nums[left], nums[right]});
+                    ++left;
+                    --right;
+                } else if (sum < 0) {
+                    ++left;
+                } else {
+                    --right;
+                }
+            }
+        }
+
+        return vector<vector<int>>(ans_set.begin(), ans_set.end());
+    }
+};
+
+```
 # resize(size_t n)
 
 ## Purpose: **Changes the actual size** of the container.
