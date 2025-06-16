@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 482.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,6 +182,9 @@
   },
   "active": "87b750c40f43fdd8",
   "lastOpenFiles": [
+    "ROS/ROS 1/workspace and package.md",
+    "ROS/hardware/RTK/xsense-mti-680g.md",
+    "DJBGS working logbook/June 16.md",
     "c and cpp/cpp/STL/stack.md",
     "c and cpp/cpp/algorithm/动态规划.md",
     "c and cpp/cpp/STL/vector.md",
@@ -200,7 +204,6 @@
     "DJBGS working logbook/June 14.md",
     "DJBGS working logbook/ARC SLAM TOOL NOTE.md",
     "DJBGS working logbook/arc3_fastlivo2_ac1.png",
-    "ROS/hardware/RTK/xsense-mti-680g.md",
     "ROS/hardware/RTK",
     "ROS/hardware",
     "ROS/SLAM/Untitled.md",
@@ -209,8 +212,6 @@
     "c and cpp/cpp/algorithm/plural.md",
     "c and cpp/cpp/algorithm/前缀和.md",
     "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
-    "c and cpp/cpp/algorithm/归并排序.md",
-    "DJBGS working logbook/June 12.md",
     "c and cpp/cpp/variable type/Untitled",
     "c and cpp/cpp/variable type",
     "ROS/ROS 1/evo_ape_alignment.png",

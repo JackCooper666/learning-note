@@ -1,0 +1,5 @@
+- [ ] set up your ubuntu 20.04
+- [ ] RTK experiments
+- [ ] fastlivo2 the filter function
+- [ ] leecode 3 question
+- [ ] running
