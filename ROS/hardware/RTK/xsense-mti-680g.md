@@ -182,7 +182,17 @@ and then
 ```
 roslaunch ntrip ntrip.launch
 ```
-# set the rtk filter
+# set the RTK
+after we get the GNSS position massages,  we need to let the Xsens mti 680g to receive the RTCM massages to correct the positioning error through the NTRIP server.
+
+There are three methods to receive the RTCM massages through  the NTRIP server.
+## NTRIP server on a PC with main connector/cable
+![[NTRIP server on PC.png]]
+
+## NTRIP modem and a wireless connection
+
+
+## base station and wireless connection
 
 
 
