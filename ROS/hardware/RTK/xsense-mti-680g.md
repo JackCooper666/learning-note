@@ -87,7 +87,7 @@ Source the `/devel/setup.bash` file inside your catkin workspace
 source ./devel/setup.bash
 ```
 
-# use RTK
+# set the GNSS
 
 ## access authority setting
 in your BIOS please shutdown your security protection, when using linux, as the protection will eject any installization for the custom core.
@@ -182,3 +182,7 @@ and then
 ```
 roslaunch ntrip ntrip.launch
 ```
+# set the rtk filter
+
+
+

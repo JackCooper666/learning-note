@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ubuntu/nvidia drive and cuda install.md",
+                "file": "ROS/hardware/RTK/xsense-mti-680g.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nvidia drive and cuda install"
+              "title": "xsense-mti-680g"
             }
           }
         ]
@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 482.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,10 +180,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9057a9433e081024",
+  "active": "87b750c40f43fdd8",
   "lastOpenFiles": [
-    "ROS/hardware/RTK/xsense-mti-680g.md",
     "ubuntu/nvidia drive and cuda install.md",
+    "ROS/hardware/RTK/xsense-mti-680g.md",
     "ubuntu",
     "ROS/ROS 1/workspace and package.md",
     "DJBGS working logbook/June 16.md",
