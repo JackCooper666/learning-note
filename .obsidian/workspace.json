@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/hardware/RTK/xsense-mti-680g.md",
+                "file": "c and cpp/cpp/STL/string.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xsense-mti-680g"
+              "title": "string"
             }
           }
         ]
@@ -180,13 +180,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9057a9433e081024",
+  "active": "5fca78fd402928fc",
   "lastOpenFiles": [
+    "ROS/hardware/RTK/xsense-mti-680g.md",
     "ROS/hardware/RTK/NTRIP server on PC.png",
     "2025-06-16.md",
     "ubuntu/x-terminal-emulator install.md",
     "ubuntu/GPU driver install and CUDA toolkit install.md",
-    "ROS/hardware/RTK/xsense-mti-680g.md",
     "ubuntu/nvidia drive and cuda install.md",
     "ubuntu",
     "ROS/ROS 1/workspace and package.md",
@@ -226,7 +226,6 @@
     "ubuntu/vim editor/Pasted image 20250513153752.png",
     "ubuntu/vim editor/Pasted image 20250513153717.png",
     "ubuntu/vim editor/Pasted image 20250513153706.png",
-    "ubuntu/vim editor/Pasted image 20250513153650.png",
-    "ubuntu/vim editor/Pasted image 20250513153643.png"
+    "ubuntu/vim editor/Pasted image 20250513153650.png"
   ]
 }
