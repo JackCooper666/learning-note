@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/vector.md",
+                "file": "ROS/hardware/RTK/xsense-mti-680g.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vector"
+              "title": "xsense-mti-680g"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4c56fd1e3fd15cc7",
@@ -182,9 +183,10 @@
   },
   "active": "5fca78fd402928fc",
   "lastOpenFiles": [
+    "ROS/hardware/RTK/NTRIP server on PC.png",
+    "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/string.md",
     "ROS/hardware/RTK/xsense-mti-680g.md",
-    "ROS/hardware/RTK/NTRIP server on PC.png",
     "2025-06-16.md",
     "ubuntu/x-terminal-emulator install.md",
     "ubuntu/GPU driver install and CUDA toolkit install.md",
@@ -194,7 +196,6 @@
     "DJBGS working logbook/June 16.md",
     "c and cpp/cpp/STL/stack.md",
     "c and cpp/cpp/algorithm/动态规划.md",
-    "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "c and cpp/cpp/algorithm/execution time saving method.md",
     "c and cpp/cpp/time complex and space complex.md",
@@ -213,7 +214,6 @@
     "DJBGS working logbook/arc3_fastlivo2_ac1.png",
     "ROS/hardware/RTK",
     "ROS/hardware",
-    "ROS/SLAM/Untitled.md",
     "c and cpp/cpp/variable type/Untitled",
     "c and cpp/cpp/variable type",
     "ROS/ROS 1/evo_ape_alignment.png",

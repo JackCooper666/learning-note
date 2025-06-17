@@ -188,6 +188,29 @@ after we get the GNSS position massages,  we need to let the Xsens mti 680g to r
 There are three methods to receive the RTCM massages through  the NTRIP server.
 ## NTRIP server on a PC with main connector/cable
 ![[NTRIP server on PC.png]]
+### using the MT manager
+1. ensure your laptop is connected with internet
+2. open the NTRIP client which is under the MT manager tool bar
+3. input the address and port of the NTRIP server you want to connected. For example, the address and port of the SiReNT is 199.184.151.36 and 2101.
+4. input your NTRIP Account(username and password), you may need to pay one from the NTRIP company
+5. select the closest NTRIP mount point in the dropdown menu
+6. click the "update mount points"
+7. click "Start"
+
+The NTRIP Client window is divided into two sections:
+1. Under NTRIP caster settings, the user can log-in to the desired NTRIP server by providing the address, port number, username and password.
+2. The NTRIP stream section allows for further configuration of the NTRIP setup:
+	1. The "Update mount points" button can be used to refresh the dropdown menu for NTRIP mount points.
+	2. The "Mount point details" button will open a separate window with an overview of all available mount points for the configured provider (see figure below).
+	3. The "GGA transmit interval" indicates the interval in seconds at which the current location of the MTi is transmitted to the NTRIP server. This is a requirement for obtaining RTCM messages.
+	4. Alternatively, it is possible to manually set the position (latitude, longitude, altitude) that is transmitted to the NTRIP server, instead of transmitting the real-time position as estimated by the MTi.
+	5. Finally, the "Start" button will initiate the NTRIP connection. An increasing number of bytes transmitted should be visible. The MT Status View (see Overview MT Manager) can now be used to check the RTK fix status.
+### using the ros package
+1. cd to the ntrip.launch under the ntrip package
+2. fill the host, port, mountpoint, username, password
+3. then cd to the workspace 
+4. `source ./devel/setup.bash`
+5. `roslaunch`
 
 ## NTRIP modem and a wireless connection
 
