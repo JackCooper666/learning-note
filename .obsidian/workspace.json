@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4c56fd1e3fd15cc7",
@@ -166,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,14 +182,15 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part_2.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "position_drawing.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/scnning.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/single_scanning.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g",
     "ROS/hardware/RTK/xsens",
     "c and cpp/cpp/STL/deque.md",
@@ -220,7 +221,6 @@
     "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/emplace_back.md",
-    "DJBGS working logbook/rs_arc3_fastlivo.png",
     "ROS/hardware/RTK",
     "ROS/hardware",
     "c and cpp/cpp/variable type/Untitled",

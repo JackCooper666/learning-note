@@ -162,7 +162,7 @@ port: '/dev/ttyUSB0'
 ## device setting by the MT manager or the driver
 ### device setting by MT Manager
 - click the "single scanning" your MT Manager![[single_scanning.png]] 
-![[scnning.png]]
+<img src="scnning.png" width="70%" alt="scanning">
 - MT Manager - Device Settings - Output Configuration , select "UTC Time, Sample TimeFine, Status Word, Latitude and Longitude" and other required data, click "Apply",
 ### device setting by driver
 - or your could change the `enable_deviceConfig` in [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) to true and change the `pub_utctime`, `pub_gnss` to true, then change the other desired output parameters as listed in the [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) for the complete sensor configurations.
@@ -256,9 +256,11 @@ After the [ntrip.launch](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_an
 5. launch the xsens_mti_node.launch only and record the /gnss, /gnss_pose, /filter/positionlla
 6. launch the ntrip.launch record the /gnss, /gnss_pose, /filter/positionlla, /nmea, /rtcm, /status
 ## current result
- full path, the RTK Corrected is imu smoothed result, the Raw GNSS is the result with the RTK ![[RTK_SiReNT_32_result.png]]
-![[RTK_SiReNT_32_result_error_part.png]]
-
+<div style="display: flex; justify-content: space-between;">
+  <img src="RTK_SiReNT_32_result.png" width="48%" alt="RTK SiReNT Result">
+  <img src="RTK_SiReNT_32_result_error_part.png" width="48%" alt="RTK SiReNT Error Part">
+</div>
+<img src="RTK_SiReNT_32_result_error_part_2.png" width="50%" style="display: block;" alt="RTK SiReNT Error Part 2">
 %% 2. open the xsens_mti_node.yaml, set the "enable_device_Config" to true.
 7. roslaunch the xsens_mti_node.launch and the ntrip.launch.
 8. set the enable_device_Config to false %%
