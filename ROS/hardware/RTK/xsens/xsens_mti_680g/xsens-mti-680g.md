@@ -1,4 +1,6 @@
 # software download
+there are two ways adjusting and using xsens-mti-680g: the **MT manager** and the **ros driver**.
+the official ros driver is valid in ros1 and ros2, but, in this instruction, only the ros1 will be used.
 ## MT manager install
 refer to:
 https://base.movella.com/s/article/MT-Manager-Installation-Guide-for-ubuntu-20-04-and-22-04?language=en_US
@@ -157,33 +159,32 @@ scan_for_devices: false # set to false w=otherwise the port will not work
 port: '/dev/ttyUSB0'
 # baudrate: 115200
 ```
-## device setting
-- For MTi-680(G), the UTC Time, PvtData needs to be enabled, in order to get GPGGA data for topic `/nmea`, which will be used for the Ntrip Client:
-    - MT Manager - Device Settings - Output Configuration , select "UTC Time, Sample TimeFine, Status Word, Latitude and Longitude" and other required data, click "Apply",
+## device setting by the MT manager or the driver
+### device setting by MT Manager
+- MT Manager - Device Settings - Output Configuration , select "UTC Time, Sample TimeFine, Status Word, Latitude and Longitude" and other required data, click "Apply",
+### device setting by driver
 - or your could change the `enable_deviceConfig` in [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) to true and change the `pub_utctime`, `pub_gnss` to true, then change the other desired output parameters as listed in the [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) for the complete sensor configurations.
-
-
-## How to Use:
-
-change the credentials/servers/mountpoint in `src/ntrip/launch/ntrip.launch` to your own one.
-
-open two terminals:
-
+- set `enable_filter_config` in  [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) to `true`, which will refuse the IMU data in the sensor and the GNSS results to smooth the path.
+- set `enable_beidou` in the [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) to `true`, it you like
+```yaml
+# If set true: Enables Beidou, disables GLONASS
+# If set false: Disables Beidou, enables GLONASS
+# valid for MTi-7/8/670/680/710
 ```
-roslaunch xsens_mti_driver xsens_mti_node.launch
-```
+## GNSS step and step testing
+1. open the  [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml), set the `enable_deviceConfig` to `true` to configure your sensor
+2. `roslaunch xsens_mti_driver xsens_mti_node.launch` to activate the GNSS and configure your device
+3. set the `enable_deviceConfig` to `false`
+4. `roslaunch xsens_mti_driver xsens_mti_node.launch`, then `rostopic echo` the following topics
 
-or with the 3D display rviz:
+| topic                    | Message Type                        | Message Contents                                                                                                                                | Data Output Rate  <br>(Depending on Model and OutputConfigurations at MT Manager) |
+| ------------------------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| filter/free_acceleration | geometry_msgs/<br>Vector3Stamped    | free acceleration from filter, which is the acceleration in the local earth coordinate system (L) from which  <br>the local gravity is deducted | 1-400Hz(MTi-600 and MTi-100 series), 1-100Hz(MTi-1 series)                        |
+| filter/positionlla       | geometry_msgs/<br>Vector3Stamped    | filtered position output in latitude (x), longitude (y) and altitude (z) as Vector3, in WGS84 datum                                             | 1-400Hz(MTi-600 and MTi-100 series), 1-100Hz(MTi-1 series)                        |
+| filter/quaternion        | geometry_msgs/<br>QuaternionStamped | quaternion from filter                                                                                                                          | 1-400Hz(MTi-600 and MTi-100 series), 1-100Hz(MTi-1 series)                        |
+| gnss                     | sensor_msgs/<br>NavSatFix           | raw 4 Hz latitude, longitude, altitude and status data from GNSS receiver                                                                       | 4Hz                                                                               |
+| gnss_pose                | geometry_msgs/<br>PoseStamped       | filtered position output in latitude (x), longitude (y) and altitude (z) as Vector3 in WGS84 datum, and quaternion from filter                  | 1-400Hz(MTi-600 and MTi-100 series), 1-100Hz(MTi-1 series)                        |
 
-```
-roslaunch xsens_mti_driver display.launch
-```
-
-and then
-
-```
-roslaunch ntrip ntrip.launch
-```
 # set the RTK
 after we get the GNSS position massages,  we need to let the Xsens mti 680g to receive the RTCM massages to correct the positioning error through the NTRIP server.
 
@@ -198,6 +199,12 @@ There are three methods to receive the RTCM massages through  the NTRIP server.
 5. select the closest NTRIP mount point in the dropdown menu
 6. click the "update mount points"
 7. click "Start"
+8. open the `Status Data` view window, the `RTK Status` should be 1, that means RTK Fix like the figure shows, the `RTK status` should be stable at the 1 (High, RTK Fix), otherwise RTK is invalid![[ab8a08c89267b8dd2ae6f72ed2f754b5.jpg]]
+9. if the RTK status is not fix, please change the mount points, until the RTK fix.
+10. if changing the mount points does not work, there may be two reasons now:
+	1. the antenna of the xsens mti 680g may not good enough
+	2. weather or the geographical environment is not good
+	3. the GNSS system is not good, switch to the Beidou, the default is GLONASS and GPS
 
 The NTRIP Client window is divided into two sections:
 1. Under NTRIP caster settings, the user can log-in to the desired NTRIP server by providing the address, port number, username and password.
@@ -238,8 +245,32 @@ or `rostopic echo /status` to check the RTK Fix type, it should be 1(RTK Floatin
 
 ## NTRIP modem and a wireless connection
 
-
 ## base station and wireless connection
+
+
+
+
+## How to Use:
+
+change the credentials/servers/mountpoint in `src/ntrip/launch/ntrip.launch` to your own one.
+
+open two terminals:
+
+```
+roslaunch xsens_mti_driver xsens_mti_node.launch
+```
+
+or with the 3D display rviz:
+
+```
+roslaunch xsens_mti_driver display.launch
+```
+
+and then
+
+```
+roslaunch ntrip ntrip.launch
+```
 
 
 
