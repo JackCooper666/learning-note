@@ -182,6 +182,11 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "position_drawing.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/scnning.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/single_scanning.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
@@ -216,16 +221,12 @@
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/emplace_back.md",
     "DJBGS working logbook/rs_arc3_fastlivo.png",
-    "DJBGS working logbook/arc3_fastlivo2_ac1.png",
     "ROS/hardware/RTK",
     "ROS/hardware",
     "c and cpp/cpp/variable type/Untitled",
     "c and cpp/cpp/variable type",
-    "ROS/ROS 1/evo_ape_alignment.png",
     "ROS/ROS 1/launch",
     "c and cpp/cpp/algorithm",
-    "c and cpp/cpp/STL",
-    "ubuntu/Wechat installation/Pasted image 20250513160633.png",
-    "ubuntu/vim editor/Pasted image 20250513152705.png"
+    "c and cpp/cpp/STL"
   ]
 }

@@ -161,6 +161,8 @@ port: '/dev/ttyUSB0'
 ```
 ## device setting by the MT manager or the driver
 ### device setting by MT Manager
+- click the "single scanning" your MT Manager![[single_scanning.png]] 
+![[scnning.png]]
 - MT Manager - Device Settings - Output Configuration , select "UTC Time, Sample TimeFine, Status Word, Latitude and Longitude" and other required data, click "Apply",
 ### device setting by driver
 - or your could change the `enable_deviceConfig` in [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) to true and change the `pub_utctime`, `pub_gnss` to true, then change the other desired output parameters as listed in the [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml) for the complete sensor configurations.
@@ -172,6 +174,10 @@ port: '/dev/ttyUSB0'
 # valid for MTi-7/8/670/680/710
 ```
 ## GNSS step and step testing
+
+### by MT Manager
+1. open the GNSS position draw window ![[position_drawing.png]]
+### by the ros drive
 1. open the  [xsens_mti_node.yaml](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/xsens_ros_mti_driver/param/xsens_mti_node.yaml), set the `enable_deviceConfig` to `true` to configure your sensor
 2. `roslaunch xsens_mti_driver xsens_mti_node.launch` to activate the GNSS and configure your device
 3. set the `enable_deviceConfig` to `false`
@@ -204,7 +210,7 @@ There are three methods to receive the RTCM massages through  the NTRIP server.
 10. if changing the mount points does not work, there may be two reasons now:
 	1. the antenna of the xsens mti 680g may not good enough
 	2. weather or the geographical environment is not good
-	3. the GNSS system is not good, switch to the Beidou, the default is GLONASS and GPS
+	3. the GNSS system is not good, switch to the Beidou, the default is GLONASS
 
 The NTRIP Client window is divided into two sections:
 1. Under NTRIP caster settings, the user can log-in to the desired NTRIP server by providing the address, port number, username and password.
@@ -220,25 +226,39 @@ The NTRIP Client window is divided into two sections:
 3. then cd to the workspace 
 4. `source ./devel/setup.bash`
 5. roslaunch the xsens_mti_node.launch and the ntrip.launch
+	The Ntrip_client subscribes to the `/nmea` rostopic from `xsens_ros_mti_driver`, and wait until it gets GPGGA data from that rostopic for maximum 300 sec, it will send GPGGA to the Ntrip Caster(Server) every 1 seconds(defined by [ntrip.launch](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/ntrip/launch/ntrip.launch)).
+6. `rostopic echo` the following topics: 
+```
+/filter/positionlla
+/gnss
+/gnss_pose
+/nmea 
+/rtcm 
+/status 
+```
+you could check `rostopic echo /rtcm`, there should be HEX RTCM data coming, or `rostopic echo /status` to check the RTK Fix type, it should be 1(RTK Floating) or 2(RTK Fix). In the `/status`, the `rtk_status` should be stable at 2.
+After the [ntrip.launch](https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/blob/main/src/ntrip/launch/ntrip.launch) is activated. the position_covariance in the /gnss should decrease obviously in comparison with result of  `xsens_mti_node.launch`. 
 
-## RTK status confirm
-current problem:
-- [ ] the /filter/positionlla is not the rtk correction result
-- [ ] the GNSS info and the NTRIP info can be received, but the RTK status is not fix and the RTCM do not have any information
-The reason is that the NUS NTRIP server is not good, singal is unstable
-### RTK testing strategy
+
+
+# RTK testing experiment in NUS
 1. ensure wifi is stable
-2. in MT Manager, test the following server
-	- [ ] DGNSS_SNUS -> RTK_STATE
-	- [ ] RTK_SNUS_31 -> RTK_STATE
-	- [ ] RTK_SNUS_32 -> RTK_STATE
-	- [ ] RTK_SNUS_GPS -> RTK_STATE
+2. in MT Manager, test the following mount points, and check the RTK status in the Status Date window.
+	- [x] DGNSS_SNUS -> RTK_Status
+	- [ ] RTK_SNUS_31 -> RTK_Status
+	- [ ] RTK_SNUS_32 -> RTK_Status
+	- [ ] RTK_SNUS_GPS -> RTK_Status can keep in RTK Fix status in relatively long time as well
+	- [ ] RTK_SiReNT_32 -> RTK_Status can keep in the RTK Fix status within the longest time
+	- [ ] RTK_SiReNT_31 -> RTK_Status
+
 3. open the position monitor to check whether the RTCM works
-4. set the ntrip/launch/ntrip.launch, the mountpoint to the stable server tested by the MT Manager.
+4. set the mountpoint in the ntrip/launch/ntrip.launch to the stable server tested by the MT Manager.
 5. launch the xsens_mti_node.launch only and record the /gnss, /gnss_pose, /filter/positionlla
 6. launch the ntrip.launch record the /gnss, /gnss_pose, /filter/positionlla, /nmea, /rtcm, /status
-you could check `rostopic echo /rtcm`, there should be HEX RTCM data coming,
-or `rostopic echo /status` to check the RTK Fix type, it should be 1(RTK Floating) or 2(RTK Fix).
+## current result
+ full path, the RTK Corrected is imu smoothed result, the Raw GNSS is the result with the RTK ![[RTK_SiReNT_32_result.png]]
+![[RTK_SiReNT_32_result_error_part.png]]
+
 %% 2. open the xsens_mti_node.yaml, set the "enable_device_Config" to true.
 7. roslaunch the xsens_mti_node.launch and the ntrip.launch.
 8. set the enable_device_Config to false %%
@@ -250,9 +270,9 @@ or `rostopic echo /status` to check the RTK Fix type, it should be 1(RTK Floatin
 
 
 
-## How to Use:
+# Do the localisation by xsens mti 680g
 
-change the credentials/servers/mountpoint in `src/ntrip/launch/ntrip.launch` to your own one.
+keep you params setting for the ntrip and xsens mti 680g
 
 open two terminals:
 
