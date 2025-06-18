@@ -56,7 +56,7 @@ run your mtmanager (located at: mtmanager/linux-x64/bin/)
 ./mtmanager
 ```
 
-## workspace and package downloading
+## driver downloading
 refer to 
 https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client/tree/main#
 
@@ -90,7 +90,7 @@ source ./devel/setup.bash
 # set the GNSS
 
 ## access authority setting
-in your BIOS please shutdown your security protection, when using linux, as the protection will eject any installization for the custom core.
+!!! in your BIOS please shutdown your security protection, when using linux, as the protection will eject any installization for the custom core.
 
 plugin the xsens-mti-680g to your pc, check whether the `ttyUSB0` is in your /dev by:
 ```bash
@@ -107,11 +107,12 @@ Make sure you are in the correct group (often dialout or uucp) in order to acces
 
 ```bash
 ls -l /dev/ttyUSB0
-
+// the result likes this
 crw-rw---- 1 root dialout 188, 0 May  6 16:21 /dev/ttyUSB0
 ```
 
-your terminal should be in the correct group, the group for the xsens-mti-680g is dialout
+your terminal should be in the correct group, the group for the xsens-mti-680g is dialout, as the `ls -l /dev/ttyUSB0` shows,
+
 you can check the group by 
 
 ```bash
@@ -143,7 +144,8 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="2639", ACTION=="add", GROUP="$GROUP", MODE="
 ```
 	Change $GROUP into your desired group (e.g. adm, plugdev, or usb).
 
-then reboot your pc
+
+then, after the group setting,  reboot your pc
 ```bash
 sudo reboot
 ```
