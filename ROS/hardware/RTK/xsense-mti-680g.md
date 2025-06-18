@@ -210,21 +210,29 @@ The NTRIP Client window is divided into two sections:
 2. fill the host, port, mountpoint, username, password
 3. then cd to the workspace 
 4. `source ./devel/setup.bash`
-5. `roslaunch`
+5. roslaunch the xsens_mti_node.launch and the ntrip.launch
 
 ## RTK status confirm
 current problem:
 - [ ] the /filter/positionlla is not the rtk correction result
 - [ ] the GNSS info and the NTRIP info can be received, but the RTK status is not fix and the RTCM do not have any information
 The reason is that the NUS NTRIP server is not good, singal is unstable
-### RTK fix strategy
+### RTK testing strategy
 1. ensure wifi is stable
 2. in MT Manager, test the following server
-- [ ] DGNSS_SNUS -> RTK_STATE
-- [ ] RTK_SNUS_31 -> RTK_STATE
-- [ ] RTK_SNUS_32 -> RTK_STATE
-- [ ] RTK_SNUS_GPS -> RTK_STATE
-3. 
+	- [ ] DGNSS_SNUS -> RTK_STATE
+	- [ ] RTK_SNUS_31 -> RTK_STATE
+	- [ ] RTK_SNUS_32 -> RTK_STATE
+	- [ ] RTK_SNUS_GPS -> RTK_STATE
+3. open the position monitor to check whether the RTCM works
+4. set the ntrip/launch/ntrip.launch, the mountpoint to the stable server tested by the MT Manager.
+5. launch the xsens_mti_node.launch only and record the /gnss, /gnss_pose, /filter/positionlla
+6. launch the ntrip.launch record the /gnss, /gnss_pose, /filter/positionlla, /nmea, /rtcm, /status
+you could check `rostopic echo /rtcm`, there should be HEX RTCM data coming,
+or `rostopic echo /status` to check the RTK Fix type, it should be 1(RTK Floating) or 2(RTK Fix).
+%% 2. open the xsens_mti_node.yaml, set the "enable_device_Config" to true.
+7. roslaunch the xsens_mti_node.launch and the ntrip.launch.
+8. set the enable_device_Config to false %%
 
 ## NTRIP modem and a wireless connection
 
