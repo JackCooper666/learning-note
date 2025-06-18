@@ -212,6 +212,11 @@ The NTRIP Client window is divided into two sections:
 4. `source ./devel/setup.bash`
 5. `roslaunch`
 
+## RTK status confirm
+current problem:
+- [ ] the /filter/positionlla is not the rtk correction result
+- [ ] the GNSS info and the NTRIP info can be received, but the RTK status is not fix and the RTCM do not have any information
+
 ## NTRIP modem and a wireless connection
 
 
