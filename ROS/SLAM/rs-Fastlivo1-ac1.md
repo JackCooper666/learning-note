@@ -1,10 +1,17 @@
+
+
+# Points cloud transformation pipeline
+LIO system
+1. `PredicteStateAndUndistortCloud(LidarMeasures,state,feats_undistort)`前向传播+反向传播去畸变, input is `feat_undistort`, output is `feat_undistort`
+2. `feat_undistort` -> `PreprocessCloud(feat_undistort)` this function will filter the tailing points and far points, then downsample the filtered points to get the `feats_down_body`
+3. `feat_down_world`: the `feat_down_body`use the states estimation results from the IMU forward propagation to get the `feat_down_world` in `BuildKdTree(feats_down_body);` -> `pointBodyToWorld(&(feats_down_body->points[i]),&(feats_down_world->points[i]));`
+
 EstimateLIOState()
-1. `feat_undistort` -> `PreprocessCloud(feat_undistort)` this function will filter the tailing points and far points, then downsample the filtered points to get the `feats_down_body`
-2. 
+ 4.  each point in the `feat_down_world` will be checked, and the points who cannot fit a surface with their neighbour 
 
 
 
-
+VIO system
 EstimateVIOState()
 1. `const auto &valid_source_cloud_for_VIO = valid_source_cloud;`
 2. `&pt = valid_source_cloud_for_VIO->points[i];`
