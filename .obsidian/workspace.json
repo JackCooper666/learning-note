@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Class.md",
+                "file": "ROS/SLAM/FastLivo2 Code analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Class"
+              "title": "FastLivo2 Code analysis"
             }
           }
         ]
@@ -181,9 +181,10 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/recursion.png",
+    "Python/Class.md",
     "c and cpp/cpp/run cpp in linux.md",
     "c and cpp/cpp/algorithm/递归.md",
-    "recursion.png",
     "git/git commends.md",
     "c and cpp/cpp/algorithm/二叉树.md",
     "c and cpp/cpp/algorithm/归并排序.md",
@@ -218,8 +219,6 @@
     "DJBGS working logbook/June 16.md",
     "c and cpp/cpp/algorithm/动态规划.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
-    "c and cpp/cpp/algorithm/execution time saving method.md",
-    "c and cpp/cpp/time complex and space complex.md",
     "ROS/hardware/RTK",
     "ROS/hardware",
     "c and cpp/cpp/variable type/Untitled",

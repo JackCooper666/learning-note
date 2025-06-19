@@ -88,7 +88,7 @@ the point cloud update pipeline
 4. feat_down_world -> LIO StateEstimation() -> `_state = voxelmap_manager->state_ //estimated state` 
 5. `_pv_list = voxelmap_manage->pv_list_` : the IMU predication state after the forward propagation, this state translate the feat_down_body from the IMU frame to the world frame.
 6. `world_lidar`  -> `transformLidar(_state.rot_end, _state.pos_end, feats_down_body, world_lidar);`
-7. `voxelmap_manager->pv_list_` gets the points cloud in the frame frame from the `world_lidar` by the following code.
+7. `voxelmap_manager->pv_list_` gets the points cloud in the frame from the `world_lidar` by the following code.
 ```cpp
 for (size_t i = 0; i < world_lidar->points.size(); i++)
 {
@@ -111,4 +111,5 @@ voxelmap_manager->UpdateVoxelMap(voxelmap_manager->pv_list_);
 9.  `laserCloudFullRes` get the `feats_undistort` or the `feats_down_body` according to user setting
 10. `laserCloudWorld`: `RGBpointBodyToWorld(&laserCloudFullRes->points[i], &laserCloudWorld->points[i]);` transforms the `laserCloudFullRes` from IMU frame to world frame.
 11. `*pcl_w_wait_pub = *laserCloudWorld;`: if the VIO is enabled, the `pcl_w_wait_pub` will be put into the VIO, else the `pcl_w_wait_pub` will be published. 
-12. 
+12. `vio_manager->processFrame(LidarMeasures.measures.back().img, _pv_list, voxelmap_manager->voxel_map_, LidarMeasures.last_lio_update_time - _first_lidar_time);` the `_pv_list` will transfer into the vio state estimation system
+13. 
