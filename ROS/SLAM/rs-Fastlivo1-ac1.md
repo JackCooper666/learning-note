@@ -1,5 +1,5 @@
 EstimateLIOState()
-1. `feat_undistort` -> `PreprocessCloud(feat_undistort)`
+1. `feat_undistort` -> `PreprocessCloud(feat_undistort)` this function will filter the tailing points and far points, then downsample the filtered points to get the `feats_down_body`
 2. 
 
 
@@ -21,4 +21,5 @@ scan_W_filtered->push_back(scan_vec[i]);
 lidar_selector->noise_cloud->push_back(scan_vec[i]);
 ++scan_large_angle_cnt;
 ```
+
 7. `const auto &pt = featsFromMap->points[i];` 
