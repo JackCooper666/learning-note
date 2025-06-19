@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/FastLivo2 Code analysis.md",
+                "file": "ROS/SLAM/rs-Fastlivo1-ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FastLivo2 Code analysis"
+              "title": "rs-Fastlivo1-ac1"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "ROS/SLAM/FastLivo2 Code analysis.md",
     "c and cpp/cpp/algorithm/recursion.png",
     "Python/Class.md",
     "c and cpp/cpp/run cpp in linux.md",
