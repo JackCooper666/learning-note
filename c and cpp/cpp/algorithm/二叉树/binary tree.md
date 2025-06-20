@@ -93,6 +93,51 @@ node3->right = node7;
 ```
 
 # traverse binary tree
+
 ## depth-first search
+### preorder traversal
+中左右
+firstly traverse the root then traverse the left subtree and then the right subtree
+```markdown
+		5
+	  /   \
+	 4     6
+    / \   / \
+   1  2  7   8
+```
+traversal result:
+5->4->1->2->6->7->8
+1. by recursion
+2. by iteration
+### inorder traversal
+左中右
+firstly traverse the left subtree then the root and then the right subtree
+```markdown
+		5
+	  /   \
+	 4     6
+    / \   / \
+   1  2  7   8
+```
+traversal result:
+1->4->2->5->7->6->8
+1. by recursion
+2. by iteration
+### postorder traversal
+左右中
+firstly traverse the left subtree, then the right subtree and then the root
+```markdown
+		5
+	  /   \
+	 4     6
+    / \   / \
+   1  2  7   8
+```
+traversal result:
+1->2->4->7->8->6->5
+1. by recursion
+2. by iteration
 
 ## breadth-first search
+### level_order traversal
+1. by iteration
