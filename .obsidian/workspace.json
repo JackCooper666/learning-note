@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/二叉树.md",
+                "file": "c and cpp/cpp/algorithm/二叉树/二叉树.md",
                 "mode": "source",
                 "source": false
               },
@@ -179,9 +179,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd4e5a4809ca7bd6",
+  "active": "9057a9433e081024",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/二叉树/binary_search_tree.png",
+    "c and cpp/cpp/algorithm/二叉树/complete_binary_tree.png",
+    "c and cpp/cpp/algorithm/二叉树/full_binary_tree.png",
+    "c and cpp/cpp/algorithm/二叉树/basic_format.png",
+    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
+    "c and cpp/cpp/algorithm/二叉树/二叉树.md",
+    "c and cpp/cpp/algorithm/二叉树/basic format.png",
     "ROS/SLAM/rs-Fastlivo1-ac1.md",
+    "c and cpp/cpp/algorithm/二叉树.md",
+    "c and cpp/cpp/algorithm/二叉树",
     "c and cpp/cpp/algorithm/归并排序.md",
     "c and cpp/cpp/algorithm/递归.md",
     "c and cpp/cpp/math.md",
@@ -204,28 +213,19 @@
     "Python/Class.md",
     "c and cpp/cpp/run cpp in linux.md",
     "git/git commends.md",
-    "c and cpp/cpp/algorithm/二叉树.md",
     "c and cpp/gcc and g++.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part_2.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/position_drawing.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/scnning.png",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/single_scanning.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g",
     "ROS/hardware/RTK/xsens",
     "c and cpp/cpp/STL/stack.md",
     "2025-06-16.md",
-    "ROS/ROS 1/C++/topic communication.md",
-    "ROS/ROS 1/C++/nav_msgs.md",
     "ubuntu",
     "ROS/hardware/RTK",
     "ROS/hardware",
     "c and cpp/cpp/variable type/Untitled",
     "c and cpp/cpp/variable type",
     "ROS/ROS 1/launch",
-    "c and cpp/cpp/algorithm",
-    "c and cpp/cpp/STL"
+    "c and cpp/cpp/algorithm"
   ]
 }
