@@ -9,10 +9,12 @@ LIO system
 EstimateLIOState()
  4.  each point in the `feat_down_world` will be checked, and the points who cannot fit a surface with their neighbours will be filter out. `laserCloudOri->points[effct_feat_num] = feats_down_body->points[i];` and the effect points will be put into the `laserCloudOri`.
  5. `lidar_selector->lidar_feat_num = effct_feat_num;`
- 6. `laserCloudOri` will be used in the ICP and IEKF
- 7. 
+ 6. `laserCloudOri` will be used in the ICP and IEKF 
 
 PublishLIOResult()
+7. `feat_down_body` -> `cloud_registered_I`
+8. `cloud_registered_I` -> `RGBpointBodyToWorld(&cloud_registered_I->points[i],&cloud_registered_W->points[i]);` -> `cloud_registered_W`
+
 
 
 VIO system

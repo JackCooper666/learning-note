@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/math.md",
+                "file": "ROS/SLAM/rs-Fastlivo1-ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "math"
+              "title": "rs-Fastlivo1-ac1"
             }
           }
         ]
@@ -181,6 +181,9 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/归并排序.md",
+    "c and cpp/cpp/algorithm/递归.md",
+    "c and cpp/cpp/math.md",
     "c and cpp/cpp/STL/the operators.md",
     "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/deque.md",
@@ -200,10 +203,8 @@
     "c and cpp/cpp/algorithm/recursion.png",
     "Python/Class.md",
     "c and cpp/cpp/run cpp in linux.md",
-    "c and cpp/cpp/algorithm/递归.md",
     "git/git commends.md",
     "c and cpp/cpp/algorithm/二叉树.md",
-    "c and cpp/cpp/algorithm/归并排序.md",
     "c and cpp/gcc and g++.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part_2.png",
@@ -218,7 +219,6 @@
     "2025-06-16.md",
     "ROS/ROS 1/C++/topic communication.md",
     "ROS/ROS 1/C++/nav_msgs.md",
-    "ROS/ROS 1/rosbag.md",
     "ubuntu",
     "ROS/hardware/RTK",
     "ROS/hardware",
