@@ -37,3 +37,5 @@ lidar_selector->noise_cloud->push_back(scan_vec[i]);
 ```
 
 7. `const auto &pt = featsFromMap->points[i];` 
+8. `display_keypatch()`
+9. 
