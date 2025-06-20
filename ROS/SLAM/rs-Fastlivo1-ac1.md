@@ -14,6 +14,7 @@ EstimateLIOState()
 PublishLIOResult()
 7. `feat_down_body` -> `cloud_registered_I`
 8. `cloud_registered_I` -> `RGBpointBodyToWorld(&cloud_registered_I->points[i],&cloud_registered_W->points[i]);` -> `cloud_registered_W`
+9. `cloud_registered_W`->`pcl::copyPointCloud(*cloud_registered_W,*valid_source_indices,*valid_source_cloud);` -> `valid_source_cloud`
 
 
 
