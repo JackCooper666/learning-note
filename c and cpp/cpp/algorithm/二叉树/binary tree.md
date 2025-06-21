@@ -1,10 +1,23 @@
-![[basic_format.png]]
 # full binary tree
-each root has full leaves, and each layer is full
-![[full_binary_tree.png]]
+每个节点要么是**叶子节点**（无子节点），要么恰好有**两个子节点**（即左、右子树都不为空）。
+```markdown
+        1
+      /   \
+     2     3
+    / \   / \
+   4   5 6   7
+```
+
 # complete binary tree
 except the last layer, other layers should be full, but the leaves of the last layer should be continuous like this 
-![[complete_binary_tree.png]]
+若将这棵树的节点从上到下、从左到右编号为 1、2、3……n，则**所有编号 ≤ n 的位置都有节点**，即节点排列紧凑，没有“空洞”
+```markdown
+        1
+      /   \
+     2     3
+    / \   /
+   4   5 6
+```
 # binary search tree
 unlike the complete binary tree and full binary tree, the binary search tree does not have the structure requirement
 一棵二叉搜索树是满足以下条件的**二叉树**：
