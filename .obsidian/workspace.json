@@ -11,12 +11,14 @@
             "id": "cd4e5a4809ca7bd6",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/FAST-LIO论文讲解.pdf"
+                "file": "DJBGS working logbook/June 21.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "FAST-LIO论文讲解"
+              "icon": "lucide-file",
+              "title": "June 21"
             }
           }
         ]
@@ -179,8 +181,9 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
-    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
+    "DJBGS working logbook/June 21.md",
+    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ubuntu/GPU driver install and CUDA toolkit install.md",
     "ubuntu/Wechat installation/wechat installation.md",
     "ubuntu/Wechat installation/Pasted image 20250513160633.png",
@@ -215,7 +218,6 @@
     "c and cpp/cpp/STL/swap.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "Python/Class.md",
-    "c and cpp/cpp/run cpp in linux.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g",
     "ROS/hardware/RTK/xsens",
     "ubuntu",
