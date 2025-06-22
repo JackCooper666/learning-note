@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/FastLivo2 Code analysis.md",
+                "file": "c and cpp/cpp/{}.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FastLivo2 Code analysis"
+              "title": "{}"
             }
           }
         ]
@@ -181,6 +181,13 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "c and cpp/cpp/math.md",
+    "c and cpp/cpp/{}.md",
+    "c and cpp/cpp/ASCII.md",
+    "c and cpp/cpp/time complex and space complex.md",
+    "c and cpp/cpp/run cpp in linux.md",
+    "c and cpp/cpp/variable type/numbers' type.md",
+    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ROS/SLAM/rs-Fastlivo1-ac1.md",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
     "DJBGS working logbook/LIO LIDAR noise filter before the VIO.md",
@@ -190,7 +197,6 @@
     "DJBGS working logbook/arc3_fastlivo2_ac1.png",
     "DJBGS working logbook/June 21.md",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
-    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ubuntu/GPU driver install and CUDA toolkit install.md",
     "ubuntu/Wechat installation/wechat installation.md",
     "ubuntu/Wechat installation/Pasted image 20250513160633.png",
@@ -207,17 +213,12 @@
     "c and cpp/cpp/algorithm/二叉树.md",
     "c and cpp/cpp/algorithm/二叉树",
     "c and cpp/cpp/algorithm/归并排序.md",
-    "c and cpp/cpp/math.md",
     "c and cpp/cpp/STL/the operators.md",
     "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/deque.md",
     "c and cpp/cpp/STL/emplace_back.md",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/list (链表).md",
-    "c and cpp/cpp/STL/pair.md",
-    "c and cpp/cpp/STL/queue.md",
-    "c and cpp/cpp/STL/string.md",
-    "c and cpp/cpp/STL/swap.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g",
     "ROS/hardware/RTK/xsens",
     "ubuntu",
