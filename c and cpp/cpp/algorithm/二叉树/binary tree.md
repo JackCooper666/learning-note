@@ -58,14 +58,10 @@ $$
       B   C
      /     \
     D       E
-
 ```
 - 节点 D 和 E 是叶子节点，高度 = 0
-    
 - 节点 B 的高度 = 1（因为左子树 D 高度为 0）
-    
 - 节点 C 的高度 = 1（因为右子树 E 高度为 0）
-    
 - 节点 A 的高度 = 1 + max(1, 1) = 2
 
 # the storage method of binary tree
