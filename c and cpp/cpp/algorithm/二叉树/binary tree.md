@@ -156,6 +156,7 @@ traversal result:
 1. by iteration
 
 ## code
+### depth-first search
 ```cpp
 #include <iostream>
 #include <vector>
@@ -399,3 +400,4 @@ cout << "释放内存" << endl;
 return 0;
 }
 ```
+### breadth-first search
