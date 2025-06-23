@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/FastLivo2 Code analysis.md",
+                "file": "DJBGS working logbook/LIO LIDAR noise filter before the VIO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FastLivo2 Code analysis"
+              "title": "LIO LIDAR noise filter before the VIO"
             }
           }
         ]
@@ -182,9 +182,9 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "ROS/SLAM/FastLivo2 Code analysis.md",
     "DJBGS working logbook/June 23rd.md",
     "ROS/SLAM/rs-Fastlivo1-ac1.md",
-    "ROS/SLAM/FastLivo2 Code analysis.md",
     "career/future plan.md",
     "DJBGS working logbook/LIO LIDAR noise filter before the VIO.md",
     "DJBGS working logbook/rs_arc3_fastlivo.png",

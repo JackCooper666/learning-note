@@ -10,3 +10,5 @@ current issue
 如果是这样的话，这一部分的代码在哪？是这个ProjCloudToImageToGetFeature 里吗？
 
 因为这个ProjCloudToImageToGetFeature对将采样的点云做了投影以方便投影点的reference path对应的图块和现图块之间的匹配，所以这个滤除应该在这个函数的开始部分，可我没找到
+
+Jimg = Jimg * (1.0/scale) * pt->weight_ * pt->weight_2_ * pt->weight_3_ * pt->weight_4_;
