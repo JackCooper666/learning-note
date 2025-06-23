@@ -15,5 +15,13 @@ The node of it consists of three things: the data, the next pointer pointing to 
 ![[bio_direction_list.jpg]]
 
 `push_front()`: push node at the top
-`pop_front()`: 
+`pop_front()`: pop the node at the top
+`front()`: get the node at the top
 `push_back()`: push node at the end
+`pop_back()`: pop the node at the end
+`back()`: get the node at the end
+
+由于链表的存储方式并不是连续的内存空间，因此链表list中的迭代器只支持前移和后移，属于**双向迭代器**
+## construct list
+```
+```
