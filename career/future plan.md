@@ -7,7 +7,7 @@
 		1. the robotics algorithm jobs are the best
 	2. China
 		1. the robotics algorithm jobs are the best
-# the main things you needs to do
+# the main things you needs to do with priority
 1. phd
 	1. phd applications
 	2. Articles
