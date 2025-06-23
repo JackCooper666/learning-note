@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/heap.md",
+                "file": "c and cpp/cpp/algorithm/recursion/递归.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "heap"
+              "title": "递归"
             }
           }
         ]
@@ -181,8 +181,15 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/recursion/recursion.png",
+    "c and cpp/cpp/algorithm/recursion/递归.md",
+    "c and cpp/cpp/algorithm/recursion",
+    "c and cpp/cpp/algorithm/Untitled.md",
+    "c and cpp/cpp/algorithm/heap/heap.md",
+    "c and cpp/cpp/algorithm/heap",
+    "priority_queue.png",
+    "c and cpp/cpp/algorithm/heap/priority_queue.png",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
-    "c and cpp/cpp/algorithm/heap.md",
     "c and cpp/cpp/{}.md",
     "c and cpp/cpp/math.md",
     "c and cpp/cpp/ASCII.md",
@@ -207,25 +214,17 @@
     "sh/run a sh file.md",
     "c and cpp/cpp/algorithm/二叉树/full_binary_tree.png",
     "c and cpp/cpp/algorithm/二叉树/complete_binary_tree.png",
-    "c and cpp/cpp/algorithm/二叉树/binary_search_tree.png",
-    "c and cpp/cpp/algorithm/二叉树/basic_format.png",
-    "c and cpp/cpp/algorithm/递归.md",
-    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
     "c and cpp/cpp/algorithm/二叉树.md",
     "c and cpp/cpp/algorithm/二叉树",
     "c and cpp/cpp/algorithm/归并排序.md",
     "c and cpp/cpp/STL/the operators.md",
     "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/deque.md",
-    "c and cpp/cpp/STL/emplace_back.md",
-    "c and cpp/cpp/STL/hashtable.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g",
     "ROS/hardware/RTK/xsens",
     "ubuntu",
     "ROS/hardware/RTK",
     "ROS/hardware",
-    "c and cpp/cpp/variable type/Untitled",
-    "c and cpp/cpp/variable type",
-    "ROS/ROS 1/launch"
+    "c and cpp/cpp/variable type/Untitled"
   ]
 }
