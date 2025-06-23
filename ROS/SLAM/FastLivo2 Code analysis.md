@@ -112,3 +112,7 @@ voxelmap_manager->UpdateVoxelMap(voxelmap_manager->pv_list_);
 10. `laserCloudWorld`: `RGBpointBodyToWorld(&laserCloudFullRes->points[i], &laserCloudWorld->points[i]);` transforms the `laserCloudFullRes` from IMU frame to world frame.
 11. `*pcl_w_wait_pub = *laserCloudWorld;`: if the VIO is enabled, the `pcl_w_wait_pub` will be put into the VIO, else the `pcl_w_wait_pub` will be published. 
 12. `vio_manager->processFrame(LidarMeasures.measures.back().img, _pv_list, voxelmap_manager->voxel_map_, LidarMeasures.last_lio_update_time - _first_lidar_time);` the `_pv_list` will transfer into the vio state estimation system
+
+
+# key variables
+`SubSparseMap *visual_submap; // 当前帧patch地图`

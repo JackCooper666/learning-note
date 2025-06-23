@@ -11,4 +11,7 @@ current issue
 
 因为这个ProjCloudToImageToGetFeature对将采样的点云做了投影以方便投影点的reference path对应的图块和现图块之间的匹配，所以这个滤除应该在这个函数的开始部分，可我没找到
 
+
+
+没有直接过滤点。存到了点的weight_字段，在优化时用来给光度误差降权。
 Jimg = Jimg * (1.0/scale) * pt->weight_ * pt->weight_2_ * pt->weight_3_ * pt->weight_4_;

@@ -46,3 +46,7 @@ lidar_selector->noise_cloud->push_back(scan_vec[i]);
 
 14. `display_keypatch()`
 15. 
+
+
+# key variables
+`SubSparseMap* sub_sparse_map; // 当前帧patch地图`
