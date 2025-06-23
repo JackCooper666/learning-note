@@ -1,5 +1,5 @@
 
 - [ ] heap
 - [ ] fastlivo2 visualisation optimize
-- [ ] future plan
+- [x] future plan
 - [ ] body building

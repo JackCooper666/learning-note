@@ -36,6 +36,13 @@ lidar_selector->noise_cloud->push_back(scan_vec[i]);
 ++scan_large_angle_cnt;
 ```
 
-7. `const auto &pt = featsFromMap->points[i];` 
-8. `display_keypatch()`
-9. 
+7. `const auto &pt = featsFromMap->points[i];`
+8. `V3D pt_beam{pt.x - pos_I.x(), pt.y - pos_I.y(), pt.z - pos_I.z()};`
+9. `auto pt_copy = pt;`
+10. `pt_copy.intensity = 1.0;`
+11. the point cannot satisfy the filter condition `pt_copy.intensity = weight;` `is_map_selected` will be 3
+12. `map_vec[i] = pt_copy;`
+13. `map_vec` -> `map_W_filtered`
+
+14. `display_keypatch()`
+15. 
