@@ -11,9 +11,12 @@
 1. phd
 	1. phd applications
 	2. Articles
+	3. mini-bus project
 2. jobs
 	1. Singapore
 		1. internship, then change to the format job
+		2. mini-bus project
 	2. China
 		1. July to October autumn recruitment 
 		2. Leecode
+		3. mini-bus project
