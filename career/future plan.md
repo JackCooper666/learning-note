@@ -1,6 +1,6 @@
 # priority
 1. apply Robotics PHD, your main propose, the SLAM is the best, other options can be considered as well 
-	1. singapore is best option
+	1. Singapore is best option
 	2. China
 2. apply job, your route of retreat
 	1. Singapore
@@ -8,8 +8,8 @@
 	2. China
 		1. the robotics algorithm jobs are the best
 # the main things you needs to do with priority
-1. phd
-	1. phd applications
+1. Phd
+	1. Phd applications
 	2. Articles
 	3. mini-bus project
 2. jobs
