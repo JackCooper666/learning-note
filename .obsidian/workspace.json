@@ -182,8 +182,9 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
-    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ROS/SLAM/FAST-LIO论文讲解.pdf",
+    "ROS/SLAM/rs-Fastlivo1-ac1.md",
+    "ROS/SLAM/FastLivo2 Code analysis.md",
     "DJBGS working logbook/June 24th.md",
     "c and cpp/cpp/STL/list/list (链表).md",
     "c and cpp/cpp/STL/list/bio_direction_list.jpg",
@@ -191,7 +192,6 @@
     "c and cpp/cpp/STL/list",
     "c and cpp/cpp/algorithm/heap/heap.md",
     "DJBGS working logbook/June 23rd.md",
-    "ROS/SLAM/rs-Fastlivo1-ac1.md",
     "DJBGS working logbook/LIO LIDAR noise filter before the VIO.md",
     "career/future plan.md",
     "DJBGS working logbook/rs_arc3_fastlivo.png",
