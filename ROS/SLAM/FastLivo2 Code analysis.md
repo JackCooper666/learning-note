@@ -35,7 +35,7 @@ output:
 	->voxelmap_manager->pv_list_: downsampled points cloud
 	-> voxelmap_manager->ptpl_list_: a list of **point-to-plane residuals** (and associated geometric information) that are **built from** the downsampled point cloud (`pv_list_`).
 
-### the lio point cloud reslu in world frame based on the lio state estimation:
+### the lio point cloud result in world frame based on the lio state estimation:
 `the *pul_w_wait_pub` is the point cloud result and will be pushed into the vio system
 
 ```cpp
@@ -81,7 +81,7 @@ inputs:
 
 
 
-the point cloud update pipeline
+# the point cloud update pipeline
 1. feat_undistort: is the points cloud after the forward propagation and motion undistortion
 2. feat_down_body: the down-sampled point cloud of feat_undistort  
 3. feat_down_world: the IMU predication state after the forward propagation, this state translate the feat_down_body from the IMU frame to the world frame
@@ -115,7 +115,7 @@ voxelmap_manager->UpdateVoxelMap(voxelmap_manager->pv_list_);
 
 
 # key variables
-`SubSparseMap *visual_submap; // 当前帧patch地图`
+## `SubSparseMap *visual_submap; // 当前帧patch地图`
 
 ```cpp
 struct SubSparseMap
@@ -246,3 +246,9 @@ bool getCloseViewObs(const Vector3d &pos, Feature *&obs, const Vector2d &cur_px)
 
 };
 ```
+
+## 📌 Meaning of `curvature`
+In the context of the `PointXYZINormal` structure, the `**curvature**` field represents the **surface curvature** at a 3D point in a point cloud, typically calculated from the local neighborhood of the point.
+
+- `curvature` is a **scalar value** that quantifies **how flat or curved** the local surface is around the point.
+- It is commonly derived during **normal estimation** using **Principal Component Analysis (PCA)** on neighboring points.
