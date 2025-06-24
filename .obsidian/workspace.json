@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/list/list (链表).md",
+                "file": "ROS/SLAM/rs-Fastlivo1-ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "list (链表)"
+              "title": "rs-Fastlivo1-ac1"
             }
           }
         ]
@@ -182,15 +182,16 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
-    "c and cpp/cpp/STL/list/bio_direction_list.jpg",
+    "ROS/SLAM/FastLivo2 Code analysis.md",
+    "ROS/SLAM/FAST-LIO论文讲解.pdf",
+    "DJBGS working logbook/June 24th.md",
     "c and cpp/cpp/STL/list/list (链表).md",
+    "c and cpp/cpp/STL/list/bio_direction_list.jpg",
     "c and cpp/cpp/STL/list/list.png",
     "c and cpp/cpp/STL/list",
     "c and cpp/cpp/algorithm/heap/heap.md",
     "DJBGS working logbook/June 23rd.md",
-    "ROS/SLAM/FastLivo2 Code analysis.md",
     "ROS/SLAM/rs-Fastlivo1-ac1.md",
-    "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "DJBGS working logbook/LIO LIDAR noise filter before the VIO.md",
     "career/future plan.md",
     "DJBGS working logbook/rs_arc3_fastlivo.png",
@@ -221,7 +222,6 @@
     "sh/run a sh file.md",
     "c and cpp/cpp/algorithm/二叉树.md",
     "c and cpp/cpp/algorithm/二叉树",
-    "c and cpp/cpp/algorithm/归并排序.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g",
     "ROS/hardware/RTK/xsens",
     "ubuntu",
