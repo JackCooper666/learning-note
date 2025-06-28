@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4c56fd1e3fd15cc7",
@@ -180,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd4e5a4809ca7bd6",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
     "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part_2.png",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
