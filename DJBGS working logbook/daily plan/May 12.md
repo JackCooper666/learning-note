@@ -1,0 +1,5 @@
+- [x] change system
+- [ ] knowledge learning
+- [x] ros 2 installation
+- [ ] ros 1 and ros 2 coexist
+- [ ] body building

@@ -1,0 +1,4 @@
+- [x] Finish the intrinsic matrix of the AC in Fastlivo2
+- [x] add rc lidar in Fastlivo2
+- [x] lidar degeneration function for fastlivo2
+- [x] body building

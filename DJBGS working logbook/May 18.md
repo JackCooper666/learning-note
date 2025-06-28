@@ -1,3 +1,0 @@
-- [ ] chapter 1
-- [ ] body building
-- [x] visit your relationship

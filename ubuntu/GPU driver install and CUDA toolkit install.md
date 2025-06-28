@@ -3,8 +3,8 @@
 gcc -v
 g++ -v
 ```
-
-2. check whether you already have the nvidia driver by using or checking the "Additional Drivers" in the software&update. 
+2. please make sure your security protection of your computer is shutdown
+3. check whether you already have the nvidia driver by using or checking the "Additional Drivers" in the software&update. 
 ```bash
 nvidia-smi
 ```

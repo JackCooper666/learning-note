@@ -1,0 +1,4 @@
+- [x] body building
+- [x] resume editing
+- [ ] project discussion
+- [ ] find suitable phd project
