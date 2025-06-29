@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "file": "ROS/hardware/cmera_and_lidar/robosense ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "title": "robosense ac1"
             }
           }
         ]
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,52 +179,52 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd4e5a4809ca7bd6",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
-    "DJBGS working logbook/issues/LIO LIDAR noise filter before the VIO and Jacobian improvement.md",
-    "DJBGS working logbook/FastLivo2 Code analysis.md",
-    "DJBGS working logbook/rs-Fastlivo1-ac1.md",
-    "DJBGS working logbook/rs_arc3_fastlivo.png",
-    "DJBGS working logbook/compared slam algorithm",
-    "DJBGS working logbook/arc3_fastlivo2_ac1.png",
-    "DJBGS working logbook/compared slam algorithm/ARC SLAM TOOL NOTE.md",
-    "DJBGS working logbook/issues",
-    "DJBGS working logbook/issues/拖点去除.md",
-    "ROS/SLAM/FastLivo2 Code analysis.md",
-    "ROS/SLAM/FAST-LIO论文讲解.pdf",
-    "DJBGS working logbook/AC1+FastLivo.md",
-    "DJBGS working logbook/adefaa453af4299b0f16e8835fb37f90.jpg",
-    "DJBGS working logbook/daily plan/May 4.md",
-    "DJBGS working logbook/daily plan/June 3rd.md",
-    "DJBGS working logbook/daily plan",
-    "ROS/SLAM/rs-Fastlivo1-ac1.md",
-    "DJBGS working logbook/daily plan/June 24th.md",
-    "c and cpp/cpp/STL/list/list (链表).md",
-    "c and cpp/cpp/STL/list/bio_direction_list.jpg",
-    "c and cpp/cpp/STL/list/list.png",
-    "c and cpp/cpp/STL/list",
-    "c and cpp/cpp/algorithm/heap/heap.md",
-    "DJBGS working logbook/daily plan/June 23rd.md",
+    "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
+    "ROS/hardware/cmera_and_lidar/camera & lidar内外参标定.pdf",
+    "ROS/hardware/cmera_and_lidar/robosense ac1.md",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "ROS/hardware/cmera_and_lidar",
+    "career/goal list.md",
     "career/future plan.md",
-    "c and cpp/cpp/algorithm/heap/priority_queue 1.png",
+    "career",
+    "c and cpp/cpp/{}.md",
+    "c and cpp/cpp/variable type/numbers' type.md",
+    "c and cpp/cpp/run cpp in linux.md",
+    "c and cpp/cpp/algorithm/二叉树/full_binary_tree.png",
+    "c and cpp/cpp/algorithm/二叉树/complete_binary_tree.png",
+    "c and cpp/cpp/algorithm/二叉树/binary_search_tree.png",
+    "c and cpp/cpp/algorithm/二叉树/binary tree.md",
+    "c and cpp/cpp/algorithm/二叉树/basic_format.png",
+    "c and cpp/cpp/algorithm/二叉树",
     "c and cpp/cpp/algorithm/recursion/递归.md",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/algorithm/recursion",
-    "c and cpp/cpp/algorithm/Untitled.md",
-    "c and cpp/cpp/algorithm/heap",
     "c and cpp/cpp/algorithm/heap/priority_queue.png",
-    "c and cpp/cpp/algorithm/二叉树/binary tree.md",
-    "c and cpp/cpp/{}.md",
-    "c and cpp/cpp/math.md",
-    "c and cpp/cpp/ASCII.md",
-    "c and cpp/cpp/time complex and space complex.md",
-    "c and cpp/cpp/run cpp in linux.md",
-    "c and cpp/cpp/variable type/numbers' type.md",
-    "DJBGS working logbook/daily plan/June 21.md",
-    "ubuntu/Wechat installation/Pasted image 20250513160633.png",
-    "ubuntu/vim editor/Pasted image 20250513152258.png",
-    "c and cpp/cpp/algorithm/二叉树",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g",
-    "ROS/hardware/RTK/xsens"
+    "c and cpp/cpp/algorithm/heap/heap.md",
+    "c and cpp/cpp/algorithm/heap",
+    "c and cpp/cpp/STL/list/list.png",
+    "c and cpp/cpp/STL/list/list (链表).md",
+    "c and cpp/cpp/STL/list/bio_direction_list.jpg",
+    "c and cpp/cpp/STL/list",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/position_drawing.png",
+    "DJBGS working logbook/rs-Fastlivo1-ac1.md",
+    "DJBGS working logbook/issues/拖点去除.md",
+    "DJBGS working logbook/issues/LIO LIDAR noise filter before the VIO and Jacobian improvement.md",
+    "DJBGS working logbook/issues",
+    "DJBGS working logbook/daily plan/june 9.md",
+    "DJBGS working logbook/daily plan/May 8.md",
+    "DJBGS working logbook/daily plan/May 7.md",
+    "DJBGS working logbook/daily plan/May 6.md",
+    "DJBGS working logbook/daily plan/May 5.md",
+    "DJBGS working logbook/daily plan/May 4.md",
+    "DJBGS working logbook/daily plan/May 31.md",
+    "DJBGS working logbook/daily plan/May 30.md",
+    "DJBGS working logbook/daily plan/May 29.md",
+    "DJBGS working logbook/daily plan/May 28.md",
+    "DJBGS working logbook/daily plan",
+    "DJBGS working logbook/compared slam algorithm",
+    "DJBGS working logbook/adefaa453af4299b0f16e8835fb37f90.jpg"
   ]
 }
