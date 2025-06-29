@@ -186,7 +186,7 @@ void buildHeapDown(vector<int>& heap) {
 
 # priority queue
 the min heap is the best option to do this
-![[priority_queue 1.png]]
+![[priority_queue.png]]
 1. build min heap
 2. pop the root of the tree
 3. then put the last node into the root, then heapify down
