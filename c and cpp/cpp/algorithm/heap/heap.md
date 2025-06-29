@@ -152,6 +152,10 @@ void buildHeapUp(vector<int>& data) {
     }
 }
 ```
+
+this is the heapify up for the max heap, but it only consideres the left leaf, why not considered right leaf?
+
+
 ## ✅ B. Build a Heap Using **Heapify Down** (More Efficient)
 
 ### 🔽 Idea: treat array as a complete binary tree, and fix each subtree **from the middle to the top**
