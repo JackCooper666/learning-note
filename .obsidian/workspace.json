@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "file": "ROS/hardware/cmera_and_lidar/robosense ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "title": "robosense ac1"
             }
           }
         ]
@@ -181,8 +181,8 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "conflict-files-obsidian-git.md",
     "git/git commends.md",
     "ROS/hardware/cmera_and_lidar/robosense ac1.md",
     "ROS/hardware/cmera_and_lidar/AC1/robosense ac1.md",
