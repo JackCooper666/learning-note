@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/hardware/cmera_and_lidar/robosense ac1.md",
+                "file": "mechanical engineering/Screws and nuts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "robosense ac1"
+              "title": "Screws and nuts"
             }
           }
         ]
@@ -181,10 +181,13 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "Untitled.md",
+    "mechanical engineering/Screws and nuts.md",
+    "mechanical engineering",
+    "ROS/hardware/cmera_and_lidar/robosense ac1.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "conflict-files-obsidian-git.md",
     "git/git commends.md",
-    "ROS/hardware/cmera_and_lidar/robosense ac1.md",
     "ROS/hardware/cmera_and_lidar/AC1/robosense ac1.md",
     "ROS/hardware/cmera_and_lidar/AC1",
     "ROS/hardware/cmera_and_lidar/AC1/ac1_physical_connections.png",
@@ -223,9 +226,6 @@
     "DJBGS working logbook/daily plan/May 7.md",
     "DJBGS working logbook/daily plan/May 6.md",
     "DJBGS working logbook/daily plan/May 5.md",
-    "DJBGS working logbook/daily plan/May 4.md",
-    "DJBGS working logbook/daily plan/May 31.md",
-    "DJBGS working logbook/daily plan/May 30.md",
-    "DJBGS working logbook/daily plan"
+    "DJBGS working logbook/daily plan/May 4.md"
   ]
 }
