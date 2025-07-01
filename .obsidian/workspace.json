@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,16 +181,24 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/heap/priority_queue.png",
+    "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
+    "c and cpp/cpp/algorithm/execution time saving method.md",
+    "c and cpp/cpp/algorithm/plural.md",
+    "c and cpp/cpp/algorithm/two-pointer and sliding window.md",
+    "c and cpp/cpp/algorithm/二分查找.md",
+    "c and cpp/cpp/algorithm/归并排序.md",
+    "c and cpp/cpp/algorithm/动态规划.md",
+    "c and cpp/cpp/algorithm/前缀和.md",
+    "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
+    "c and cpp/cpp/algorithm/heap/heap.md",
     "ROS/SLAM/KML with google earth.md",
     "ROS/ROS 1/evo/evo_ape_alignment.png",
     "ROS/ROS 1/evo/evo.md",
     "ROS/ROS 1/evo",
-    "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
     "ROS/ROS 1/C++/lidar",
     "ROS/ROS 1/C++/file operation/package.h.md",
     "ROS/ROS 1/C++/file operation",
-    "c and cpp/cpp/algorithm/heap/priority_queue.png",
-    "c and cpp/cpp/algorithm/heap/heap.md",
     "mechanical engineering/Screws and nuts.md",
     "ROS/hardware/cmera_and_lidar/robosense ac1.md",
     "mechanical engineering",
@@ -213,20 +220,11 @@
     "c and cpp/cpp/algorithm/二叉树/full_binary_tree.png",
     "c and cpp/cpp/algorithm/二叉树/complete_binary_tree.png",
     "c and cpp/cpp/algorithm/二叉树/binary_search_tree.png",
-    "c and cpp/cpp/algorithm/二叉树/binary tree.md",
     "c and cpp/cpp/algorithm/二叉树/basic_format.png",
     "c and cpp/cpp/algorithm/二叉树",
-    "c and cpp/cpp/algorithm/recursion/递归.md",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/algorithm/recursion",
     "c and cpp/cpp/STL/list/list.png",
-    "c and cpp/cpp/STL/list/list (链表).md",
-    "c and cpp/cpp/STL/list/bio_direction_list.jpg",
-    "DJBGS working logbook/rs-Fastlivo1-ac1.md",
-    "DJBGS working logbook/issues/拖点去除.md",
-    "DJBGS working logbook/issues/LIO LIDAR noise filter before the VIO and Jacobian improvement.md",
-    "DJBGS working logbook/daily plan/june 9.md",
-    "DJBGS working logbook/daily plan/May 8.md",
-    "DJBGS working logbook/daily plan/May 7.md"
+    "c and cpp/cpp/STL/list/bio_direction_list.jpg"
   ]
 }
