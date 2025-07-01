@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/arc/zewen/study_note/cpp_practice/STL/containor/list/list_insert_remove.cpp
+iostream
+-
+list
+-
+algorithm
+-
+

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/arc/zewen/study_note/cpp_practice/algorithm/recursion_and_find_law/find_law.cpp
+iostream
+-
+cmath
+-
+

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/arc/zewen/study_note/cpp_practice/algorithm/recursion_and_find_law/a_pawn_crossing_the_river.cpp
+iostream
+-
+

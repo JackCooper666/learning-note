@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/depth_first_search.dir/algorithm/binary_tree/depth_first_search.cpp.o  -o depth_first_search 

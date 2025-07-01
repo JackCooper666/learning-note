@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/pawn_crossing_river.dir/algorithm/recursion_and_find_law/a_pawn_crossing_the_river.cpp.o  -o pawn_crossing_river 

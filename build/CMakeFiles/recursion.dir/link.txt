@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/recursion.dir/algorithm/recursion_and_find_law/recursion.cpp.o  -o recursion 

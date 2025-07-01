@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/list_insert_remove.dir/STL/containor/list/list_insert_remove.cpp.o  -o list_insert_remove 
