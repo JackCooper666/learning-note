@@ -167,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 482.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +181,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1de55c432d7228d1",
+  "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
     "ROS/ROS 1/C++/file operation/package.h.md",
     "ROS/SLAM/KML with google earth.md",
