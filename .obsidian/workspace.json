@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/KML with google earth.md",
+                "file": "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KML with google earth"
+              "title": "robosense ac1"
             }
           }
         ]
@@ -182,12 +182,15 @@
   },
   "active": "cd4e5a4809ca7bd6",
   "lastOpenFiles": [
+    "ROS/hardware/cmera_and_lidar/camera & lidar内外参标定.pdf",
+    "ROS/hardware/cmera_and_lidar/ac1",
+    "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
+    "ROS/SLAM/KML with google earth.md",
     "ROS/SLAM/RTK+GNSS.md",
     "mini-bus/daily plan/June 3rd.md",
     "DJBGS working logbook/daily plan/July 2nd.md",
     "mini-bus/daily plan",
     "mini-bus",
-    "ROS/SLAM/KML with google earth.md",
     "ROS/ROS 1/C++/file operation/package.h.md",
     "ROS/ROS 1/evo/evo.md",
     "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
@@ -200,15 +203,13 @@
     "mechanical engineering/Screws and nuts.md",
     "Untitled.md",
     "mechanical engineering",
-    "ROS/hardware/cmera_and_lidar/robosense ac1.md",
+    "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "conflict-files-obsidian-git.md",
     "git/git commends.md",
     "ROS/hardware/cmera_and_lidar/AC1/robosense ac1.md",
     "ROS/hardware/cmera_and_lidar/AC1",
     "ROS/hardware/cmera_and_lidar/AC1/ac1_physical_connections.png",
-    "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
-    "ROS/hardware/cmera_and_lidar/camera & lidar内外参标定.pdf",
     "ROS/hardware/cmera_and_lidar",
     "career/goal list.md",
     "career/future plan.md",
@@ -226,7 +227,6 @@
     "c and cpp/cpp/algorithm/heap/heap.md",
     "c and cpp/cpp/STL/list/list.png",
     "c and cpp/cpp/STL/list/list (链表).md",
-    "c and cpp/cpp/STL/list/bio_direction_list.jpg",
-    "DJBGS working logbook/rs-Fastlivo1-ac1.md"
+    "c and cpp/cpp/STL/list/bio_direction_list.jpg"
   ]
 }
