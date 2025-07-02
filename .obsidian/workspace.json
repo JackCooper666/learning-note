@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0150abf09972e0aa",
+        "id": "79ee1e21e2c54277",
         "type": "tabs",
         "children": [
           {
-            "id": "cd4e5a4809ca7bd6",
+            "id": "87b750c40f43fdd8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "robosense ac1"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4c56fd1e3fd15cc7",
@@ -180,53 +175,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd4e5a4809ca7bd6",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
-    "ROS/hardware/cmera_and_lidar/camera & lidar内外参标定.pdf",
-    "ROS/hardware/cmera_and_lidar/ac1",
-    "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
-    "ROS/SLAM/KML with google earth.md",
-    "ROS/SLAM/RTK+GNSS.md",
+    "ubuntu/vim editor/vim file editor.md",
+    "ubuntu/vim editor/Pasted image 20250513153752.png",
+    "ubuntu/vim editor/Pasted image 20250513153717.png",
+    "ubuntu/vim editor/Pasted image 20250513153706.png",
+    "ubuntu/vim editor/Pasted image 20250513153650.png",
+    "ubuntu/vim editor/Pasted image 20250513153643.png",
+    "ubuntu/vim editor/Pasted image 20250513153436.png",
+    "ubuntu/vim editor/Pasted image 20250513153428.png",
+    "ubuntu/vim editor/Pasted image 20250513153408.png",
+    "ubuntu/vim editor/Pasted image 20250513153228.png",
+    "ubuntu/vim editor/Pasted image 20250513153210.png",
+    "ubuntu/Wechat installation/wechat installation.md",
+    "ubuntu/x-terminal-emulator install.md",
+    "ubuntu/vim editor",
+    "ubuntu/nvidia drive and cuda install.md",
+    "ubuntu/Wechat installation",
+    "ubuntu/Steam install Ubuntu.md",
+    "ubuntu/GPU driver install and CUDA toolkit install.md",
+    "ubuntu",
     "mini-bus/daily plan/June 3rd.md",
-    "DJBGS working logbook/daily plan/July 2nd.md",
     "mini-bus/daily plan",
     "mini-bus",
-    "ROS/ROS 1/C++/file operation/package.h.md",
-    "ROS/ROS 1/evo/evo.md",
-    "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
-    "ROS/ROS 1/C++/file operation",
-    "ROS/ROS 1/Untitled",
-    "ROS/ROS 1/C++/lidar",
-    "ROS/ROS 1/C++/Untitled.md",
-    "ROS/ROS 1/evo",
-    "ROS/ROS 1/evo/evo_ape_alignment.png",
     "mechanical engineering/Screws and nuts.md",
-    "Untitled.md",
     "mechanical engineering",
-    "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-    "conflict-files-obsidian-git.md",
-    "git/git commends.md",
-    "ROS/hardware/cmera_and_lidar/AC1/robosense ac1.md",
-    "ROS/hardware/cmera_and_lidar/AC1",
-    "ROS/hardware/cmera_and_lidar/AC1/ac1_physical_connections.png",
-    "ROS/hardware/cmera_and_lidar",
     "career/goal list.md",
     "career/future plan.md",
+    "career",
     "c and cpp/cpp/{}.md",
     "c and cpp/cpp/variable type/numbers' type.md",
     "c and cpp/cpp/run cpp in linux.md",
-    "c and cpp/cpp/algorithm/二叉树/full_binary_tree.png",
-    "c and cpp/cpp/algorithm/二叉树/complete_binary_tree.png",
-    "c and cpp/cpp/algorithm/二叉树/binary_search_tree.png",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
-    "c and cpp/cpp/algorithm/二叉树/basic_format.png",
+    "c and cpp/cpp/algorithm/二叉树",
     "c and cpp/cpp/algorithm/recursion/递归.md",
-    "c and cpp/cpp/algorithm/recursion/recursion.png",
-    "c and cpp/cpp/algorithm/heap/priority_queue.png",
+    "c and cpp/cpp/algorithm/recursion",
     "c and cpp/cpp/algorithm/heap/heap.md",
-    "c and cpp/cpp/STL/list/list.png",
+    "c and cpp/cpp/algorithm/heap",
+    "c and cpp/cpp/STL/queue.md",
     "c and cpp/cpp/STL/list/list (链表).md",
-    "c and cpp/cpp/STL/list/bio_direction_list.jpg"
+    "c and cpp/cpp/STL/deque.md",
+    "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
+    "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
+    "ROS/SLAM/RTK+GNSS.md",
+    "ROS/SLAM/KML with google earth.md",
+    "ROS/ROS 1/evo/evo.md",
+    "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md"
   ]
 }
