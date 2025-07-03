@@ -179,8 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "87b750c40f43fdd8",
+  "active": "9057a9433e081024",
   "lastOpenFiles": [
+    "mini-bus_log/daily plan/June 3rd.md",
+    "mini-bus_log/daily plan",
+    "mini-bus_log",
     "ROS/hardware/RTK/xsense-mti-680g.md",
     "ubuntu/vim editor/vim file editor.md",
     "ubuntu/vim editor/Pasted image 20250513153752.png",
@@ -215,9 +218,7 @@
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
     "c and cpp/cpp/algorithm/二叉树",
     "c and cpp/cpp/algorithm/recursion/递归.md",
-    "c and cpp/cpp/algorithm/recursion",
     "c and cpp/cpp/algorithm/heap/heap.md",
-    "c and cpp/cpp/algorithm/heap",
     "c and cpp/cpp/STL/queue.md",
     "c and cpp/cpp/STL/list/list (链表).md",
     "c and cpp/cpp/STL/deque.md",
@@ -225,7 +226,6 @@
     "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
     "ROS/SLAM/RTK+GNSS.md",
-    "ROS/SLAM/KML with google earth.md",
-    "ROS/ROS 1/evo/evo.md"
+    "ROS/SLAM/KML with google earth.md"
   ]
 }

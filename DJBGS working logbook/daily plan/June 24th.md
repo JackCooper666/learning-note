@@ -1,4 +1,0 @@
-- [ ] heap list
-- [ ] fastlivo2 Jacobian
-- [ ] body building
-- [ ] Clemanti

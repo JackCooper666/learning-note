@@ -1,3 +1,0 @@
-- [x] cpp functor
-- [x] cpp algorithm
-- [ ] body building : shoulder

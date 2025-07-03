@@ -1,4 +1,0 @@
-- [x] cpp, one chapter
-- [ ] slam, one chapter
-- [x] body building
-- [ ] 

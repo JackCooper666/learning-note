@@ -1,3 +1,0 @@
-- [ ] leecode 3 questions
-- [ ] fastlivo2 issue reasons finding
-- [ ] body building

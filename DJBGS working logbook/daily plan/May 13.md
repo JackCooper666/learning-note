@@ -1,4 +1,0 @@
-- [ ] cuda install
-- [ ] chapter 3 
-- [ ] body building
-- [ ] 
