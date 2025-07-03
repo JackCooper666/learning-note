@@ -1,7 +1,7 @@
 # learning-note
-the learning note of ros 1 and 2, python , cpp and git
+the learning note of ros 1 and 2, python , cpp, hardware usages and robotics algorithms
 
-# token, changed per month
-// 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
-
-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
+# branches
+1. /master:
+2. /cpp
+3. /
