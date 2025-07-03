@@ -1,16 +1,39 @@
 # Get Start
 
+## connect a git repository 
+
 1. Use the "git clone" or "git remote add" to git the remote repository
 
+if the repository is other's and you are the contributor invested by the repository holder
 ```git
 git clone https://github.com/AAAAAAABYSSS/ME5413-Final-Project-Group6.git
 ```
 or 
 ```git
-git remote add upstream git@github.com:AAAAAAABYSSS/ME5413-Final-Project-Group6.git
+git remote add upstream https://github.com/AAAAAAABYSSS/ME5413-Final-Project-Group6.git
 
 git remote -v
 ```
+
+
+if the repository is your own
+```git
+git init
+```
+config your user.name and email
+```git
+git config --global user.name "your name"
+git config --global user.email "your_email@youremail.com"
+```
+connect your repository 
+```git
+git remote add origin https://github.com/AAAAAAABYSSS/ME5413-Final-Project-Group6.git
+```
+check your git status, it should be on the master branch
+```git
+git status
+```
+you can create new branch or `git add ` -> `git commit -m` -> `git push --set-upstream origin your_current_branch `
 
 2. Check your current branch
 ```git
