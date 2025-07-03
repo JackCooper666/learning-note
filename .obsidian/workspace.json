@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
+                "file": "hardware/cmera_and_lidar/ac1/robosense ac1.md",
                 "mode": "source",
                 "source": false
               },
@@ -179,10 +179,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "87b750c40f43fdd8",
+  "active": "9057a9433e081024",
   "lastOpenFiles": [
     "git/git commends.md",
-    "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
+    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "mini-bus_log/daily plan/June 3rd.md",
     "mini-bus_log/daily plan",
     "mini-bus_log",
@@ -224,8 +224,8 @@
     "c and cpp/cpp/STL/queue.md",
     "c and cpp/cpp/STL/list/list (链表).md",
     "c and cpp/cpp/STL/deque.md",
-    "ROS/hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-    "ROS/hardware/cmera_and_lidar/Camera and Lidar calibration.md",
+    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "hardware/cmera_and_lidar/Camera and Lidar calibration.md",
     "ROS/SLAM/RTK+GNSS.md"
   ]
 }
