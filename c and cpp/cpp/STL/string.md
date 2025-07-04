@@ -216,3 +216,28 @@ string str = "dsfasdfdsaf";
 cout << str.size() << str.length() << endl;
 ```
 
+**`s.size()` returns `size_t` (unsigned)**
+- `std::string::size()` (and most STL container size functions) return `size_t`, which is an **unsigned** type (cannot represent negative values).
+- Example:
+```cpp
+std::string s = "hello";
+size_t len = s.size(); // len is of type `size_t` (unsigned)
+```
+
+**Comparing `int` with `size_t` can cause problems**
+- If you compare a **negative `int`** (like `-1`) with `size_t`, the `int` gets **implicitly converted to an unsigned value**, leading to unexpected behavior:
+```cpp
+int r = -1;
+if (r < s.size()) { 
+    // BUG: `r` (-1) becomes a huge positive number when converted to `size_t`
+    // So this condition is FALSE when it should be TRUE!
+}
+```
+**Solution: Convert `s.size()` to `int`**
+- By using `int(s.size())`, we force the comparison to happen in **signed arithmetic**, avoiding surprises:
+```cpp
+int r = -1;
+if (r < int(s.size())) { 
+    // Now this works correctly (-1 < 5)
+}
+```
