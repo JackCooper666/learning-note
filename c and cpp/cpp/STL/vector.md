@@ -168,3 +168,32 @@ PointCloudXYZI().swap(*laserCloudOri);
 This:
 - Replaces `laserCloudOri` with a new, empty point cloud.
 - Clears the existing data and **frees memory**.
+
+
+# 如何找到vector 中的最大值和最小值并返回索引
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm> // for std::max_element, std::min_element
+
+int main() {
+    std::vector<int> vec = {3, 1, 4, 1, 5, 9, 2, 6};
+
+    // 找到最大值的迭代器，并计算索引
+    auto max_it = std::max_element(vec.begin(), vec.end());
+    int max_index = std::distance(vec.begin(), max_it);
+    int max_value = *max_it;
+
+    // 找到最小值的迭代器，并计算索引
+    auto min_it = std::min_element(vec.begin(), vec.end());
+    int min_index = std::distance(vec.begin(), min_it);
+    int min_value = *min_it;
+
+    std::cout << "Max value: " << max_value << " at index " << max_index << '\n';
+    std::cout << "Min value: " << min_value << " at index " << min_index << '\n';
+
+    return 0;
+}
+```
+
+
