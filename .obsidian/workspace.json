@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/vector.md",
+                "file": "c and cpp/cpp/infinite small and large.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vector"
+              "title": "infinite small and large"
             }
           }
         ]
@@ -181,6 +181,8 @@
   },
   "active": "d3baefede94a4096",
   "lastOpenFiles": [
+    "c and cpp/cpp/STL/vector.md",
+    "c and cpp/cpp/infinite small and large.md",
     "c and cpp/cpp/algorithm/前缀和.md",
     "c and cpp/cpp/STL/string.md",
     "c and cpp/cpp/STL/hashtable.md",
@@ -197,7 +199,6 @@
     "c and cpp/cpp/STL/stack/stack.md",
     "c and cpp/cpp/STL/stack",
     "c and cpp/cpp/STL/stack/stack_principle.jpg",
-    "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/STL/queue/queue.md",
     "hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "c and cpp/cpp/STL/queue",
@@ -225,7 +226,6 @@
     "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "DJBGS working logbook/daily plan/July 2nd.md",
     "ROS/SLAM/RTK+GNSS.md",
-    "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
-    "c and cpp/cpp/algorithm/execution time saving method.md"
+    "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md"
   ]
 }
