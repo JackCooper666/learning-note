@@ -181,6 +181,8 @@
   },
   "active": "d3baefede94a4096",
   "lastOpenFiles": [
+    "c and cpp/cpp/Common Library/Eigen/eigen_block_vector.png",
+    "c and cpp/cpp/Common Library/Eigen/eigen_block_corner.png",
     "c and cpp/cpp/Common Library/Eigen/eigen_block.png",
     "c and cpp/cpp/Common Library/Eigen/eigen_lib.png",
     "c and cpp/cpp/math.md",
@@ -218,8 +220,6 @@
     "hardware/RTK/xsens/xsens_mti_680g/scnning.png",
     "hardware/RTK/xsens/xsens_mti_680g/position_drawing.png",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
-    "hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part_2.png",
-    "hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
     "hardware/RTK/xsens/xsens_mti_680g",
     "hardware/cmera_and_lidar/camera & lidar内外参标定.pdf",
     "hardware/cmera_and_lidar/ac1",

@@ -1,3 +1,6 @@
+refer to 
+CSDN博主「hongge_smile」的原创文章，遵循CC 4.0 BY-SA版权协议
+原文链接：https://blog.csdn.net/hongge_smile/article/details/107296658
 # 1.Eigen安装及使用
 
 ## 1.1 安装
@@ -590,7 +593,7 @@ int main() {
     }
     cout << "m: " << endl << m << endl;
     cout << "Block in the middle" << endl;
-    cout << m.block<2, 2>(1, 1) << endl << endl;      // m.block<i,j> (a,b) 表示从第(a+1)行(b+1)列开始,截图1行,1列
+    cout << m.block<2, 2>(1, 1) << endl << endl;      // m.block<i,j> (a,b) 表示从第(a+1)行(b+1)列开始,截图i行,j列
     for (int i = 1; i <= 3; ++i) {
         cout << "Block of size " << i << "x" << i << endl;
         cout << m.block(0, 0, i, i) << endl << endl;  //m.block(a,b,i,j) 表示从第(a+1)行(b+1)列开始,截图i行,j列
@@ -621,3 +624,870 @@ Block of size 3x3
  9 10 11
 
 ```
+注意:m.block<i,j> (a,b) 表示从第(a+1)行(b+1)列开始,截图i行,j列
+m.block(a,b,i,j) 表示从第(a+1)行(b+1)列开始,截图i行,j列
+
+上述例子中的块操作方法作为表达式的右值，意味着是只读形式的，然而，块操作也可以作为左值使用，意味着你可以给他赋值。下面的例子说明了这一点，当然对于矩阵的操作是一样的。
+```cpp
+//
+// Created by fuhong on 20-7-14.
+//
+
+#include <Eigen/Dense>
+#include <iostream>
+
+using namespace std;
+using namespace Eigen;
+
+int main() {
+    Array22f m;
+    m << 1, 2,
+            3, 4;
+    Array44f a = Array44f::Constant(0.6);
+    cout << "Here is the array a:" << endl << a << endl << endl;
+    a.block<2, 2>(1, 1) = m;
+    cout << "Here is now a with m copied into its central 2x2 block:" << endl << a << endl << endl;
+    a.block(0, 0, 2, 3) = a.block(2, 1, 2, 3);
+    cout << "Here is now a with bottom-right 2x3 block copied into top-left 2x2 block:" << endl << a << endl << endl;
+}
+
+```
+
+```bash
+Here is the array a:
+0.6 0.6 0.6 0.6
+0.6 0.6 0.6 0.6
+0.6 0.6 0.6 0.6
+0.6 0.6 0.6 0.6
+
+Here is now a with m copied into its central 2x2 block:
+0.6 0.6 0.6 0.6
+0.6   1   2 0.6
+0.6   3   4 0.6
+0.6 0.6 0.6 0.6
+
+Here is now a with bottom-right 2x3 block copied into top-left 2x2 block:
+  3   4 0.6 0.6
+0.6 0.6 0.6 0.6
+0.6   3   4 0.6
+0.6 0.6 0.6 0.6
+
+```
+
+## 10.2行和列(cols and rows)
+
+行和列是一中特殊的块。Eigen提供了特殊的方法：col() 列 row() 行。
+```cpp
+//
+// Created by fuhong on 20-7-14.
+//
+
+
+#include <Eigen/Dense>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    Eigen::MatrixXf m(4, 4);
+    // 数组初始化
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            m(i, j) = j + 1 + i * 4;
+        }
+    }
+    cout << "Here is the matrix m:" << endl << m << endl;
+    cout << "2nd Row: " << m.row(1) << endl;
+    m.col(2) += 3 * m.col(0);
+    cout << "After adding 3 times the first column into the third column, the matrix m is:\n";
+    cout << m << endl;
+}
+```
+输出:
+```bash
+Here is the matrix m:
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15 16
+2nd Row: 5 6 7 8
+After adding 3 times the first column into the third column, the matrix m is:
+ 1  2  6  4
+ 5  6 22  8
+ 9 10 38 12
+13 14 54 16
+```
+
+## 10.3 边角相关的操作
+
+Eigen同样提供了对于挨着矩阵或数组的边、角的特殊操作方法，比如topLeftCorner()方法可用于操作矩阵左上角的区域。总结如下：
+![[eigen_block_corner.png]]
+```cpp
+//
+// Created by fuhong on 20-7-14.
+//
+
+
+#include <Eigen/Dense>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    Eigen::Matrix4f m;
+    m << 1, 2, 3, 4,
+            5, 6, 7, 8,
+            9, 10, 11, 12,
+            13, 14, 15, 16;
+    cout << "m.leftCols(2) =" << endl << m.leftCols(2) << endl << endl;
+    cout << "m.bottomRows<2>() =" << endl << m.bottomRows<2>() << endl << endl;
+    m.topLeftCorner(1, 3) = m.bottomRightCorner(3, 1).transpose();
+    cout << "After assignment, m = " << endl << m << endl;
+}
+
+```
+输出:
+```bash
+m.leftCols(2) =
+ 1  2
+ 5  6
+ 9 10
+13 14
+
+m.bottomRows<2>() =
+ 9 10 11 12
+13 14 15 16
+
+After assignment, m = 
+ 8 12 16  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15 16
+
+```
+
+## 10.4 对于向量的块操作
+
+Eigen也提供了一些针对向量和一维数组的块操作方法：
+![[eigen_block_vector.png]]
+```cpp
+//
+// Created by fuhong on 20-7-14.
+//
+
+#include <Eigen/Dense>
+#include <iostream>
+using namespace std;
+int main()
+{
+    Eigen::ArrayXf v(6);
+    v << 1, 2, 3, 4, 5, 6;
+    cout << "v.head(3) =" << endl << v.head(3) << endl << endl;
+    cout << "v.tail<3>() = " << endl << v.tail<3>() << endl << endl;
+    v.segment(1,4) *= 2;
+    cout << "after 'v.segment(1,4) *= 2', v =" << endl << v << endl;
+}
+
+```
+
+输出:
+```bash
+v.head(3) =
+1
+2
+3
+
+v.tail<3>() = 
+4
+5
+6
+
+after 'v.segment(1,4) *= 2', v =
+ 1
+ 4
+ 6
+ 8
+10
+ 6
+
+```
+
+# 11 范数计算
+
+向量的平方范数由squaredNorm()获得，等价于向量对自身做点积，也等同于所有元素额平方和。Eigen也提供了norm()范数，返回的是squaredNorm()的根。这些操作也适用于矩阵。如果想使用其他元素级的范数，使用lpNorm
+
+()方法，当求无穷范数时，模板参数p可以取特殊值Infinity，得到的是所有元素的最大绝对值。
+```cpp
+//
+// Created by fuhong on 20-7-14.
+//
+
+#include <Eigen/Dense>
+#include <iostream>
+
+using namespace std;
+using namespace Eigen;
+
+int main() {
+    VectorXf v(2);
+    MatrixXf m(2, 2), n(2, 2);
+
+    v << -1, 2;
+
+    m << 1, -2, -3, 4;
+    cout << "v.squaredNorm() = " << v.squaredNorm() << endl;
+    cout << "v.norm() = " << v.norm() << endl;
+    cout << "v.lpNorm<1>() = " << v.lpNorm<1>() << endl;
+    cout << "v.lpNorm<Infinity>() = " << v.lpNorm<Infinity>() << endl;
+    cout << endl;
+    cout << "m.squaredNorm() = " << m.squaredNorm() << endl;
+    cout << "m.norm() = " << m.norm() << endl;
+    cout << "m.lpNorm<1>() = " << m.lpNorm<1>() << endl;
+    cout << "m.lpNorm<Infinity>() = " << m.lpNorm<Infinity>() << endl;
+}
+
+```
+
+输出:
+```bash
+v.squaredNorm() = 5
+v.norm() = 2.23607
+v.lpNorm<1>() = 3
+v.lpNorm<Infinity>() = 2
+
+m.squaredNorm() = 30
+m.norm() = 5.47723
+m.lpNorm<1>() = 10
+m.lpNorm<Infinity>() = 4
+
+```
+
+矩阵的1范数和无穷范数也可以用下面的方法计算：
+```cpp
+#include <Eigen/Dense>
+#include <iostream>
+using namespace Eigen;
+using namespace std;
+int main()
+{
+  MatrixXf m(2,2);
+  m << 1,-2,
+       -3,4;
+  cout << "1-norm(m)     = " << m.cwiseAbs().colwise().sum().maxCoeff()
+       << " == "             << m.colwise().lpNorm<1>().maxCoeff() << endl;
+  cout << "infty-norm(m) = " << m.cwiseAbs().rowwise().sum().maxCoeff()
+       << " == "             << m.rowwise().lpNorm<1>().maxCoeff() << endl;
+}
+
+```
+输出:
+```bash
+1-norm(m)     = 6 == 6
+infty-norm(m) = 7 == 7
+
+```
+
+# 12 布尔规约
+
+如下的操作得到的是布尔值
+all()返回真，如果矩阵或数组的所有元素为真
+any()返回真，如果矩阵或数组至少有一个元素为真
+count()返回元素为真的个数
+```cpp
+#include <Eigen/Dense>
+#include <iostream>
+using namespace std;
+using namespace Eigen;
+int main()
+{
+  ArrayXXf a(2,2);
+  
+  a << 1,2,
+       3,4;
+  cout << "(a > 0).all()   = " << (a > 0).all() << endl;
+  cout << "(a > 0).any()   = " << (a > 0).any() << endl;
+  cout << "(a > 0).count() = " << (a > 0).count() << endl;
+  cout << endl;
+  cout << "(a > 2).all()   = " << (a > 2).all() << endl;
+  cout << "(a > 2).any()   = " << (a > 2).any() << endl;
+  cout << "(a > 2).count() = " << (a > 2).count() << endl;
+}
+```
+
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+
+输出:
+
+(a > 0).all()   = 1
+(a > 0).any()   = 1
+(a > 0).count() = 4
+
+(a > 2).all()   = 0
+(a > 2).any()   = 1
+(a > 2).count() = 2
+
+bash
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+
+13迭代
+
+当需要获得元素在矩阵或数组中的位置时使用迭代。
+
+#include <iostream>
+#include <Eigen/Dense>
+using namespace std;
+using namespace Eigen;
+int main()
+{
+  Eigen::MatrixXf m(2,2);
+  
+  m << 1, 2,
+       3, 4;
+  //get location of maximum
+  MatrixXf::Index maxRow, maxCol;
+  float max = m.maxCoeff(&maxRow, &maxCol);
+  //get location of minimum
+  MatrixXf::Index minRow, minCol;
+  float min = m.minCoeff(&minRow, &minCol);
+  cout << "Max: " << max <<  ", at: " <<
+     maxRow << "," << maxCol << endl;
+  cout << "Min: " << min << ", at: " <<
+     minRow << "," << minCol << endl;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20
+    21
+
+输出:
+
+Max: 4, at: 1,1
+Min: 1, at: 0,0
+
+bash
+
+    1
+    2
+
+14 部分规约
+
+部分规约指的是对矩阵或数组按行或列进行的操作，对每一列或者行进行规约操作时得到的是一个列或者行向量。如下例子得到矩阵每一列的最大值并存入一个行向量中
+
+#include <iostream>
+#include <Eigen/Dense>
+using namespace std;
+int main()
+{
+  Eigen::MatrixXf mat(2,4);
+  mat << 1, 2, 6, 9,
+         3, 1, 7, 2;
+  
+  std::cout << "Column's maximum: " << std::endl
+   << mat.colwise().maxCoeff() << std::endl;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+
+输出：
+
+Column's maximum: 
+3 2 7 9
+
+bash
+
+    1
+    2
+
+同样也可以得到每一行的最大值，返回一个列向量
+
+#include <iostream>
+#include <Eigen/Dense>
+using namespace std;
+int main()
+{
+  Eigen::MatrixXf mat(2,4);
+  mat << 1, 2, 6, 9,
+         3, 1, 7, 2;
+  
+  std::cout << "Row's maximum: " << std::endl
+   << mat.rowwise().maxCoeff() << std::endl;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+
+输出:
+
+Row's maximum: 
+9
+7
+
+bash
+
+    1
+    2
+    3
+
+部分规约和其他操作的结合
+使用部分规约操作得到的结果去做其他的操作也是可以的，如下例子用于得到矩阵中元素和最大的一列
+
+#include <iostream>
+#include <Eigen/Dense>
+using namespace std;
+using namespace Eigen;
+int main()
+{
+  MatrixXf mat(2,4);
+  mat << 1, 2, 6, 9,
+         3, 1, 7, 2;
+  
+  MatrixXf::Index   maxIndex;
+  float maxNorm = mat.colwise().sum().maxCoeff(&maxIndex);
+  
+  std::cout << "Maximum sum at position " << maxIndex << std::endl;
+  std::cout << "The corresponding vector is: " << std::endl;
+  std::cout << mat.col( maxIndex ) << std::endl;
+  std::cout << "And its sum is is: " << maxNorm << std::endl;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+
+输出:
+
+Maximum sum at position 2
+The corresponding vector is: 
+6
+7
+And its sum is is: 13
+
+bash
+
+    1
+    2
+    3
+    4
+    5
+
+通过colwise()迭代，应用sum()对每一列规约操作得到一个新的1x4的矩阵，因此如果
+在这里插入图片描述
+那么,
+在这里插入图片描述
+最终执行maxCoeff()操作获得元素和最大的列的索引。
+15 广播机制
+
+广播的概念类似于部分规约，不同之处在于广播通过对向量在一个方向上的复制，将向量解释成矩阵。如下例子将一个列向量加到矩阵的每一列中
+
+#include <iostream>
+#include <Eigen/Dense>
+using namespace std;
+int main()
+{
+  Eigen::MatrixXf mat(2,4);
+  Eigen::VectorXf v(2);
+  
+  mat << 1, 2, 6, 9,
+         3, 1, 7, 2;
+         
+  v << 0,
+       1;
+       
+  //add v to each column of m
+  mat.colwise() += v;
+  
+  std::cout << "Broadcasting result: " << std::endl;
+  std::cout << mat << std::endl;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20
+
+输出:
+
+Broadcasting result: 
+1 2 6 9
+4 2 8 3
+
+bash
+
+    1
+    2
+    3
+
+可以将mat.colwise()+=v理解成两种等价的方式，它将列向量加到矩阵的每一列中；或者将列向量复制4次的得到一个2x4的矩阵，之后进行矩阵的相加运算：
+
++=、+和-运算符也可以按列或行操作。在数组中也可以用*=、/=、和/运算符执行元素级的按行或列乘除运算。但不能用在矩阵上，如果想用v(0)乘以矩阵的第0列，v(1)乘以矩阵的第1列…使用mat = mat*v.asDiagonal()。
+结合广播和其他操作
+
+广播也可以和其他操作结合，比如矩阵或数组的运算、规约和部分规约操作。下面介绍一个更加复杂的例子，演示了在矩阵中找到和给定向量最接近的一列，使用到了欧氏距离。
+
+#include <iostream>
+#include <Eigen/Dense>
+using namespace std;
+using namespace Eigen;
+int main()
+{
+  Eigen::MatrixXf m(2,4);
+  Eigen::VectorXf v(2);
+  
+  m << 1, 23, 6, 9,
+       3, 11, 7, 2;
+       
+  v << 2,
+       3;
+  MatrixXf::Index index;
+  // find nearest neighbour
+  (m.colwise() - v).colwise().squaredNorm().minCoeff(&index);
+  cout << "Nearest neighbour is column " << index << ":" << endl;
+  cout << m.col(index) << endl;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20
+
+输出:
+
+Nearest neighbour is column 0:
+1
+3
+
+bash
+
+    1
+    2
+    3
+
+其中
+(m.colwise() - v).colwise().squaredNorm().minCoeff(&index);
+这句话做的工作是：
+
+（1）m.colwise()-v是一个广播操作，矩阵m的每一列减去v，得到一个新的矩阵
+
+在这里插入图片描述
+（2）(m.colwise() - v).colwise().squareNorm()是部分规约操作，按列计算矩阵的平方范数，得到一个行向量
+在这里插入图片描述
+（3）最终minCoeff(&index)根据欧氏距离获得矩阵中最接近v的一列的索引。
+16几何模块的实践(Geometry)
+
+详细说明参考官网:点我
+Eigen的几何模块用来表达空间的旋转、平移等变换。3维空间中刚体的运动有六个自由度，分别是绕3个轴的旋转运动和沿着3个轴的平移运动。对于旋转可以用3x3的旋转矩阵R表示，旋转矩阵描述了刚体经过矩阵作用后的姿态信息，旋转矩阵是一个正交矩阵；然而旋转矩阵有9个参数，9个参数描述6自由度的旋转，有点冗余了。因此旋转还可以用旋转向量来表示，空间中物体的旋转可以看作是绕这某个轴转过一定的角度完成，因此旋转矩阵是个3维向量，其方向代表转轴的方向，其大小代表旋转的角度。
+
+实际中物体不光有旋转，还有平移运动，如果用t表示平移向量，那么R*p+t可以描述刚体p的旋转加平移运动，然而当连续多次运动时整个表达式将会变得非常复杂，比如R1*(R*p+t)+t1描述连续两次的运动，因此为了简化书写形式引入齐次坐标的概念，将坐标扩充到4维，将旋转矩阵和平移向量写入一个4x4的变换矩阵中，简化了连续运动公式的形式，但是结果是16个参数描述一个6自由度的运动，更加冗余了。在旋转向量的后面增加3维代表平移向量，即用6维的旋转向量描述旋转和平移运动，看起来比较紧凑了，但是像欧拉角一样也会遇到万向锁问题，导致奇异性；最终即不冗余又紧凑又没有万向锁问题的解决方案是使用四元数描述旋转问题，这也是很多飞控代码中用到的方案。
+
+    1
+
+// Created by 开机烫手 on 2018/4/8.
+#include <iostream>
+#include <Eigen/Dense>
+#include <cmath>
+#include <Eigen/Geometry>
+#include <Eigen/Core>
+ 
+using namespace std;
+using namespace Eigen;
+ 
+int main() {
+ 
+    // 旋转矩阵直接用Matrix3d即可
+    Matrix3d rotation_matrix;
+    rotation_matrix.setIdentity();
+    // 旋转向量 由旋转轴和旋转角度组成
+    AngleAxisd rotation_vector(M_PI / 4, Vector3d(0, 0, 1));
+    cout.precision(3);
+    cout << "rotation vector: Angle is: " << rotation_vector.angle() * (180 / M_PI)
+         << "  Axis is: " << rotation_vector.axis().transpose() << endl;
+    cout << "rotation matrix =\n" << rotation_vector.matrix() << endl;
+    rotation_matrix = rotation_vector.toRotationMatrix();
+    // 下面v是待旋转的向量，或者认为空间中的一个刚体的位置
+    Vector3d v(1, 0, 0);
+    Vector3d v_rotated = rotation_vector * v;
+    cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
+    v_rotated = rotation_matrix * v;
+    cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
+ 
+    // 欧拉角 按ZYX的顺序 由旋转矩阵直接转换成欧拉角
+    Vector3d euler_angles = rotation_matrix.eulerAngles(2, 1, 0);
+    cout << "yaw pitch roll = " << euler_angles.transpose() * (180 / M_PI) << endl;
+ 
+    // 变换矩阵  4x4的
+    Isometry3d T = Eigen::Isometry3d::Identity();
+    T.rotate(rotation_vector);
+//    T.rotate(rotation_matrix);    // 这样写也行，相当于由旋转矩阵构造变换矩阵
+    // 设置平移向量
+    T.pretranslate(Eigen::Vector3d(0, 0, 3));
+    cout << "Transform matrix = \n" << T.matrix() << endl;
+ 
+    // 用变换矩阵进行坐标变换
+    Vector3d v_transformed = T * v;
+    cout << "v transformed = " << v_transformed.transpose() << endl;
+ 
+    // 由旋转向量构造四元数
+    Quaterniond q = Eigen::Quaterniond(rotation_vector);
+    cout << "quaternion = \n" << q.coeffs() << endl;
+    // 由旋转矩阵构造四元数
+    q = Eigen::Quaterniond(rotation_matrix);
+    cout << "quaternion = \n" << q.coeffs() << endl;
+    v_rotated = q * v;
+    cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
+ 
+    return 0;
+}
+
+cpp
+运行
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20
+    21
+    22
+    23
+    24
+    25
+    26
+    27
+    28
+    29
+    30
+    31
+    32
+    33
+    34
+    35
+    36
+    37
+    38
+    39
+    40
+    41
+    42
+    43
+    44
+    45
+    46
+    47
+    48
+    49
+    50
+    51
+    52
+    53
+    54
+    55
+    56
+
+输出:
+
+rotation vector: Angle is: 45  Axis is: 0 0 1
+rotation matrix =
+ 0.707 -0.707      0
+ 0.707  0.707      0
+     0      0      1
+(1,0,0) after rotation = 0.707 0.707     0
+(1,0,0) after rotation = 0.707 0.707     0
+yaw pitch roll = 45 -0  0
+Transform matrix =
+ 0.707 -0.707      0      0
+ 0.707  0.707      0      0
+     0      0      1      3
+     0      0      0      1
+v transformed = 0.707 0.707     3
+quaternion =
+    0
+    0
+0.383
+0.924
+quaternion =
+    0
+    0
+0.383
+0.924
+(1,0,0) after rotation = 0.707 0.707     0
+
+bash
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20
+    21
+    22
+    23
+    24
+    25
+
+17 稠密问题之线性代数和分解
+
+官网: http://eigen.tuxfamily.org/dox/group__DenseLinearSolvers__chapter.html
+参考链接: https://blog.csdn.net/u012936940/article/details/79871941
