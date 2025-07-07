@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/deque/deque.md",
+                "file": "c and cpp/cpp/Common Library/Eigen/Eigen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "deque"
+              "title": "Eigen"
             }
           }
         ]
@@ -181,6 +181,12 @@
   },
   "active": "d3baefede94a4096",
   "lastOpenFiles": [
+    "c and cpp/cpp/Common Library/Eigen/eigen_lib.png",
+    "c and cpp/cpp/math.md",
+    "c and cpp/cpp/Common Library/Eigen/Eigen.md",
+    "c and cpp/cpp/Common Library/Eigen",
+    "c and cpp/cpp/STL/deque/deque.md",
+    "c and cpp/cpp/Common Library",
     "c and cpp/cpp/algorithm/动态规划.md",
     "c and cpp/cpp/infinite small and large.md",
     "c and cpp/cpp/STL/vector.md",
@@ -192,7 +198,6 @@
     "c and cpp/cpp/STL/emplace_back.md",
     "c and cpp/cpp/STL/sort().md",
     "c and cpp/cpp/STL/swap.md",
-    "c and cpp/cpp/STL/deque/deque.md",
     "c and cpp/cpp/STL/deque/deque.jpg",
     "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/STL/deque/deque_internal.jpg",
@@ -214,18 +219,12 @@
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part_2.png",
     "hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result_error_part.png",
-    "hardware/RTK/xsens/xsens_mti_680g/RTK_SiReNT_32_result.png",
     "hardware/RTK/xsens/xsens_mti_680g",
     "hardware/cmera_and_lidar/camera & lidar内外参标定.pdf",
     "hardware/cmera_and_lidar/ac1",
     "hardware/cmera_and_lidar/Camera and Lidar calibration.md",
     "hardware/RTK/xsens",
     "hardware/cmera_and_lidar",
-    "hardware/RTK",
-    "hardware",
-    "mini-bus/daily plan/June 3rd.md",
-    "ROS/hardware/cmera_and_lidar/ac1/robosense ac1.md",
-    "DJBGS working logbook/daily plan/July 2nd.md",
-    "ROS/SLAM/RTK+GNSS.md"
+    "mini-bus/daily plan/June 3rd.md"
   ]
 }
