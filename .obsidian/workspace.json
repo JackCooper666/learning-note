@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "file": "ubuntu/how to run .bash file.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "title": "how to run .bash file"
             }
           }
         ],
@@ -196,8 +196,9 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "ubuntu/how to run .bash file.md",
+    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "c and cpp/cpp/Common Library/numeric/numeric.md",
     "c and cpp/cpp/Common Library/random/random.md",
     "c and cpp/cpp/Common Library/numeric",
@@ -240,7 +241,6 @@
     "c and cpp/cpp/STL/queue/queue.md",
     "c and cpp/cpp/STL/queue",
     "c and cpp/cpp/STL/deque",
-    "c and cpp/cpp/algorithm/heap/heap.md",
     "hardware/RTK/xsens/xsens_mti_680g"
   ]
 }
