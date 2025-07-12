@@ -196,4 +196,22 @@ int main() {
 }
 ```
 
+# lower_bound()
+In this code, `lower_bound` is a standard C++ algorithm from the `<algorithm>` library that performs a **binary search** on a sorted range to find the **first element that is not less than** (i.e., greater than or equal to) a given target value.
+
+```cpp
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        for (const auto& row: matrix) {
+            auto it = lower_bound(row.begin(), row.end(), target);
+            if (it != row.end() && *it == target) {
+                return true;
+            }
+        }
+        return false;
+    }
+};
+
+```
 
