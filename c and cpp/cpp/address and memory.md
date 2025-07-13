@@ -81,3 +81,28 @@ private:
 ```cpp
 int arr[] {1, 2, 3};  // 初始化列表（C++11 起支持）
 ```
+
+# 为指针取别名
+I want to cite a pointer into the function, then I can change the address where the pointer pointing to in the function directly without a return.
+The issue in your code is with the way you're trying to pass the `ans` pointer by reference. In C++, the correct syntax for passing a pointer by reference is `ListNode* &ans`, not `ListNode& *ans`.
+```cpp
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode *ans = nullptr;
+        traversal(headA, headB, ans);
+        return ans;
+    }
+    
+    void traversal(ListNode *headA, ListNode *headB, ListNode* &ans) {
+        if (headA == nullptr || headB == nullptr) {
+            return;
+        }
+        if (headA == headB) {
+            ans = headA;
+            return;
+        }
+        traversal(headA->next, headB->next, ans);
+    }
+};
+```
