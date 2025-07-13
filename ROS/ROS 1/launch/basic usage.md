@@ -36,5 +36,7 @@
 
 # remap
 ```launch
-<remap from = "robot/base_link" to = "ROBOT/MY_NEW_LINK"/>
+	<node pkg = "some_pkg" type = "some_node" name = "some_node_name">
+		<remap from = "robot/base_link" to = "ROBOT/MY_NEW_LINK"/>
+	</node>
 ```
