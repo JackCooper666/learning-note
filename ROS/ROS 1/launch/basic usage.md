@@ -33,3 +33,8 @@
     `roslaunch 包名 launch文件名`
     
 5. 运行结果: 一次性启动了多个节点
+
+# remap
+```launch
+<remap from = "robot/base_link" to = "ROBOT/MY_NEW_LINK"/>
+```
