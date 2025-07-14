@@ -61,7 +61,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	unset __conda_setup
 	echo "Conda initialized. Use 'conda activate'."
 else
-	echo "Skipped Conda initialization. Run 'startconda' to enable it later."
+	echo "Skipped Conda initialization."
 fi
 ```
 
@@ -105,7 +105,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	unset __conda_setup
 	echo "Conda initialized. Use 'conda activate'."
 else
-	echo "Skipped Conda initialization. Run 'startconda' to enable it later."
+	echo "Skipped Conda initialization."
 fi
 ```
 
