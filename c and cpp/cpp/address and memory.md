@@ -106,3 +106,8 @@ public:
     }
 };
 ```
+
+# pointer
+## pointer as function input
+
+the address where the pointer pointing to is put into the function, if the value in the address is modified in the function, the value will be modified outside the function as well.
