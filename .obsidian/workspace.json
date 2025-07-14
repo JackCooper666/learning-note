@@ -196,8 +196,11 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "ubuntu/conda/install/conda install and uninstall.md",
+    "ubuntu/soft link and hard link/soft link and hard link.md",
+    "ubuntu/soft link and hard link/hard_link_classification.jpeg",
     "ubuntu/cmake/install and uninstall/install and uninstall.md",
+    "ubuntu/soft link and hard link",
+    "ubuntu/conda/install/conda install and uninstall.md",
     "ubuntu/cmake/install and uninstall",
     "ubuntu/cmake",
     "ROS/SLAM/3d gaussian splitting usage for ubuntu 20.04.md",
@@ -217,7 +220,6 @@
     "ubuntu/conda/Untitled.md",
     "hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "ubuntu/conda",
-    "ROS/SLAM/FAST-LIO论文讲解.pdf",
     "ROS/SLAM/FastLivo2 Code analysis.md",
     "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/address and memory.md",
@@ -237,10 +239,7 @@
     "ROS/ROS 1/rviz/rviz.md",
     "ubuntu/how to run .bash file.md",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-    "c and cpp/cpp/Common Library/numeric/numeric.md",
-    "c and cpp/cpp/Common Library/random/random.md",
     "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png",
-    "c and cpp/cpp/algorithm/二叉树/basic_format.png",
-    "c and cpp/cpp/algorithm/环状替换/Screenshot from 2025-07-08 14-34-08.png"
+    "c and cpp/cpp/algorithm/二叉树/basic_format.png"
   ]
 }
