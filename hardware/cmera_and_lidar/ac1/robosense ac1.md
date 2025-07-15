@@ -78,6 +78,7 @@ sudo apt-get install libavformat-dev libavdevice-dev libavcodec-dev
 ---
 For Ubuntu 22.04 you may get this error:
 The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org> Hit:9 http://security.ubuntu.com/ubuntu jammy-security InRelease
+
 this happens becuase
 1. **ROS (Robot Operating System)** signs its repository packages with a **GPG key** to ensure authenticity.
 2. **This key expired** (common in Linux repositories for security reasons).
