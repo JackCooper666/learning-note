@@ -43,6 +43,11 @@ make
 sudo make install
 ```
 **the version of cmake for the compiling should be larger than 3.27**
+otherwise you will get some error like this:
+```bash
+Target “cmTC_e7e07“ requires the language dialect “CUDA17“ (with compiler extensions),
+```
+为了解决 CUDA 17 的编译问题，您需要使用支持 CUDA 17 的 CMake 版本。根据您的问题，您应该至少使用 CMake 3.18 版本，因为该版本增加了对 CUDA 17 的基本支持。不过，建议使用最新的 CMake 版本，以确保获得最新的功能和 bug 修复。
 
 # 7. Run COLMAP
 ```bash

@@ -181,10 +181,10 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
     "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
-    "c and cpp/cpp/algorithm/CIrcular Substitution/环状替换.md",
     "ROS/SLAM/3d gaussian splitting/3d gaussian splitting usage for ubuntu 20.04.md",
+    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
+    "c and cpp/cpp/algorithm/CIrcular Substitution/环状替换.md",
     "ROS/SLAM/Mathematical basis.md",
     "ROS/SLAM/convergence Judgements in IEKF.md",
     "ROS/Localization/RTK+GNSS.md",
