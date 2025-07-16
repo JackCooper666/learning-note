@@ -23,7 +23,10 @@ P.S. do not run the `conda env create --file environment.yml` or it breaks
 # SIBER-VIWER install
 1. deactivate the conda environment
 2. install dependencies
-3. 
+3. switch git branch of the SIBR
+4. cmake link
+5. cmake compile
+6. 
 
 
 # Evaluation
