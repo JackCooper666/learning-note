@@ -126,5 +126,5 @@ python metrics.py -m /the/complete/path/of/the_folder_storing_the_result
 # Visualization
 go to the gaussian-splatting/SIBER_viewers/install/bin
 ```bash
-./SIBR_gaussianViewer_app -m 
+./SIBR_gaussianViewer_app -m /the/complete/path/of/the_folder_storing_the_result
 ```
