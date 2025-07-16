@@ -8,7 +8,8 @@
 	栅栏指针：两个指针仿佛围成一个栅栏，一个指针的一侧全部存放符合要求的节点，另一个指针负责遍历寻找。常用于要求原地处理的题目。
 	
 	滑动窗口：两个指针一前一后形成一个窗口，不满足条件时前面的不停扩大窗口，满足时后面指针前进，缩小窗口，由可行解寻找最优解。
-
+	
+双指针技术本质上是依赖 **速度** 或 **起始位置不同** 的两个指针对于链表的遍历来实现对问题的快速解决
 # slow-fast pointers
 - Use a **slow pointer (`slow`)** to track the position where the next valid element should be placed.
 - Use a **fast pointer (`fast`)** to scan through the array.
