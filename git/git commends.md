@@ -112,7 +112,8 @@ Assuming:
 ⚠️ WARNING: This will delete all **uncommitted** and **local changes**.
 
 ```git
-git fetch origin git reset --hard origin/your-branch-name
+git fetch origin 
+git reset --hard origin/your-branch-name
 ```
 This means:
 
