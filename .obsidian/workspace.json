@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
+                "file": "ROS/SLAM/Mathematical basis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3d gaussian splatting usage for ubuntu 20.04"
+              "title": "Mathematical basis"
             }
           }
         ]
@@ -179,15 +179,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0589ee7ae40c4b22",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
-    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
-    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
-    "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
-    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
-    "c and cpp/cpp/algorithm/CIrcular Substitution/环状替换.md",
+    "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/SLAM/Mathematical basis.md",
     "ROS/SLAM/convergence Judgements in IEKF.md",
+    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
+    "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
+    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
+    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
+    "c and cpp/cpp/algorithm/CIrcular Substitution/环状替换.md",
     "ROS/Localization/RTK+GNSS.md",
     "ROS/Localization/KML with google earth.md",
     "ROS/SLAM/fastlivo2/PCA.md",
@@ -197,7 +198,6 @@
     "ROS/SLAM/fastlivo2",
     "ROS/SLAM/3d gaussian splitting",
     "hardware/cmera_and_lidar/ac1/robosense ac1.md",
-    "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ubuntu/GPU driver install and CUDA toolkit install.md",
     "ubuntu/how to run .bash file.md",
     "ubuntu/nvidia drive and cuda install.md",
