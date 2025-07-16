@@ -181,10 +181,10 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
+    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
     "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
     "ROS/SLAM/3d gaussian splitting/3d gaussian splitting usage for ubuntu 20.04.md",
-    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
+    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
     "c and cpp/cpp/algorithm/CIrcular Substitution/环状替换.md",
     "ROS/SLAM/Mathematical basis.md",
     "ROS/SLAM/convergence Judgements in IEKF.md",
@@ -225,7 +225,6 @@
     "c and cpp/cpp/STL/vector.md",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
     "c and cpp/cpp/algorithm/traversal method/four-pointers.png",
-    "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png",
-    "c and cpp/cpp/algorithm/二叉树/basic_format.png"
+    "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png"
   ]
 }

@@ -13,7 +13,6 @@ sudo apt-get install openjdk-8-jdk git python-dev python3-dev python-numpy pytho
 # 3. get github source core
 ```bash
 git clone https://github.com/colmap/colmap.git
-
 ```
 
 # 4. Dependencies from default [Ubuntu](https://so.csdn.net/so/search?q=Ubuntu&spm=1001.2101.3001.7020) repositories

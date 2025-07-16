@@ -21,9 +21,9 @@ pip install tqdm
 ```
 P.S. do not run the `conda env create --file environment.yml` or it breaks
 # SIBER-VIWER install
-
-
-# Train
+1. deactivate the conda environment
+2. install dependencies
+3. 
 
 
 # Evaluation
