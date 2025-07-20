@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/ROS 1/evo/evo.md",
+                "file": "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "evo"
+              "title": "the basic usage of list"
             }
           }
         ]
@@ -181,13 +181,17 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
+    "c and cpp/cpp/STL/list/list.md",
+    "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
+    "c and cpp/cpp/STL/list/list.png",
+    "git/git commends.md",
+    "ROS/ROS 1/evo/evo.md",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "ROS/SLAM/SLAM + 3DGS",
     "c and cpp/cpp/algorithm/traversal method/two-pointers, sliding window, four-pointers.md",
     "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png",
     "c and cpp/cpp/algorithm/CIrcular Substitution/环状替换.md",
-    "git/git commends.md",
     "ROS/SLAM/Mathematical basis.md",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/SLAM/convergence Judgements in IEKF.md",
@@ -210,11 +214,8 @@
     "ubuntu/Steam install Ubuntu.md",
     "ubuntu/x-terminal-emulator install.md",
     "c and cpp/cpp/address and memory.md",
-    "ubuntu/cmake/install and uninstall/install and uninstall.md",
-    "ubuntu/soft link and hard link/soft link and hard link.md",
     "ubuntu/soft link and hard link/hard_link_classification.jpeg",
     "ubuntu/soft link and hard link",
-    "ubuntu/conda/install/conda install and uninstall.md",
     "ubuntu/cmake/install and uninstall",
     "ubuntu/cmake",
     "mechanical engineering/solidwork with bambo lab/bambo lab/bambo lab printor debug",
@@ -224,8 +225,6 @@
     "ubuntu/conda/install/install_gui_2.webp",
     "ubuntu/conda/install/install_gui_1.webp",
     "ubuntu/conda/install/terminal.webp",
-    "ubuntu/conda/install/conda_install_web.webp",
-    "ubuntu/conda/Untitled.md",
-    "c and cpp/cpp/algorithm/traversal method/four-pointers.png"
+    "ubuntu/conda/install/conda_install_web.webp"
   ]
 }
