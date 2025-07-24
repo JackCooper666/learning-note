@@ -16,4 +16,10 @@ CUDA multi thread backpropagation
 3. remove slim gaussian balls
 
 # GS-LIVO
-1. The lio will do the IESKF to 
+1. The lio will do the IESKF to get the state estimation
+2. the gaussian initialize the gaussian balls according to the current image and lidar point cloud at t he estimated state
+3. the gaussian balls will be put into the global gaussian map (octree similar with the voxel map) to filter out the useless and invalid points
+4. the filtered gaussian balls in current frame will be put into the sliding window and be optimized
+5. the lio state estimation and the optimized gaussian balls and image in current frame will be put into the vio part to do the state estimation
+
+# MM3DGS
