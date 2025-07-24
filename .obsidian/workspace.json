@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/LRU.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LRU"
+              "title": "related works"
             }
           }
         ]
@@ -181,8 +181,8 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "c and cpp/cpp/algorithm/前缀和，前缀积，后缀和，后缀积.md",
     "c and cpp/cpp/algorithm/LRU.md",
+    "c and cpp/cpp/algorithm/前缀和，前缀积，后缀和，后缀积.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "c and cpp/cpp/STL/rbegin and rend.md",
     "c and cpp/cpp/STL/hashtable.md",

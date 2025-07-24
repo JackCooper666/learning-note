@@ -16,3 +16,4 @@ CUDA multi thread backpropagation
 3. remove slim gaussian balls
 
 # GS-LIVO
+The 
