@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/recursion/递归.md",
+                "file": "c and cpp/cpp/STL/hashtable.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "递归"
+              "title": "hashtable"
             }
           }
         ]
@@ -181,8 +181,13 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
+    "c and cpp/cpp/address and memory.md",
+    "c and cpp/cpp/infinite small and large.md",
+    "c and cpp/cpp/time complex and space complex.md",
+    "c and cpp/cpp/run cpp in linux.md",
+    "c and cpp/cpp/algorithm/recursion/递归.md",
+    "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/STL/vector.md",
@@ -206,11 +211,7 @@
     "ROS/SLAM/Mathematical basis.md",
     "ROS/ROS 1 AND ROS 2 COEXIST.md",
     "ROS/SLAM/convergence Judgements in IEKF.md",
-    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
-    "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
-    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
     "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
-    "ROS/Localization/RTK+GNSS.md",
     "ROS/SLAM/fastlio",
     "ROS/SLAM/fastlivo",
     "ROS/SLAM/fastlivo2",
@@ -225,7 +226,6 @@
     "ubuntu/conda/install/install_gui_3.webp",
     "ubuntu/conda/install/install_gui_2.webp",
     "ubuntu/conda/install/install_gui_1.webp",
-    "ubuntu/conda/install/terminal.webp",
-    "ubuntu/conda/install/conda_install_web.webp"
+    "ubuntu/conda/install/terminal.webp"
   ]
 }
