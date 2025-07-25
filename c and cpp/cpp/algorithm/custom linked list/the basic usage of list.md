@@ -1,3 +1,4 @@
+# Single direction list
 ```cpp
 // Definition for singly-linked list.
 struct ListNode {
@@ -55,4 +56,15 @@ int getLengthRecursive(ListNode* head) {
     if (head == nullptr) return 0;
     return 1 + getLengthRecursive(head->next);
 }
+```
+
+# bio-direct list
+```cpp
+struct DLinkedNode {
+    int key, value;
+    DLinkedNode* prev;
+    DLinkedNode* next;
+    DLinkedNode(): key(0), value(0), prev(nullptr), next(nullptr) {}
+    DLinkedNode(int _key, int _value): key(_key), value(_value), prev(nullptr), next(nullptr) {}
+};
 ```
