@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
+                "file": "hardware/cmera_and_lidar/ac1/robosense ac1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "the basic usage of list"
+              "title": "robosense ac1"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/STL/rbegin and rend.md",
@@ -199,7 +200,6 @@
     "c and cpp/cpp/algorithm/前缀和，前缀积，后缀和，后缀积.md",
     "git/git commends.md",
     "c and cpp/cpp/algorithm/custom linked list/tricky.md",
-    "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
     "c and cpp/cpp/STL/stack/stack.md",
     "c and cpp/cpp/STL/list/list.md",
     "c and cpp/cpp/STL/list/list.png",
