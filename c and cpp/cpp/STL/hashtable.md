@@ -80,7 +80,7 @@ m.erase(key);
 m[key];
 ```
 
-|Method|Returns|Use Case|
-|---|---|---|
-|`.find()`|Iterator (can access value)|When you need the element (key-value pair)|
-|`.count()`|`0` or `1`|When you only need to check existence|
+| Method     | Returns                     | Use Case                                   |
+| ---------- | --------------------------- | ------------------------------------------ |
+| `.find()`  | Iterator (can access value) | When you need the element (key-value pair) |
+| `.count()` | `0` or `1`                  | When you only need to check existence      |
