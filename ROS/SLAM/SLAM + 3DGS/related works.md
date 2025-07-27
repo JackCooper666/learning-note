@@ -22,4 +22,21 @@ CUDA multi thread backpropagation
 4. the filtered gaussian balls in current frame will be put into the sliding window and be optimized
 5. the lio state estimation and the optimized gaussian balls and image in current frame will be put into the vio part to do the state estimation
 
-# MM3DGS
+# 3DGS-LM
+We utilize our LM implementation in the second stage of
+3DGS optimization (see Fig. 2). Before that, we use the
+ADAM optimizer to obtain an initialization of the Gaussian
+parameters. It is also possible to use the LM optimizer from
+the beginning, however this does not bring any additional
+speed-up (see Fig. 4). In the beginning of optimization,
+gradient descent makes rapid progress by optimizing the
+Gaussians from a single image per iteration. In contrast, we
+sample many images in every LM iteration, which makes
+every iteration more time-consuming. This additional com-
+pute overhead is especially helpful to converge to optimal
+Gaussian parameters quicker (see Fig. 1 left).
+Splitting the method in two stages also allows us to com-
+plete the densification of the Gaussians before employing
+the LM optimizer, which simplifies the implementation.
+
+
