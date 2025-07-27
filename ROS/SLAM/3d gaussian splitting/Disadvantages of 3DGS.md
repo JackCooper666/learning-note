@@ -1,0 +1,1 @@
+3DGS requires millions of different Gaussian primitives to fit the geometry and appearance in a scene, leading to **high storage overhead**: a typical reconstruction of an outdoor scene often requires several hundred megabytes to multiple gigabytes of explicit storage space.
