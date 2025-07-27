@@ -22,7 +22,7 @@ CUDA multi thread backpropagation
 4. the filtered gaussian balls in current frame will be put into the sliding window and be optimized
 5. the lio state estimation and the optimized gaussian balls and image in current frame will be put into the vio part to do the state estimation
 
-# 3DGS-LM
+# 3DGS-LM -> only to improve the 3d gaussian, not  the slam
 We utilize our LM implementation in the second stage of
 3DGS optimization (see Fig. 2). Before that, we use the
 ADAM optimizer to obtain an initialization of the Gaussian
