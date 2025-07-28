@@ -23,21 +23,7 @@ CUDA multi thread backpropagation
 5. the lio state estimation and the optimized gaussian balls and image in current frame will be put into the vio part to do the state estimation
 
 # 3DGS-LM -> only to improve the 3d gaussian, not  the slam
-We utilize our LM implementation in the second stage of
-3DGS optimization (see Fig. 2). Before that, we use the
-ADAM optimizer to obtain an initialization of the Gaussian
-parameters. It is also possible to use the LM optimizer from
-the beginning, however this does not bring any additional
-speed-up (see Fig. 4). In the beginning of optimization,
-gradient descent makes rapid progress by optimizing the
-Gaussians from a single image per iteration. In contrast, we
-sample many images in every LM iteration, which makes
-every iteration more time-consuming. This additional com-
-pute overhead is especially helpful to converge to optimal
-Gaussian parameters quicker (see Fig. 1 left).
-Splitting the method in two stages also allows us to com-
-plete the densification of the Gaussians before employing
-the LM optimizer, which simplifies the implementation.
+We utilize our LM implementation in the second stage of3DGS optimization (see Fig. 2). Before that, we use the ADAM optimizer to obtain an initialization of the Gaussian parameters. It is also possible to use the LM optimizer from the beginning, however this does not bring any additional speed-up (see Fig. 4). In the beginning of optimization, gradient descent makes rapid progress by optimizing the Gaussians from a single image per iteration. In contrast, we sample many images in every LM iteration, which makes every iteration more time-consuming. This additional compute overhead is especially helpful to converge to optimal Gaussian parameters quicker (see Fig. 1 left). Splitting the method in two stages also allows us to complete the densification of the Gaussians before employing the LM optimizer, which simplifies the implementation.
 
 # DashGaussian
 这篇文章《DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds》提出了一种名为DashGaussian的方法，旨在加速3D高斯泼溅（3D Gaussian Splatting, 3DGS）的优化过程，同时保持渲染质量。以下是其核心原理的详细解释：
@@ -95,3 +81,5 @@ DashGaussian通过动态调整这两个因素来降低整体优化复杂度。
 3. **基元剪枝与分裂**：根据基元的梯度或渲染误差动态剪枝或分裂基元，控制基元数量。
 
 
+
+# GauSS-MI
