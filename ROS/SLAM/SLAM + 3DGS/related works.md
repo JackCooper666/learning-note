@@ -192,3 +192,77 @@ This paper introduces Gaussian Splatting Shannon Mutual Information (GauSS-MI) a
 - **安全约束**：
     - 碰撞检测：通过3DGS地图的占据信息（如Alpha Shape）过滤不可行轨迹。
     - 视野约束：确保目标视角在传感器FOV内（如D435的87°水平FOV）。
+
+# GS-LIVM
+提出了一种基于高斯泼溅（Gaussian Splatting）的实时逼真多传感器（LiDAR-IMU-相机）建图框架，用于大规模无边界户外场景。以下是其核心原理的详细解释：
+## **1. 问题背景与挑战**
+
+- **传统SLAM的局限性**：传统SLAM系统（如基于滤波或图优化的方法）主要依赖稀疏特征点，难以实现高质量的3D重建和逼真渲染。
+- **神经场景表示的兴起**：NeRF和3D高斯泼溅（3DGS）等技术提升了场景表示的真实性，但在户外场景中面临以下挑战：
+    - **数据稀疏性**：LiDAR点云分布不均匀（如多线旋转LiDAR或非重复扫描LiDAR）。
+    - **实时性不足**：现有方法（如NeRF-SLAM或离线3DGS）优化时间长，无法满足实时需求。
+    - **视角偏差**：传感器单向运动时，3D高斯优化会偏向相机视角，导致新视角渲染质量下降。
+## **2. 核心方法**
+
+GS-LIVM通过以下技术解决上述问题：
+
+### **2.1 多传感器紧耦合前端**
+- **状态估计**：采用LiDAR-IMU-视觉紧耦合里程计（如R³LIVE或FAST-LIVO）提供高精度的传感器位姿和点云坐标变换。
+- **数据同步**：融合LiDAR（几何结构）、IMU（高频运动补偿）和相机（纹理信息）的数据。
+
+### **2.2 体素级高斯过程回归（Voxel-GPR）**
+
+- **问题**：LiDAR点云稀疏且分布不均，直接用于3D高斯初始化会导致内存浪费和优化效率低。
+- **解决方案**：
+    1. **体素划分**：将空间划分为体素，对每个体素内的点云独立处理。
+    2. **高斯过程回归（GPR）**：
+        - 对每个体素内的点云，通过PCA确定主方向（值轴），其他方向为参数轴。
+        - 使用核函数（如RBF）建模点云分布，预测均匀分布的网格点（`P_α*`）及其协方差（`Σ_α*`）。
+        - 公式：
+$$
+p(\mathbf{f}_* \mid \mathbf{x}_*, \mathbf{x}, \mathbf{f}) = \mathcal{N}(\mathbf{f}_* \mid \boldsymbol{\mu}_*, \boldsymbol{\Sigma}_*)
+$$
+$$
+\boldsymbol{\mu}_* = \mathbf{K}_*^\top (\mathbf{K} + \sigma^2 \mathbf{I})^{-1} \mathbf{f}
+$$
+$$
+\boldsymbol{\Sigma}_* = \mathbf{K}_{**} - \mathbf{K}_*^\top (\mathbf{K} + \sigma^2 \mathbf{I})^{-1} \mathbf{K}_*
+$$
+	3. **并行加速**：利用CUDA并行处理多个体素，耗时小于30毫秒。
+### **2.3 3D高斯的快速初始化**
+
+- **传统方法**：3D高斯的尺度和旋转参数需通过邻近点距离或随机初始化，收敛慢。
+- **改进方法**：
+    1. **基于Voxel-GPR的初始化**：
+        - 对每个体素的子网格（subgrid），用加权最小二乘拟合3D高斯的位置（`p_β`）和协方差矩阵（`Φ_β`）。
+        - 公式：（权重`w_i^β = 1/Σ_*`，`Q`为点云相对于中心的偏移）。
+$$
+\mathbf{p}^\beta = \frac{\sum_{i=1}^{n_r^2} (\mathcal{P}_{f*}^\alpha)_i^\beta \cdot w_i^\beta}{\sum_{i=1}^{n_r^2} w_i^\beta};
+\Phi^\beta = \frac{\mathbf{Q}^\top \cdot \operatorname{diag}(w_1^\beta, \ldots, w_{n_r^2}^\beta) \cdot \mathbf{Q}}{\sum_{i=1}^{n_r^2} w_i^\beta}
+$$
+		- 尺度和旋转直接由协方差矩阵分解得到（`S_β = diag(Φ_β)`，`R_β`初始为单位四元数）。
+	2. **颜色初始化**：通过相机外参将高斯中心投影到RGB图像，获取初始颜色（SH系数）。
+### **2.4 迭代优化框架**
+- **地图扩展与协方差更新**：
+    - 体素分为四类（未探索/待处理/活跃/已收敛），仅对活跃体素迭代优化Voxel-GPR参数。
+    - 利用新观测的LiDAR点云更新协方差，直至收敛（方差小于阈值`η`）。
+- **渲染与损失函数**：
+1. **渲染模型**：
+    - 使用3D高斯泼溅的光栅化渲染颜色（`C`）、深度（`D`）和轮廓（`S`）图像：
+$$
+C = \sum_{i \in \mathcal{N}} c_i \alpha_i \prod_{j=1}^{i-1} (1 - \alpha_j)
+$$
+2. **损失函数**：
+
+	- **深度相似性损失（`L_d`）**：约束连续帧间的深度一致性。
+$$
+\mathcal{L}_d = \left\| \mathbf{S}_{\mathcal{F}_{c+1}} \circ D_{\mathcal{F}_{c+1}} - \pi_{\mathcal{F}_{c+1}} \mathbf{T}_{\mathcal{F}_{c+1}} \mathbf{T}_{\mathcal{F}_c}^{-1} \pi_{\mathcal{F}_c}^{-1} (\mathbf{S}_{\mathcal{F}_c} \circ D_{\mathcal{F}_c}) \right\|_1
+$$
+	- **结构相似性损失（`L_p`）**：约束LiDAR点云与3D高斯的几何一致性。
+$$
+\mathcal{L}_p = \frac{1}{n} \sum_{j=1}^n \min_{k \in \{1,\ldots,m\}} \left( \| (\mathbf{P}_f)_j - \mathbf{p}_k \|_2 - \bar{S}_k \right)
+$$
+	- **总损失**：结合光度损失（L1+SSIM）、深度和结构损失：
+$$
+\mathcal{L} = (1-\lambda_s)\|C - C_{gt}\|_1 + \lambda_s \mathcal{L}_{ssim} + \lambda_d \mathcal{L}_d + \lambda_p \mathcal{L}_p
+$$
