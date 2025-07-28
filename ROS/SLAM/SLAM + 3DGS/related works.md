@@ -85,3 +85,32 @@ DashGaussian通过动态调整这两个因素来降低整体优化复杂度。
 # GauSS-MI
 This paper introduces Gaussian Splatting Shannon Mutual Information (GauSS-MI) as a metric for efficient next best view selection in high-visual fidelity active reconstruction.
 
+这篇文章《GauSS-MI: Gaussian Splatting Shannon Mutual Information for Active 3D Reconstruction》提出了一种基于高斯泼溅（3D Gaussian Splatting, 3DGS）和香农互信息（Shannon Mutual Information, SMI）的主动三维重建系统，旨在通过量化视觉不确定性并选择最优视角来提高重建效率和视觉质量。以下是其核心实现原理的详细介绍：
+## 1. **问题背景与挑战**
+- **主动三维重建**：在未知环境中，机器人需要动态选择下一个最佳视角（Next-Best-View, NBV）以高效完成高质量的三维重建。
+- **现有问题**：传统方法主要关注几何完整性（如体素覆盖），而忽略视觉质量的不确定性量化，导致重建结果在纹理和细节上表现不佳。
+- **新需求**：需要一种能够实时评估视觉信息增益的指标，并指导机器人选择信息量最大的视角。
+## 2. **核心方法：GauSS-MI**
+
+### （1）**概率模型构建**
+- **高斯泼溅表示**：场景由多个3D高斯椭球体（Gaussians）表示，每个高斯包含几何（位置、协方差）和光学属性（颜色、透明度）。
+- **可靠性概率**：为每个高斯定义一个二元随机变量 $r$，表示其渲染的可靠性（可靠或不可靠），初始化为无先验信息（$P(r) = 0.5$）。
+- **逆传感器模型**：通过当前观测与渲染图像的损失（颜色和深度差异）更新高斯的可靠性概率。损失越小，可靠性越高：
+	$$
+	P(r^{i} | Z_{k}) = \frac{1} {(\lambda_{L}L_{k})^{\lambda_{T}T^{[i]}} + 1}
+	$$
+    其中 ​$L_{k}$ 是损失图像，$T^{[i]}$ 是高斯的累积透射率（调节更新强度）。
+### （2）**香农互信息（GauSS-MI）**
+- **目标**：量化从新视角 $z_{k}$​ 中获取的预期信息增益，以最小化地图的不确定性（条件熵）。
+    
+- **互信息定义**：
+    
+    $$I(r;zk)=H(r)−H(r∣zk)I(r;zk​)=H(r)−H(r∣zk​)$$
+    
+    最大化互信息等价于最小化条件熵。
+    
+- **高效计算**：通过解析推导，将互信息分解为像素级信息增益的累加：
+    
+    I(r;z)=∑j=1nzP(z[j]∣M[j])∑i∈N[j]−T[i]log⁡(P(r[i]))I(r;z)=j=1∑nz​​P(z[j]∣M[j])i∈N[j]∑​−T[i]log(P(r[i]))
+    
+    其中 P(z[j])P(z[j]) 是传感器测量先验（基于亮度噪声模型），log⁡(P(r[i]))log(P(r[i])) 反映高斯的信息增益。
