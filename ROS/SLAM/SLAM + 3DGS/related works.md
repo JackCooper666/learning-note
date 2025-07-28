@@ -83,3 +83,5 @@ DashGaussian通过动态调整这两个因素来降低整体优化复杂度。
 
 
 # GauSS-MI
+This paper introduces Gaussian Splatting Shannon Mutual Information (GauSS-MI) as a metric for efficient next best view selection in high-visual fidelity active reconstruction.
+
