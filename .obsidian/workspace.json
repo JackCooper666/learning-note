@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Current Drawback"
+              "title": "related works"
             }
           }
         ],
@@ -197,8 +197,8 @@
   },
   "active": "7bc1b48ada9cace7",
   "lastOpenFiles": [
-    "ROS/SLAM/SLAM + 3DGS/related works.md",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "ROS/SLAM/SLAM + 3DGS/related works.md",
     "c and cpp/cpp/algorithm/二叉树/width first search.md",
     "c and cpp/cpp/algorithm/二叉树/depth first search.md",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
