@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Current Drawback"
             }
+          },
+          {
+            "id": "7bc1b48ada9cace7",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "research_proposal"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,8 +192,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0589ee7ae40c4b22",
+  "active": "7bc1b48ada9cace7",
   "lastOpenFiles": [
+    "ROS/SLAM/convergence Judgements in IEKF.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
@@ -206,7 +220,6 @@
     "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
     "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
     "hardware/cmera_and_lidar/ac1/robosense ac1.md",
-    "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
     "ROS/SLAM/SLAM + 3DGS",
