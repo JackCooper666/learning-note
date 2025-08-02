@@ -11,14 +11,12 @@
             "id": "0589ee7ae40c4b22",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "c and cpp/cpp/algorithm/二叉树/depth first search.md",
-                "mode": "source",
-                "source": false
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.pdf"
               },
-              "icon": "lucide-file",
-              "title": "depth first search"
+              "icon": "lucide-file-text",
+              "title": "related works"
             }
           }
         ]
@@ -181,14 +179,20 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
-    "c and cpp/cpp/algorithm/二叉树/binary tree.md",
+    "ROS/SLAM/3d gaussian splitting/Disadvantages of 3DGS.md",
+    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
+    "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
+    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
+    "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
+    "ROS/SLAM/SLAM + 3DGS/related works.pdf",
+    "ROS/SLAM/3d gaussian splitting/related works.pdf",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "c and cpp/cpp/algorithm/二叉树/depth first search.md",
+    "c and cpp/cpp/algorithm/二叉树/binary tree.md",
     "c and cpp/cpp/algorithm/二叉树/width first search.md",
     "c and cpp/cpp/STL/queue/queue.md",
-    "c and cpp/cpp/algorithm/二叉树/depth first search.md",
     "git/git commends.md",
-    "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "c and cpp/cpp/algorithm/二分查找.md",
     "c and cpp/cpp/variable type/numbers' type.md",
     "c and cpp/cpp/variable type/char.md",
@@ -199,15 +203,11 @@
     "c and cpp/cpp/infinite small and large.md",
     "c and cpp/cpp/run cpp in linux.md",
     "c and cpp/cpp/time complex and space complex.md",
-    "ROS/SLAM/3d gaussian splitting/Disadvantages of 3DGS.md",
     "c and cpp/cpp/algorithm/recursion/递归.md",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/emplace_back.md",
     "c and cpp/cpp/algorithm/execution time saving method.md",
     "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
-    "c and cpp/cpp/algorithm/custom linked list/the basic usage of list.md",
-    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
-    "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
     "ROS/SLAM/SLAM + 3DGS",
@@ -220,8 +220,6 @@
     "ubuntu/soft link and hard link/hard_link_classification.jpeg",
     "ubuntu/soft link and hard link",
     "ubuntu/cmake/install and uninstall",
-    "ubuntu/cmake",
-    "mechanical engineering/solidwork with bambo lab/bambo lab/bambo lab printor debug",
     "ubuntu/conda/install/install_gui_4.webp",
     "ubuntu/conda/install/install_gui_3.webp",
     "ubuntu/conda/install/install_gui_2.webp",

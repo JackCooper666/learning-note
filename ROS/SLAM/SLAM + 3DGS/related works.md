@@ -364,4 +364,3 @@ $$G_{merged} = \frac{∑w_iG_i}{∑w_i}, \quad w_i = α_i·V_i$$
 3. 非重叠区域保留原高斯  
 4. 联合优化更新全局地图
 
-# MM3DGS
