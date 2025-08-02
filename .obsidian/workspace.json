@@ -11,12 +11,14 @@
             "id": "0589ee7ae40c4b22",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/SLAM + 3DGS/related works.pdf"
+                "file": "git/git commends.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "related works"
+              "icon": "lucide-file",
+              "title": "git commends"
             }
           }
         ]
@@ -179,13 +181,13 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
+    "ROS/SLAM/SLAM + 3DGS/related works.pdf",
     "ROS/SLAM/3d gaussian splitting/Disadvantages of 3DGS.md",
     "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
     "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
     "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
-    "ROS/SLAM/SLAM + 3DGS/related works.pdf",
     "ROS/SLAM/3d gaussian splitting/related works.pdf",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "c and cpp/cpp/algorithm/二叉树/depth first search.md",
@@ -207,7 +209,6 @@
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/STL/emplace_back.md",
     "c and cpp/cpp/algorithm/execution time saving method.md",
-    "c and cpp/cpp/algorithm/Boyer-Moore 投票算法.md",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
     "ROS/SLAM/SLAM + 3DGS",
