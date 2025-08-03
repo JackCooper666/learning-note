@@ -266,6 +266,19 @@ $$
 $$
 \mathcal{L} = (1-\lambda_s)\|C - C_{gt}\|_1 + \lambda_s \mathcal{L}_{ssim} + \lambda_d \mathcal{L}_d + \lambda_p \mathcal{L}_p
 $$
+```cpp
+gsPointCloudUpdate(p_frame, updated_voxel_count, final_gs_sample, final_gs_calc_loss);
+->
+new_gs_for_map_points.push_back(final_gs_sample);
+->
+
+```
+
+
+
+
+
+
 
 # VPGS-SLAM
 VPGS-SLAM是一种创新的基于3D高斯泼溅(3D Gaussian Splatting)的大规模视觉SLAM系统，下面我将从技术细节层面深入解析其工作原理。
