@@ -266,13 +266,14 @@ $$
 $$
 \mathcal{L} = (1-\lambda_s)\|C - C_{gt}\|_1 + \lambda_s \mathcal{L}_{ssim} + \lambda_d \mathcal{L}_d + \lambda_p \mathcal{L}_p
 $$
-```cpp
-gsPointCloudUpdate(p_frame, updated_voxel_count, final_gs_sample, final_gs_calc_loss);
-->
-new_gs_for_map_points.push_back(final_gs_sample);
-->
 
-```
+ 🌟 总体目标：`lioOptimization::process()`
+
+这是整个 LIO + 视觉 + 3D Gaussian Splatting 系统中每一帧数据的主处理入口，完成：
+
+> “状态初始化 → 数据预处理 → 状态估计 → 高斯点云生成 → 图像渲染训练 → 地图维护 → 发布/保存”。
+
+
 
 
 
