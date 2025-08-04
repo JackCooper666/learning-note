@@ -323,7 +323,7 @@ std::vector<Eigen::MatrixXd> gmm_init_sigma;
 };
 ```
 
-`forward_gp3d()` 是整个 Gaussian Splatting 系统中**核心的高斯生成模块**，负责对 voxel 中的点云执行 **3D Gaussian Process（GP）预测建模**，输出可用于构建高斯球的：
+`forward_gp3d()` 是整个 Gaussian Splatting 系统中**核心的高斯生成模块**，负责对 voxel 中的点云执行 **3D Gaussian Process（GP）预测建模**， 并为点云上色，输出可用于构建高斯球的：
 - 中心位置（`xyz`）
 - RGB 颜色（`rgb`）
 - 协方差矩阵（`cov`）
@@ -359,8 +359,70 @@ GsForMap {
 加入 `final_gs_sample` → 后续用于建立高斯地图（渲染）
 
 
-每帧高斯球是怎么放入全局地图的？
+每帧高斯球是怎么放入全局地图(`all_gs`)的？
+```cpp
+void lioOptimization::processAndMergePointClouds(GSLIVM::GsForMaps& all_gs) {
 
+std::vector<GSLIVM::GsForMaps> new_gs_points_copy;
+
+{
+
+std::lock_guard<std::mutex> lock(gs_point_for_map_mutex);
+
+new_gs_points_copy = new_gs_for_map_points;
+
+new_gs_for_map_points.clear();
+
+new_gs_points_for_map_count = 0;
+
+}
+
+  
+
+int index = 0;
+
+for (const auto& cloud : new_gs_points_copy) {
+
+if (index == 0) {
+
+all_gs.hash_posi_s = cloud.hash_posi_s;
+
+all_gs.indexes = cloud.indexes;
+
+all_gs.gs_xyzs = cloud.gs_xyzs;
+
+all_gs.gs_rgbs = cloud.gs_rgbs;
+
+all_gs.gs_covs = cloud.gs_covs;
+
+} else {
+
+all_gs.hash_posi_s.reserve(all_gs.hash_posi_s.size() + cloud.hash_posi_s.size());
+
+all_gs.hash_posi_s.insert(all_gs.hash_posi_s.end(), cloud.hash_posi_s.begin(), cloud.hash_posi_s.end());
+
+  
+
+all_gs.indexes.reserve(all_gs.indexes.size() + cloud.indexes.size());
+
+all_gs.indexes.insert(all_gs.indexes.end(), cloud.indexes.begin(), cloud.indexes.end());
+
+  
+
+all_gs.gs_xyzs = torch::cat({all_gs.gs_xyzs, cloud.gs_xyzs}, 0);
+
+all_gs.gs_rgbs = torch::cat({all_gs.gs_rgbs, cloud.gs_rgbs}, 0);
+
+all_gs.gs_covs = torch::cat({all_gs.gs_covs, cloud.gs_covs}, 0);
+
+}
+
+index++;
+
+}
+
+}
+```
 
 全局地图是怎么维护的？
 
