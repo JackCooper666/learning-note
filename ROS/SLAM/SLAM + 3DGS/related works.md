@@ -323,10 +323,45 @@ std::vector<Eigen::MatrixXd> gmm_init_sigma;
 };
 ```
 
+`forward_gp3d()` 是整个 Gaussian Splatting 系统中**核心的高斯生成模块**，负责对 voxel 中的点云执行 **3D Gaussian Process（GP）预测建模**，输出可用于构建高斯球的：
+- 中心位置（`xyz`）
+- RGB 颜色（`rgb`）
+- 协方差矩阵（`cov`）
+
+输出:
+```cpp
+GsForMap {
+  hash_posi_
+  gs_xyz      ← 高斯位置
+  gs_rgb      ← 高斯颜色
+  gs_cov      ← 高斯协方差
+}
+```
+加入 `vector_final_gs_sample` → 后续用于建立高斯地图（渲染）
+```cpp
+GsForLoss {
+  hash_posi_
+  gs_xyz      ← 稀疏点（间隔采样）→ 用于训练 loss
+}
+```
+加入 `vector_final_gs_calc_loss` → 后续用于 photometric loss、SSIM 等训练信号
+
 
 每帧高斯球是怎么被定义的？
+```cpp
+GsForMap {
+  hash_posi_
+  gs_xyz      ← 高斯位置
+  gs_rgb      ← 高斯颜色
+  gs_cov      ← 高斯协方差
+}
+```
+加入 `final_gs_sample` → 后续用于建立高斯地图（渲染）
+
 
 每帧高斯球是怎么放入全局地图的？
+
+
 全局地图是怎么维护的？
 
 
