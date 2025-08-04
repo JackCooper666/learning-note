@@ -359,7 +359,6 @@ GsForMap {
 加入 `final_gs_sample` → 后续用于建立高斯地图（渲染）
 
 
-每帧高斯球是怎么放入全局地图(`all_gs`)的？
 ```cpp
 void lioOptimization::processAndMergePointClouds(GSLIVM::GsForMaps& all_gs) {
 
@@ -424,7 +423,60 @@ index++;
 }
 ```
 
+gaussian反向传播
+```cpp
+gaussian_pro->Create_from_pcd(gsoptimParams, all_gs, 1.f);
+
+gaussian_pro->Training_setup(gsoptimParams);
+
+  
+
+// warm up
+
+{
+
+auto [image, depth, depth_sol] = render(_cameras[0][0], gaussian_pro, background);
+
+auto gt_image = _cameras[0][0].Get_original_image().to(torch::kCUDA, true);
+
+auto ssim_loss = gaussian_splatting::ssim(image, gt_image, conv_window, window_size, channel);
+
+  
+
+ssim_loss.backward();
+
+gaussian_pro->_optimizer->step();
+
+gaussian_pro->_optimizer->zero_grad(true);
+
+}
+
+is_gs_started = true;
+```
+
+高斯球是怎么放入全局地图的？
+
 全局地图是怎么维护的？
+```cpp
+class GaussianModel {
+  torch::Tensor _xyz;          // 所有高斯的位置
+  torch::Tensor _scaling;      // 高斯的尺寸
+  torch::Tensor _rotation;     // 高斯朝向
+  torch::Tensor _features_dc;  // 球谐颜色 DC 分量
+  torch::Tensor _features_rest;// 球谐高阶分量
+  torch::Tensor _opacity;      // 高斯的不透明度
+};
+```
+```markdown
+run() → gsPointCloudUpdate()
+           ↓
+     final_gs_sample
+           ↓
+optimize_vis() → addNewPointcloud()
+                     ↓
+     将该帧所有高斯作为新的参数拼接进全局高斯图
+```
+
 
 
 
