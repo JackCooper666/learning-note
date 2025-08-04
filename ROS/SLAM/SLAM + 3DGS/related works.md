@@ -268,12 +268,66 @@ $$
 $$
 
  
- 🌟 总体目标：`lioOptimization::process()`
+这个项目中高斯球是怎么生成的？
+`splitPointsIntoCell(points_notadded, frameLossPoints);` :
+将本帧的有色点云放进去，将有色点云按体素划分
+输出：
+	1. `hash_pointmatrix`
+	📌 类型：`std::unordered_map<std::size_t, PointMatrix>`
+	🔍 作用：
+	- 存储每个 voxel（由 `hash_posi` 标识）中收集到的所有 3D 点（构成一个 `PointMatrix`）。    
+	- 后续用于 GP3D 拟合高斯表面，或生成体素内的高斯球。
+	
+	 1. `hash_voxelnode`
+	📌 类型：`std::unordered_map<std::size_t, VoxelNode>`
+	🔍 作用：
+	- 记录每个 voxel 的状态：是否已经被处理/收敛（`is_converged`）；
+	- 控制哪些 voxel 可以继续添加点或进行 GP 拟合。
+	
+	1. `updated_voxel`
+	📌 类型：`std::vector<std::size_t>`
+	🔍 作用：
+	- 记录**当前帧中**有哪些 voxel 被添加了新点；
+	- 后续 `dividePointsIntoCellInitMap()` 会只处理这些 voxel（而不是所有 voxel）。
+	
+	 1. `hash_vecpoint`
+	📌 类型：`std::unordered_map<std::size_t, Eigen::Vector3d>`
+	🔍 作用：
+	- 记录每个 `hash_posi` 对应的离散 voxel 坐标索引（如 `[ix, iy, iz]`）；
+	- 后续用于生成该 voxel 的空间位置（Region 的边界范围）。
 
-这是整个 LIO + 视觉 + 3D Gaussian Splatting 系统中每一帧数据的主处理入口，完成：
+`dividePointsIntoCellInitMap()` 的作用是：  
+**将输入点云划分到 voxel 网格中，对每个满足条件的 voxel 构建 `needGPUdata`，用于后续的 Gaussian Process 拟合（`forward_gp3d()`），并筛选出可用于 loss 的点（`GsForLoss`）**
+`GpMap::dividePointsIntoCellInitMap()` 这个函数本身 **只处理了无颜色（XYZ）信息的点云数据**，并没有直接涉及 RGB 或彩色信息的处理。
+```cpp
+struct needGPUdata {
 
-> “状态初始化 → 数据预处理 → 状态估计 → 高斯点云生成 → 图像渲染训练 → 地图维护 → 发布/保存”。
+std::size_t hash_;
 
+Eigen::Matrix<double, 3, Eigen::Dynamic> point;
+
+Eigen::Matrix<double, 1, Eigen::Dynamic> variance;
+
+int num_point;
+
+Region region_;
+
+int direction_;
+
+bool is_converged{false};
+
+std::vector<Eigen::VectorXd> gmm_init_mu;
+
+std::vector<Eigen::MatrixXd> gmm_init_sigma;
+
+};
+```
+
+
+每帧高斯球是怎么被定义的？
+
+每帧高斯球是怎么放入全局地图的？
+全局地图是怎么维护的？
 
 
 
