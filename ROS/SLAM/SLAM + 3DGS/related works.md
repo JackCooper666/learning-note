@@ -267,6 +267,7 @@ $$
 \mathcal{L} = (1-\lambda_s)\|C - C_{gt}\|_1 + \lambda_s \mathcal{L}_{ssim} + \lambda_d \mathcal{L}_d + \lambda_p \mathcal{L}_p
 $$
 
+ 
  🌟 总体目标：`lioOptimization::process()`
 
 这是整个 LIO + 视觉 + 3D Gaussian Splatting 系统中每一帧数据的主处理入口，完成：
