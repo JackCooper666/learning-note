@@ -104,6 +104,7 @@ double t_tocuda_;
 
 
 全局地图是怎么维护的？
+`optimize()` 是对当前的**整个地图（包括历史点和新加点）**进行一次前向渲染 + 反向传播 + 梯度更新的优化过程。
 # GS-LIVO
 1. The lio will do the IESKF to get the state estimation
 2. the gaussian initialize the gaussian balls according to the current image and lidar point cloud at t he estimated state
