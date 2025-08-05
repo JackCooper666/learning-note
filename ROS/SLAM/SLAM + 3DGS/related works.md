@@ -16,8 +16,88 @@ CUDA multi thread backpropagation
 3. remove slim gaussian balls
 
 这个项目中高斯球是怎么生成的？
+ `extend()` 函数的作用是什么？
+
+这个函数的主要目的是：  
+🔹 **从当前帧中提取还未被当前高斯地图覆盖的区域，并新增一批高斯球点，扩展全局地图。**
+
 
 每帧高斯球是怎么被定义的？
+```cpp
+class GaussianModel
+{
+public:
+GaussianModel(const Params& prm);
+torch::Tensor getScaling();
+torch::Tensor getRotation();
+torch::Tensor getXYZ();
+torch::Tensor getFeaturesDc();
+torch::Tensor getFeaturesRest();
+torch::Tensor getOpacity();
+torch::Tensor getCovariance(int scaling_modifier);
+torch::Tensor getExposure();
+void initialize(const std::shared_ptr<Dataset>& dataset);
+void saveMap(const std::string& result_path);
+void trainingSetup();
+void densificationPostfix(
+torch::Tensor& new_xyz,
+torch::Tensor& new_features_dc,
+torch::Tensor& new_features_rest,
+torch::Tensor& new_opacities,
+torch::Tensor& new_scaling,
+torch::Tensor& new_rotation);
+
+public:
+int sh_degree_;
+bool white_background_;
+bool random_background_;
+bool convert_SHs_python_;
+bool compute_cov3D_python_;
+double lambda_erank_;
+double scaling_scale_;
+double position_lr_;
+double feature_lr_;
+double opacity_lr_;
+double scaling_lr_;
+double rotation_lr_;
+double lambda_dssim_;
+bool apply_exposure_;
+double exposure_lr_;
+int skybox_points_num_;
+int skybox_radius_;
+
+// the 
+torch::Tensor xyz_;
+torch::Tensor features_dc_;
+torch::Tensor features_rest_;
+torch::Tensor scaling_;
+torch::Tensor rotation_;
+torch::Tensor opacity_;
+
+torch::Tensor exposure_;
+
+std::vector<torch::Tensor> Tensor_vec_xyz_,
+Tensor_vec_feature_dc_,
+Tensor_vec_feature_rest_,
+Tensor_vec_opacity_,
+Tensor_vec_scaling_ ,
+Tensor_vec_rotation_,
+Tensor_vec_exposure_;
+std::shared_ptr<torch::optim::Adam> optimizer_;
+std::shared_ptr<SparseGaussianAdam> sparse_optimizer_;
+std::shared_ptr<torch::optim::Adam> exposure_optimizer_;
+bool is_init_;
+torch::Tensor bg_;
+std::chrono::steady_clock::time_point t_start_;
+std::chrono::steady_clock::time_point t_end_;
+double t_forward_;
+double t_backward_;
+double t_step_;
+double t_optlist_;
+double t_tocuda_;
+};
+```
+
 
 高斯球是怎么放入全局地图的？
 
