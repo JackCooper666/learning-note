@@ -15,6 +15,13 @@ CUDA multi thread backpropagation
 2. For faster training of the Gaussianmap representation, sparse Adamwas applied to only update Gaussians in the current camera frustum.
 3. remove slim gaussian balls
 
+这个项目中高斯球是怎么生成的？
+
+每帧高斯球是怎么被定义的？
+
+高斯球是怎么放入全局地图的？
+
+全局地图是怎么维护的？
 # GS-LIVO
 1. The lio will do the IESKF to get the state estimation
 2. the gaussian initialize the gaussian balls according to the current image and lidar point cloud at t he estimated state
