@@ -16,10 +16,7 @@ CUDA multi thread backpropagation
 3. remove slim gaussian balls
 
 这个项目中高斯球是怎么生成的？
- `extend()` 函数的作用是什么？
-
-这个函数的主要目的是：  
-🔹 **从当前帧中提取还未被当前高斯地图覆盖的区域，并新增一批高斯球点，扩展全局地图。**
+gaussians->initialize(dataset);
 
 
 每帧高斯球是怎么被定义的？
@@ -100,6 +97,11 @@ double t_tocuda_;
 
 
 高斯球是怎么放入全局地图的？
+ `extend()` 函数的作用是什么？
+
+这个函数的主要目的是：  
+🔹 **从当前帧中提取还未被当前高斯地图覆盖的区域，并新增一批高斯球点，扩展全局地图。**
+
 
 全局地图是怎么维护的？
 # GS-LIVO
@@ -668,4 +670,6 @@ $$E_{loop} = λ_{icp}E_{icp} + λ_{render}E_{render}$$
 $$G_{merged} = \frac{∑w_iG_i}{∑w_i}, \quad w_i = α_i·V_i$$
 3. 非重叠区域保留原高斯  
 4. 联合优化更新全局地图
+
+
 
