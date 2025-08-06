@@ -181,6 +181,8 @@
   },
   "active": "0589ee7ae40c4b22",
   "lastOpenFiles": [
+    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "ROS/SLAM/SLAM + 3DGS/related works.md",
     "c and cpp/cpp/error/整数溢出（integer overflow）.md",
     "c and cpp/cpp/algorithm/分治.md",
     "c and cpp/cpp/error",
@@ -195,9 +197,7 @@
     "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
     "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
-    "ROS/SLAM/SLAM + 3DGS/related works.md",
     "ROS/SLAM/3d gaussian splitting/related works.pdf",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "c and cpp/cpp/algorithm/二叉树/depth first search.md",
     "c and cpp/cpp/STL/queue/queue.md",
     "c and cpp/cpp/variable type/numbers' type.md",
