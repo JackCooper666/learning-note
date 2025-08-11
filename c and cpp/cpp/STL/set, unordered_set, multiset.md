@@ -145,3 +145,25 @@ int main() {
 要么给 `unordered_set` 提供一个自定义的哈希函数。
 
 # how to get the element in a set by index
+```cpp
+#include <iostream>
+#include <set>
+#include <iterator> // for std::advance
+
+int main() {
+    std::set<int> s = {10, 20, 30, 40, 50};
+
+    // Get the element at index 2 (0-based)
+    int index = 2;
+    auto it = s.begin();
+    std::advance(it, index);
+
+    if (it != s.end()) {
+        std::cout << "Element at index " << index << ": " << *it << std::endl;
+    } else {
+        std::cout << "Index out of bounds!" << std::endl;
+    }
+
+    return 0;
+}
+```
