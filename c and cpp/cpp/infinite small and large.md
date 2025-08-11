@@ -50,12 +50,14 @@ Integers **cannot represent true infinity**, but you can use:
 #include <climits> // For INT_MAX, INT_MIN
 
 int pseudo_pos_inf = INT_MAX; // Largest possible integer
+long long top = LLONG_MAX;
 std::cout << "Pseudo +inf (int): " << pseudo_pos_inf; // e.g., 2147483647
 ```
 
 ## **Infinitely Small (Minimum Value)**
 ```cpp
 int pseudo_neg_inf = INT_MIN; // Smallest possible integer
+long long bottom = LLONG_MIN;
 std::cout << "Pseudo -inf (int): " << pseudo_neg_inf; // e.g., -2147483648
 ```
 

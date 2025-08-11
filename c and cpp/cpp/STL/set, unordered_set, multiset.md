@@ -143,3 +143,5 @@ int main() {
 
 要么使用 `set<vector<int>>`（有序集合，自动去重）  
 要么给 `unordered_set` 提供一个自定义的哈希函数。
+
+# how to get the element in a set by index
