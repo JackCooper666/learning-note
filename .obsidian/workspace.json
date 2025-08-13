@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/algorithm/二叉树/width first search.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "width first search"
+              "title": "related works"
             }
           }
         ],
@@ -210,9 +210,10 @@
   },
   "active": "f360f36578489975",
   "lastOpenFiles": [
+    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "c and cpp/cpp/algorithm/二叉树/width first search.md",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
     "c and cpp/cpp/STL/queue/queue.md",
-    "c and cpp/cpp/algorithm/二叉树/width first search.md",
     "c and cpp/cpp/algorithm/二叉树/depth first search.md",
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "c and cpp/cpp/STL/rbegin and rend.md",
@@ -230,7 +231,6 @@
     "git/git commends.md",
     "conflict-files-obsidian-git.md",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "ROS/navigation/teb.md",
     "ROS/navigation/ros_motion_planning.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
