@@ -15,7 +15,39 @@ CUDA multi thread backpropagation
 2. For faster training of the Gaussianmap representation, sparse Adamwas applied to only update Gaussians in the current camera frustum.
 3. remove slim gaussian balls
 
-the input points cloud is color points cloud which are the output po
+this is the output points cloud of coco-lic
+```cpp
+void Publish3DGSPoints(const Eigen::aligned_vector<Eigen::Vector3d>& new_points,
+const Eigen::aligned_vector<Eigen::Vector3i>& new_colors, int64_t img_time)
+{
+
+pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
+
+for (int i = 0; i < new_points.size(); ++i)
+{
+pcl::PointXYZRGB point;
+point.x = new_points[i].x();
+point.y = new_points[i].y();
+point.z = new_points[i].z();
+point.r = new_colors[i].x();
+point.g = new_colors[i].y();
+point.b = new_colors[i].z();
+cloud->points.push_back(point);
+}
+cloud->width = cloud->points.size();
+cloud->height = 1;
+cloud->is_dense = false; //数据是否有无效点
+sensor_msgs::PointCloud2 output_msg;
+pcl::toROSMsg(*cloud, output_msg);
+ros::Time time_tool;
+output_msg.header.stamp = time_tool.fromNSec(img_time);
+output_msg.header.frame_id = "map";
+pub_gs_points_.publish(output_msg);
+}
+```
+
+
+the input points cloud is color points cloud which are the output points cloud of coco-lic
 ```cpp
 /// point
 
