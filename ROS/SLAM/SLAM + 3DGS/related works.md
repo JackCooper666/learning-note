@@ -15,7 +15,7 @@ CUDA multi thread backpropagation
 2. For faster training of the Gaussianmap representation, sparse Adamwas applied to only update Gaussians in the current camera frustum.
 3. remove slim gaussian balls
 
-the input points cloud is color points cloud
+the input points cloud is color points cloud which are the output po
 ```cpp
 /// point
 
@@ -60,6 +60,7 @@ std::vector<std::shared_ptr<Camera>> test_cameras_;
 };
 ```
 
+集体更新：
 
 
 
