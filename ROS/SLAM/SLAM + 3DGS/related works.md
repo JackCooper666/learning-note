@@ -15,6 +15,57 @@ CUDA multi thread backpropagation
 2. For faster training of the Gaussianmap representation, sparse Adamwas applied to only update Gaussians in the current camera frustum.
 3. remove slim gaussian balls
 
+the input points cloud is color points cloud
+```cpp
+/// point
+
+pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
+pcl::fromROSMsg(*cur_frame.point_msg, *cloud);
+
+for (const auto& pt : cloud->points)
+{
+pointcloud_.emplace_back(Eigen::Vector3d(pt.x, pt.y, pt.z));
+pointcolor_.emplace_back(Eigen::Vector3d(pt.r, pt.g, pt.b) / 255.0);
+Eigen::Matrix3d R_cw = q_wc.toRotationMatrix().transpose();
+Eigen::Vector3d t_cw = - R_cw * t_wc;
+Eigen::Vector3d pt_c = R_cw * pointcloud_.back() + t_cw;
+assert(pt_c(2) > 0);
+pointdepth_.push_back(static_cast<float>(pt_c(2)));
+}
+class Dataset
+{
+public:
+Dataset(const Params& prm)
+: fx_(prm.fx), fy_(prm.fy), cx_(prm.cx), cy_(prm.cy),
+select_every_k_frame_(prm.select_every_k_frame),
+all_frame_num_(0), is_keyframe_current_(false) {}
+void addFrame(Frame& cur_frame);
+public:
+double fx_;
+double fy_;
+double cx_;
+double cy_;
+int select_every_k_frame_;
+int all_frame_num_;
+bool is_keyframe_current_;
+
+Eigen::aligned_vector<Eigen::Matrix3d> R_wc_;
+Eigen::aligned_vector<Eigen::Vector3d> t_wc_;
+
+Eigen::aligned_vector<Eigen::Vector3d> pointcloud_;
+Eigen::aligned_vector<Eigen::Vector3d> pointcolor_;
+std::vector<float> pointdepth_;
+std::vector<std::shared_ptr<Camera>> train_cameras_;
+std::vector<std::shared_ptr<Camera>> test_cameras_;
+};
+```
+
+
+
+
+
+
+
 这个项目中高斯球是怎么生成的？
 gaussians->initialize(dataset);
 
