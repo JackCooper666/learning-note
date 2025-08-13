@@ -93,8 +93,30 @@ std::vector<std::shared_ptr<Camera>> test_cameras_;
 ```
 
 集体更新：
+the image of each frame will be recorded by
+```cpp
+train_cameras_.emplace_back(cam);
+```
+get the nums of image and randomly selected 100 frames from the previous frames
+```cpp
+int train_camera_num = dataset->train_cameras_.size();
+std::vector<int> all_list(train_camera_num);
+std::iota(all_list.begin(), all_list.end(), 0);
 
+std::random_device rd;
+std::mt19937 gen(rd());
+if (train_camera_num <= max_iters)
+{
+opt_list = all_list;
+}
 
+else
+{
+std::sample(all_list.begin(), all_list.end(),
+std::back_inserter(opt_list), max_iters, gen);
+}
+```
+then optimize per selected frame
 
 
 
