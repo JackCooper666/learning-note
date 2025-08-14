@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/write a short python in terminal.md",
+                "file": "c and cpp/cpp/Lambda.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "write a short python in terminal"
+              "title": "Lambda"
             }
           }
         ]
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,8 +181,9 @@
   },
   "active": "ab57794e0f9e19fe",
   "lastOpenFiles": [
-    "ubuntu/镜像源切换.md",
     "Python/write a short python in terminal.md",
+    "c and cpp/cpp/Lambda.md",
+    "ubuntu/镜像源切换.md",
     "c and cpp/cpp/STL/hashtable.md",
     "c and cpp/cpp/algorithm/二叉树/depth first search.md",
     "c and cpp/cpp/algorithm/二叉树/binary tree.md",
@@ -208,7 +208,6 @@
     "ROS/navigation/teb.md",
     "ROS/navigation/ros_motion_planning.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
-    "c and cpp/cpp/error/整数溢出（integer overflow）.md",
     "c and cpp/cpp/error",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
