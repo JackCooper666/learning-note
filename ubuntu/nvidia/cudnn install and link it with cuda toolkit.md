@@ -44,3 +44,13 @@ sudo apt install -y \
   /var/cudnn-local-repo-ubuntu2004-9.10.2/libcudnn9-dev-cuda-11_9.10.2.21-1_amd64.deb
 ```
 
+# uninstall the cudnn
+find all cudnn packages
+```bash
+sudo dpkg -l | grep cudnn
+```
+uninstall all packages
+
+
+**Note that**: the opencv 4.7.0 matches the cudnn 8.x 
+
