@@ -49,8 +49,11 @@ find all cudnn packages
 ```bash
 sudo dpkg -l | grep cudnn
 ```
-uninstall all packages
-
+uninstall all packages by
+```bash
+sudo rm -rf 
+```
 
 **Note that**: the opencv 4.7.0 matches the cudnn 8.x 
+
 
