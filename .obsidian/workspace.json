@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
+                "file": "ROS/SLAM/slam_successfully_run/coco-lic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3d gaussian splatting usage for ubuntu 20.04"
+              "title": "coco-lic"
             }
           }
         ]
@@ -181,8 +181,10 @@
   },
   "active": "ab57794e0f9e19fe",
   "lastOpenFiles": [
-    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
     "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
+    "ROS/SLAM/slam_successfully_run/coco-lic.md",
+    "ROS/SLAM/slam_successfully_run",
+    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
     "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
     "c and cpp/cpp/Lambda.md",
@@ -207,7 +209,6 @@
     "c and cpp/cpp/run cpp in linux.md",
     "c and cpp/cpp/ASCII.md",
     "c and cpp/cpp/address and memory.md",
-    "c and cpp/cpp/algorithm/归并排序.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "c and cpp/cpp/error",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
@@ -221,7 +222,6 @@
     "ROS/SLAM/fastlivo2",
     "ROS/SLAM/3d gaussian splitting",
     "ubuntu/soft link and hard link/hard_link_classification.jpeg",
-    "ubuntu/soft link and hard link",
     "ubuntu/conda/install/install_gui_4.webp",
     "ubuntu/conda/install/install_gui_3.webp",
     "ubuntu/conda/install/install_gui_2.webp",
