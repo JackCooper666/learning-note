@@ -179,11 +179,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab57794e0f9e19fe",
+  "active": "9057a9433e081024",
   "lastOpenFiles": [
+    "c and cpp/cpp/algorithm/Untitled",
+    "c and cpp/cpp/algorithm/Untitled.md",
+    "c and cpp/cpp/algorithm/二叉树/Lowest Common Ancestor.md",
     "Pasted image 20250815234112.png",
     "c and cpp/cpp/algorithm/二叉树/lca.png",
-    "c and cpp/cpp/algorithm/二叉树/Lowest Common Ancestor.md",
     "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
     "ROS/SLAM/slam_successfully_run/coco-lic.md",
     "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
@@ -210,7 +212,6 @@
     "c and cpp/cpp/STL/pair.md",
     "c and cpp/cpp/infinite small and large.md",
     "c and cpp/cpp/time complex and space complex.md",
-    "c and cpp/cpp/run cpp in linux.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "c and cpp/cpp/error",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
@@ -225,7 +226,6 @@
     "ROS/SLAM/3d gaussian splitting",
     "ubuntu/soft link and hard link/hard_link_classification.jpeg",
     "ubuntu/conda/install/install_gui_4.webp",
-    "ubuntu/conda/install/install_gui_3.webp",
-    "ubuntu/conda/install/install_gui_2.webp"
+    "ubuntu/conda/install/install_gui_3.webp"
   ]
 }
