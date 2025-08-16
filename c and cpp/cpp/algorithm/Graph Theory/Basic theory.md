@@ -1,3 +1,5 @@
+refer to [【图论】总汇（内含C++）](https://blog.csdn.net/weixin_66767924/article/details/133513083?fromshare=blogdetail&sharetype=blogdetail&sharerId=133513083&sharerefer=PC&sharesource=yourox&sharefrom=from_link)
+
 # 一、图的各种定义
 ## 1.图的构成
 
@@ -365,7 +367,84 @@ int main(){
 }
 ```
 
-##### 5.强联通分量
+## 5.强联通分量
 
 强联通分量，一个有向图的子图，其中任意两点都可以互相到达，要尽可能大。那怎么求强联通分量数量呢？强联通分量本质就是环，让我们在下文中解决这个问题。
+### （1）前置定义
 
+我们把它搞成一个**形似树的东西**！
+
+![[tree_with_loop.png]]
+
+**树边：** 不可言传，只可意会！ 
+**回边（形成环）：** 从一个点指向自己祖先的边。 
+**横叉边（扩大环）：** 既不是树边，也不是回边。
+### （2）Tarjan求强联通分量
+```cpp
+#include<bits/stdc++.h>
+using namespace std; 
+#define ll long long
+vector<ll> edge[100005]; 
+ll n,m,s;
+void add_edge(ll s,ll e){
+	edge[s].push_back(e);
+} 
+int num;//当前dfs了几个点。
+int dfn[10005];//dfn[i] 代表i点是第几个被dfs到的点。
+int low[10005];
+//low[i] 代表从i点出发 走 树边、回边、能扩大环的横叉边 能走到的所有点中dfn最小的是多少。
+stack<int> sta;//用来存储 所有被 dfs 过 但还没有求出 强连通分量的点。
+bool instack[10005];//instack[i] 代表i点是否在栈里面。
+int cnt;//当前总共有多少个强连通分量。
+int belong[10005];//belong[i]代表i点属于第几个强连通分量
+void dfs(int i){
+	num++,dfn[i]=low[i]=num;
+	sta.push(i);
+	instack[i]=1;
+	for(int k=0;k<edge[i].size();k++){
+		ll j=edge[i][k];
+		if(!dfn[j]){//树边
+			dfs(j);
+			low[i]=min(low[i],low[j]); 
+		}else{//回边横叉边
+			if(instack[j])low[i]=min(low[i],dfn[j]);
+		}
+	}
+	if(dfn[i]==low[i]){//i是它所属的强连通分量的最上面的点 
+		cnt++;//新增了一个强连通分量
+		while(sta.top()!=i){//栈顶不等于当前点
+			belong[sta.top()]=cnt;//i和sta.top()一定属于同一个强连通分量
+			instack[sta.top()]=0;
+			sta.pop();
+		}
+		sta.pop();
+		instack[i]=0;
+		belong[i]=cnt;
+	}
+} 
+vector<ll> Belong[10005];//Belong[i]是一个vector用来记录第i个强连通分量里面的所有点。
+bool vis[10005];//vis[i]代表第i个强联通分量是否已经输出过了。 
+int main(){
+	cin>>n>>m;
+	for(int i=1;i<=m;i++){
+		int p1,p2;
+		cin>>p1>>p2;
+		add_edge(p1,p2);
+	}
+	for(int i=1;i<=n;i++){
+		if(!dfn[i])dfs(i);
+		Belong[belong[i]].push_back(i);
+	}
+	cout<<cnt<<'\n'//有几个强连通分量 ;
+	for(int i=1;i<=cnt;++i){
+		sort(Belong[i].begin(),Belong[i].end());
+	}
+	for(int i=1;i<=n;++i){
+		if(vis[belong[i]])continue;
+		vis[belong[i]]=1;
+		for(int j=0;j<Belong[belong[i]].size();++j){
+			cout<<Belong[belong[i]][j]<<" ";
+		}cout<<'\n';
+	}
+}
+```
