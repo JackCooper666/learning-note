@@ -40,7 +40,8 @@ Lambda 函数是 C++11 引入的一种匿名函数特性，它允许你在需要
 
 ### 基本示例
 ```cpp
-auto sum = [](int a, int b) { return a + b; };
+auto sum = [](int a, int b) { return a + b; }; 
+//The first `auto` deduces the lambda’s type (a functor, not its return type).
 std::cout << sum(5, 3);  // 输出8
 ```
 

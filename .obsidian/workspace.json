@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs + slam_successfully_run/monogs.md",
+                "file": "c and cpp/cpp/Lambda.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "monogs"
+              "title": "Lambda"
             }
           }
         ]
@@ -182,8 +182,8 @@
   },
   "active": "6489b81729279e11",
   "lastOpenFiles": [
-    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
     "ROS/SLAM/gs + slam_successfully_run/monogs.md",
+    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
     "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
     "ubuntu/conda/install/conda install and uninstall.md",
     "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
