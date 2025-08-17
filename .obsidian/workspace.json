@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ubuntu/conda/install/conda install and uninstall.md",
+                "file": "ROS/SLAM/gs + slam_successfully_run/splatam.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conda install and uninstall"
+              "title": "splatam"
             }
           }
         ]
@@ -183,6 +183,8 @@
   "active": "6489b81729279e11",
   "lastOpenFiles": [
     "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
+    "ubuntu/conda/install/conda install and uninstall.md",
     "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
     "c and cpp/cpp/algorithm/binary tree/Lowest Common Ancestor.md",
@@ -215,7 +217,6 @@
     "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "c and cpp/cpp/STL/rbegin and rend.md",
     "c and cpp/cpp/STL/pair.md",
-    "c and cpp/cpp/infinite small and large.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "c and cpp/cpp/error",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
