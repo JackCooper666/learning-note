@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+                "file": "ubuntu/conda/common commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gaussian-slam"
+              "title": "common commands"
             }
           }
         ]
@@ -182,12 +182,13 @@
   },
   "active": "6489b81729279e11",
   "lastOpenFiles": [
-    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
+    "ubuntu/conda/install/conda install and uninstall.md",
+    "ubuntu/conda/common commands.md",
     "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
     "ROS/SLAM/gs + slam_successfully_run/splatam.md",
     "c and cpp/cpp/Lambda.md",
     "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
-    "ubuntu/conda/install/conda install and uninstall.md",
     "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
     "c and cpp/cpp/algorithm/binary tree/Lowest Common Ancestor.md",
@@ -216,7 +217,6 @@
     "ROS/SLAM/SLAM + 3DGS/related works.md",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "c and cpp/cpp/STL/queue/queue.md",
-    "c and cpp/cpp/STL/set, unordered_set, multiset.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "c and cpp/cpp/error",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
