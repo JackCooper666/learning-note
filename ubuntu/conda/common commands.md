@@ -54,6 +54,12 @@ conda update numpy
 conda install pkg_name -c conda_forge
 ```
 
+install packages through the pip install and requirement.txt
+```bash
+pip install -r requirements.txt
+```
+
+
 # conda卸载包
 ```bash
 conda uninstall package_name
