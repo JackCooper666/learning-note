@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "1d67ee0d095174dd",
+        "id": "631676d7c2e52196",
         "type": "tabs",
         "children": [
           {
-            "id": "6489b81729279e11",
+            "id": "1581e81193d10ffb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "loop splat"
+              "title": "related works"
+            }
+          },
+          {
+            "id": "97de9bfdcde16709",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "related works"
+            }
+          },
+          {
+            "id": "f360f36578489975",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "xsens-mti-680g"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -166,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 482.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,45 +209,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6489b81729279e11",
+  "active": "f360f36578489975",
   "lastOpenFiles": [
-    "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+    "ROS/Localization/RTK+GNSS.md",
+    "ROS/Localization/AMCL.md",
+    "git/git commends.md",
     "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
-    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
-    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
-    "ubuntu/conda/common commands.md",
-    "ubuntu/conda/install/conda install and uninstall.md",
-    "c and cpp/cpp/Lambda.md",
-    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
-    "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
-    "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
-    "c and cpp/cpp/algorithm/binary tree/Lowest Common Ancestor.md",
-    "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
-    "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815234112.png",
-    "c and cpp/cpp/algorithm/Graph Theory/Pasted image 20250816191728.png",
-    "c and cpp/cpp/algorithm/binary tree/width first search.md",
-    "c and cpp/cpp/algorithm/Graph Theory",
-    "c and cpp/cpp/algorithm/Untitled.md",
-    "c and cpp/cpp/algorithm/二叉树/lca.png",
-    "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
-    "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
-    "ROS/SLAM/gs + slam_successfully_run",
-    "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
+    "ubuntu/镜像源切换.md",
     "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
-    "c and cpp/gcc and g++.md",
     "ubuntu/nvidia",
-    "ubuntu/Untitled.md",
-    "ubuntu/how to run .bash file.md",
-    "Python/write a short python in terminal.md",
-    "ubuntu/镜像源切换.md",
-    "c and cpp/cpp/STL/hashtable.md",
+    "ubuntu/conda/common commands.md",
+    "c and cpp/cpp/algorithm/binary tree/width first search.md",
+    "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
     "c and cpp/cpp/algorithm/binary tree/depth first search.md",
     "c and cpp/cpp/algorithm/binary tree/binary tree.md",
+    "c and cpp/cpp/algorithm/binary tree/Lowest Common Ancestor.md",
+    "c and cpp/cpp/algorithm/binary tree",
+    "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
+    "c and cpp/cpp/algorithm/Graph Theory/Pasted image 20250816191728.png",
+    "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
+    "c and cpp/cpp/algorithm/Graph Theory",
+    "c and cpp/cpp/Lambda.md",
+    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
+    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
+    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+    "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+    "ROS/SLAM/gs + slam_successfully_run",
+    "Python/write a short python in terminal.md",
+    "conflict-files-obsidian-git.md",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "ROS/navigation/teb.md",
+    "ROS/navigation/ros_motion_planning.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
+    "c and cpp/cpp/error/整数溢出（integer overflow）.md",
     "c and cpp/cpp/error",
+    "c and cpp/cpp/algorithm/分治.md",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
@@ -226,6 +254,8 @@
     "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
     "ROS/SLAM/fastlio",
     "ROS/SLAM/fastlivo",
-    "ROS/SLAM/fastlivo2"
+    "ubuntu/soft link and hard link/hard_link_classification.jpeg",
+    "ubuntu/conda/install/install_gui_4.webp",
+    "ubuntu/conda/install/install_gui_3.webp"
   ]
 }
