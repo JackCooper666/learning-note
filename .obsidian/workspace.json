@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+                "file": "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gaussian-slam"
+              "title": "loop splat"
             }
           }
         ]
@@ -181,8 +181,8 @@
   },
   "active": "6489b81729279e11",
   "lastOpenFiles": [
-    "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
     "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+    "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
     "ROS/SLAM/gs + slam_successfully_run/splatam.md",
     "ROS/SLAM/gs + slam_successfully_run/monogs.md",
     "ubuntu/conda/common commands.md",

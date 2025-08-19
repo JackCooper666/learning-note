@@ -102,7 +102,7 @@ dependencies:
 ```
 
 # download the dataset (TUM_RBGD)
-the official downloda_tum.sh is wrong, the downloaded package is incompleted, please use the following one
+the official downloda_tum.sh is wrong, the downloaded package is incompleted, please replace the following one with the original download_tum.sh in the /scripts and use it by `bash /scripts/download_tum.sh`
 ```bash
 mkdir -p data/TUM_RGBD
 cd data/TUM_RGBD
@@ -119,6 +119,13 @@ tar -xvzf rgbd_dataset_freiburg3_long_office_household.tgz
 ```
 
 # train
+train a dataset
+```bash
+python run_slam.py configs/<dataset_name>/<config_name> --input_path <path_of_input_dataset> --output_path <output_path>
+```
 
-
+for example
+```bash
+python run_slam.py configs/TUM_RGBD/rgbd_dataset_freiburg1_desk.yaml --input_path data/TUM_RGBD/rgbd_dataset_freiburg1_desk --output_path output/TUM_RGBD/rgbd_dataset_freiburg1_desk/
+```
 # visualization
