@@ -19,19 +19,6 @@ else
 fi
 # <<< ros noetic <<<
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/arc/.conan/data/gflags/2.2.2/_/_/package/88539f002769027b252fd7a108dc2f1fa9529154/lib
-export LIBRARY_PATH=$LIBRARY_PATH:/home/arc/.conan/data/gflags/2.2.2/_/_/package/88539f002769027b252fd7a108dc2f1fa9529154/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/arc/.conan/data/glog/0.6.0/_/_/package/a9d362b17f05cef8580ca68487c6299654e427f6/lib
-export LIBRARY_PATH=$LIBRARY_PATH:/home/arc/.conan/data/glog/0.6.0/_/_/package/a9d362b17f05cef8580ca68487c6299654e427f6/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/arc/.conan/data/ceres-solver/1.14.0/_/_/package/7195fd60b8544268e80a4a2edca60ab3e55f8aa9/lib
-export LIBRARY_PATH=$LIBRARY_PATH:/home/arc/.conan/data/ceres-solver/1.14.0/_/_/package/7195fd60b8544268e80a4a2edca60ab3e55f8aa9/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/arc/.conan/data/osqp/0.6.3/_/_/package/2af715f34a7c8c2aeae57b25be0a52c4110dc502/lib
-
-
-export LIBRARY_PATH=$LIBRARY_PATH:/home/arc/.conan/data/osqp/0.6.3/_/_/package/2af715f34a7c8c2aeae57b25be0a52c4110dc502/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/arc/.conan/data/libunwind/1.8.0/_/_/package/c8c888b1fc83f5e0145e8890c2af3bd4e0005c98/lib
-export LIBRARY_PATH=$LIBRARY_PATH:/home/arc/.conan/data/libunwind/1.8.0/_/_/package/c8c888b1fc83f5e0145e8890c2af3bd4e0005c98/lib
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 echo "----------------------------------------"
