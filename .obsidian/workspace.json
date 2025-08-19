@@ -211,6 +211,8 @@
   },
   "active": "f360f36578489975",
   "lastOpenFiles": [
+    "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
+    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "ROS/Localization/RTK+GNSS.md",
     "ROS/Localization/AMCL.md",
     "git/git commends.md",
@@ -243,9 +245,7 @@
     "ROS/navigation/teb.md",
     "ROS/navigation/ros_motion_planning.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
-    "c and cpp/cpp/error/整数溢出（integer overflow）.md",
     "c and cpp/cpp/error",
-    "c and cpp/cpp/algorithm/分治.md",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
