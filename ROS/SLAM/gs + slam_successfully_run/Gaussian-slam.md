@@ -128,4 +128,3 @@ for example
 ```bash
 python run_slam.py configs/TUM_RGBD/rgbd_dataset_freiburg1_desk.yaml --input_path data/TUM_RGBD/rgbd_dataset_freiburg1_desk --output_path output/TUM_RGBD/rgbd_dataset_freiburg1_desk/
 ```
-# visualization
