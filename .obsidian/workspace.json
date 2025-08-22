@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/cpp project folders' structure.md",
+                "file": "c and cpp/cpp/CMakeList/basic commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cpp project folders' structure"
+              "title": "basic commands"
             }
           }
         ]
@@ -182,8 +182,12 @@
   },
   "active": "6489b81729279e11",
   "lastOpenFiles": [
-    "ROS/SLAM/SLAM + 3DGS/related works.md",
+    "c and cpp/cpp/run cpp in linux.md",
+    "c and cpp/cpp/CMakeList/basic commands.md",
+    "c and cpp/cpp/CMakeList",
+    "c and cpp/cpp/time complex and space complex.md",
     "c and cpp/cpp/cpp project folders' structure.md",
+    "ROS/SLAM/SLAM + 3DGS/related works.md",
     "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "ROS/SLAM/gs + slam_successfully_run/monogs.md",
     "ROS/SLAM/gs + slam_successfully_run/splatam.md",
@@ -216,16 +220,12 @@
     "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
     "ROS/SLAM/gs + slam_successfully_run",
     "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
-    "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
-    "c and cpp/gcc and g++.md",
     "ubuntu/nvidia",
-    "ubuntu/Untitled.md",
     "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "c and cpp/cpp/error",
     "ROS/SLAM/SLAM + 3DGS/related works.pdf",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
-    "ROS/SLAM/SLAM + 3DGS",
     "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png",
     "c and cpp/cpp/algorithm/二叉树/basic_foramt.png"
   ]
