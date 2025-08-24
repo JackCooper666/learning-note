@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git commends.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git commends"
+              "title": "related works"
             }
           }
         ]
@@ -182,6 +182,8 @@
   },
   "active": "6489b81729279e11",
   "lastOpenFiles": [
+    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "git/git commends.md",
     "c and cpp/gcc and g++.md",
     "c and cpp/cpp/CMakeList/basic commands.md",
     "c and cpp/cpp/run cpp in linux.md",
@@ -189,7 +191,6 @@
     "c and cpp/cpp/time complex and space complex.md",
     "c and cpp/cpp/cpp project folders' structure.md",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "ROS/SLAM/gs + slam_successfully_run/monogs.md",
     "ROS/SLAM/gs + slam_successfully_run/splatam.md",
     "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
@@ -216,7 +217,6 @@
     "c and cpp/cpp/algorithm/Graph Theory/Pasted image 20250816191728.png",
     "c and cpp/cpp/algorithm/binary tree/width first search.md",
     "c and cpp/cpp/algorithm/Graph Theory",
-    "c and cpp/cpp/algorithm/Untitled.md",
     "c and cpp/cpp/algorithm/二叉树/lca.png",
     "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
     "ROS/SLAM/gs + slam_successfully_run",
