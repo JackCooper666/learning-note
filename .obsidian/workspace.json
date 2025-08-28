@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1d67ee0d095174dd",
+        "id": "b4fbe3629677d388",
         "type": "tabs",
         "children": [
           {
-            "id": "6489b81729279e11",
+            "id": "628ce65c05c4ee94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
+                "file": "git/git commends.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cudnn install and link it with cuda toolkit"
+              "title": "git commends"
             }
           }
         ]
@@ -181,14 +181,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6489b81729279e11",
+  "active": "628ce65c05c4ee94",
   "lastOpenFiles": [
+    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/cuda toolkit switch by symlink.md",
     "c and cpp/cpp/STL/queue/queue.md",
     "c and cpp/cpp/run cpp in linux.md",
     "git/git commends.md",
     "ubuntu/vim editor/vim file editor.md",
-    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
     "c and cpp/cpp/Common Library/Eigen/Eigen.md",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
