@@ -211,6 +211,124 @@ double t_tocuda_;
 
 全局地图是怎么维护的？
 `optimize()` 是对当前的**整个地图（包括历史点和新加点）**进行一次前向渲染 + 反向传播 + 梯度更新的优化过程。
+
+gaussian pcd saving:
+```cpp
+void GaussianModel::saveMap(const std::string& result_path)
+
+{
+
+std::string pc_path = result_path + "/point_cloud.ply";
+
+torch::Tensor xyz = this->xyz_.index({torch::indexing::Slice(skybox_points_num_)}).detach().cpu();
+
+// torch::Tensor normals = torch::zeros_like(xyz);
+torch::Tensor f_dc = this->features_dc_.index({torch::indexing::Slice(skybox_points_num_)}).detach().transpose(1, 2).flatten(1).contiguous().cpu();
+
+torch::Tensor f_rest = this->features_rest_.index({torch::indexing::Slice(skybox_points_num_)}).detach().transpose(1, 2).flatten(1).contiguous().cpu();
+
+torch::Tensor opacities = this->opacity_.index({torch::indexing::Slice(skybox_points_num_)}).detach().cpu();
+
+torch::Tensor scale = this->scaling_.index({torch::indexing::Slice(skybox_points_num_)}).detach().cpu();
+
+torch::Tensor rotation = this->rotation_.index({torch::indexing::Slice(skybox_points_num_)}).detach().cpu();
+
+  
+
+std::filebuf fb_binary;
+fb_binary.open(pc_path, std::ios::out | std::ios::binary);
+std::ostream outstream_binary(&fb_binary);
+
+  
+
+tinyply::PlyFile result_file;
+
+
+// xyz
+
+result_file.add_properties_to_element(
+"vertex", {"x", "y", "z"},
+tinyply::Type::FLOAT32, xyz.size(0),
+reinterpret_cast<uint8_t*>(xyz.data_ptr<float>()),
+tinyply::Type::INVALID, 0);
+
+
+// // normals
+// result_file.add_properties_to_element(
+// "vertex", {"nx", "ny", "nz"},
+// tinyply::Type::FLOAT32, normals.size(0),
+// reinterpret_cast<uint8_t*>(normals.data_ptr<float>()),
+// tinyply::Type::INVALID, 0);
+
+  
+// f_dc
+
+std::size_t n_f_dc = this->features_dc_.size(1) * this->features_dc_.size(2);
+std::vector<std::string> property_names_f_dc(n_f_dc);
+for (int i = 0; i < n_f_dc; ++i)
+	property_names_f_dc[i] = "f_dc_" + std::to_string(i);
+
+  
+result_file.add_properties_to_element(
+"vertex", property_names_f_dc,
+tinyply::Type::FLOAT32, this->features_dc_.size(0),
+reinterpret_cast<uint8_t*>(f_dc.data_ptr<float>()),
+tinyply::Type::INVALID, 0);
+
+
+// f_rest
+std::size_t n_f_rest = this->features_rest_.size(1) * this->features_rest_.size(2);
+std::vector<std::string> property_names_f_rest(n_f_rest);
+for (int i = 0; i < n_f_rest; ++i)
+	property_names_f_rest[i] = "f_rest_" + std::to_string(i);
+
+
+result_file.add_properties_to_element(
+"vertex", property_names_f_rest,
+tinyply::Type::FLOAT32, this->features_rest_.size(0),
+reinterpret_cast<uint8_t*>(f_rest.data_ptr<float>()),
+tinyply::Type::INVALID, 0);
+
+
+// opacities
+result_file.add_properties_to_element(
+"vertex", {"opacity"},
+tinyply::Type::FLOAT32, opacities.size(0),
+reinterpret_cast<uint8_t*>(opacities.data_ptr<float>()),
+tinyply::Type::INVALID, 0);
+
+// scale
+std::size_t n_scale = scale.size(1);
+std::vector<std::string> property_names_scale(n_scale);
+for (int i = 0; i < n_scale; ++i)
+	property_names_scale[i] = "scale_" + std::to_string(i);
+
+result_file.add_properties_to_element(
+"vertex", property_names_scale,
+tinyply::Type::FLOAT32, scale.size(0),
+reinterpret_cast<uint8_t*>(scale.data_ptr<float>()),
+tinyply::Type::INVALID, 0);
+
+// rotation
+std::size_t n_rotation = rotation.size(1);
+std::vector<std::string> property_names_rotation(n_rotation);
+
+for (int i = 0; i < n_rotation; ++i)
+	property_names_rotation[i] = "rot_" + std::to_string(i);
+
+result_file.add_properties_to_element(
+"vertex", property_names_rotation,
+tinyply::Type::FLOAT32, rotation.size(0),
+reinterpret_cast<uint8_t*>(rotation.data_ptr<float>()),
+tinyply::Type::INVALID, 0);
+
+// Write the file
+result_file.write(outstream_binary, true);
+fb_binary.close();
+}
+```
+
+
 # GS-LIVO
 1. The lio will do the IESKF to get the state estimation
 2. the gaussian initialize the gaussian balls according to the current image and lidar point cloud at t he estimated state

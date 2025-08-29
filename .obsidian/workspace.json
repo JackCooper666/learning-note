@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/git commends.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git commends"
+              "title": "related works"
             }
           }
         ]
@@ -183,16 +183,16 @@
   },
   "active": "628ce65c05c4ee94",
   "lastOpenFiles": [
+    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "git/git commends.md",
     "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/cuda toolkit switch by symlink.md",
     "c and cpp/cpp/STL/queue/queue.md",
     "c and cpp/cpp/run cpp in linux.md",
-    "git/git commends.md",
     "ubuntu/vim editor/vim file editor.md",
     "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
     "c and cpp/cpp/Common Library/Eigen/Eigen.md",
     "ROS/SLAM/SLAM + 3DGS/related works.md",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
     "c and cpp/gcc and g++.md",
     "c and cpp/cpp/CMakeList/basic commands.md",
     "c and cpp/cpp/CMakeList",
