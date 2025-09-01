@@ -11,12 +11,14 @@
             "id": "628ce65c05c4ee94",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png"
+                "file": "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "NTRIP server on PC"
+              "icon": "lucide-file",
+              "title": "Basic theory"
             }
           }
         ]
@@ -179,8 +181,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9057a9433e081024",
+  "active": "628ce65c05c4ee94",
   "lastOpenFiles": [
+    "hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "c and cpp/cpp/STL/torch/Neural network and optimizer.md",
     "c and cpp/cpp/STL/torch/Linear Algebra.md",
@@ -209,7 +212,6 @@
     "ROS/SLAM/fastlio/FAST-LIO论文讲解.pdf",
     "ROS/SLAM/3d gaussian splitting/Disadvantages of 3DGS.md",
     "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
-    "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
     "ROS/ROS 1/catkin/catkin_tools",
     "ROS/ROS 1/catkin",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
