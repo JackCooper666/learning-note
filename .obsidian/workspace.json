@@ -11,14 +11,12 @@
             "id": "628ce65c05c4ee94",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-                "mode": "source",
-                "source": false
+                "file": "hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png"
               },
-              "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "icon": "lucide-image",
+              "title": "NTRIP server on PC"
             }
           }
         ]
@@ -181,8 +179,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "628ce65c05c4ee94",
+  "active": "9057a9433e081024",
   "lastOpenFiles": [
+    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "c and cpp/cpp/STL/torch/Neural network and optimizer.md",
     "c and cpp/cpp/STL/torch/Linear Algebra.md",
     "c and cpp/cpp/STL/torch/tensor.md",
@@ -211,7 +210,6 @@
     "ROS/SLAM/3d gaussian splitting/Disadvantages of 3DGS.md",
     "ROS/SLAM/3d gaussian splitting/colmap install and testing.md",
     "ROS/SLAM/3d gaussian splitting/ceres-solver-1.14.0 install.md",
-    "ROS/SLAM/3d gaussian splitting/3d gaussian splatting usage for ubuntu 20.04.md",
     "ROS/ROS 1/catkin/catkin_tools",
     "ROS/ROS 1/catkin",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
