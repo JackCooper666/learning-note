@@ -200,7 +200,7 @@ There are three methods to receive the RTCM massages through  the NTRIP server.
 ### using the MT manager
 1. ensure your laptop is connected with internet
 2. open the NTRIP client which is under the MT manager tool bar
-3. input the address and port of the NTRIP server you want to connected. For example, the address and port of the SiReNT is 199.184.151.36 and 2101.
+3. input the address and port of the NTRIP server you want to connected. For example, the address and port of the SiReNT is ???.???.???.?? and ????.
 4. input your NTRIP Account(username and password), you may need to pay one from the NTRIP company
 5. select the closest NTRIP mount point in the dropdown menu
 6. click the "update mount points"
