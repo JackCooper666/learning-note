@@ -183,6 +183,10 @@
   },
   "active": "628ce65c05c4ee94",
   "lastOpenFiles": [
+    "hardware/RTK/xsens/xsens_mti_680g/Xsens GNSS-INS - Supercharge Your GNSS Receiver - MTAN001-A.pdf",
+    "hardware/RTK/xsens/xsens_mti_680g/Unconfirmed 36181.crdownload",
+    "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
+    "hardware/RTK/xsens/xsens_mti_680g/Unconfirmed 229116.crdownload",
     "c and cpp/cpp/algorithm/Graph Theory/BFS in graph theory.md",
     "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
     "hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png",
@@ -212,7 +216,6 @@
     "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
     "ROS/SLAM/fastlio/FAST-LIO论文讲解.pdf",
-    "ROS/SLAM/3d gaussian splitting/Disadvantages of 3DGS.md",
     "ROS/ROS 1/catkin/catkin_tools",
     "ROS/ROS 1/catkin",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
@@ -223,9 +226,6 @@
     "c and cpp/cpp/algorithm/二叉树/lca.png",
     "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
     "ROS/SLAM/gs + slam_successfully_run",
-    "ubuntu/nvidia",
-    "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
-    "c and cpp/cpp/error",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
     "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png"
