@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "f2f7deb0782f2cf0",
+    "id": "70d0a5237fa337a8",
     "type": "split",
     "children": [
       {
-        "id": "b4fbe3629677d388",
+        "id": "9d8a31e069c4f83b",
         "type": "tabs",
         "children": [
           {
-            "id": "628ce65c05c4ee94",
+            "id": "dbd497b9c474bfe1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
+                "file": "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gaussian-slam"
+              "title": "coco-lic"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b60842b6c740003f",
+    "id": "9df256f93da52c76",
     "type": "split",
     "children": [
       {
-        "id": "6a6e8b2e534f469f",
+        "id": "4c5e6cf54af3e8dd",
         "type": "tabs",
         "children": [
           {
-            "id": "9057a9433e081024",
+            "id": "66630b9d854e644b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "a9bdaea6b03e3d5e",
+            "id": "8d1df0666608c371",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "b24e2367e23eb119",
+            "id": "000db8eebf5cb01f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "4c56fd1e3fd15cc7",
+    "id": "e9e1c5715809392e",
     "type": "split",
     "children": [
       {
-        "id": "33698c3832f305c9",
+        "id": "46223f49aa69dc1a",
         "type": "tabs",
         "children": [
           {
-            "id": "b03a6e1fc18ceec2",
+            "id": "f891a921bdf3a739",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily plan/ARC SLAM TOOL NOTE.md",
+                "file": "ubuntu/conda/install/conda install and uninstall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ARC SLAM TOOL NOTE"
+              "title": "Backlinks for conda install and uninstall"
             }
           },
           {
-            "id": "4eec5c47877545a9",
+            "id": "e06569cbafa00f74",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ROS 1/evo.md",
+                "file": "ubuntu/conda/install/conda install and uninstall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from evo"
+              "title": "Outgoing links from conda install and uninstall"
             }
           },
           {
-            "id": "9a951ac8e7324846",
+            "id": "4bc0fd8276efd708",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,96 +137,87 @@
             }
           },
           {
-            "id": "81b9c83afbb78377",
+            "id": "eebeacddddad3433",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily plan/ARC SLAM TOOL NOTE.md",
-                "followCursor": true,
-                "showSearch": true,
+                "file": "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+                "followCursor": false,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ARC SLAM TOOL NOTE"
-            }
-          },
-          {
-            "id": "1de55c432d7228d1",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of coco-lic"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "628ce65c05c4ee94",
+  "active": "dbd497b9c474bfe1",
   "lastOpenFiles": [
-    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
-    "ROS/SLAM/SLAM + 3DGS/related works.md",
-    "ROS/SLAM/SLAM + 3DGS/related works.pdf",
-    "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
     "git/git commends.md",
-    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-    "hardware/RTK/xsens/xsens_mti_680g/Xsens GNSS-INS - Supercharge Your GNSS Receiver - MTAN001-A.pdf",
-    "hardware/RTK/xsens/xsens_mti_680g/Unconfirmed 36181.crdownload",
-    "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
-    "hardware/RTK/xsens/xsens_mti_680g/Unconfirmed 229116.crdownload",
-    "c and cpp/cpp/algorithm/Graph Theory/BFS in graph theory.md",
-    "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
-    "hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png",
-    "c and cpp/cpp/STL/torch/Neural network and optimizer.md",
-    "c and cpp/cpp/STL/torch/Linear Algebra.md",
-    "c and cpp/cpp/STL/torch/tensor.md",
-    "c and cpp/cpp/STL/torch",
-    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
-    "ubuntu/nvidia/cuda toolkit switch by symlink.md",
-    "c and cpp/cpp/STL/queue/queue.md",
-    "c and cpp/cpp/run cpp in linux.md",
-    "ubuntu/vim editor/vim file editor.md",
-    "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
-    "c and cpp/cpp/Common Library/Eigen/Eigen.md",
     "c and cpp/gcc and g++.md",
-    "c and cpp/cpp/CMakeList/basic commands.md",
-    "c and cpp/cpp/CMakeList",
-    "c and cpp/cpp/time complex and space complex.md",
-    "c and cpp/cpp/cpp project folders' structure.md",
-    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
-    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
-    "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
+    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+    "c and cpp/gcc and g++ multi version.md",
+    "coco-lic.md",
+    "ubuntu/nvidia/cuda toolkit switch by symlink.md",
+    "ubuntu/conda/install/conda install and uninstall.md",
+    "ubuntu/conda/common commands.md",
+    "ubuntu/镜像源切换.md",
     "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
-    "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
-    "ROS/SLAM/fastlio/FAST-LIO论文讲解.pdf",
-    "ROS/ROS 1/catkin/catkin_tools",
-    "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
-    "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
-    "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815234112.png",
-    "c and cpp/cpp/algorithm/Graph Theory/Pasted image 20250816191728.png",
-    "c and cpp/cpp/algorithm/二叉树/lca.png",
-    "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
-    "c and cpp/cpp/algorithm/recursion/recursion.png",
-    "c and cpp/cpp/STL/list/list.png",
-    "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png"
+    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
+    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
+    "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
+    "ubuntu/conda/install/terminal.webp",
+    "ubuntu/conda/install/install_gui_4.webp",
+    "ubuntu/conda/install/install_gui_3.webp",
+    "ubuntu/conda/install/install_gui_2.webp",
+    "ubuntu/conda/install/install_gui_1.webp",
+    "ubuntu/conda/install/conda_install_web.webp",
+    "ubuntu/cmake/install and uninstall/install and uninstall.md",
+    "ubuntu/vim editor/vim file editor.md",
+    "ubuntu/vim editor/Pasted image 20250513153752.png",
+    "ubuntu/vim editor/Pasted image 20250513153717.png",
+    "ubuntu/vim editor/Pasted image 20250513153706.png",
+    "ubuntu/vim editor/Pasted image 20250513153650.png",
+    "ubuntu/soft link and hard link/soft link and hard link.md",
+    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
+    "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
+    "ubuntu/conda/install",
+    "ubuntu/cmake/install and uninstall",
+    "ubuntu/Wechat installation/wechat installation.md",
+    "ubuntu/x-terminal-emulator install.md",
+    "ubuntu/vim editor",
+    "ubuntu/soft link and hard link",
+    "ubuntu/nvidia",
+    "ubuntu/how to run .bash file.md",
+    "ubuntu/cpu architecture.md",
+    "ubuntu/conda",
+    "ubuntu/cmake",
+    "ubuntu/Wechat installation",
+    "ubuntu/Steam install Ubuntu.md",
+    "ubuntu",
+    "sh/sh commends.md",
+    "sh/run a sh file.md",
+    "sh",
+    "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md"
   ]
 }
