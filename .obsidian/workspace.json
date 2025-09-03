@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "file": "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "title": "Gaussian-slam"
             }
           }
         ]
@@ -182,6 +182,13 @@
   },
   "active": "628ce65c05c4ee94",
   "lastOpenFiles": [
+    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "ROS/SLAM/SLAM + 3DGS/related works.md",
+    "ROS/SLAM/SLAM + 3DGS/related works.pdf",
+    "ROS/SLAM/SLAM + 3DGS/research_proposal.pdf",
+    "git/git commends.md",
+    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "hardware/RTK/xsens/xsens_mti_680g/Xsens GNSS-INS - Supercharge Your GNSS Receiver - MTAN001-A.pdf",
     "hardware/RTK/xsens/xsens_mti_680g/Unconfirmed 36181.crdownload",
     "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
@@ -189,14 +196,10 @@
     "c and cpp/cpp/algorithm/Graph Theory/BFS in graph theory.md",
     "c and cpp/cpp/algorithm/Graph Theory/Basic theory.md",
     "hardware/RTK/xsens/xsens_mti_680g/NTRIP server on PC.png",
-    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "c and cpp/cpp/STL/torch/Neural network and optimizer.md",
     "c and cpp/cpp/STL/torch/Linear Algebra.md",
     "c and cpp/cpp/STL/torch/tensor.md",
-    "ROS/SLAM/SLAM + 3DGS/related works.md",
     "c and cpp/cpp/STL/torch",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
-    "git/git commends.md",
     "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/cuda toolkit switch by symlink.md",
     "c and cpp/cpp/STL/queue/queue.md",
@@ -216,15 +219,12 @@
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
     "ROS/SLAM/fastlio/FAST-LIO论文讲解.pdf",
     "ROS/ROS 1/catkin/catkin_tools",
-    "ROS/ROS 1/catkin",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
     "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
     "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815234112.png",
     "c and cpp/cpp/algorithm/Graph Theory/Pasted image 20250816191728.png",
-    "c and cpp/cpp/algorithm/Graph Theory",
     "c and cpp/cpp/algorithm/二叉树/lca.png",
     "c and cpp/cpp/algorithm/二叉树/Pasted image 20250815230027.png",
-    "ROS/SLAM/gs + slam_successfully_run",
     "c and cpp/cpp/algorithm/recursion/recursion.png",
     "c and cpp/cpp/STL/list/list.png",
     "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png"
