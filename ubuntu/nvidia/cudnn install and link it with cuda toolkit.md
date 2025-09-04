@@ -58,7 +58,21 @@ https://developer.nvidia.com/rdp/cudnn-archive
 ```bash
 sudo dpkg -i cudnn-local-repo-ubuntu2004-8.9.7.29_1.0-1_amd64.deb
 
-sudo cp /var/cudnn-local-repo-ubuntu2004-8.9.7.29/cudnn-local-CD2C2DD4-keyring.gpg /usr/share/keyrings/
+sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
+```
+
+then install the the libcudnn8, libcudnn8-dev and libcudnn8-sample
+```bash
+sudo apt-get update
+sudo apt-get install libcudnn8 libcudnn8-dev libcudnn8-samples
+```
+
+testing
+```bash
+cp -r /usr/src/cudnn_samples_v8/ $HOME
+cd  $HOME/cudnn_samples_v8/mnistCUDNN
+make clean && make
+./mnistCUDNN
 ```
  
 

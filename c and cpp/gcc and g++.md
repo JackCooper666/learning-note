@@ -1,3 +1,16 @@
+# check versions of gcc and g++ in your system
+```bash
+ls /usr/bin/gcc*
+ls /usr/bin/g++*
+```
+# check current version of gcc and g++
+```bash
+gcc --version
+g++ --version
+```
+# install gcc and g++
+
+
 # how to switch version of gcc and g++
 ```bash
 sudo update-alternatives --config gcc
