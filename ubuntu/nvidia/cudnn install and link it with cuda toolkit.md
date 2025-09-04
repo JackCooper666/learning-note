@@ -45,6 +45,10 @@ sudo apt install -y \
   /var/cudnn-local-repo-ubuntu2004-9.10.2/libcudnn9-headers-cuda-11_9.10.2.21-1_amd64.deb \
   /var/cudnn-local-repo-ubuntu2004-9.10.2/libcudnn9-dev-cuda-11_9.10.2.21-1_amd64.deb
 ```
+## uninstall the cudnn 9.10.2 
+
+
+
 
 # install cuda toolkit 11.7 with cudnn 8.9.7.29
 take the cuda toolkit 11.7 and cudnn 8.9.7.29 as an example
@@ -76,14 +80,14 @@ make clean && make
 ```
  
 
-# uninstall the cudnn
+## uninstall the cudnn 8.9.7.29
 find all cudnn packages
 ```bash
 sudo dpkg -l | grep cudnn
 ```
 uninstall all packages by
 ```bash
-sudo rm -rf 
+sudo apt remove --purge libcudnn8 libcudnn8-dev libcudnn8-samples
 ```
 
 
