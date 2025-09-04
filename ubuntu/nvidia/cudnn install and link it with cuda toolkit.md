@@ -50,11 +50,12 @@ sudo apt install -y \
 
 
 
-# install cuda toolkit 11.7 with cudnn 8.9.7.29
+# install cuda toolkit 11.7 with cudnn 8.9.7.29+cuda 11.8
 take the cuda toolkit 11.7 and cudnn 8.9.7.29 as an example
 go to this website to find the correct version of cudnn 
 
 **Note that**: the opencv 4.7.0 matches the cudnn 8.x
+the cudnn 8.9.7.29 is for cuda 11.8 but it matches the cuda 11.7 as well.
 
 https://developer.nvidia.com/rdp/cudnn-archive
 
@@ -68,7 +69,10 @@ sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
 then install the the libcudnn8, libcudnn8-dev and libcudnn8-sample
 ```bash
 sudo apt-get update
-sudo apt-get install libcudnn8 libcudnn8-dev libcudnn8-samples
+%% sudo apt-get install libcudnn8 libcudnn8-dev libcudnn8-samples %%
+sudo apt-get install libcudnn8=8.9.7.29-1+cuda11.8
+sudo apt-get install libcudnn8-dev=8.9.7.29-1+cuda11.8
+sudo apt-get install libcudnn8-samples=8.9.7.29-1+cuda11.8
 ```
 
 testing
