@@ -7,7 +7,9 @@ wget https://developer.download.nvidia.com/compute/cudnn/9.10.2/local_installers
 
 sudo dpkg -i cudnn-local-repo-ubuntu2004-9.10.2_1.0-1_amd64.deb
 
-sudo cp /var/cudnn-local-repo-ubuntu2004-9.10.2/cudnn-*-keyring.gpg /usr/share/keyrings/sudo apt-get update
+sudo cp /var/cudnn-local-repo-ubuntu2004-9.10.2/cudnn-*-keyring.gpg /usr/share/keyrings/
+
+sudo apt-get update
 
 sudo apt-get -y install cudnn
 ```
