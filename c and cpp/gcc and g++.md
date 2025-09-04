@@ -9,6 +9,14 @@ gcc --version
 g++ --version
 ```
 # install gcc and g++
+```bash
+sudo apt-get install -y gcc-9 g++-9
+```
+# register gcc and g++
+```bash
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 90
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 90
+```
 
 
 # how to switch version of gcc and g++
