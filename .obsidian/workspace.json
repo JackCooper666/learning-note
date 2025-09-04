@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+                "file": "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "coco-lic"
+              "title": "cudnn install and link it with cuda toolkit"
             }
           }
         ]
@@ -173,19 +173,23 @@
   },
   "active": "dbd497b9c474bfe1",
   "lastOpenFiles": [
+    "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
+    "ubuntu/nvidia/multi version of cuda and cudnn install and switch.md",
+    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
+    "ubuntu/nvidia/cuda toolkit switch by symlink.md",
+    "ROS/SLAM/gs + slam_successfully_run/gaussian-lic.md",
+    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
+    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
+    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
+    "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
+    "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
     "git/git commends.md",
     "c and cpp/gcc and g++.md",
-    "ROS/SLAM/gs + slam_successfully_run/coco-lic.md",
     "c and cpp/gcc and g++ multi version.md",
     "coco-lic.md",
-    "ubuntu/nvidia/cuda toolkit switch by symlink.md",
     "ubuntu/conda/install/conda install and uninstall.md",
     "ubuntu/conda/common commands.md",
     "ubuntu/镜像源切换.md",
-    "ROS/SLAM/gs + slam_successfully_run/Gaussian-slam.md",
-    "ROS/SLAM/gs + slam_successfully_run/splatam.md",
-    "ROS/SLAM/gs + slam_successfully_run/monogs.md",
-    "ROS/SLAM/gs + slam_successfully_run/loop splat.md",
     "ubuntu/conda/install/terminal.webp",
     "ubuntu/conda/install/install_gui_4.webp",
     "ubuntu/conda/install/install_gui_3.webp",
@@ -199,8 +203,6 @@
     "ubuntu/vim editor/Pasted image 20250513153706.png",
     "ubuntu/vim editor/Pasted image 20250513153650.png",
     "ubuntu/soft link and hard link/soft link and hard link.md",
-    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
-    "ubuntu/nvidia/GPU driver install and CUDA toolkit install.md",
     "ubuntu/conda/install",
     "ubuntu/cmake/install and uninstall",
     "ubuntu/Wechat installation/wechat installation.md",
@@ -216,8 +218,6 @@
     "ubuntu/Steam install Ubuntu.md",
     "ubuntu",
     "sh/sh commends.md",
-    "sh/run a sh file.md",
-    "sh",
-    "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md"
+    "sh"
   ]
 }
