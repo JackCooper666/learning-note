@@ -1,4 +1,4 @@
-# Install Anaconda on Ubuntu
+# Install conda on Ubuntu by Anaconda installe
 
 The steps to install the Anaconda distribution on the Ubuntu system are explained in detail below:
 
@@ -113,3 +113,4 @@ fi
 ```bash
 source ~/.bashrc
 ```
+

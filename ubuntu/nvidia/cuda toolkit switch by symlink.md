@@ -36,3 +36,6 @@ export PATH=$PATH:/usr/local/cuda/bin
 export CUDA_HOME=$CUDA_HOME:/usr/local/cuda
 ```
 
+
+# uninstall a specific version of cuda when you have multi-version of cuda
+
