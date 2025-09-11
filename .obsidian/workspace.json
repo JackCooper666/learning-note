@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/CMakeList/basic commands.md",
+                "file": "ROS/SLAM/gs_and_slam_installation_instruction/pings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "basic commands"
+              "title": "pings"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 297.5
   },
   "right": {
     "id": "e9e1c5715809392e",
@@ -173,35 +173,35 @@
   },
   "active": "dbd497b9c474bfe1",
   "lastOpenFiles": [
-    "c and cpp/cmake/install and uninstall/install and uninstall.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/gs-livm.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/splatam.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/monogs.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/mm3dgs-slam.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/gs-livm.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/Gaussian-slam.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/gaussian-lic.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/pings.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/coco-lic.md",
+    "ubuntu/conda/install/mamba install.md",
+    "ubuntu/conda/channel in conda and mamba.md",
+    "ubuntu/conda/common commands.md",
+    "ubuntu/conda/install ros noetic in conda.md",
+    "c and cpp/cpp/CMakeList/basic commands.md",
+    "c and cpp/cmake/install and uninstall/install and uninstall.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/fastlivo2.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/r3live.md",
     "c and cpp/gcc and g++.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/coco-lic.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/splatam.md",
     "ROS/SLAM/thirdparty_install/Sophus.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
-    "ubuntu/conda/channel in conda and mamba.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/mm3dgs-slam.md",
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
-    "c and cpp/cpp/CMakeList/basic commands.md",
-    "ubuntu/conda/install/mamba install.md",
     "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
     "ubuntu/nvidia/cuda toolkit switch by symlink.md",
     "ubuntu/conda/install/conda install and uninstall.md",
-    "ubuntu/conda/common commands.md",
     "ubuntu/conda/install cuda and cudnn in conda.md",
     "ubuntu/conda/install/terminal.webp",
-    "ROS/SLAM/gs_and_slam_installation_instruction/Gaussian-slam.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/gaussian-lic.md",
     "ROS/Localization/ekf_localization-amcl-movebase-relationship.png",
     "ROS/Localization/RTK+GNSS.md",
     "ROS/SLAM/thirdparty_install",
     "ROS/ROS 1/workspace and package.md",
-    "ubuntu/conda/install ros noetic in conda.md",
-    "ubuntu/conda/install/Untitled.md",
     "Untitled.base",
     "Untitled.canvas",
     "ubuntu/conda/install/install_gui_4.webp",

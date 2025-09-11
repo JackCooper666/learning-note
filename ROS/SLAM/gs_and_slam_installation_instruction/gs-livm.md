@@ -32,8 +32,8 @@ mamba install cxx-compiler=1.5.0
 mamba install make
 mamba install conda-forge::sophus
 mamba install conda-forge::tsl_robin_map
+mamba install -y -c conda-forge libgomp 
 ```
-
 
 # build Livox-SDK and livox_ros_driver2 in mamba
 
@@ -734,8 +734,8 @@ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch_ROS1
 
 # install torch
 ```conda
-mamba install pytorch=2.0.1 -c pytorch -c nvidia -c conda-forge
-mamba install -c pytorch -c nvidia pytorch=2.0.1 pytorch-cuda=11.8
+conda install pytorch=2.0.1 -c pytorch -c nvidia -c conda-forge
+conda install -c pytorch -c nvidia pytorch=2.0.1 pytorch-cuda=11.8
 ```
 ## check the installation of the torch
 ```python
@@ -767,7 +767,7 @@ PY
 ## error
 undefined symbol: iJIT_NotifyEvent, **MKL 版本过新（≥2024.1）** 与 **conda 版 PyTorch 2.0.1** 的动态链接不兼容导致的：`iJIT_NotifyEvent` 在新版 MKL 里不再导出，而 `libtorch_cpu.so` 仍在找它。
 ```conda
-mamba install -y -c conda-forge --override-channels \
+conda install -y -c conda-forge --override-channels \
   "mkl==2024.0.0" "libblas=*=*mkl" "libcblas=*=*mkl" "liblapack=*=*mkl" "liblapacke=*=*mkl"
 ```
 
@@ -783,9 +783,49 @@ git clone https://github.com/xieyuser/GS-LIVM.git
 ```conda
 # install other packages
 cd GS-LIVM
-mamba install --file conda_pkgs.txt -c nvidia -c pytorch -c conda-forge
+conda install --file conda_pkgs.txt -c nvidia -c pytorch -c conda-forge
 ```
 this is the new conda_pkg.txt, the original one is wrong, the cuda 12.1 is not compatible with pytorch 2.0.1
+```txt
+# ---------------- Core / ABI ----------------
+python=3.9
+
+# BLAS backend  ——  修复 libtorch_cpu.so 的 MKL 符号问题
+mkl==2024.0.0
+mkl-include==2024.0.0
+mkl-devel==2024.0.0
+libblas=*=*mkl
+libcblas=*=*mkl
+liblapack=*=*mkl
+liblapacke=*=*mkl
+
+# ---------------- PyTorch (CUDA 11.8) ----------------
+pytorch==2.0.1
+pytorch-cuda==11.8
+torchvision==0.15.2
+torchaudio==2.0.2
+# 可选：CUDA 编译器（与 cu118 匹配；用于编译 simple-knn / diff_gaussian_rasterization 等）
+cuda-nvcc=11.8.*
+
+# ---------------- Build Toolchain ----------------
+cxx-compiler==1.5.0
+cmake>=3.24
+ninja
+eigen>=3.3.4
+
+# ---------------- Geometry / C++ libs ----------------
+# conda-forge 上 2.0.0 不一定总有，用区间避免冲突（2.2.x 可）
+ceres-solver>=2.0.0,<2.3
+tsl_robin_map>=1.3.0
+libcnpy
+
+# ---------------- ROS 工具（如需） ----------------
+catkin_tools
+catkin_pkg
+empy
+rospkg
+vcstool
+```
 # build GS-LIVM
 ```bash
 # build
@@ -818,8 +858,84 @@ catkin_package(
   DEPENDS EIGEN3
 )
 ```
+add the following lines in the package.xml
+```xml
+<build_depend>livox_ros_driver2</build_depend>
+<build_export_depend>livox_ros_driver2</build_export_depend>
+<exec_depend>livox_ros_driver2</exec_depend>
+```
+### could not find OpenMP
+```conda
+mamba install conda-forge::openmp
+```
+change the `find_package(OpenMP REQUIRED COMPONENTS C CXX)` to
+```cmake
+find_package(OpenMP REQUIRED COMPONENTS CXX)
+```
+### cv_bridge is not in the package.xml
+put the following three lines in the package.xml
+```xml
+<build_depend>cv_bridge</build_depend>
+<build_export_depend>cv_bridge</build_export_depend>
+<exec_depend>cv_bridge</exec_depend>
+```
+### `pthread_*_clock*` 未定义 —— 工具链/头文件混搭导致
+
+这是因为你当前环境 **同时** 用到了：
+- **Conda 的 sysroot**（`sysroot_linux-64=2.17`），提供的是 **老版本 glibc 2.17** 的头文件；
+- **系统的 GCC 11 的 libstdc++ 头文件**（`/usr/include/c++/11`），这些头里会调用较新的 `pthread_*_clock*` 接口（需要较新的 glibc）。
+```bash
+# 1) 清理一下之前的配置/缓存
+catkin clean -y
+
+# 2) 确保使用的是conda里的编译器
+export CC=$(which gcc)         # 显示为 .../envs/gslivm/bin/gcc 10.4
+export CXX=$(which g++)
+export CUDAHOSTCXX=$(which g++)
+
+# 3) 覆盖 catkin 的 CMake 参数（把你原来写死的 /usr/bin/g++-11 去掉）
+catkin config --cmake-args \
+  -DCMAKE_CUDA_HOST_COMPILER="$(which g++)" \
+  -DCUDA_PROPAGATE_HOST_FLAGS=OFF \
+  -DCMAKE_CUDA_STANDARD=17 -DCMAKE_CXX_STANDARD=17 \
+  -DCMAKE_CUDA_ARCHITECTURES=86 \
+  -DTorch_DIR="$CONDA_PREFIX/lib/python3.9/site-packages/torch/share/cmake/Torch" \
+  '-DCMAKE_CUDA_FLAGS=--std=c++17 --expt-relaxed-constexpr -Xcompiler=-fno-tree-vectorize -Xcompiler=-fno-strict-aliasing'
+
+# 4) 重建
+catkin build gslivm
+```
+
+### **`c10::guts::to_string`** undefined
+
+**PyTorch 2.4 删除了 `c10::guts::to_string`**，导致 `src/gs/gaussian.cu` 里 6 处调用报错。
+
+在 `gaussian.cu` 顶部**加入头文件**（放在任何 `#include <torch...>` 之上或之下都行）
+```cpp
+#include <c10/util/string_utils.h>
+```
+把所有 `c10::guts::to_string` **替换为** `c10::str`
 
 
+
+
+```bash
+export CC=$(which gcc)
+export CXX=$(which g++)
+export CUDAHOSTCXX=$(which g++)
+export PCL_DIR="$CONDA_PREFIX/share/pcl-1.12"
+
+catkin config --cmake-args \
+  -DCMAKE_CUDA_HOST_COMPILER="$(which g++)" \
+  -DCUDA_PROPAGATE_HOST_FLAGS=OFF \
+  -DCMAKE_CUDA_STANDARD=17 -DCMAKE_CXX_STANDARD=17 \
+  -DCMAKE_CUDA_ARCHITECTURES=86 \
+  -DTorch_DIR="$CONDA_PREFIX/lib/python3.9/site-packages/torch/share/cmake/Torch" \
+  '-DCMAKE_CUDA_FLAGS=--std=c++17 --expt-relaxed-constexpr -Xcompiler=-fno-tree-vectorize -Xcompiler=-fno-strict-aliasing'
+
+
+
+```
 
 
 
