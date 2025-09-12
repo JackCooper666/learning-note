@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9d8a31e069c4f83b",
+        "id": "00d78151247007a1",
         "type": "tabs",
         "children": [
           {
-            "id": "dbd497b9c474bfe1",
+            "id": "f32d31016b8f15b5",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf"
+                "file": "ubuntu/conda/install/conda install and uninstall.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MTi 600-series Datasheet"
+              "icon": "lucide-file",
+              "title": "conda install and uninstall"
             }
           }
         ]
@@ -169,12 +171,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dbd497b9c474bfe1",
+  "active": "f32d31016b8f15b5",
   "lastOpenFiles": [
+    "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "hardware/cmera_and_lidar/ac1/robosense ac1.md",
-    "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
     "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/r3live.md",
@@ -210,7 +212,6 @@
     "ubuntu/conda/install/conda_install_web.webp",
     "ubuntu/vim editor/Pasted image 20250513153752.png",
     "ubuntu/vim editor/Pasted image 20250513153717.png",
-    "ubuntu/vim editor/Pasted image 20250513153706.png",
     "ubuntu/conda/install",
     "c and cpp/cmake/install and uninstall",
     "ubuntu/vim editor",
