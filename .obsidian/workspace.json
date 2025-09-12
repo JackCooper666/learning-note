@@ -11,14 +11,12 @@
             "id": "dbd497b9c474bfe1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-                "mode": "source",
-                "source": false
+                "file": "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf"
               },
-              "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "icon": "lucide-file-text",
+              "title": "MTi 600-series Datasheet"
             }
           }
         ]
@@ -173,8 +171,9 @@
   },
   "active": "dbd497b9c474bfe1",
   "lastOpenFiles": [
-    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
+    "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
     "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
     "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
@@ -199,7 +198,6 @@
     "c and cpp/cmake/install and uninstall/install and uninstall.md",
     "c and cpp/gcc and g++.md",
     "ROS/SLAM/thirdparty_install/Sophus.md",
-    "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
     "ubuntu/conda/install/terminal.webp",
     "ROS/Localization/ekf_localization-amcl-movebase-relationship.png",
     "ROS/SLAM/thirdparty_install",
