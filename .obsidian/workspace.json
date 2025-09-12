@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
+                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "loop splat"
+              "title": "xsens-mti-680g"
             }
           }
         ]
@@ -173,8 +173,11 @@
   },
   "active": "dbd497b9c474bfe1",
   "lastOpenFiles": [
-    "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
+    "hardware/cmera_and_lidar/ac1/robosense ac1.md",
+    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
     "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/r3live.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/splatam.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/vpgs-slam.md",
@@ -197,8 +200,6 @@
     "c and cpp/gcc and g++.md",
     "ROS/SLAM/thirdparty_install/Sophus.md",
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
-    "ubuntu/nvidia/cudnn install and link it with cuda toolkit.md",
-    "ubuntu/nvidia/cuda toolkit switch by symlink.md",
     "ubuntu/conda/install/terminal.webp",
     "ROS/Localization/ekf_localization-amcl-movebase-relationship.png",
     "ROS/SLAM/thirdparty_install",
@@ -218,7 +219,6 @@
     "ubuntu/soft link and hard link",
     "ubuntu/nvidia",
     "ubuntu/conda",
-    "c and cpp/cmake",
-    "ubuntu/Wechat installation"
+    "c and cpp/cmake"
   ]
 }
