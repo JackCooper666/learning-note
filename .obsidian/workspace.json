@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ubuntu/conda/install/conda install and uninstall.md",
+                "file": "ROS/ROS 1/package.xml/basic commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conda install and uninstall"
+              "title": "basic commands"
             }
           }
         ]
@@ -173,6 +173,17 @@
   },
   "active": "f32d31016b8f15b5",
   "lastOpenFiles": [
+    "ROS/ROS 1/CMakeList/basic commands.md",
+    "ROS/ROS 1/package.xml/basic commands.md",
+    "ROS/ROS 1/package.xml",
+    "c and cpp/gcc and g++.md",
+    "c and cpp/cmake/install and uninstall/install and uninstall.md",
+    "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
+    "ROS/ROS 1/evo/evo.md",
+    "ROS/Localization/AMCL.md",
+    "ROS/Localization/cartographer.md",
+    "ROS/Localization/ekf_localization.md",
+    "ubuntu/conda/install/conda install and uninstall.md",
     "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
@@ -191,15 +202,6 @@
     "ROS/SLAM/gs_and_slam_installation_instruction/Gaussian-slam.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/gaussian-lic.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/fastlivo2.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/coco-lic.md",
-    "ubuntu/conda/install/mamba install.md",
-    "ubuntu/conda/channel in conda and mamba.md",
-    "ubuntu/conda/common commands.md",
-    "ubuntu/conda/install ros noetic in conda.md",
-    "c and cpp/cpp/CMakeList/basic commands.md",
-    "c and cpp/cmake/install and uninstall/install and uninstall.md",
-    "c and cpp/gcc and g++.md",
-    "ROS/SLAM/thirdparty_install/Sophus.md",
     "ubuntu/conda/install/terminal.webp",
     "ROS/Localization/ekf_localization-amcl-movebase-relationship.png",
     "ROS/SLAM/thirdparty_install",
@@ -217,7 +219,6 @@
     "ubuntu/vim editor",
     "ubuntu/soft link and hard link",
     "ubuntu/nvidia",
-    "ubuntu/conda",
-    "c and cpp/cmake"
+    "ubuntu/conda"
   ]
 }
