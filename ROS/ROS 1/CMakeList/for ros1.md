@@ -102,3 +102,7 @@ my_pkg/
 👉 The `CMakeLists.txt` compiles the `.cpp` files into:
 - `libmy_lib.so` (library)
 - `my_node` (executable node)
+
+
+
+# 5. whole pipeline
