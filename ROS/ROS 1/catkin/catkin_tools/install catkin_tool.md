@@ -1,3 +1,5 @@
+refer to: CSDN博主「Tipriest_」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/titan__/article/details/150067837
 # the components in catkin_tool
 catkin_tools 是对 ROS 原始构建系统 catkin_make 的一个现代化、功能更强的替代品。它提供了一套名为 catkin 的命令来构建 ROS 工作空间。
 
@@ -17,9 +19,6 @@ catkin build my_package_name: 只编译指定的包及其依赖项。
 catkin create pkg my_new_pkg --catkin-deps roscpp rospy std_msgs: 创建一个新的 ROS 包，并自动在 package.xml 中添加依赖。
 catkin config: 查看或修改工作空间的构建配置（例如编译选项 CMAKE_BUILD_TYPE 等）。
 总结：catkin_tools 是一个纯粹的构建工具，它假设源代码已经存在于 src 目录中。
-————————————————
-版权声明：本文为CSDN博主「Tipriest_」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/titan__/article/details/150067837
 
 # Installing on Ubuntu with apt-get[¶](https://catkin-tools.readthedocs.io/en/latest/installing.html#installing-on-ubuntu-with-apt-get "Link to this heading")
 
