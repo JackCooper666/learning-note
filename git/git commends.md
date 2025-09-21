@@ -180,3 +180,30 @@ git push
 Git 会将凭据保存在该仓库下的 `~/.git-credentials` 文件中，之后就不会再要求输入了。
 
 
+
+
+# .gitignore
+看日志你这次把8.57 GiB 的内容（大量 bag_tumrgbd/output/rgb/*.png）推到了远端，GitHub 很容易直接 500/断开连接；
+把所有生成物从整个历史中删除，然后再推（若远端已有脏历史，需要强推）。
+加 `.gitignore`
+```bash
+cat > .gitignore <<'EOF'
+# ROS/catkin
+build/
+devel/
+logs/
+# 生成/大文件
+bag_tumrgbd/output/
+*.bag
+*.pcd
+*.ply
+*.mp4
+*.tum
+# Python
+__pycache__/
+*.pyc
+EOF
+git add .gitignore
+git commit -m "chore: ignore generated outputs"
+```
+
