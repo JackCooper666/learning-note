@@ -1,41 +1,112 @@
 {
   "main": {
-    "id": "70d0a5237fa337a8",
+    "id": "f2f7deb0782f2cf0",
     "type": "split",
     "children": [
       {
-        "id": "00d78151247007a1",
+        "id": "631676d7c2e52196",
         "type": "tabs",
         "children": [
           {
-            "id": "f32d31016b8f15b5",
+            "id": "1581e81193d10ffb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "install catkin_tool"
+              "title": "related works"
+            }
+          },
+          {
+            "id": "97de9bfdcde16709",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ROS/SLAM/SLAM + 3DGS/related works.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "related works"
+            }
+          },
+          {
+            "id": "f360f36578489975",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "xsens-mti-680g"
+            }
+          },
+          {
+            "id": "5f2f50b849ff8b4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "xsens-mti-680g"
+            }
+          },
+          {
+            "id": "1be2ab8a2de39831",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "c and cpp/cpp/STL/list/list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "list"
+            }
+          },
+          {
+            "id": "4db7f56aff813405",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ROS/ROS 1/CMakeList/basic commands.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "basic commands"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "9df256f93da52c76",
+    "id": "b60842b6c740003f",
     "type": "split",
     "children": [
       {
-        "id": "4c5e6cf54af3e8dd",
+        "id": "6a6e8b2e534f469f",
         "type": "tabs",
         "children": [
           {
-            "id": "66630b9d854e644b",
+            "id": "9057a9433e081024",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +119,7 @@
             }
           },
           {
-            "id": "8d1df0666608c371",
+            "id": "a9bdaea6b03e3d5e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +136,7 @@
             }
           },
           {
-            "id": "000db8eebf5cb01f",
+            "id": "b24e2367e23eb119",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +149,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5
+    "width": 300
   },
   "right": {
-    "id": "e9e1c5715809392e",
+    "id": "4c56fd1e3fd15cc7",
     "type": "split",
     "children": [
       {
-        "id": "46223f49aa69dc1a",
+        "id": "33698c3832f305c9",
         "type": "tabs",
         "children": [
           {
-            "id": "f891a921bdf3a739",
+            "id": "b03a6e1fc18ceec2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ubuntu/conda/install/conda install and uninstall.md",
+                "file": "daily plan/ARC SLAM TOOL NOTE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +175,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for conda install and uninstall"
+              "title": "Backlinks for ARC SLAM TOOL NOTE"
             }
           },
           {
-            "id": "e06569cbafa00f74",
+            "id": "4eec5c47877545a9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ubuntu/conda/install/conda install and uninstall.md",
+                "file": "ROS 1/evo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from conda install and uninstall"
+              "title": "Outgoing links from evo"
             }
           },
           {
-            "id": "4bc0fd8276efd708",
+            "id": "9a951ac8e7324846",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,22 +208,22 @@
             }
           },
           {
-            "id": "eebeacddddad3433",
+            "id": "81b9c83afbb78377",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
-                "followCursor": false,
-                "showSearch": false,
+                "file": "daily plan/ARC SLAM TOOL NOTE.md",
+                "followCursor": true,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of install catkin_tool"
+              "title": "Outline of ARC SLAM TOOL NOTE"
             }
           },
           {
-            "id": "26de7092e634338e",
+            "id": "1de55c432d7228d1",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -166,33 +237,35 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 482.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f32d31016b8f15b5",
+  "active": "4db7f56aff813405",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "ubuntu/nvidia/multi version of cuda and cudnn install and switch.md",
+    "ubuntu/conda/install/mamba install.md",
+    "ubuntu/conda/install ros noetic in conda.md",
+    "ubuntu/conda/channel in conda and mamba.md",
     "c and cpp/cmake/install and uninstall/install and uninstall.md",
-    "git/git commends.md",
-    "c and cpp/gcc and g++.md",
-    "ROS/SLAM/Mathematical basis.md",
-    "ROS/SLAM/convergence Judgements in IEKF.md",
+    "c and cpp/cmake/install and uninstall",
+    "c and cpp/cmake",
     "ROS/SLAM/thirdparty_install/Sophus.md",
-    "ROS/SLAM/SLAM + 3DGS/related works.md",
-    "ROS/SLAM/SLAM + 3DGS/Current Drawback.md",
+    "ROS/SLAM/thirdparty_install",
     "ROS/SLAM/gs_and_slam_installation_instruction/splatam.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/r3live.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/Point-SLAM.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/pings.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/monogs.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/mm3dgs-slam.md",
@@ -200,34 +273,32 @@
     "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/gs-livm.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/Gaussian-slam.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/gaussian-lic.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/fastlivo2.md",
-    "ROS/ROS 1/evo/evo.md",
-    "c and cpp/cpp/Common Library/Eigen/Eigen.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/coco-lic.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/Point-SLAM.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction/Gaussian-slam.md",
+    "ROS/SLAM/gs_and_slam_installation_instruction",
+    "ROS/ROS 1/package.xml/basic commands.md",
+    "ROS/ROS 1/package.xml",
     "ROS/ROS 1/CMakeList/for ros1.md",
     "ROS/ROS 1/CMakeList/connection with package.xml.md",
     "ROS/ROS 1/CMakeList/basic commands.md",
-    "ROS/ROS 1/package.xml",
+    "ROS/ROS 1/CMakeList",
+    "c and cpp/cpp/STL/list/list.md",
+    "hardware/RTK/xsens/xsens_mti_680g/Xsens GNSS-INS - Supercharge Your GNSS Receiver - MTAN001-A.pdf",
     "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
+    "c and cpp/cpp/STL/torch",
+    "c and cpp/cpp/CMakeList",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
-    "ubuntu/conda/install/terminal.webp",
-    "ROS/Localization/ekf_localization-amcl-movebase-relationship.png",
-    "ROS/SLAM/thirdparty_install",
-    "Untitled.base",
-    "Untitled.canvas",
-    "ubuntu/conda/install/install_gui_4.webp",
-    "ubuntu/conda/install/install_gui_3.webp",
-    "ubuntu/conda/install/install_gui_2.webp",
-    "ubuntu/conda/install/install_gui_1.webp",
-    "ubuntu/conda/install/conda_install_web.webp",
-    "ubuntu/vim editor/Pasted image 20250513153752.png",
-    "ubuntu/vim editor/Pasted image 20250513153717.png",
-    "ubuntu/conda/install",
-    "c and cpp/cmake/install and uninstall",
-    "ubuntu/vim editor",
-    "ubuntu/soft link and hard link",
-    "ubuntu/nvidia",
-    "ubuntu/conda"
+    "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
+    "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
+    "c and cpp/cpp/algorithm/Graph Theory/Pasted image 20250816191728.png",
+    "c and cpp/cpp/algorithm/recursion/recursion.png",
+    "c and cpp/cpp/STL/list/list.png",
+    "c and cpp/cpp/algorithm/CIrcular Substitution/Screenshot from 2025-07-08 14-34-08.png",
+    "c and cpp/cpp/algorithm/二叉树/basic_foramt.png",
+    "ubuntu/soft link and hard link/hard_link_classification.jpeg",
+    "ubuntu/conda/install/install_gui_4.webp"
   ]
 }
