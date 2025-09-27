@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/ROS 1/ROS 1 mistakes.md",
+                "file": "ROS/Localization/RTK+GNSS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ROS 1 mistakes"
+              "title": "RTK+GNSS"
             }
           }
         ],
@@ -252,8 +252,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4db7f56aff813405",
+  "active": "9057a9433e081024",
   "lastOpenFiles": [
+    "hardware/RTK/wheeltec/G90",
+    "hardware/RTK/wheeltec",
+    "ROS/ROS 1/ROS 1 mistakes.md",
     "ROS/ROS 1/plotjuggler.md",
     "ROS/ROS 1/rosbag.md",
     "ROS/ROS 1/ROS terminal commends.md",
@@ -281,15 +284,12 @@
     "ROS/SLAM/gs_and_slam_installation_instruction/gs-livm.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/gaussian-lic.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/fastlivo2.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/coco-lic.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/Point-SLAM.md",
     "ROS/SLAM/gs_and_slam_installation_instruction",
     "ROS/ROS 1/package.xml",
     "ROS/ROS 1/CMakeList",
     "hardware/RTK/xsens/xsens_mti_680g/Xsens GNSS-INS - Supercharge Your GNSS Receiver - MTAN001-A.pdf",
     "hardware/RTK/xsens/xsens_mti_680g/MTi 600-series Datasheet.pdf",
     "c and cpp/cpp/STL/torch",
-    "c and cpp/cpp/CMakeList",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
