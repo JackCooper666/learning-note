@@ -1,4 +1,4 @@
-# software download
+ # software download
 there are two ways adjusting and using xsens-mti-680g: the **MT manager** and the **ros driver**.
 the official ros driver is valid in ros1 and ros2, but, in this instruction, only the ros1 will be used.
 ## MT manager install
