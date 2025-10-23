@@ -36,7 +36,16 @@ Meanwhile, the u-center can show the RTK localization result on the google map i
 **Prerequisites**
 1. register a google map static map API through the following link
 
+**Steps:**
+1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK"
+2. open the "Map View" 
 # 3. ROS2
-## Ublox driver
-## NTRIP Client
-## Current issue
+## 3.1 Pre-setting on U-center
+The Pre-setting on u-center includes two parts: the serial communication setting and the output messages setting.
+### Serial communication setting
+**Steps**
+### Output messages setting
+## 3.2 Ublox driver
+
+## 3.3NTRIP Client
+## 3.4 Current issue
