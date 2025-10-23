@@ -42,9 +42,22 @@ Meanwhile, the u-center can show the RTK localization result on the google map i
 # 3. ROS2
 ## 3.1 Pre-setting on U-center
 The Pre-setting on u-center includes two parts: the serial communication setting and the output messages setting.
-### Serial communication setting
-**Steps**
-### Output messages setting
+##### Serial communication setting
+**Steps:**
+1. config the port under **menu bar  -> View -> Message View -> UBX -> CFG -> PRT (Ports)** like following Figure
+2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure
+3. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
+##### Output messages setting
+**Steps:**
+1. Configure the receiver to output raw data and navigation messages
+
+2. Configure the receiver to output navigation results in UBX format
+
+3. Configure the receiver to output NMEA protocol related statements
+
+4. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
+
+
 ## 3.2 Ublox driver
 
 ## 3.3NTRIP Client
