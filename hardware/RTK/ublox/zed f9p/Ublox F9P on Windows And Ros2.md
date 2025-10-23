@@ -39,6 +39,9 @@ Meanwhile, the u-center can show the RTK localization result on the google map i
 **Steps:**
 1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK"
 2. open the "Map View" 
+
+
+
 # 3. ROS2
 ## 3.1 Pre-setting on U-center WINDOWS
 The Pre-setting on u-center includes two parts: the serial communication setting and the output messages setting.
@@ -92,7 +95,8 @@ sudo cat /dev/ttyACM0
  sudo usermod -a -G dialout $USER
  sudo reboot
  ```
-##### 3.2.3 Prepare a new ROS 2 workspace for project
+## 3.3 Ublox Driver
+##### 3.3.1 Build Ublox Driver
 1. To create a Workspace Directory, open a Terminal and create a folder (for example, **ros2_ws**) with a **src** subfolder:
 ```bash
 mkdir -p ~/ros2_ws/src
@@ -139,19 +143,80 @@ cd ~/ros2_ws
 colcon build
 ```
 
-##### 3.2.4 test the GPS
+##### 3.3.2 test the GPS
 ```bash
 source install/setup.bash
 ros2 launch ublox_gps ublox_gps_node-launch.py
 ```
 If everything is configured correctly, the node should begin publishing GPS data from the ttyACM0 receiver.
 
-##### 3.2.5 topics and service list
+##### 3.3.3 topics and service list
 1. Run the following command to view available Topics. Look for topics like **/ublox_gps_node/fix**, which contains GPS data in sensor_msgs/NavSatFix format, etc
-2. Run the command to see GPS data in real time.
+```bash
+ros2 topic list
+```
 
+2. View the list of available services provided by the Node.
+```bash
+ros2 service list
+```
 
+## 3.4 NTRIP Client
+##### 3.4.1 Build NTRIP Client
+1. Navigate to ROS2 workspace directory and clone the ROS 2 branch
+```bash
+cd ~/ros2_ws/src
+git clone --branch ros2 https://github.com/LORD-MicroStrain/ntrip_client.git
+```
+2. Return to the workspace root, install any missing dependencies, and build the package
+```bash
+cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
+colcon build
+```
+3. Update NTRIP parameters such as host, port, username, password, and mountpoint and save the changes in file.
+```bash
+nano ~/ros2_ws/src/ntrip_client/launch/ntrip_client_launch.py
+```
 
+4. Rebuild
+```markup
+cd ~/ros2_ws
+colcon build
+```
 
-## 3.3NTRIP Client
-## 3.4 Current issue
+##### 3.4.2 Test NTRIP Client
+1. Launch the Node with your NTRIP parameters to establish a connection to the NTRIP Caster:
+```bash
+ros2 launch ntrip_client ntrip_client_launch.py
+```
+##### 3.4.3 Topics and services list
+```bash
+ros2 topic list
+ros2 service list
+```
+## 3.5 Test RTK
+1. Check node connection
+```bash
+rqt_graph
+```
+2. Check topics
+open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals 
+```bash
+ros2 topic echo /nmea
+```
+please check the 7 bit of the /nmea 
+
+```bash
+ros2 topic echo /rtcm
+```
+The rtcm should have message
+
+```bash
+ros2 topic echo /ublox_gps_node/navpvt
+```
+The fix_type:
+The flags:
+
+## 3.6 Current RTK localization results and issues
+
