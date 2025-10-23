@@ -40,7 +40,7 @@ Meanwhile, the u-center can show the RTK localization result on the google map i
 1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK"
 2. open the "Map View" 
 # 3. ROS2
-## 3.1 Pre-setting on U-center
+## 3.1 Pre-setting on U-center WINDOWS
 The Pre-setting on u-center includes two parts: the serial communication setting and the output messages setting.
 ##### Serial communication setting
 **Steps:**
@@ -50,15 +50,108 @@ The Pre-setting on u-center includes two parts: the serial communication setting
 ##### Output messages setting
 **Steps:**
 1. Configure the receiver to output raw data and navigation messages
+	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> UBX-RXM-RAWX(Multi-GNSS-Raw-Measurement Data)
+	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> UBX-RXM-SFRBX
+
+	Please right click them and choose enable.
 
 2. Configure the receiver to output navigation results in UBX format
+	menu bar  -> View -> Message View ->UBX -> UBX-NAV-PVT
 
+	Please right click them and choose enable.
+	
 3. Configure the receiver to output NMEA protocol related statements
-
+	menu bar -> View -> Message View -> NMEA
+	 
+	 Please right click it and choose enable Child Messages, but please disable the message under the NMEA
+	 
 4. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
 
 
-## 3.2 Ublox driver
+## 3.2 Connect Ubuntu with ublox F9P
+##### 3.2.1 Update your ros2
+To manage dependencies in ROS 2, update your package list and installs **ros-dev-tools**, which includes **rosdep** and other useful development tools for ROS 2.
+```bash
+sudo apt update && sudo apt install ros-dev-tools
+```
+##### 3.2.2 Find your RTK receiver on your PC
+1. Connect your receiver to the PC via the USB port. 
+2. The receiver should be automatically configured. To verify this, open Terminal and type the command. You should see **/dev/ttyACM0** (or a similar device, e.g., **/dev/ttyACM1**).
+```bash
+ls /dev/ttyACM*
+```
+
+
+
+3. To check the GPS Stream from RTK receiver, run the command in the Terminal. It shows the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop.
+```bash
+sudo cat /dev/ttyACM0
+```
+ **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., being in the dialout group). You can add yourself with the command below. Afterward, log out and log back in for the changes to take effect.
+ ```bash
+ sudo usermod -a -G dialout $USER
+ sudo reboot
+ ```
+##### 3.2.3 Prepare a new ROS 2 workspace for project
+1. To create a Workspace Directory, open a Terminal and create a folder (for example, **ros2_ws**) with a **src** subfolder:
+```bash
+mkdir -p ~/ros2_ws/src
+```
+
+2. Navigate to your workspace/src.
+```bash
+cd ~/ros2_ws/src
+```
+
+3. To clone the u-blox repository to your ROS 2 workspace
+```bash
+git clone --branch ros2 https://github.com/KumarRobotics/ublox.git
+```
+
+4. Initiate **rosdep** and download the latest package dependency definitions.
+```bash
+sudo rosdep init
+rosdep update
+```
+
+5. To build u-blox Node, return to the main workspace folder and compile:
+```bash
+cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
+colcon build
+source install/setup.bash
+```
+
+6. Now the u-blox Node is available in your ROS2 environment.
+7. Modify the configuration file to update device paths or parameters as needed (we will use **/dev/ttyACM0** ). The ublox_gps package includes a default configuration file named **zed_f9p.yaml**. Open the configuration file by command and modify the "device":
+```bash
+nano ~/ros2_ws/src/ublox/ublox_gps/config/zed_f9p.yaml
+```
+
+8. To configure the node with the **zed_f9p.yaml** settings, update the launch file. Open the file and add the following line to load the configuration:
+```bash
+nano ~/ros2_ws/src/ublox/ublox_gps/launch/ublox_gps_node-launch.py
+```
+
+9. Rebuild the packages. We recommend using a **separate package** for your custom config and launch files to keep things organized. We’ll discuss that approach later.
+```bash
+cd ~/ros2_ws
+colcon build
+```
+
+##### 3.2.4 test the GPS
+```bash
+source install/setup.bash
+ros2 launch ublox_gps ublox_gps_node-launch.py
+```
+If everything is configured correctly, the node should begin publishing GPS data from the ttyACM0 receiver.
+
+##### 3.2.5 topics and service list
+1. Run the following command to view available Topics. Look for topics like **/ublox_gps_node/fix**, which contains GPS data in sensor_msgs/NavSatFix format, etc
+2. Run the command to see GPS data in real time.
+
+
+
 
 ## 3.3NTRIP Client
 ## 3.4 Current issue
