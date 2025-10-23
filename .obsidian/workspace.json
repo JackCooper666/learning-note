@@ -69,30 +69,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/list/list.md",
+                "file": "hardware/RTK/ublox/zed f9p/Ublox F9P on Windows And Ros2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "list"
-            }
-          },
-          {
-            "id": "4db7f56aff813405",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "hardware/RTK/ublox/zed f9p/ublox f9p on windows and ros2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ublox f9p on windows and ros2"
+              "title": "Ublox F9P on Windows And Ros2"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -251,14 +237,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4db7f56aff813405",
+  "active": "1be2ab8a2de39831",
   "lastOpenFiles": [
+    "Untitled.base",
+    "Untitled 1.base",
+    "hardware/RTK/ublox/zed f9p/Ublox F9P on Windows And Ros2.md",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
-    "hardware/RTK/ublox/zed f9p/ublox f9p on windows and ros2.md",
     "hardware/RTK/ublox/zed f9p",
     "hardware/RTK/ublox",
-    "Untitled 1.base",
-    "Untitled.base",
     "ROS/Localization/RTK+GNSS.md",
     "hardware/RTK/wheeltec/G90",
     "hardware/RTK/wheeltec",
@@ -287,7 +273,6 @@
     "ROS/SLAM/gs_and_slam_installation_instruction/loopy-slam.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/gs-livm.md",
     "ROS/SLAM/gs_and_slam_installation_instruction",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
