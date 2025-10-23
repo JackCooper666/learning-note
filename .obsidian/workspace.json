@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+                "file": "hardware/RTK/ublox/zed f9p/ublox f9p on windows and ros2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xsens-mti-680g"
+              "title": "ublox f9p on windows and ros2"
             }
           }
         ],
@@ -253,6 +253,10 @@
   },
   "active": "4db7f56aff813405",
   "lastOpenFiles": [
+    "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
+    "hardware/RTK/ublox/zed f9p/ublox f9p on windows and ros2.md",
+    "hardware/RTK/ublox/zed f9p",
+    "hardware/RTK/ublox",
     "Untitled 1.base",
     "Untitled.base",
     "ROS/Localization/RTK+GNSS.md",
@@ -284,11 +288,7 @@
     "ROS/SLAM/gs_and_slam_installation_instruction/loop splat.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/loam livox.md",
     "ROS/SLAM/gs_and_slam_installation_instruction/gs-livm.md",
-    "ROS/SLAM/gs_and_slam_installation_instruction/gaussian-lic.md",
     "ROS/SLAM/gs_and_slam_installation_instruction",
-    "ROS/ROS 1/package.xml",
-    "ROS/ROS 1/CMakeList",
-    "hardware/RTK/xsens/xsens_mti_680g/Xsens GNSS-INS - Supercharge Your GNSS Receiver - MTAN001-A.pdf",
     "hardware/RTK/xsens/xsens_mti_680g/ab8a08c89267b8dd2ae6f72ed2f754b5.jpg",
     "c and cpp/cpp/algorithm/binary tree/v2-99457646a2f9b511f82dd244eb76ba2c_r.png",
     "c and cpp/cpp/algorithm/Graph Theory/tree_with_loop.png",
