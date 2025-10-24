@@ -25,42 +25,51 @@ The RTK localization includes two parts: the GPS localization, and the NTRIP loc
 \[Figure 3\]: Port connection check
 
 ## 2.3 Verification the GPS connection and situation
-The GPS testing need to be executed at empty outdoor environment. When the Fix mode on the right side of the interface shows 3D (green), it means that the right side is working normally, as Figure shows
-
+The GPS testing need to be executed at empty outdoor environment. When the Fix mode on the right side of the interface shows 3D (green), it means that the right side is working normally, as Figure 4 shows
+![[3d.png]]
 
 ## 2.4 Connect the NTRIP Client
 **Steps:**
 1. Make Sure your PC connects with internet. The personal Hotspot is recommended Because, the NTRIP access will be rejected by the Firewall sometime.  
-2. Click the **Receiver-> NTRIP Client**, then key your host, port, username and password like the following Figure 4 shows
-3. Click the "Update source table," which will search the valid mount points, then choose your mount point like the following Figure 4 shows. According to our previous test, the RTK_SiReNT_32 can provide an accurate localization result.
+2. Click the **Receiver-> NTRIP Client**, then key your host, port, username and password like the following Figure 5 shows
+3. Click the "Update source table," which will search the valid mount points, then choose your mount point like the following Figure 5 shows. According to our previous test, the RTK_SiReNT_32 can provide an accurate localization result.
 ![[ntrip_access.png]]
-\[Figure 4\]: Ntrip access
+\[Figure 5\]: Ntrip access
 
 
-4. If the connection is successful, the ntrip connection icon will be green in the bottom status bar as Figure 5.
+4. If the connection is successful, the ntrip connection icon will be green in the bottom status bar as Figure 6.
 ![[ntrip_connect.jpg]]
-\[Figure 5\]: Ntrip connection check
+\[Figure 6\]: Ntrip connection check
 
 ## 2.5 Check the RTK status
-The RTK status should be tested under empty outdoor environment. The RTK status will be shown at the last word of the  Fix Mode like the followings Figures. The "Fix" in Figure 6 means the RTK status is fix, the "Float" in Figure means the RTK status is float.
+The RTK status should be tested under empty outdoor environment. The RTK status will be shown at the last word of the  Fix Mode like the followings Figures. The "Float" in Figure 7 means the RTK status is float, the "Fix" in Figure 7 means the RTK status is fix.
+![[fix_float.png]]
+\[Figure 7\]: RTK Fix and Float solutions
 
 
-In addition, Figure 7 is our test result of RTK status by Xsens mti 680g. Please have a look, as reference. The green points are RTK fix status, the orange points are RTK float status, and the red points are RTK invalid status.
+In addition, Figure 8 is our test result of RTK status by Xsens mti 680g. Please have a look, as reference. The green points are RTK fix status, the orange points are RTK float status, and the red points are RTK invalid status.
 ![[xsens_res.jpg]]
-\[Figure 7\] xsens result on google earth
+\[Figure 8\] Xsens result on google earth
+
+
 ## 2.6 Insert the google map
-Meanwhile, the u-center can show the RTK localization result on the google map in real-time, like Figure.
+Meanwhile, the u-center can show the RTK localization result on the google map in real-time, like Figure 9.
+![[with_google_map.png]]
+\[Figure 9:\] Integrate with google map
 
 **Prerequisites**
 1. register a google map static map API through the following link
 https://developers.google.com/maps/documentation/static-maps/?hl=en
 
 **Steps:**
-1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK"
+1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK" as Figure . 
 ![[google_maps_api_setting.png]]
-2. open the "Map View" 
-![[with_google_map.png]]
+\[Figure 10\]: API setting
 
+
+2. open the "Map View" 
+![[map_view.png]]
+\[Figure 11\]: Open the google map in u-center
 
 # 3. ROS2
 ## 3.1 Pre-setting on U-center WINDOWS
