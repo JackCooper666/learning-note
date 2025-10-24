@@ -76,21 +76,25 @@ https://developers.google.com/maps/documentation/static-maps/?hl=en
 The Pre-setting on u-center includes two parts: the serial communication setting and the output messages setting.
 ##### Serial communication setting
 **Steps:**
-1. config the port under **menu bar  -> View -> Message View -> UBX -> CFG -> PRT (Ports)** like following Figure
+1. config the port under **menu bar  -> View -> Message View -> UBX -> CFG -> PRT (Ports)** like following Figure 12.
 ![[port_setting.png]]
+\[Figure 12\]: Port setting
 
-2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure
+2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure 13.
 ![[set_fre.png]]
 
 3. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
 ![[save_config.png]]
+\[Figure 13\]: 
+
 ##### Output messages setting
 **Steps:**
 1. Configure the receiver to output raw data and navigation messages
-	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RAWX(Multi-GNSS-Raw-Measurement Data)
-	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> SFRBX
+	go to the **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RAWX(Multi-GNSS-Raw-Measurement Data)** as Figure . 
+	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> SFRBX(Subframe Data NG)
+	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RTCM(RTCM input status)
 	Please right click them and choose enable.
-	
+	![[rawx_SFRBX_rtcm.png]]
 
 2. Configure the receiver to output navigation results in UBX format
 	menu bar  -> View -> Message View ->UBX -> NAV -> PVT
@@ -100,7 +104,7 @@ The Pre-setting on u-center includes two parts: the serial communication setting
 3. Configure the receiver to output NMEA protocol related statements
 	menu bar -> View -> Message View -> NMEA
 	please enable the messages of nmea shown in Figure
-
+![[nmea.png]]
 
 
 
