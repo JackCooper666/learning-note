@@ -348,8 +348,8 @@ I did two tests on campus.
 
 ###### 3.6.2 Current issues
 1. The RTK localization may fail down sometimes.
-2. The RTK cannot get the fix status, but can float status 
+2. The u-center shows the RTK can get fix status, but at the same location, the ublox driver can only get float solution.
 
 ## 3.7 Possible Solution
 1. We have asked the Sparkfun for technical support
-2. We will try the Wheeltech N100 RTK localization system as an alternative. 
+2. We will try the Wheeltech G60 RTK localization system as an alternative.  
