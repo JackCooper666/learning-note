@@ -12,16 +12,17 @@ The RTK localization includes two parts: the GPS localization, and the NTRIP loc
 \[Figure 1\]: U-center download
 ## 2.2 Connect the GPS
 **Steps:**
-1. Click the Receiver -> Connection to choose the serial port of the ublox as Figure below.
+1. Click the **Receiver -> Connection** to choose the serial port of the ublox as Figure 2 below.
 ![[win_port_selection.png]]
+\[Figure 2\]: Port selection
 
 2. Then, set the baudrate of the serial communication.
-
-
+![[win_port_baud_seting.png]]
+\[Figure 3\]: Baudrate setting
 
 3.  Make sure the connection icon is flashing in the bottom status bar. This indicates that the serial communication between the computer and the GNSS device is working.
 ![[com_connect.png]]
-
+\[Figure 3\]: Port connection check
 
 ## 2.3 Verification the GPS connection and situation
 The GPS testing need to be executed at empty outdoor environment. When the Fix mode on the right side of the interface shows 3D (green), it means that the right side is working normally, as Figure shows
@@ -30,22 +31,23 @@ The GPS testing need to be executed at empty outdoor environment. When the Fix m
 ## 2.4 Connect the NTRIP Client
 **Steps:**
 1. Make Sure your PC connects with internet. The personal Hotspot is recommended Because, the NTRIP access will be rejected by the Firewall sometime.  
-2. Click the Receiver-> NTRIP Client, then key your host, port, username and password like the following Figure 2 shows
-3. Click the "Update source table," which will search the valid mount points, then choose your mount point like the following Figure 2 shows. According to our previous test, the RTK_SiReNT_32 can provide an accurate localization result.
+2. Click the **Receiver-> NTRIP Client**, then key your host, port, username and password like the following Figure 4 shows
+3. Click the "Update source table," which will search the valid mount points, then choose your mount point like the following Figure 4 shows. According to our previous test, the RTK_SiReNT_32 can provide an accurate localization result.
+![[ntrip_access.png]]
+\[Figure 4\]: Ntrip access
 
 
-
-
-4. If the connection is successful, the ntrip connection icon will be green in the bottom status bar as Figure.
-
+4. If the connection is successful, the ntrip connection icon will be green in the bottom status bar as Figure 5.
+![[ntrip_connect.jpg]]
+\[Figure 5\]: Ntrip connection check
 
 ## 2.5 Check the RTK status
-The RTK status should be tested under empty outdoor environment. The RTK status will be shown at the last word of the  Fix Mode like the followings Figures. The "Fix" in Figure means the RTK status is fix, the "Float" in Figure means the RTK status is float.
+The RTK status should be tested under empty outdoor environment. The RTK status will be shown at the last word of the  Fix Mode like the followings Figures. The "Fix" in Figure 6 means the RTK status is fix, the "Float" in Figure means the RTK status is float.
 
 
-In addition, Figure is our test result of RTK status by Xsens mti 680g. Please have a look, as reference. The green points are RTK fix status, the orange points are RTK float status, and the red points are RTK invalid status.
-
-
+In addition, Figure 7 is our test result of RTK status by Xsens mti 680g. Please have a look, as reference. The green points are RTK fix status, the orange points are RTK float status, and the red points are RTK invalid status.
+![[xsens_res.jpg]]
+\[Figure 7\] xsens result on google earth
 ## 2.6 Insert the google map
 Meanwhile, the u-center can show the RTK localization result on the google map in real-time, like Figure.
 
@@ -55,8 +57,9 @@ https://developers.google.com/maps/documentation/static-maps/?hl=en
 
 **Steps:**
 1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK"
+![[google_maps_api_setting.png]]
 2. open the "Map View" 
-
+![[with_google_map.png]]
 
 
 # 3. ROS2
@@ -67,10 +70,10 @@ The Pre-setting on u-center includes two parts: the serial communication setting
 1. config the port under **menu bar  -> View -> Message View -> UBX -> CFG -> PRT (Ports)** like following Figure
 
 2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure
-
+![[set_fre.png]]
 
 3. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
-
+![[save_config.png]]
 ##### Output messages setting
 **Steps:**
 1. Configure the receiver to output raw data and navigation messages
@@ -111,6 +114,8 @@ ls /dev/ttyACM*
 ```bash
 sudo cat /dev/ttyACM0
 ```
+
+
  **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., being in the dialout group). You can add yourself with the command below. Afterward, log out and log back in for the changes to take effect.
  ```bash
  sudo usermod -a -G dialout $USER
