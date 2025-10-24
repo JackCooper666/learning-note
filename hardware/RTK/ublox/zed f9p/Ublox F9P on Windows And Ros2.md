@@ -293,7 +293,21 @@ there are a lot of data format in the nmea to represent the RTK status. GxGGA wi
 ```bash
 ros2 topic echo /nmea | grep GGA
 ```
-the 7th bit of the GGA in the /nmea represent the RTK status. The following list shows the meaning of all GGA's bits.
+the sixth field of the GGA in the /nmea represent the RTK status. The following list shows the meaning of all GGA's bits.
+```txt
+sentence: "$GPGGA,154135.00,0118.00918,N,10346.33794,E,5,09,1.20,29.1,M,5.9,M,1.0,1943*71\r\n"
+
+```
+
+|Field #|Example value|Meaning|
+|:-:|:-:|:--|
+|1|`154135.00`|UTC time (hhmmss.ss)|
+|2–5|`0118.00918,N,10346.33794,E`|Latitude / Longitude|
+|6|`5`|**Fix Quality Indicator ← RTK status is here**|
+|7|`09`|Number of SVs used|
+|8|`1.20`|HDOP|
+|9|`29.1,M`|Altitude + units|
+|…|…|other fields|
 
 
 
@@ -305,7 +319,25 @@ The rtcm should have message
 ```bash
 ros2 topic echo /ublox_gps_node/navpvt
 ```
-In the /ublox_gps_node/navpvt, the fix_type and flags represent the GPS and RTK localization status as Table below shows.
+The following list introduces the main params in the /ublox_gps_node/navpvt
+
+| **Category** | **Field**                          | **Description / Meaning**           | **Unit / Scale** | **Typical Use**                                |
+| ------------ | ---------------------------------- | ----------------------------------- | ---------------- | ---------------------------------------------- |
+| **Time**     | `i_tow`                            | GPS time of week                    | ms               | Timestamp in GPS week                          |
+|              | `year, month, day, hour, min, sec` | UTC date & time                     | —                | Human-readable time                            |
+| **Position** | `lat`, `lon`                       | Latitude, longitude                 | deg × 1e-7       | `lat_deg = lat * 1e-7`, `lon_deg = lon * 1e-7` |
+|              | `h_msl`                            | Altitude above mean sea level       | mm → m           | Recommended for altitude                       |
+|              | `height`                           | Height above ellipsoid              | mm → m           | Used in geodesy (less intuitive)               |
+| **Fix Info** | `fix_type`                         | Solution type (0–5)                 | —                | 0 = no fix, 3 = 3D, 4 = GNSS+DR                |
+|              | `flags.bit0`                       | `GNSS_FIX_OK`                       | bool             | Fix valid                                      |
+|              | `flags.bit1`                       | `DIFF_SOLN`                         | bool             | Differential corrections (SBAS/RTCM) used      |
+|              | `flags.bits6–7`                    | `carrSoln` = carrier-phase solution | —                | 0 = none, 1 = RTK-FLOAT, 2 = RTK-FIX           |
+|              | `num_sv`                           | Satellites used                     | count            | Higher = better geometry                       |
+|              | `p_dop`                            | Position dilution of precision      | 0.01             | `PDOP = p_dop / 100`                           |
+
+
+
+
 
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
@@ -315,8 +347,8 @@ I did two tests on campus.
 
 
 ###### 3.6.2 Current issues
-1. The RTK localization will fail down when the movement is too fast.
-2. The RTK cannot get the fix status. 
+1. The RTK localization may fail down sometimes.
+2. The RTK cannot get the fix status, but can float status 
 
 ## 3.7 Possible Solution
 1. We have asked the Sparkfun for technical support
