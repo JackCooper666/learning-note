@@ -82,35 +82,38 @@ The Pre-setting on u-center includes two parts: the serial communication setting
 
 2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure 13.
 ![[set_fre.png]]
+\[Figure 13\]: Port rates setting
 
-3. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
+3. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure 14
 ![[save_config.png]]
-\[Figure 13\]: 
+\[Figure 14\]: Save config
 
 ##### Output messages setting
 **Steps:**
 1. Configure the receiver to output raw data and navigation messages
-	go to the **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RAWX(Multi-GNSS-Raw-Measurement Data)** as Figure . 
-	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> SFRBX(Subframe Data NG)
-	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RTCM(RTCM input status)
+	go to the **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RAWX(Multi-GNSS-Raw-Measurement Data)** as Figure 15. 
+	go to **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> SFRBX(Subframe Data NG)** as Figure 15.
+	go to **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RTCM(RTCM input status)** as Figure 15
 	Please right click them and choose enable.
 	![[rawx_SFRBX_rtcm.png]]
+\[Figure 15\]: Output RAWX, RTCM and SFRBX
 
 2. Configure the receiver to output navigation results in UBX format
-	menu bar  -> View -> Message View ->UBX -> NAV -> PVT
+	go to **menu bar  -> View -> Message View ->UBX -> NAV -> PVT** as Figure 16.
 	Please right click it and choose enable.
 ![[pvt_win.png]]
-	
+\[Figure 16\]: output the PVT.
+
 3. Configure the receiver to output NMEA protocol related statements
 	menu bar -> View -> Message View -> NMEA
-	please enable the messages of nmea shown in Figure
+	please enable the messages of nmea shown in Figure 17.
 ![[nmea.png]]
+\[Figure 17\]: NMEA output setting
 
 
-
-4. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
+4. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure 18.
 ![[save_config.png]]
-
+\[Figure 18\]: Save config
 
 
 ## 3.2 Connect Ubuntu with ublox F9P
@@ -122,18 +125,19 @@ sudo apt update && sudo apt install ros-dev-tools
 
 ##### 3.2.2 Find your RTK receiver on your PC
 1. Connect your receiver to the PC via the USB port. 
-2. The receiver should be automatically configured. To verify this, open Terminal and type the command. You should see **/dev/ttyACM0** (or a similar device, e.g., **/dev/ttyACM1**).
+2. The receiver should be automatically configured. To verify this, open Terminal and type the command. You should see **/dev/ttyACM0** as Figure 19 (or a similar device, e.g., **/dev/ttyACM1**).
 ```bash
 ls /dev/ttyACM*
 ```
 ![[check ttyAcm.jpg]]
+\[Figure 19\]: Port name
 
-3. To check the GPS Stream from RTK receiver, run the command in the Terminal. It shows the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop.
+3. To check the GPS Stream from RTK receiver, run the command in the Terminal as Figure 20. It shows the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop.
 ```bash
 sudo cat /dev/ttyACM0
 ```
 ![[see_ttyACM.jpg]]
-
+\[Figure 20\]: Info in the port
 
  **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., being in the dialout group). Thus, please check your groups by the command below.
 ```bash
@@ -180,18 +184,19 @@ source install/setup.bash
 ```
 
 6. Now the u-blox Node is available in your ROS2 environment.
-7. Modify the configuration file to update device paths or parameters as needed (we will use **/dev/ttyACM0** ). The ublox_gps package includes a default configuration file named **zed_f9p.yaml**. Open the configuration file by command and modify the "device":
+7. Modify the configuration file to update device paths or parameters as needed (we will use **/dev/ttyACM0** ). The ublox_gps package includes a default configuration file named **zed_f9p.yaml**. Open the configuration file by command and modify the "device" as Figure 21:
 ```bash
 nano ~/ros2_ws/src/ublox/ublox_gps/config/zed_f9p.yaml
 ```
 ![[zed_yaml.png]]
+\[Figure 21\]: Modify yaml setting 
 
-
-8. To configure the node with the **zed_f9p.yaml** settings, update the launch file. Open the file and add the following line to load the configuration:
+8. To configure the node with the **zed_f9p.yaml** settings, update the launch file as Figure 22. Open the file and add the following line to load the configuration:
 ```bash
 nano ~/ros2_ws/src/ublox/ublox_gps/launch/ublox_gps_node-launch.py
 ```
 ![[set_launch_ublox.jpg]]
+\[Figure 22\]: Modify the launch file
 
 9. Rebuild the packages. We recommend using a **separate package** for your custom config and launch files to keep things organized. We’ll discuss that approach later.
 ```bash
@@ -199,32 +204,32 @@ cd ~/ros2_ws
 colcon build
 ```
 
-##### 3.3.2 test the GPS
+##### 3.3.2 Test the GPS
 ```bash
 source install/setup.bash
 ros2 launch ublox_gps ublox_gps_node-launch.py
 ```
-If everything is configured correctly, the node should begin publishing GPS data from the ttyACM0 receiver.
-
-
+If everything is configured correctly, the node should begin publishing GPS data from the ttyACM0 receiver as Figure 23.
+![[ublox_launch.png]]
+\[Figure 23\]: Launch the ublox driver
 
 
 ##### 3.3.3 topics and service list
-1. Run the following command to view available Topics. Look for topics like **/ublox_gps_node/fix**, which contains GPS data in sensor_msgs/NavSatFix format, etc
+1. Run the following command to view available Topics as Figure 24. 
 ```bash
 ros2 topic list
 ```
+![[ros2ubloxtopics.png]]
+\[Figure 24\]: Topic list
 
 
 
-
-
-2. View the list of available services provided by the Node.
+2. View the list of available services provided by the Node as Figure 25.
 ```bash
 ros2 service list
 ```
-
-
+![[ros2ubloxservices.png]]
+\[Figure 25\]: Service list
 
 
 
@@ -241,12 +246,12 @@ cd ~/ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
 ```
-3. Update NTRIP parameters such as host, port, username, password, and mountpoint and save the changes in file.
+3. Update NTRIP parameters such as host, port, username, password, and mountpoint and save the changes in file as Figure 26.
 ```bash
 nano ~/ros2_ws/src/ntrip_client/launch/ntrip_client_launch.py
 ```
 ![[set_ntrip_access.jpg]]
-
+\[Figure 26\] login Ntrip
 
 4. Rebuild
 ```markup
@@ -255,26 +260,33 @@ colcon build
 ```
 
 ##### 3.4.2 Test NTRIP Client
-1. Launch the Node with your NTRIP parameters to establish a connection to the NTRIP Caster:
+1. Launch the Node with your NTRIP parameters to establish a connection to the NTRIP Caster as Figure 27:
 ```bash
 ros2 launch ntrip_client ntrip_client_launch.py
 ```
-
-##### 3.4.3 Topics and services list
-```bash
-ros2 topic list
-ros2 service list
-```
-
+![[ntrip_client_launch.png]]
+\[Figure 27\]: Launch Ntrip
 ## 3.5 Test RTK
 1. Check node connection
 ```bash
 rqt_graph
 ```
+![[rosgraph.png]]
 
 
+2. Check services
+If the ntrip and ublox driver run successfully, the services in Figure 28 should be included, when run command.
+```bash
+ros2 service list
+```
+![[rso2servicesRTK.png]]
+\[Figure 28\]: Services for RTK
 
-2. Check topics
+3. Check topics
+The topics should like Figure 29
+![[ros2topicsRTK.png]]
+\[Figure 29\]: Topics for RTK
+
 open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals
 
 there are a lot of data format in the nmea to represent the RTK status. GxGGA will be used in this instruction.
