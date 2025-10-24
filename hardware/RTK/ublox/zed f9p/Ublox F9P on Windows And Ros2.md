@@ -221,7 +221,12 @@ The rtcm should have message
 ```bash
 ros2 topic echo /ublox_gps_node/navpvt
 ```
-In the /ublox_gps_node/navpvt, the fix_type and flags represent the GPS and RTK localization status. The table below shows the 
+In the /ublox_gps_node/navpvt, the fix_type and flags represent the GPS and RTK localization status as Table below shows.
 
 ## 3.6 Current RTK localization results and issues
+##### 3.6.1 Current RTK localization results
+I did two tests on campus. 
 
+###### 3.6.2 Current issues
+1. The RTK localization will fail down when the movement is too fast.
+2. The RTK cannot get the fix status. 
