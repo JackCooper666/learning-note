@@ -77,13 +77,13 @@ To manage dependencies in ROS 2, update your package list and installs **ros-de
 ```bash
 sudo apt update && sudo apt install ros-dev-tools
 ```
+
 ##### 3.2.2 Find your RTK receiver on your PC
 1. Connect your receiver to the PC via the USB port. 
 2. The receiver should be automatically configured. To verify this, open Terminal and type the command. You should see **/dev/ttyACM0** (or a similar device, e.g., **/dev/ttyACM1**).
 ```bash
 ls /dev/ttyACM*
 ```
-
 
 
 3. To check the GPS Stream from RTK receiver, run the command in the Terminal. It shows the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop.
@@ -95,6 +95,8 @@ sudo cat /dev/ttyACM0
  sudo usermod -a -G dialout $USER
  sudo reboot
  ```
+
+
 ## 3.3 Ublox Driver
 ##### 3.3.1 Build Ublox Driver
 1. To create a Workspace Directory, open a Terminal and create a folder (for example, **ros2_ws**) with a **src** subfolder:
@@ -201,11 +203,15 @@ ros2 service list
 rqt_graph
 ```
 2. Check topics
-open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals 
+open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals
+
+there are a lot of data format in the nmea to represent the RTK status. GxGGA will be used in this instruction.
 ```bash
-ros2 topic echo /nmea
+ros2 topic echo /nmea | grep GGA
 ```
-please check the 7 bit of the /nmea 
+the 7th bit of the GGA in the /nmea represent the RTK status. The following list shows the meaning of all GGA's bits.
+
+
 
 ```bash
 ros2 topic echo /rtcm
@@ -215,8 +221,7 @@ The rtcm should have message
 ```bash
 ros2 topic echo /ublox_gps_node/navpvt
 ```
-The fix_type:
-The flags:
+In the /ublox_gps_node/navpvt, the fix_type and flags represent the GPS and RTK localization status. The table below shows the 
 
 ## 3.6 Current RTK localization results and issues
 
