@@ -77,6 +77,7 @@ The Pre-setting on u-center includes two parts: the serial communication setting
 ##### Serial communication setting
 **Steps:**
 1. config the port under **menu bar  -> View -> Message View -> UBX -> CFG -> PRT (Ports)** like following Figure
+![[port_setting.png]]
 
 2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure
 ![[set_fre.png]]
@@ -86,22 +87,26 @@ The Pre-setting on u-center includes two parts: the serial communication setting
 ##### Output messages setting
 **Steps:**
 1. Configure the receiver to output raw data and navigation messages
-	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> UBX-RXM-RAWX(Multi-GNSS-Raw-Measurement Data)
-	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> UBX-RXM-SFRBX
-
+	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RAWX(Multi-GNSS-Raw-Measurement Data)
+	menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> SFRBX
 	Please right click them and choose enable.
+	
 
 2. Configure the receiver to output navigation results in UBX format
-	menu bar  -> View -> Message View ->UBX -> UBX-NAV-PVT
-
-	Please right click them and choose enable.
+	menu bar  -> View -> Message View ->UBX -> NAV -> PVT
+	Please right click it and choose enable.
+![[pvt_win.png]]
 	
 3. Configure the receiver to output NMEA protocol related statements
 	menu bar -> View -> Message View -> NMEA
-	 
-	 Please right click it and choose enable Child Messages, but please disable the message **PUBX** under the NMEA
-	 
+	please enable the messages of nmea shown in Figure
+
+
+
+
 4. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure
+![[save_config.png]]
+
 
 
 ## 3.2 Connect Ubuntu with ublox F9P
@@ -117,18 +122,25 @@ sudo apt update && sudo apt install ros-dev-tools
 ```bash
 ls /dev/ttyACM*
 ```
-
+![[check ttyAcm.jpg]]
 
 3. To check the GPS Stream from RTK receiver, run the command in the Terminal. It shows the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop.
 ```bash
 sudo cat /dev/ttyACM0
 ```
+![[see_ttyACM.jpg]]
 
 
- **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., being in the dialout group). You can add yourself with the command below. Afterward, log out and log back in for the changes to take effect.
+ **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., being in the dialout group). Thus, please check your groups by the command below.
+```bash
+groups
+```
+
+
+If you do not have the dialout group, you can add yourself with the command below. Afterward, log out and log back in for the changes to take effect.
  ```bash
- sudo usermod -a -G dialout $USER
- sudo reboot
+ sudo usermod -a -G dialout $USER #add the dialout group
+ sudo reboot # restart your pc
  ```
 
 
@@ -168,11 +180,14 @@ source install/setup.bash
 ```bash
 nano ~/ros2_ws/src/ublox/ublox_gps/config/zed_f9p.yaml
 ```
+![[zed_yaml.png]]
+
 
 8. To configure the node with the **zed_f9p.yaml** settings, update the launch file. Open the file and add the following line to load the configuration:
 ```bash
 nano ~/ros2_ws/src/ublox/ublox_gps/launch/ublox_gps_node-launch.py
 ```
+![[set_launch_ublox.jpg]]
 
 9. Rebuild the packages. We recommend using a **separate package** for your custom config and launch files to keep things organized. We’ll discuss that approach later.
 ```bash
@@ -187,16 +202,27 @@ ros2 launch ublox_gps ublox_gps_node-launch.py
 ```
 If everything is configured correctly, the node should begin publishing GPS data from the ttyACM0 receiver.
 
+
+
+
 ##### 3.3.3 topics and service list
 1. Run the following command to view available Topics. Look for topics like **/ublox_gps_node/fix**, which contains GPS data in sensor_msgs/NavSatFix format, etc
 ```bash
 ros2 topic list
 ```
 
+
+
+
+
 2. View the list of available services provided by the Node.
 ```bash
 ros2 service list
 ```
+
+
+
+
 
 ## 3.4 NTRIP Client
 ##### 3.4.1 Build NTRIP Client
@@ -215,6 +241,8 @@ colcon build
 ```bash
 nano ~/ros2_ws/src/ntrip_client/launch/ntrip_client_launch.py
 ```
+![[set_ntrip_access.jpg]]
+
 
 4. Rebuild
 ```markup
@@ -227,16 +255,21 @@ colcon build
 ```bash
 ros2 launch ntrip_client ntrip_client_launch.py
 ```
+
 ##### 3.4.3 Topics and services list
 ```bash
 ros2 topic list
 ros2 service list
 ```
+
 ## 3.5 Test RTK
 1. Check node connection
 ```bash
 rqt_graph
 ```
+
+
+
 2. Check topics
 open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals
 
@@ -261,6 +294,9 @@ In the /ublox_gps_node/navpvt, the fix_type and flags represent the GPS and RTK 
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
 I did two tests on campus. 
+
+
+
 
 ###### 3.6.2 Current issues
 1. The RTK localization will fail down when the movement is too fast.
