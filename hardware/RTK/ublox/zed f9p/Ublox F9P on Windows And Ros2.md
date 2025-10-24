@@ -10,10 +10,17 @@ The RTK localization includes two parts: the GPS localization, and the NTRIP loc
 1. Please, use the following link to download the u-center
 	https://www.u-blox.com/en/product/u-center
 2. In the Web page, please choose the u-center (highlighted by red box) not the u-center 2.
+![[u-center.png]]
+\[Figure 1\]: U-center download
 ## 2.2 Connect the GPS
 **Steps:**
 1. Click the Receiver -> Connection to choose the serial port of the ublox as Figure below.
-2. Then, set the baudrate of the serial communication. 
+
+
+2. Then, set the baudrate of the serial communication.
+
+
+
 3.  Make sure the connection icon is flashing in the bottom status bar. This indicates that the serial communication between the computer and the GNSS device is working.
 ## 2.3 Verification the GPS connection and situation
 The GPS testing need to be executed at empty outdoor environment. When the Fix mode on the right side of the interface shows 3D (green), it means that the right side is working normally, as Figure shows
@@ -21,6 +28,7 @@ The GPS testing need to be executed at empty outdoor environment. When the Fix m
 **Steps:**
 1. Make Sure your PC connects with internet. The personal Hotspot is recommended Because, the NTRIP access will be rejected by the Firewall sometime.  
 2. Click the Receiver-> NTRIP Client, then key your host, port, username and password like the following Figure shows
+
 3. Click the "Update source table," which will search the valid mount points, then choose your mount point. According to our previous test, the RTK_SiReNT_32 can provide an accurate localization result.
 4. If the connection is successful, the ntrip connection icon will be green in the bottom status bar.
 ## 2.5 Check the RTK status
@@ -230,3 +238,7 @@ I did two tests on campus.
 ###### 3.6.2 Current issues
 1. The RTK localization will fail down when the movement is too fast.
 2. The RTK cannot get the fix status. 
+
+## 3.7 Possible Solution
+1. We have asked the Sparkfun for technical support
+2. We will try the Wheeltech N100 RTK localization system as an alternative. 
