@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,7 +181,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c997dde1b65529a4",
+  "active": "1de55c432d7228d1",
   "lastOpenFiles": [
     "hardware/RTK/ublox/zed f9p/UBX-NAV-PVT.md",
     "hardware/RTK/ublox/zed f9p/Ublox F9P on Windows And Ros2.md",

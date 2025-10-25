@@ -104,42 +104,43 @@ The **pre-configuration** in **u-center** consists of two parts: **serial commun
 ![[pvt_win.png]]
 \[Figure 16\]: output the PVT.
 
-3. Configure the receiver to output NMEA protocol related statements
-	menu bar -> View -> Message View -> NMEA
-	please enable the messages of nmea shown in Figure 17.
+3. Configure the receiver to output **NMEA protocol** messages:
+	- Go to **Menu Bar → View → Message View → NMEA**.
+	- Enable the NMEA messages shown in _Figure 17_.
 ![[nmea.png]]
 \[Figure 17\]: NMEA output setting
 
 
-4. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure 18.
+4. After completing the modifications, save the parameters under **Menu Bar → View → Message View → UBX → CFG → CFG (Configuration)**, as shown in _Figure 18_.
 ![[save_config.png]]
 \[Figure 18\]: Save config
 
 
 ## 3.2 Connect Ubuntu with ublox F9P
 ##### 3.2.1 Update your ros2
-To manage dependencies in ROS 2, update your package list and installs **ros-dev-tools**, which includes **rosdep** and other useful development tools for ROS 2.
+To manage dependencies in **ROS 2**, update your package list and install **ros-dev-tools**, which includes **rosdep** and other useful development tools for ROS 2.
 ```bash
 sudo apt update && sudo apt install ros-dev-tools
 ```
 
 ##### 3.2.2 Find your RTK receiver on your PC
-1. Connect your receiver to the PC via the USB port. 
-2. The receiver should be automatically configured. To verify this, open Terminal and type the command. You should see **/dev/ttyACM0** as Figure 19 (or a similar device, e.g., **/dev/ttyACM1**).
+1. Connect the receiver to your PC via a **USB port**.
+2. The receiver should be automatically detected. To verify this, open a **Terminal** and run the following command. You should see **/dev/ttyACM0** (or a similar device, e.g., **/dev/ttyACM1**) displayed, as shown in _Figure 19_.
 ```bash
 ls /dev/ttyACM*
 ```
 ![[check ttyAcm.jpg]]
 \[Figure 19\]: Port name
 
-3. To check the GPS Stream from RTK receiver, run the command in the Terminal as Figure 20. It shows the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop.
+3. To check the GPS stream, run the command in the **Terminal**, as shown in _Figure 20_.  This command displays the raw GPS data streaming from the receiver. Press **Ctrl + C** to stop the process.
 ```bash
 sudo cat /dev/ttyACM0
 ```
 ![[see_ttyACM.jpg]]
 \[Figure 20\]: Info in the port
 
- **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., being in the dialout group). Thus, please check your groups by the command below.
+ **Tip:** If you don’t see any output or the device is missing, make sure your user has the appropriate permissions (e.g., is a member of the **dialout** group).  
+You can check your group memberships by running the following command:
 ```bash
 groups
 ```
@@ -154,7 +155,7 @@ If you do not have the dialout group, you can add yourself with the command belo
 
 ## 3.3 Ublox Driver
 ##### 3.3.1 Build Ublox Driver
-1. To create a Workspace Directory, open a Terminal and create a folder (for example, **ros2_ws**) with a **src** subfolder:
+1. To create a **workspace directory**, open a **Terminal** and make a new folder (for example, **ros2_ws**) with a **src** subfolder:
 ```bash
 mkdir -p ~/ros2_ws/src
 ```
@@ -287,9 +288,9 @@ The topics should like Figure 29
 ![[ros2topicsRTK.png]]
 \[Figure 29\]: Topics for RTK
 
-open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals
+Open **three Terminals** in the workspace, and run `source install/setup.bash` in each of them.  Then, check the topics **/nmea**, **/rtcm**, and **/ublox_gps_node/navpvt** separately in the three Terminals.
 
-there are a lot of data format in the nmea to represent the RTK status. 
+There are a lot of data format in the nmea to represent the RTK status. 
 ```bash
 ros2 topic echo /nmea 
 ```
@@ -298,6 +299,7 @@ ros2 topic echo /nmea
 ros2 topic echo /rtcm
 ```
 The rtcm should have message
+
 
 ```bash
 ros2 topic echo /ublox_gps_node/navpvt
@@ -319,14 +321,11 @@ The following list introduces the main params in the /ublox_gps_node/navpvt
 |              | `p_dop`                            | Position dilution of precision      | 0.01             | `PDOP = p_dop / 100`                           |
 
 
-
-
-
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
-I did 19 tests, the following two are the best results.
+I conducted 18 tests, and the following two represent the best results.
 
-In figures  the green points are RTK fix status, Orange points are RTK float status, and the grey points are RTK invalid status.
+In the figures, the green points indicate RTK fixed status, the orange points indicate RTK float status, and the grey points indicate RTK invalid status.
 
 Firstly, I tested a large loop.
 ![[car_test.png]]
@@ -338,9 +337,9 @@ Secondly, I tested a small loop.
 
 
 ###### 3.6.2 Current issues
-1. The RTK localization may fail down sometimes.
-2. The altitude cannot be estimated correctly sometimes.
+1. The RTK localization may occasionally **fail** or **drift significantly**.
+2. The **altitude** estimation may sometimes be **inaccurate**.
 
 ## 3.7 Possible Solution
-1. I will try the Wheeltech G60 RTK localization system as an alternative.  
-2. I recommend to use a **better RTK module**, because the current performance of localization cannot support the localization task.
+1. I will try the **Wheeltech G60 RTK localization system** as an alternative.
+2. I recommend using a **higher-quality RTK module**, as the current localization performance is insufficient for the task.
