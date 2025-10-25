@@ -324,7 +324,7 @@ The following list introduces the main params in the /ublox_gps_node/navpvt
 
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
-I did two tests on campus. 
+We did 
 In figures  the green points are RTK fix status, Orange points are RTK float status, and the grey points are RTK invalid status.
 
 Firstly, we tested a large loop.
@@ -332,8 +332,8 @@ Firstly, we tested a large loop.
 \[Figure 30\]: large loop test
 
 Secondly, we tested a small loop.
-
-
+![[small_loop.png]]
+\[Figure 31\]: small loop test
 
 
 ###### 3.6.2 Current issues
@@ -341,5 +341,5 @@ Secondly, we tested a small loop.
 2. The altitude cannot be estimated correctly sometimes.
 
 ## 3.7 Possible Solution
-1. We have asked the Sparkfun for technical support
-2. We will try the Wheeltech G60 RTK localization system as an alternative.  
+1. We will try the Wheeltech G60 RTK localization system as an alternative.  
+2. We recommend to use a **better RTK module**, because the localization performance cannot support the localization task.
