@@ -323,7 +323,7 @@ The following list introduces the main params in the /ublox_gps_node/navpvt
 
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
-I conducted 18 tests, and the following two represent the best results.
+I conducted 18 tests, and the following two represent the best results. 
 
 In the figures, the green points indicate RTK fixed status, the orange points indicate RTK float status, and the grey points indicate RTK invalid status.
 
