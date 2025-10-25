@@ -1,36 +1,37 @@
 # 1. Overview
-This is an instruction to demenstrate how to integrate ublox f9p within windows and ros2 step by step.
+This document provides step-by-step instructions on how to integrate the **u-blox F9P** with both **Windows** and **ROS2** environments.
 # 2. Windows
-The RTK localization includes two parts: the GPS localization, and the NTRIP localization correction. This section will present a detailed instruction for achieving the RTK localization on Windows. 
+RTK (Real-Time Kinematic) localization consists of two components: **GPS-based localization** and **NTRIP correction**.  This section provides a detailed guide on how to achieve RTK localization in the Windows environment.
 ## 2.1 Download U-center
 1. Please, use the following link to download the u-center
 	https://www.u-blox.com/en/product/u-center
-2. In the Web page, please choose the u-center (highlighted by red box) not the u-center 2, as Figure 1.
+2. On the webpage, select **u-center** (highlighted in the red box), **not u-center 2**, as shown in _Figure 1_.
 ![[u-center.png]]
 \[Figure 1\]: U-center download
 ## 2.2 Connect the GPS
 **Steps:**
-1. Click the **Receiver -> Connection** to choose the serial port of the ublox as Figure 2 below.
+1. Click **Receiver → Connection** to select the serial port of the u-blox device, as shown in _Figure 2_ below.
 ![[win_port_selection.png]]
 \[Figure 2\]: Port selection
 
-2. Then, set the baudrate of the serial communication.
+2. Then, set the **baud rate** for the serial communication.
 ![[win_port_baud_seting.png]]
-\[Figure 3\]: Baudrate setting
+\[Figure\]: Baudrate setting
 
-3.  Make sure the connection icon is flashing in the bottom status bar. This indicates that the serial communication between the computer and the GNSS device is working.
+3.  Make sure the **connection icon** is flashing in the bottom status bar. This indicates that the serial communication between the computer and the GNSS device is functioning properly.
 ![[com_connect.png]]
 \[Figure 3\]: Port connection check
 
 ## 2.3 Verification the GPS connection and situation
-The GPS testing need to be executed at empty outdoor environment. When the Fix mode on the right side of the interface shows 3D (green), it means that the right side is working normally, as Figure 4 shows
+The GPS testing should be conducted in an open outdoor environment.  
+When the **Fix Mode** indicator on the right side of the interface shows **3D (green)**, it means that the GNSS receiver is operating normally, as shown in _Figure 4_.
 ![[3d.png]]
-
+\[Figure 4\]: Pure GPS fix mode
 ## 2.4 Connect the NTRIP Client
 **Steps:**
-1. Make Sure your PC connects with internet. The personal Hotspot is recommended Because, the NTRIP access will be rejected by the Firewall sometime.  
-2. Click the **Receiver-> NTRIP Client**, then key your host, port, username and password like the following Figure 5 shows
-3. Click the "Update source table," which will search the valid mount points, then choose your mount point like the following Figure 5 shows. According to our previous test, the RTK_SiReNT_32 can provide an accurate localization result.
+1. Make sure your PC is connected to the Internet. Using a **personal hotspot** is recommended because NTRIP access may sometimes be blocked by the firewall.
+2. Click **Receiver → NTRIP Client**, then enter your **host**, **port**, **username**, and **password**, as shown in _Figure 5_.
+3. Click **Update Source Table** to search for available mount points, then select your desired mount point, as shown in _Figure 5_. Based on our previous tests, **RTK_SiReNT_32** provides accurate localization results.
 ![[ntrip_access.png]]
 \[Figure 5\]: Ntrip access
 
@@ -40,27 +41,29 @@ The GPS testing need to be executed at empty outdoor environment. When the Fix m
 \[Figure 6\]: Ntrip connection check
 
 ## 2.5 Check the RTK status
-The RTK status should be tested under empty outdoor environment. The RTK status will be shown at the last word of the  Fix Mode like the followings Figures. The "Float" in Figure 7 means the RTK status is float, the "Fix" in Figure 7 means the RTK status is fix.
+The RTK status should be tested in an open outdoor environment.  
+The current RTK status is displayed at the end of the **Fix Mode** field, as shown in the figures below.  
+When **“Float”** appears (see _Figure 7_left_ ), it indicates that the RTK status is _float_; when **“Fix”** appears (see _Figure 7_right_), it indicates that the RTK status is _fixed_.
 ![[fix_float.png]]
 \[Figure 7\]: RTK Fix and Float solutions
 
 
-In addition, Figure 8 is our test result of RTK status by Xsens mti 680g. Please have a look, as reference. The green points are RTK fix status, the orange points are RTK float status, and the red points are RTK invalid status.
+In addition, _Figure 8_ presents our RTK status test results obtained using the **Xsens MTi-680G**. Please refer to it as an example. The **green points** indicate _RTK fixed_ status, the **orange points** indicate _RTK float_ status, and the **red points** indicate _RTK invalid_ status.
 ![[xsens_res.jpg]]
 \[Figure 8\] Xsens result on google earth
 
 
 ## 2.6 Insert the google map
-Meanwhile, the u-center can show the RTK localization result on the google map in real-time, like Figure 9.
+Meanwhile, **u-center** can display the RTK localization results on **Google Maps** in real time, as shown in _Figure 9_.
 ![[with_google_map.png]]
 \[Figure 9:\] Integrate with google map
 
 **Prerequisites**
-1. register a google map static map API through the following link
+1. Register for a **Google Maps Static API key** using the following link:
 https://developers.google.com/maps/documentation/static-maps/?hl=en
 
 **Steps:**
-1. input your google map static API at Tool->Preferences->Access Tokens, then click "Apply", then "OK" as Figure . 
+1. Enter your **Google Maps Static API key** under **Tool → Preferences → Access Tokens**, then click **Apply**, followed by **OK**, as shown in _Figure 10_.
 ![[google_maps_api_setting.png]]
 \[Figure 10\]: API setting
 
@@ -71,34 +74,33 @@ https://developers.google.com/maps/documentation/static-maps/?hl=en
 
 # 3. ROS2
 ## 3.1 Pre-setting on U-center WINDOWS
-The Pre-setting on u-center includes two parts: the serial communication setting and the output messages setting.
+The **pre-configuration** in **u-center** consists of two parts: **serial communication settings** and **output message settings**.
 ##### Serial communication setting
 **Steps:**
-1. config the port under **menu bar  -> View -> Message View -> UBX -> CFG -> PRT (Ports)** like following Figure 12.
+1. Configure the port under **Menu Bar → View → Message View → UBX → CFG → PRT (Ports)**, as shown in _Figure 12_.
 ![[port_setting.png]]
 \[Figure 12\]: Port setting
 
-2. Output frequency configuration under **menu bar  -> View -> Message View -> UBX -> CFG -> RATE(Rates)** like following Figure 13.
+2. Set the output frequency under **Menu Bar → View → Message View → UBX → CFG → RATE (Rates)**, as shown in _Figure 13_.
 ![[set_fre.png]]
 \[Figure 13\]: Port rates setting
 
-3. After the modification is completed, finally choose to save the parameters under the **menu bar  -> View -> Message View -> UBX -> CFG -> CFG(Configuration)** like following Figure 14
+3. After completing the modifications, save the parameters under **Menu Bar → View → Message View → UBX → CFG → CFG (Configuration)**, as shown in _Figure 14_.
 ![[save_config.png]]
 \[Figure 14\]: Save config
 
 ##### Output messages setting
 **Steps:**
-1. Configure the receiver to output raw data and navigation messages
-	go to the **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RAWX(Multi-GNSS-Raw-Measurement Data)** as Figure 15. 
-	go to **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> SFRBX(Subframe Data NG)** as Figure 15.
-	go to **menu bar  -> View -> Message View ->UBX -> RXM(Receiver Manager) -> RTCM(RTCM input status)** as Figure 15
-	Please right click them and choose enable.
+1. Configure the receiver to output raw data and navigation messages as follows:
+	- Go to **Menu Bar → View → Message View → UBX → RXM (Receiver Manager) → RAWX (Multi-GNSS Raw Measurement Data)**, as shown in _Figure 15_. After enabling it, **RAWX** may not appear highlighted — this does not matter.
+	- Go to **Menu Bar → View → Message View → UBX → RXM (Receiver Manager) → SFRBX (Subframe Data NG)**, as shown in _Figure 15_.
+	- Go to **Menu Bar → View → Message View → UBX → RXM (Receiver Manager) → RTCM (RTCM Input Status)**, as shown in _Figure 15_.
 	![[rawx_SFRBX_rtcm.png]]
 \[Figure 15\]: Output RAWX, RTCM and SFRBX
 
-2. Configure the receiver to output navigation results in UBX format
-	go to **menu bar  -> View -> Message View ->UBX -> NAV -> PVT** as Figure 16.
-	Please right click it and choose enable.
+2. Configure the receiver to output navigation results in **UBX** format:
+	- Go to **Menu Bar → View → Message View → UBX → NAV → PVT**, as shown in _Figure 16_.
+	- Right-click it and select **Enable**.
 ![[pvt_win.png]]
 \[Figure 16\]: output the PVT.
 
