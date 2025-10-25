@@ -289,27 +289,10 @@ The topics should like Figure 29
 
 open three terminal under the workspace, and `source install/setup.bash` each terminal. Check the /nmea, /rtcm and /ublox_gps_node/navpvt separately in the terminals
 
-there are a lot of data format in the nmea to represent the RTK status. GxGGA will be used in this instruction.
+there are a lot of data format in the nmea to represent the RTK status. 
 ```bash
-ros2 topic echo /nmea | grep GGA
+ros2 topic echo /nmea 
 ```
-the sixth field of the GGA in the /nmea represent the RTK status. The following list shows the meaning of all GGA's bits.
-```txt
-sentence: "$GPGGA,154135.00,0118.00918,N,10346.33794,E,5,09,1.20,29.1,M,5.9,M,1.0,1943*71\r\n"
-
-```
-
-|Field #|Example value|Meaning|
-|:-:|:-:|:--|
-|1|`154135.00`|UTC time (hhmmss.ss)|
-|2–5|`0118.00918,N,10346.33794,E`|Latitude / Longitude|
-|6|`5`|**Fix Quality Indicator ← RTK status is here**|
-|7|`09`|Number of SVs used|
-|8|`1.20`|HDOP|
-|9|`29.1,M`|Altitude + units|
-|…|…|other fields|
-
-
 
 ```bash
 ros2 topic echo /rtcm
@@ -342,13 +325,20 @@ The following list introduces the main params in the /ublox_gps_node/navpvt
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
 I did two tests on campus. 
+In figures  the green points are RTK fix status, Orange points are RTK float status, and the grey points are RTK invalid status.
+
+Firstly, we tested a large loop.
+![[car_test.png]]
+\[Figure 30\]: large loop test
+
+Secondly, we tested a small loop.
 
 
 
 
 ###### 3.6.2 Current issues
 1. The RTK localization may fail down sometimes.
-2. The u-center shows the RTK can get fix status, but at the same location, the ublox driver can only get float solution.
+2. The altitude cannot be estimated correctly sometimes.
 
 ## 3.7 Possible Solution
 1. We have asked the Sparkfun for technical support
