@@ -1,7 +1,5 @@
 # 1. Overview
-This is an instruction to demenstrate how to integrate ublox f9p within windows and ros2 step by stepf
-%% # 1. Equipment overview
-this is the overview of the equipment. %%
+This is an instruction to demenstrate how to integrate ublox f9p within windows and ros2 step by step.
 # 2. Windows
 The RTK localization includes two parts: the GPS localization, and the NTRIP localization correction. This section will present a detailed instruction for achieving the RTK localization on Windows. 
 ## 2.1 Download U-center
@@ -198,7 +196,7 @@ nano ~/ros2_ws/src/ublox/ublox_gps/launch/ublox_gps_node-launch.py
 ![[set_launch_ublox.jpg]]
 \[Figure 22\]: Modify the launch file
 
-9. Rebuild the packages. We recommend using a **separate package** for your custom config and launch files to keep things organized. We’ll discuss that approach later.
+9. Rebuild the packages. 
 ```bash
 cd ~/ros2_ws
 colcon build
@@ -324,14 +322,15 @@ The following list introduces the main params in the /ublox_gps_node/navpvt
 
 ## 3.6 Current RTK localization results and issues
 ##### 3.6.1 Current RTK localization results
-We did 
+I did 19 tests, the following two are the best results.
+
 In figures  the green points are RTK fix status, Orange points are RTK float status, and the grey points are RTK invalid status.
 
-Firstly, we tested a large loop.
+Firstly, I tested a large loop.
 ![[car_test.png]]
 \[Figure 30\]: large loop test
 
-Secondly, we tested a small loop.
+Secondly, I tested a small loop.
 ![[small_loop.png]]
 \[Figure 31\]: small loop test
 
@@ -341,5 +340,5 @@ Secondly, we tested a small loop.
 2. The altitude cannot be estimated correctly sometimes.
 
 ## 3.7 Possible Solution
-1. We will try the Wheeltech G60 RTK localization system as an alternative.  
-2. We recommend to use a **better RTK module**, because the localization performance cannot support the localization task.
+1. I will try the Wheeltech G60 RTK localization system as an alternative.  
+2. I recommend to use a **better RTK module**, because the current performance of localization cannot support the localization task.
