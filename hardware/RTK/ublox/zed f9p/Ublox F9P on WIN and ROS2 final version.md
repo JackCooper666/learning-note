@@ -130,7 +130,7 @@ The **pre-configuration** in **u-center** consists of two parts: **serial commun
 1. Configure the port under **Menu Bar → View → Message View → UBX → CFG → PRT (Ports)**, as shown in _Figure 13.
 
 <p align="center">
-  <img src="port_setting.png" alt="Port setting" width="500">
+  <img src="port_setting.png" alt="Port setting" width="400">
 </p>
 
 <p align="center"><i>Figure 13: Port setting</i></p>
@@ -159,7 +159,7 @@ The **pre-configuration** in **u-center** consists of two parts: **serial commun
 	- Go to **Menu Bar → View → Message View → UBX → RXM (Receiver Manager) → RTCM (RTCM Input Status)**, as shown in _Figure 16_.
 
 <p align="center">
-  <img src="rawx_SFRBX_rtcm.png" alt="Output RAWX, RTCM and SFRBX" width="500">
+  <img src="rawx_SFRBX_rtcm.png" alt="Output RAWX, RTCM and SFRBX" width="300">
 </p>
 
 <p align="center"><i>Figure 16: Output RAWX, RTCM, and SFRBX</i></p>
@@ -179,7 +179,7 @@ The **pre-configuration** in **u-center** consists of two parts: **serial commun
 	- Enable the NMEA messages shown in _Figure 18_.
 
 <p align="center">
-  <img src="nmea.png" alt="NMEA output setting" width="500">
+  <img src="nmea.png" alt="NMEA output setting" width="300">
 </p>
 
 <p align="center"><i>Figure 18: NMEA output setting</i></p>
@@ -410,11 +410,11 @@ In the figures, the green points indicate RTK fixed status, the orange points in
 
 Firstly, I tested a large loop.
 
-<p align="center"> <img src="car_test.png" alt="Large loop test" width="500"> </p> <p align="center"><i>Figure 32: Large loop test</i></p>
+<p align="center"> <img src="car_test.png" alt="Large loop test" width="400"> </p> <p align="center"><i>Figure 32: Large loop test</i></p>
 
 Secondly, I tested a small loop.
 
-<p align="center"> <img src="small_loop.png" alt="Small loop test" width="500"> </p> <p align="center"><i>Figure 33: Small loop test</i></p>
+<p align="center"> <img src="small_loop.png" alt="Small loop test" width="400"> </p> <p align="center"><i>Figure 33: Small loop test</i></p>
 
 ###### 3.6.2 Current issues
 1. The RTK localization may occasionally **fail** or **drift significantly**.
