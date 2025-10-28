@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/RTK/NTRIP，RTCM，GNSS，NMEA.md",
+                "file": "hardware/RTK/wheeltec/G90/logbook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NTRIP，RTCM，GNSS，NMEA"
+              "title": "logbook"
             }
           }
         ],
