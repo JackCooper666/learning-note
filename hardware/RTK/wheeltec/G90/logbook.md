@@ -8,6 +8,7 @@ The working schedule:
 		2. UPrecise
 	5. two-antinnes RTK system in ROS1
 		1. modify the Serial port
-		2. 
+		2. install driver
+		3. test
 2. RTK gives initial pose
 3. ESKF in localization
