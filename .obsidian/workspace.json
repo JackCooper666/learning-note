@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/RTK/wheeltec/G90/logbook.md",
+                "file": "c and cpp/cpp/Common Library/Eigen/Eigen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "logbook"
+              "title": "Eigen"
             }
           }
         ],
@@ -253,9 +253,9 @@
   },
   "active": "4db7f56aff813405",
   "lastOpenFiles": [
+    "hardware/RTK/wheeltec/G90/logbook.md",
     "hardware/RTK/RTK双天线定位与定向原理.md",
     "hardware/RTK/NTRIP，RTCM，GNSS，NMEA.md",
-    "hardware/RTK/wheeltec/G90/logbook.md",
     "hardware/RTK/wheeltec/G90/G90 instruction.md",
     "hardware/RTK/ublox/zed f9p/Ublox F9P on WIN and ROS2 final version.md",
     "hardware/RTK/ublox/zed f9p/Ublox F9P on Windows And Ros2.md",
