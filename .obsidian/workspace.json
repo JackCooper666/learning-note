@@ -25,12 +25,14 @@
             "id": "cbcf27e991f1c916",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.10.3"
+                "file": "c and cpp/cpp/advanced_basic_knowledge/pointer.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
+              "icon": "lucide-file",
+              "title": "pointer"
             }
           }
         ],
@@ -179,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5,
-    "collapsed": true
+    "width": 482.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,6 +197,8 @@
   },
   "active": "cbcf27e991f1c916",
   "lastOpenFiles": [
+    "c and cpp/cpp/advanced_basic_knowledge/pointer.md",
+    "c and cpp/cpp/advanced_basic_knowledge",
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
     "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
     "ROS/ROS 1/C++/file operation/package.h.md",
@@ -239,8 +242,6 @@
     "hardware/RTK/wheeltec",
     "ROS/ROS 1/ROS 1 mistakes.md",
     "ROS/ROS 1/plotjuggler.md",
-    "ROS/ROS 1/rosbag.md",
-    "c and cpp/cmake/install and uninstall",
-    "c and cpp/cmake"
+    "c and cpp/cmake/install and uninstall"
   ]
 }
