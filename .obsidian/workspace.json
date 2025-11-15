@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "basic commands"
             }
+          },
+          {
+            "id": "cbcf27e991f1c916",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4db7f56aff813405",
+  "active": "cbcf27e991f1c916",
   "lastOpenFiles": [
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
     "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
