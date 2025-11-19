@@ -17,4 +17,13 @@ Eigen::Vector2d leastsquareFit(const vector<Eigen::Vector2d>& points)
 	return x;
 }
 ```
+
+```cpp
+std::vector<double> LineFit(const std::vector<double>& x, const std::vector<double>& y){
+
+}
+```
+
+
+
 ## RANSAC

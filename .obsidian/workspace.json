@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "631676d7c2e52196",
+        "id": "b2306a0daf69b1b0",
         "type": "tabs",
         "children": [
           {
-            "id": "4db7f56aff813405",
+            "id": "0b12fc7ba5d92b9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS/ROS 1/CMakeList/basic commands.md",
+                "file": "ROS/SLAM/basic_algrithms/Basic Algorithms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "basic commands"
-            }
-          },
-          {
-            "id": "cbcf27e991f1c916",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ROS/ROS 1/CMakeList/for ros1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "for ros1"
+              "title": "Basic Algorithms"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,10 +181,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cbcf27e991f1c916",
+  "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
-    "ROS/ROS 1/CMakeList/connection with package.xml.md",
     "ROS/ROS 1/CMakeList/basic commands.md",
+    "ROS/SLAM/basic_algrithms/Basic Algorithms.md",
+    "ROS/SLAM/convergence Judgements in IEKF.md",
+    "ROS/SLAM/Mathematical basis.md",
+    "ROS/ROS 1/CMakeList/for ros1.md",
+    "ROS/ROS 1/CMakeList/connection with package.xml.md",
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
     "ROS/ROS 1/C++/nav_msgs.md",
     "sh/sh commends.md",
@@ -217,15 +206,11 @@
     "ROS/navigation/teb.md",
     "ROS/Localization/AMCL.md",
     "ROS/Localization/ekf_localization.md",
-    "ROS/SLAM/basic_algrithms/Basic Algorithms.md",
     "c and cpp/cpp/Common Library/Eigen/Eigen.md",
     "ROS/SLAM/basic_algrithms",
     "hardware/RTK/wheeltec/G90/logbook.md",
     "hardware/RTK/RTK双天线定位与定向原理.md",
     "hardware/RTK/NTRIP，RTCM，GNSS，NMEA.md",
-    "hardware/RTK/wheeltec/G90/G90 instruction.md",
-    "hardware/RTK/ublox/zed f9p/Ublox F9P on WIN and ROS2 final version.md",
-    "hardware/RTK/ublox/zed f9p/Ublox F9P on Windows And Ros2.md",
     "hardware/RTK/ublox/zed f9p/rtk image/zed_yaml.png",
     "hardware/RTK/ublox/zed f9p/rtk image/xsens_res.jpg",
     "hardware/RTK/ublox/zed f9p/rtk image/with_google_map.png",
