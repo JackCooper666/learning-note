@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SLAM/pcl map management/kd tree.md",
+                "file": "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kd tree"
+              "title": "xsens-mti-680g"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
+    "SLAM/pcl map management/kd tree.md",
     "SLAM/pcl map management",
     "c and cpp/cpp/STL/hashtable.md",
-    "SLAM/pcl map management/kd tree.md",
     "SLAM/basic_algrithms/Basic Algorithms.md",
     "ROS/ROS 1/CMakeList/basic commands.md",
     "SLAM/convergence Judgements in IEKF.md",
@@ -227,7 +227,6 @@
     "Untitled 1.base",
     "Untitled.base",
     "hardware/RTK/wheeltec/G90",
-    "hardware/RTK/wheeltec",
-    "c and cpp/cmake/install and uninstall"
+    "hardware/RTK/wheeltec"
   ]
 }
