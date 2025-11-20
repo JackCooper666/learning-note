@@ -1,4 +1,8 @@
 # map
+
+对于map的底层原理，是通过红黑树（一种非严格意义上的平衡二叉树）来实现的，因此map内部所有的数据都是有序的，map的查询、插入、删除操作的时间复杂度都是O(logn)。
+
+
 declare and initialise a map
 ```cpp
 #include <map>
@@ -45,6 +49,8 @@ for (it = mp.begin();it!=mp.end();it++){
 ```
 
 # unordered_map
+
+unordered_map和map类似，都是存储的key-value的值，可以通过key快速索引到value。不同的是unordered_map不会根据key的大小进行排序，存储时是根据key的hash值判断元素是否相同，即unordered_map内部元素是无序的。unordered_map的底层是一个防冗余的哈希表（开链法避免地址冲突）。
 ```cpp
 #include <unordered_map>
 #include <iostream>
