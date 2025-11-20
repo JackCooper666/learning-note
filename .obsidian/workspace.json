@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c and cpp/cpp/STL/hashtable.md",
+                "file": "SLAM/pcl map management/kd tree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hashtable"
+              "title": "kd tree"
             }
           }
         ]
@@ -183,10 +183,13 @@
   },
   "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
-    "ROS/SLAM/basic_algrithms/Basic Algorithms.md",
+    "SLAM/pcl map management",
+    "c and cpp/cpp/STL/hashtable.md",
+    "SLAM/pcl map management/kd tree.md",
+    "SLAM/basic_algrithms/Basic Algorithms.md",
     "ROS/ROS 1/CMakeList/basic commands.md",
-    "ROS/SLAM/convergence Judgements in IEKF.md",
-    "ROS/SLAM/Mathematical basis.md",
+    "SLAM/convergence Judgements in IEKF.md",
+    "SLAM/Mathematical basis.md",
     "ROS/ROS 1/CMakeList/for ros1.md",
     "ROS/ROS 1/CMakeList/connection with package.xml.md",
     "ROS/ROS 1/catkin/catkin_tools/install catkin_tool.md",
@@ -198,19 +201,16 @@
     "c and cpp/cpp/advanced_basic_knowledge",
     "ROS/ROS 1/C++/lidar/Lidar namespace and structure.md",
     "ROS/ROS 1/C++/file operation/package.h.md",
-    "ROS/Localization/cartographer.md",
+    "Localization/cartographer.md",
     "ROS/ROS 1/evo/evo.md",
     "obsidian user guidance/common commends.md",
     "obsidian user guidance/obsidian + github.md",
-    "ROS/Localization/RTK+GNSS.md",
-    "ROS/navigation/teb.md",
-    "ROS/Localization/AMCL.md",
-    "ROS/Localization/ekf_localization.md",
+    "Localization/RTK+GNSS.md",
+    "navigation/teb.md",
+    "Localization/AMCL.md",
+    "Localization/ekf_localization.md",
     "c and cpp/cpp/Common Library/Eigen/Eigen.md",
-    "ROS/SLAM/basic_algrithms",
-    "hardware/RTK/wheeltec/G90/logbook.md",
-    "hardware/RTK/RTK双天线定位与定向原理.md",
-    "hardware/RTK/NTRIP，RTCM，GNSS，NMEA.md",
+    "SLAM/basic_algrithms",
     "hardware/RTK/ublox/zed f9p/rtk image/zed_yaml.png",
     "hardware/RTK/ublox/zed f9p/rtk image/xsens_res.jpg",
     "hardware/RTK/ublox/zed f9p/rtk image/with_google_map.png",
