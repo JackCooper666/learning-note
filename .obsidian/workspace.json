@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "xsens-mti-680g"
             }
-          },
-          {
-            "id": "8067f587436c26a0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +181,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8067f587436c26a0",
+  "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
     "SLAM/pcl map management/kd tree.md",
     "SLAM/pcl map management",
