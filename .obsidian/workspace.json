@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "machine learning/training method.md",
+                "file": "machine learning/Token.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "training method"
+              "title": "Token"
             }
           }
         ]
@@ -182,10 +182,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9057a9433e081024",
+  "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
-    "Untitled.base",
     "machine learning/training method.md",
+    "machine learning/Token.md",
+    "Untitled.base",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "machine learning",
     "SLAM/pcl map management/kd tree.md",
