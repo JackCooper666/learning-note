@@ -72,7 +72,7 @@ The $W_{Q}$, $W_{K}$ and $W_{V}$ are initialized and will be trained. The X is t
 $$
 similarity = QK^{T}
 $$
-2. scale the similarity and get the attention value
+2. scale the similarity and get the attention matrix
 $$
 A = Softmax(\frac{QK^{t}}{\sqrt{d_{k}}})
 $$
@@ -94,6 +94,16 @@ $$
 V_{i} = VW_{i}^{V}
 $$
 
+Then:
+
+$$headi_{i}=Attention(Q_{i},K_{i}​,V_{i}​).$$
+
+With eight heads:
+$$head_{1}​,…,head_{8}.$$
+Then concatenate them:
+$$Concat(head_{1}​,…,head_{8}​).$$
+Finally apply another linear layer:
+$$MultiHead(Q,K,V) = Concat(head_{1}, \dots, head_{h})W^{O}$$
 
 
 

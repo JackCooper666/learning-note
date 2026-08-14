@@ -1,41 +1,57 @@
 The main idea:
 Instead of reading a sentence sequentially like an RNN, let every token directly look at every other token and decide which ones are important.
 
-```
-Input sentence
-      ↓
- Input Embedding
-      +
-Positional Encoding
-      ↓
-┌──────────────────┐
-│     Encoder      │ × 6
-│                  │
-│ Multi-Head Attn  │
-│       ↓          │
-│ Feed Forward     │
-└──────────────────┘
-      ↓
-Encoder output
-      ↓
-      ↓ used by decoder
-      ↓
-┌──────────────────┐
-│     Decoder      │ × 6
-│                  │
-│ Masked Attention │
-│       ↓          │
-│ Cross Attention  │
-│       ↓          │
-│ Feed Forward     │
-└──────────────────┘
-      ↓
-    Linear
-      ↓
-    Softmax
-      ↓
-Next token probability
-```
+# The entire original Transformer
+
+We can now reconstruct Figure 1.
+
+## Encoder
+
+Input:
+
+x1​,…,xN​
+
+then:
+
+Embedding + Positional Encoding
+
+then six times:
+
+Multi-Head Self-Attention​ 
+↓ 
+Add + LayerNorm​ 
+↓ 
+Feed Forward​ 
+↓ 
+Add + LayerNorm​
+
+---
+
+## Decoder
+
+Output tokens shifted right:
+
+y0​,y1​,…,yM−1​
+
+then:
+
+Embedding+PositionalEncoding
+
+then six times:
+
+Masked MultiHead SelfAttention​ 
+↓ 
+EncoderDecoder Attention​ 
+↓ 
+FeedForward​
+
+and finally:
+
+Linear​ 
+↓ 
+Softmax​ 
+↓ 
+P(next token).
 
 # Embedding: turning a token into a vector
 
@@ -72,9 +88,54 @@ $$
 PE(pos) = [PE(pos,0), PE(pos, 1), ..., PE(2,511)]
 $$
 
-# Attention 
+# Multi head Attention 
+see the Attention & self-Attention & multi-head attention section
 
+# Feed-forward network (FFN)
+Both the weights and the biases in the FFN are trainable parameters and are updated during training.
 
+In the Transformer, the **FFN is basically an MLP**.
 
+# Mask attention
 
+The decoder first looks at its own previous tokens.
 
+For example when predicting:
+```
+学习
+```
+
+it can see:
+```
+我 喜欢 机器
+```
+
+But there's a major problem during training.
+
+We already know the complete correct sentence:
+```
+我 喜欢 机器 学习
+```
+
+If the model could see `"学习"` while trying to predict `"学习"`, that's cheating.
+
+So we need a mask to mask the attention matrix where the tokens have been used
+
+So: Decoder token i can only see tokens ≤i​, This preserves **autoregressive generation**.
+
+# Encoder-decoder attention / cross-attention
+
+For decoder self-attention:
+$$Q,K,V$$
+
+all come from the decoder.
+
+But for encoder-decoder attention:
+
+Q=decoder representation
+
+while
+
+K,V=encoder outputs.
+
+# What does the final Linear + Softmax do?
