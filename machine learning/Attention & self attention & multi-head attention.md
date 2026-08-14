@@ -28,9 +28,18 @@ $$
 $$
 a_{i} = Softmax(Sim_{i})
 $$
-3. 根据权重系数对Value值进行加权求和，得到Attention Value.
+3. 根据权重系数对Value值进行加权求和，得到Attention Value. 
 
 # Self-Attention
 针对全连接神经网络对于多个相关的输入无法建立起相关性的这个问题，通过自注意力机制来解决，自注意力机制实际上是想让机器注意到整个输入中不同部分之间的相关性。
 
 自注意力机制是注意力机制的变体，其减少了对外部信息的依赖，更擅长捕捉 数据或特征的内部相关性。自注意力机制的关键点在于，Q、K、V是同一个东西，或者三者来源于同一个X，三者同源。通过X找到X里面的关键点，从而更关注X的关键信息，忽略X的不重要信息。
+
+## Pipeline 
+
+The step of the Self-Attention is the similar as the Attention but using the matrix calculation
+1. calculate similarity by the querys and keys
+
+2. scale the similarity
+3. get the attention value
+4. get the attention of each key and choose the best one
