@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4c56fd1e3fd15cc7",
@@ -187,9 +186,9 @@
   "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
     "machine learning/Token.md",
-    "machine learning/Attention.md",
-    "machine learning/transformer.md",
     "machine learning/training method.md",
+    "machine learning/transformer.md",
+    "machine learning/Attention.md",
     "Untitled.base",
     "hardware/RTK/xsens/xsens_mti_680g/xsens-mti-680g.md",
     "machine learning",
