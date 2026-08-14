@@ -138,4 +138,26 @@ while
 
 K,V=encoder outputs.
 
-# What does the final Linear + Softmax do?
+# final output
+
+> The final Softmax outputs a probability over **the entire target-language vocabulary**, not only the Chinese tokens that have not been translated yet.
+
+Suppose the Chinese vocabulary contains
+
+V=32,000
+
+tokens. 
+
+At one decoding step, the final linear layer produces
+$$
+z \in \mathbb R^{32,000}$$
+
+and Softmax converts those 32,000 scores into
+$$
+P(y_{t+1}|y_{1}, \dots, y_{t}, English sentence)
+$$
+
+then choose the one with highest probability
+
+# how to train
+一次前向传播中，同时对所有中文位置预测“下一个 token 的概率分布”，然后把所有位置的 loss 一起算出来。
