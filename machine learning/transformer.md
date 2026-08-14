@@ -66,9 +66,13 @@ $$
 $$
 PE_{(pos,2i+1)} = cos(\frac{pos}{10000^{\frac{2i}{d_{model}}}})
 $$
-
+where $pos$ is the position of the token in the sentence, $2i$ and $2i + 1$ indicate the even and odd. 
 so for one token the PE of it will be 
+$$
 PE(pos) = [PE(pos,0), PE(pos, 1), ..., PE(2,511)]
+$$
+
+# Attention 
 
 
 
