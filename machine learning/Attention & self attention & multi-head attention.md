@@ -36,10 +36,38 @@ $$
 自注意力机制是注意力机制的变体，其减少了对外部信息的依赖，更擅长捕捉 数据或特征的内部相关性。自注意力机制的关键点在于，Q、K、V是同一个东西，或者三者来源于同一个X，三者同源。通过X找到X里面的关键点，从而更关注X的关键信息，忽略X的不重要信息。
 
 ## Pipeline 
+This is the pipeline overview of the self-attention 
+```
+              it
+               ↓
+             Query
+               ↓
+         compare against
+               ↓
+
+The   robot   couldn't   enter   tunnel   ...
+ ↓      ↓        ↓         ↓       ↓
+Key    Key      Key       Key     Key
+
+0.02   0.72     0.03      0.04    0.19
+        ↑
+    high attention
+```
+
 
 The step of the Self-Attention is the similar as the Attention but using the matrix calculation
-1. calculate similarity by the querys and keys
+0. initalize the Q, K, and V
+$$
 
-2. scale the similarity
-3. get the attention value
-4. get the attention of each key and choose the best one
+$$
+0. calculate similarity by the querys and keys
+$$
+similarity = QK^{T}
+$$
+1. scale the similarity
+$$
+sim = \frac{QK^{t}}{\sqrt{d_{k}}}
+$$
+
+2. get the attention value
+3. get the attention of each key and choose the best one
