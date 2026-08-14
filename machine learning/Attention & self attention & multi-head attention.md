@@ -53,21 +53,48 @@ Key    Key      Key       Key     Key
         ↑
     high attention
 ```
+the token representation is $z = 0.72v_{robot} + 0.2v_{tunnel} + 0.1v_{other}$
 
 
 The step of the Self-Attention is the similar as the Attention but using the matrix calculation
 0. initalize the Q, K, and V
 $$
-
+Q = XW_{Q}
 $$
-0. calculate similarity by the querys and keys
+$$
+K = XW_{K}
+$$
+$$
+V = XW_{V}
+$$
+The $W_{Q}$, $W_{K}$ and $W_{V}$ are initialized and will be trained. The X is the input such as X = Token embedding+Positional encoding​ 
+1. calculate similarity by the querys and keys
 $$
 similarity = QK^{T}
 $$
-1. scale the similarity
+2. scale the similarity and get the attention value
 $$
-sim = \frac{QK^{t}}{\sqrt{d_{k}}}
+A = Softmax(\frac{QK^{t}}{\sqrt{d_{k}}})
+$$
+3. get the attention of each key and get the representation of each token
+$$
+z = AV
 $$
 
-2. get the attention value
-3. get the attention of each key and choose the best one
+# Multi-Head Attention
+
+For head i:
+$$
+Q_{i} = QW_{i}^{Q}
+$$
+$$
+K_{i} = KW_{i}^{K}
+$$
+$$
+V_{i} = VW_{i}^{V}
+$$
+
+
+
+
+
