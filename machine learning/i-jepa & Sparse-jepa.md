@@ -232,6 +232,7 @@ Context Encoder           Target Encoder
            ŝ_y
              |
        JEPA Prediction Loss
+----------------------------------------------until here is the same as i-jepa
 
              +
 
