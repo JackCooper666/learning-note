@@ -275,3 +275,23 @@ $$
 $$
 
 
+## Latent regularization
+the Latent regulartion 
+
+## Structure sparsity
+
+The Structured sparsity is to determine which latent variable in which group.
+
+The latent variable is the element in the sementic representation vector, the result of the i-jepa, but one variable may in different groups.
+
+The group means a group of feature with the same sementic meaning such as animal, texture, pose and background.
+
+$$
+\lambda
+\sum_{g=1}^{G}
+\sum_{j=1}^{K}
+\left\|
+W_{\cdot,j}^{(g)}
+\right\|_2
+$$
+the W is the weight of the latent variable in a group.
