@@ -214,3 +214,30 @@ Therefore, the target encoder provides a relatively stable learning target for t
 
 # Sparse-jepa
 I-JEPA 主要解决“怎样学到好的 representation”；SparseJEPA 进一步问：“这些 representation 能不能组织得更稀疏、更有结构、更容易解释？”
+
+the following is the full network structure:
+```
+Image
+  |
+  +---------------------------+
+  |                           |
+Context                     Full Image
+  |                           |
+Context Encoder           Target Encoder
+  |                           |
+ s_x                         s_y
+  |                           |
+  +------> Predictor <---------+
+             |
+           ŝ_y
+             |
+       JEPA Prediction Loss
+
+             +
+
+       Sparsity Penalty
+             |
+             v
+   Structured Latent Space
+```
+
