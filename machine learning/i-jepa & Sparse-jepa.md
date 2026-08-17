@@ -276,7 +276,36 @@ $$
 
 
 ## Latent regularization
-the Latent regulartion 
+The latent regularization controls the distribution of the latent variables z conditioned on the input x.
+
+也就是：
+
+q(z∣x)​
+
+这里的含义是：
+
+- x：input，例如 SparseJEPA 中的一张输入 image
+- z：由这个 input 得到的 latent variables / latent representation
+- q(z∣x)：**given this input x, what distribution should its latent representation z follow?**
+
+Given an input x, the latent variable z is modeled by a conditional distribution q(z∣x), and KL regularization encourages this distribution to stay close to a Gaussian prior p(z)=N(0,I).
+
+如果完全没有 KL，模型理论上可以：
+
+z1​,z2​,…,zK​
+
+随便编码各种细节，甚至记住大量：
+
+- pixel noise
+- background details
+- sample-specific information
+- redundant information
+
+只要最后 JEPA prediction loss 足够低即可。
+
+KL 相当于增加一个约束：
+
+> **latent space 的 capacity 不是完全自由的，你要更有节制地使用这些 latent variables。**
 
 ## Structure sparsity
 
@@ -295,3 +324,5 @@ W_{\cdot,j}^{(g)}
 \right\|_2
 $$
 the W is the weight of the latent variable in a group.
+
+Therefore, the structure sparsity will make each latent variable in one group as soon as possible.
