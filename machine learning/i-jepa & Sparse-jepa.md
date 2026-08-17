@@ -242,3 +242,36 @@ Context Encoder           Target Encoder
    Structured Latent Space
 ```
 
+The context encoder, target encoder and predictor parts are the same as the i-jepa. The main change is the Loss function which adds the Latent regularization and sparsity reqularization.
+
+The Loss function is :
+$$
+\mathcal{L}
+=
+\frac{1}{M}
+\sum_{i=1}^{M}
+\sum_{j \in B_i}
+\left\|
+\hat{s}_{y_j} - s_{y_j}
+\right\|_2^2
++
+\beta \mathcal{L}_{KL}
++
+\lambda
+\sum_{g=1}^{G}
+\sum_{j=1}^{K}
+\left\|
+W_{\cdot,j}^{(g)}
+\right\|_2
+$$
+$$
+\mathcal{L}
+=
+\underbrace{\mathcal{L}_{\text{JEPA}}}_{\text{Predict correctly}}
++
+\underbrace{\beta \mathcal{L}_{KL}}_{\text{Latent regularization}}
++
+\underbrace{\lambda \mathcal{L}_{\text{sparse}}}_{\text{Structured sparsity}}
+$$
+
+
