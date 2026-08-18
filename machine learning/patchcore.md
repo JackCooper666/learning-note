@@ -156,6 +156,87 @@ m_{\text{test}} - m^*
 \right\|_2
 $$
 
-finally get the image level anomaly score
+Then, get the image level anomaly score
 PatchCore 的核心思想就是：
 One anomalous patch⇒Image can be anomalous​
+所以最基础 image score：
+$$
+s^*
+=
+\max_{m_{\text{test}} \in P(x_{\text{test}})}
+\min_{m \in \mathcal{M}}
+\left\|
+m_{\text{test}} - m
+\right\|_2
+$$
+
+finally, re-weight the image score according to the nearest neighbours on the input image of hte patch to get the final $s$
+
+
+# 那 anomaly segmentation 怎么得到？
+
+这个其实特别自然。
+
+因为每一个 test patch 都有：
+$$
+d_{i}​
+$$
+例如：
+```
+0.1   0.2   0.1   0.2
+
+0.1   0.2   4.5   3.8
+
+0.2   0.3   4.1   3.5
+
+0.1   0.2   0.3   0.2
+```
+
+那么：
+```
+4.5
+
+4.1
+
+3.8
+
+3.5
+```
+
+这一片就是 anomaly region。
+
+所以把：
+
+patch anomaly scores
+
+放回原来的 spatial positions：
+$$
+(h,w)
+$$
+就得到 low-resolution anomaly map。
+
+然后：
+
+bilinear interpolation
+
+放大到原始 image size。
+
+论文最后还用了： Gaussian smoothing $σ=4​$
+
+
+所以：
+
+PatchCore detection​
+
+和：
+
+PatchCore segmentation​
+
+其实使用的是同一套 patch anomaly scores。
+
+区别只是：
+$$
+image-level=max(patch scores)
+$$
+而：
+segmentation=spatial arrangement of patch scores
