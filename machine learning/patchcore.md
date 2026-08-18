@@ -135,4 +135,27 @@ Image Anomaly      Anomaly Map
 ```
 
 
-## 
+Firstly the test image come in, then the patch feature will be got and do the local aggregation with its neighbors.
+
+Secondly, the nearest neighbour of each local aggregated patch in the memory bank will be found by calculate the distance between the patch's feature and the features of the patch in the memory bank.
+
+then we can get the Patch anomaly scores
+$$
+m^*
+=
+\arg\min_{m \in \mathcal{M}}
+\left\|
+m_{\text{test}} - m
+\right\|_2
+$$
+$$
+d(m_{\text{test}})
+=
+\left\|
+m_{\text{test}} - m^*
+\right\|_2
+$$
+
+finally get the image level anomaly score
+PatchCore 的核心思想就是：
+One anomalous patch⇒Image can be anomalous​
