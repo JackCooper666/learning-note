@@ -59,7 +59,7 @@ Done
 ## extract patch feature
 the first step is get the patch features from the normal images via the pretrained CNN module. 
 
-one patch matches one receptive field of the image
+One spatial position in the CNN feature map corresponds to a receptive field in the original image, and its feature vector is regarded as a patch-level feature.
 ```
 Original Image
 
@@ -170,7 +170,7 @@ m_{\text{test}} - m
 \right\|_2
 $$
 
-finally, re-weight the image score according to the nearest neighbours on the input image of hte patch to get the final $s$
+Finally, PatchCore re-weights the maximum patch anomaly score using the neighborhood structure around its nearest normal feature $m^{∗}$ in the memory bank, producing the final image-level anomaly score $s$.
 
 
 # 那 anomaly segmentation 怎么得到？
