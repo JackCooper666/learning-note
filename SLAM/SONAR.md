@@ -37,3 +37,88 @@ $$
 
 每一个 pixel 其实表示：
 > 在某个 **range + azimuth** 区间里接收到多少声波能量。
+
+
+这里有一个非常重要的东西：
+$$
+Elevation 信息丢失​
+$$
+也就是说：
+
+真实世界：
+$$
+(r, φ, θ)
+$$
+  
+
+sonar image：
+$$
+(r, φ)
+$$
+其中：
+$$
+θ=elevation
+$$
+被压缩掉了。
+
+
+# side-scan sonar
+Side-scan sonar：左右各打一个宽扇形声束，但不会像 multibeam sonar 那样把这个扇形再分成很多可区分角度的 beam。它主要保留 range + intensity，而丢掉 beam 内部的 azimuth 信息。
+
+比如右侧这一整个扇形：
+```
+          object A
+
+                ●
+
+             /
+
+           /
+
+Sonar ● ---------------- ● object B
+
+           \
+
+             \
+
+                ● object C
+```
+
+A、B、C 都在这个 fan beam 里面。
+
+假设它们距离 sonar 都是：
+$$
+r=5m
+$$
+那么 side-scan sonar 很难告诉你：
+```
+A 在 20°
+
+B 在 40°
+
+C 在 60°
+```
+
+它主要知道： 5m 这个 range 上收到了多少 intensity​
+
+所以一侧的一次 ping 最终更像生成：
+$$
+I(r)
+$$
+也就是：
+```
+range
+
+0m   1m   2m   3m   4m   5m   6m
+
+ |    |    |    |    |    |    |
+
+░░   ░░   ░░   ░░   ░░   ██   ░░
+
+                         ↑
+
+                 strong return
+```
+
+# Multibeam Profiling Sonar
+
