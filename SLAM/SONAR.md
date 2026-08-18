@@ -122,3 +122,107 @@ range
 
 # Multibeam Profiling Sonar
 
+```
+           vehicle
+              ↓
+
+   \ | | | | | | | /
+    \| | | | | | |/
+~~~~~~~~~~~~~~~~~~~~ seabed
+```
+
+zimuth 很宽，但：
+$$
+Elevation
+$$
+非常窄，论文给出的典型值大约：
+$$
+1^{∘}∼3^{∘}
+$$
+因此每一帧基本可以当成：2D slice​
+
+论文描述它可以得到下方环境的一排 measurements。
+
+# Echosounder
+
+单束测深
+
+```
+          sonar
+           \ | /
+            \|/
+             V
+          cone beam
+             |
+             |
+~~~~~~~~~~~~ seabed
+```
+它通常不告诉你：
+
+azimuth
+
+也不告诉你：
+
+elevation
+
+主要就是：
+
+range+intensity
+
+
+# 3D sonar
+
+可以把 3D sonar 想成“二维 beam grid”
+
+普通 multibeam profiling sonar 类似：
+$$
+1×N
+$$
+beam array：
+```
+beam:
+1  2  3  4  5  6  7  8
+
+|  |  |  |  |  |  |  |
+```
+
+---
+
+3D sonar 更接近：
+$$
+M×N
+$$
+例如概念上：
+```
+             azimuth →
+
+  
+
+        beam beam beam beam
+
+          ↓    ↓    ↓    ↓
+
+  
+
+elevation  ●    ●    ●    ●
+
+   ↓       ●    ●    ●    ●
+
+           ●    ●    ●    ●
+
+           ●    ●    ●    ●
+
+```
+每一个 angular cell 都对应：
+$$
+(ϕ_{i}​,θ_{j}​)
+$$
+再测一个 range：
+$$
+r_{ij}​
+$$
+于是：
+$$
+(r,ϕ,θ)​
+$$
+全都有了。
