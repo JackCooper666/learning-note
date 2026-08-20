@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "machine learning/i-jepa & Sparse-jepa.md",
+                "file": "SLAM/kalman filter/kf & ekf & eskf.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "i-jepa & Sparse-jepa"
+              "title": "kf & ekf & eskf"
             }
           }
         ]
@@ -185,24 +185,24 @@
   },
   "active": "0b12fc7ba5d92b9f",
   "lastOpenFiles": [
+    "SLAM/kalman filter/IKF & IEKF & ESIKF.md",
+    "SLAM/kalman filter/ICP & NDT.md",
+    "SLAM/kalman filter/coupling.md",
+    "machine learning/i-jepa & Sparse-jepa.md",
+    "SLAM/convergence Judgements in IEKF.md",
     "machine learning/HoloOcean.md",
     "machine learning/SAM-RL.md",
     "SLAM/SONAR.md",
     "machine learning/Token.md",
     "machine learning/patchcore.md",
-    "machine learning/i-jepa & Sparse-jepa.md",
     "machine learning/F1, recall and precie.md",
     "machine learning/Attention & self attention & multi-head attention.md",
     "machine learning/transformer.md",
     "machine learning/training method.md",
     "machine learning/Dino V3.md",
-    "SLAM/kalman filter/ICP & NDT.md",
-    "SLAM/kalman filter/coupling.md",
-    "SLAM/kalman filter/IKF & IEKF & ESIKF.md",
     "SLAM/kalman filter/kf & ekf & eskf.md",
     "SLAM/Mathematical basis.md",
     "SLAM/kalman filter",
-    "SLAM/convergence Judgements in IEKF.md",
     "SLAM/thirdparty_install/Sophus.md",
     "SLAM/SLAM + 3DGS/research_proposal.pdf",
     "SLAM/SLAM + 3DGS/related works.md",
